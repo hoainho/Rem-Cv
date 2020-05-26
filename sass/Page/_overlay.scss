@@ -1,0 +1,36 @@
+.taitrang{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    z-index: 3500;
+    &-1{
+        background: $color-secondary-light;
+        left: 0%;
+        width: 20%;
+    }
+    &-2{
+        background: $color-secondary-light;
+        left: 20%;
+        width: 20%;
+
+    }
+    &-3{
+        background: $color-secondary-light;
+        left: 40%;
+        width: 20%;
+
+    }
+    &-4{
+        background: $color-secondary-light;
+        left: 60%;
+        width: 20%;
+
+    }
+    &-5{
+        background: $color-secondary-light;
+        left: 80%;
+        width: 20%;
+
+    }
+}

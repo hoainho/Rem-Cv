@@ -1,0 +1,156 @@
+.sale {
+    background: $color-black;
+    background-size: cover;
+    clip-path: ellipse(65% 65% at 48% 35%);
+    object-fit: cover;
+}
+.tittle-sale {
+    font-size: 10rem; 
+    top: -5rem;
+    left: 35rem;
+    @include mobile{
+      font-size: 4rem;
+      top: -5rem;
+      left: 32rem;
+      }
+      @include smtablet{
+      font-size: 5rem;
+      top: -7rem;
+      left: 31rem;
+      }
+      @include tablet{
+        font-size: 5rem;
+        top: -7rem;
+        left: 32rem;
+        }
+  }
+  .content-sale {
+    position: absolute;
+    font-size: 4rem;
+    color: $color-secondary;
+  
+  }
+  .content-sale1 {
+    left: 60rem;
+    top: -3rem;
+    animation: chuyendongrung 1s linear infinite ;
+    @include mobile{
+      left: 49rem;
+    top: -5rem;
+    }
+    @include tablet{
+      left: 49rem;
+    top: -5rem;
+    }
+    @include smtablet{
+      left: 49rem;
+      top: -5rem; 
+    }
+  }
+  .content-sale2 {
+    left: 60rem;
+    top: 1rem;
+    animation: chuyendongrung 1s linear infinite ;
+    @include mobile{
+      left: 49rem;
+      top: -2rem;
+    }
+    @include tablet{
+      left: 49rem;
+      top: -2rem;
+    }
+    @include smtablet{
+      left: 49rem;
+      top: -2rem;
+    }
+  }
+  .content-sale3a {
+    font-size:10rem ;
+    left: 68rem;
+    top: -5rem;  
+    animation: scale 3s linear infinite;
+    @include mobile{
+      left: 31rem;
+      top: -3rem;
+    }
+    @include tablet{
+      left: 31rem;
+      top: -3rem;
+    }
+    @include smtablet{
+      left: 31rem;
+      top: -3rem;
+    }
+  }
+  .content-sale3b{
+    -webkit-text-stroke: 0.1rem $color-secondary;
+    color: transparent;
+    font-size: 10rem;
+    left: 68rem;
+    top: -5rem; 
+    @include mobile{
+      left: 31rem;
+      top: -3rem;
+    }
+    @include tablet{
+      left: 31rem;
+      top: -3rem;
+    }
+    @include smtablet{
+      left: 31rem;
+      top: -3rem;
+    }
+  }
+  .content-sale4 {
+    left: 90rem;
+    top: -3rem;
+    animation: chuyendongrungvaxoay 3s linear infinite;
+    @include mobile{
+      left: 55rem;
+    top: 1rem;
+    }
+    @include smtablet{
+      left: 55rem;
+    top: 1rem;
+    }
+    @include tablet{
+      left: 55rem;
+    top: 1rem;
+    }
+
+  }
+  .content-sale5 {
+    left: 95rem;
+    top: 0rem;
+    animation: chuyendongrungvaxoay 3s linear infinite;
+    @include mobile{
+      left: 55rem;
+    top: 1rem;
+    }
+    @include smtablet{
+      left: 59rem;
+    top: 4rem;
+    }
+    @include tablet{
+      left: 59rem;
+    top: 1rem;
+    }
+  }
+  .content-sale6 {
+    left:100rem;
+    top: 3rem; 
+    animation: chuyendongrungvaxoay 3s linear infinite;
+    @include mobile{
+      left: 55rem;
+      top: 1rem;
+    }
+    @include smtablet{
+      left: 63rem;
+    top: 7rem;
+    }
+    @include tablet{
+      left: 63rem;
+      top: 1rem;
+    }
+  }
+  

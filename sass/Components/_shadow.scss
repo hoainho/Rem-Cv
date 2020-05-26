@@ -1,0 +1,18 @@
+.shadow{
+    &-slide{
+    position: absolute;
+    top:40%;
+    left:5%;
+    transform: translateY(20rem);
+    filter: blur(20px);
+    }
+    &-btn{
+        position: absolute;
+        width: 20%;
+        height: 10%;
+        bottom:-75rem;
+        left:25%;
+        filter: blur(40px);
+        z-index: -1;
+    }
+}

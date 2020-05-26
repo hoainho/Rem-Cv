@@ -1,0 +1,154 @@
+
+@keyframes chuyendongmauvarung
+{
+    0%{
+        transform: translateY(-1.5rem);
+        box-shadow: 0 0 10px $color-secondary-light ,
+      0 0 40px $color-blue,
+      0 0 60px $color-red,
+      0 0 80px $color-blue,
+      0 0 100px $color-red;
+    }
+    20%{
+        transform: translateY(1.5rem);
+        box-shadow: 0 0 10px $color-secondary-light ,
+      0 0 40px $color-blue,
+      0 0 60px $color-red,
+      0 0 80px $color-blue,
+      0 0 100px $color-red;
+    }
+    40%{
+        transform: translateY(-1.5rem);
+        box-shadow: 0 0 10px $color-red-light ,
+      0 0 40px $color-green,
+      0 0 60px $color-secondary-light,
+      0 0 80px $color-blue,
+      0 0 100px $color-purple;
+    }
+    60%{
+        transform: translateY(1.5rem);
+        box-shadow: 0 0 10px $color-secondary-light ,
+      0 0 40px $color-blue,
+      0 0 60px $color-red,
+      0 0 80px $color-blue,
+      0 0 100px $color-red;
+    }
+    100%{
+        transform: translate(0);
+        box-shadow: 0 0 10px $color-red-light ,
+      0 0 40px $color-green,
+      0 0 60px $color-secondary-light,
+      0 0 80px $color-blue,
+      0 0 100px $color-purple;
+    }
+}
+@keyframes chuyendongrung
+{
+    0%{
+        transform: translateY(-1.5rem);
+
+    }
+    20%{
+        transform: translateY(1.5rem);
+
+    }
+    40%{
+        transform: translateY(-1.5rem);
+      
+    }
+    60%{
+        transform: translateY(1.5rem);
+      
+    }
+    100%{
+        transform: translate(0);
+       
+    }
+}
+@keyframes chuyendongmau
+{
+    0%{
+        box-shadow: 0 0 10px $color-secondary-light ,
+      0 0 40px $color-blue,
+      0 0 60px $color-red,
+      0 0 80px $color-blue,
+      0 0 100px $color-red;
+    }
+    100% {
+    box-shadow: 0 0 10px $color-red-light ,
+      0 0 40px $color-green,
+      0 0 60px $color-secondary-light,
+      0 0 80px $color-blue,
+      0 0 100px $color-purple;
+    }
+}
+@keyframes chuyendongxoay{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes loop {
+  from    {transform: rotateX(0deg) rotateY(0deg);     }
+  to      {transform: rotateX(360deg) rotateY(360deg); }
+}
+@keyframes loopX {
+  from    {transform: rotateX(0deg) ; }
+  to      {transform: rotateX(360deg);}
+}
+@keyframes loopY {
+  from    {transform:  rotateY(0deg); }
+  to      {transform:  rotateY(360deg);}
+}
+@keyframes zoom {
+  0%    {transform: scale(1);     }
+  33%   {transform: scale(1.5);   }
+  66%  {transform: scale(1);      }
+  100%  {transform: scale(0);      }
+}
+@keyframes chuyendongrungvaxoay{
+  0%{
+    transform:translateY(0rem);
+  }
+  40%{
+    transform:translateY(-6.5rem);
+  }
+  49%{
+    transform:translateY(-6.5rem);
+  }
+  50%{
+    transform:translateY(-6.5rem) rotate(360deg);
+  }
+  51%{
+    transform:translateY(-6.5rem);
+  }
+  60%{
+    transform:translateY(-4rem);
+  }
+  100%{
+    transform:translateY(0rem);
+  }
+}
+@keyframes wave{
+  0%{clip-path: polygon(0% 62%, 7% 56%, 22% 54%, 28% 60%, 38% 68%, 38% 68%, 53% 73%, 69% 69%, 74% 60%, 84% 49%, 93% 42%, 99% 31%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  100%{clip-path: polygon(0% 56%, 6% 50%, 9% 44%, 18% 37%, 29% 37%, 35% 44%, 39% 56%, 42% 66%, 48% 75%, 59% 82%, 72% 75%, 78% 69%, 84% 60%, 91% 45%, 98% 34%, 100% 99%, 0% 99%);
+  }
+}
+@keyframes scale{
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100%{
+    transform: scale(2  );
+    opacity: 0.2;
+  }
+}
+@keyframes shine {
+  0% {background-position: -100%;}
+  100% {background-position: 100%;}
+}
+
