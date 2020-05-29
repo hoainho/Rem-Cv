@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="js/fullPageScroll/fullPageScrollPureJS-master/app/assets/stylesheet/full-page-scroll.css">
     <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/fullPage.js/fullPage.js-master/src/fullpage.js">
     <title>'Cv-Rem'</title>
     <link rel="icon" href="img/cropped-favicon.png">
 </head>
 <body>
-    <header class="rem-header">
-        <div class="rem-navbar rem-navbar-main rem-navbar-transparent">
-            <div class="rem-navbar--background rem-navbar--background_transparent"></div>
+  
+    <header id="header" class="rem-header">
+        <div class="rem-navbar rem-navbar-main">
+            <div class="rem-navbar--background"></div>
             <div class="rem-navbar--inner">
                 <div class="rem-navbar--inner_left">
                     <div class="rem-navbar--inner_left__wrapper ">
@@ -22,7 +25,7 @@
                     <nav class="rem-navbar--inner_left__contacts">
                         <ul class="rem-navbar--inner_left__contacts___list">
                             <li class="rem-navbar--inner_left__contacts___item">
-                                <a class="rem-navbar--inner_left__contacts___link" href="">+84 912 521 560</a>
+                                <a id ="click" class="rem-navbar--inner_left__contacts___link" href="">+84 912 521 560</a>
                             </li>
                             <li class="rem-navbar--inner_left__contacts___item">
                                 <i class="fas fa-arrows-alt-h"></i>
@@ -34,10 +37,40 @@
                     </nav>
                 </div>
                 <div class="rem-navbar--inner_right">
-                    <i class="fas fa-bars rem-navbar--inner_right__icon"></i>
+                  <div class='rem-navbar--inner_right__loading'>
+                    <div class='rem-navbar--inner_right__loading___square'></div>
+                    <div class='rem-navbar--inner_right__loading___square'></div>
+                    <div class='rem-navbar--inner_right__loading___square'></div>
+                    <div class='rem-navbar--inner_right__loading___square'></div>
+                    <div class='rem-navbar--inner_right__loading___square'></div>
+                    <div class='rem-navbar--inner_right__loading___square'></div>
+                    <div class='rem-navbar--inner_right__loading___square'></div>
+                  </div>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <nav class="navbar fixed-top ">
+                <div class="navbar-main" id="navbarNav">
+                  <ul class="navbar-nav"> 
+                    <li class="navbar-nav--item ">
+                        <a class="navbar-nav--link  scroll" href="#"><i class="fas fa-circle"></i></a>       
+                    </li>  
+                    <li class="navbar-nav--item">
+                        <a class="scrollTop navbar-nav--link scroll" href="#top"><i class="far fa-circle"></i></a>
+                    </li>
+                    <li class="navbar-nav--item">
+                        <a class="scrollFeatures navbar-nav--link  scroll" href="#features"><i class="far fa-circle"></i></a>
+                    </li>
+                    <li class="navbar-nav--item">
+                        <a class="scrollPricing navbar-nav--link  scroll" href="#pricing"><i class="far fa-circle"></i></a>
+                    </li>          
+                    </ul>
+                    
+                </div>
+                </div> <!-- /container -->
+            </nav>
+        
     </header>
     <div class="rem-menu--overlay"></div>
     <div class="rem-menu--wrapper">
@@ -47,12 +80,125 @@
             <div class="rem-menu--wrapper_main__footer"></div>
         </div>
     </div>
-
+    <div id="main" class="container-fluid scroll-container">
+      <section class="section hero " id="top">
+        <div class="hero-bg"><img class="hero-bg--img" src="./img/bgHeaders.png" alt="Background-Header"></div>
+        <div class="hero-container container ">
+          <div class="hero-container--row">
+            <div class="hero-container--row_box col-lg-12">
+              <h1 class="hero-container--row_box__slogan hero-container--row_box__slogan___before"><span>Howdy, </span> I'm
+                <br>
+                RemAlw
+              </h1>
+              <h1 class="hero-container--row_box__slogan hero-container--row_box__slogan___after"><span class="hero-container--row_box__slogan___color">Howdy, </span> I'm
+                <br>
+                RemAlw
+              </h1>
+              <span class="hero-container--row_box__bg"></span> 
+            </div>
+            <div class="hero-container--row_download col-lg-12">
+              <a href="#" class="hero-container--row_download__box">
+                <i class="hero-container--row_download__box___icon fas fa-arrow-down"></i>
+                <span class="hero-container--row_download__box___content" > 
+                  <h2 class="hero-container--row_download__box___content____font">Download Rem'Cv</h2>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section features " id="features">
+        <div class="container">
+          <h1 class="mb-5 display-4">Features</h1>
+          <div class="row">
+            <div class="col-md-4 features-container--row_box">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Consectetuer adipiscing elit.</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section pricing " id="pricing">
+        <div class="container">
+          <h1 class="mb-5 display-4">Pricing</h1>
+          <div class="row "> 
+            <div class="col-md-4 pricing-container--row_box">
+              <div class="card bg-info">
+                <div class="card-header bg-primary text-white">
+                  Basic
+                </div>
+                <div class="card-block">
+                  <h4 class="card-title">Cool Plan</h4>
+                  <p class="card-text">
+                    <ol>
+                     <li>Lorem ipsum </li>
+                     <li>Aliquam tincidunt</li>
+                     <li>Vestibulum auctor.</li>
+                  </ol>
+                  </p>
+                  <a href="#" class="btn btn-primary">Download FREE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card featured-price bg-inverse text-white">
+                <div class="card-header bg-danger text-uppercase">
+                  Most Popular
+                </div>
+                <div class="card-block">
+                  <h4 class="card-title">Awesome Plan</h4>
+                  <p class="card-text">
+                    <ol>
+                     <li>Lorem ipsum </li>
+                     <li>Aliquam tincidunt</li>
+                     <li>Vestibulum auctor.</li>
+                    </ol>
+                  </p>
+                  <a href="#" class="btn btn-danger">Buy now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-info">
+                <div class="card-header bg-primary text-white">
+                  Full Deal
+                </div>
+                <div class="card-block">
+                  <h4 class="card-title">Amazing Plan</h4>
+                  <p class="card-text">
+                    <ol>
+                       <li>Lorem ipsum </li>
+                       <li>Aliquam tincidunt</li>
+                       <li>Vestibulum auctor.</li>
+                    </ol>
+                  </p>
+                  <a href="#" class="btn btn-primary">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="footer" id="footer">
+        <p>CopyRight RemAlw</p>
+      </footer>
+    </div>
     
-
-
-
+    
+    <script src="js/fullPage.js/fullPage.js-master/src/fullpage.js"></script>
     <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"> </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/style.js"></script> 

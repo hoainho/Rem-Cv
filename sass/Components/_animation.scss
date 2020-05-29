@@ -128,9 +128,19 @@
   }
 }
 @keyframes wave{
-  0%{clip-path: polygon(0% 62%, 7% 56%, 22% 54%, 28% 60%, 38% 68%, 38% 68%, 53% 73%, 69% 69%, 74% 60%, 84% 49%, 93% 42%, 99% 31%, 100% 100%, 100% 100%, 0% 100%);
+  0%{clip-path: polygon(0 79%, 7% 89%, 18% 90%, 33% 86%, 46% 79%, 61% 75%, 80% 74%, 100% 84%, 100% 100%, 0 100%);
   }
-  100%{clip-path: polygon(0% 56%, 6% 50%, 9% 44%, 18% 37%, 29% 37%, 35% 44%, 39% 56%, 42% 66%, 48% 75%, 59% 82%, 72% 75%, 78% 69%, 84% 60%, 91% 45%, 98% 34%, 100% 99%, 0% 99%);
+  40%{clip-path: polygon(0 90%, 8% 81%, 23% 74%, 34% 80%, 44% 87%, 61% 91%, 79% 88%, 100% 76%, 100% 100%, 0 100%);
+  }  
+  55%{clip-path: polygon(0 79%, 7% 89%, 18% 90%, 33% 86%, 46% 79%, 61% 75%, 80% 74%, 100% 84%, 100% 100%, 0 100%);
+  }
+  70%{clip-path: polygon(0% 76%, 11% 73%, 26% 78%, 40% 84%, 64% 81%, 79% 81%, 93% 85%, 100% 90%, 100% 100%, 0% 100%);
+  }
+  85%{clip-path: polygon(0 90%, 8% 84%, 21% 92%, 34% 84%, 44% 84%, 57% 91%, 78% 91%, 100% 76%, 100% 100%, 0 100%);
+  }
+  90%{clip-path: polygon(0 90%, 8% 81%, 23% 74%, 34% 80%, 44% 87%, 61% 91%, 79% 88%, 100% 76%, 100% 100%, 0 100%);
+  }
+  100%{clip-path: polygon(0% 76%, 11% 73%, 26% 78%, 40% 84%, 64% 81%, 79% 81%, 93% 85%, 100% 90%, 100% 100%, 0% 100%);
   }
 }
 @keyframes scale{
@@ -150,5 +160,29 @@
 @keyframes shine {
   0% {background-position: -100%;}
   100% {background-position: 100%;}
+}
+//loading
+@keyframes square-animation {
+  0% {left: 0; top: 0}
+  10.5% {left: 0; top: 0;}
+  12.5% {left: $square_sm; top: 0;}
+  23% {left: $square_sm; top: 0;}
+  25% {left: $square_sm * 2; top: 0;}
+  35.5% {left: $square_sm * 2; top: 0;}
+  37.5% {left: $square_sm * 2; top: $square_sm;}
+  48% {left: $square_sm * 2; top: $square_sm;}
+  50% {left: $square_sm; top: $square_sm;}
+  60.5% {left: $square_sm; top: $square_sm;}
+  62.5% {left: $square_sm; top: $square_sm * 2;}
+  73% {left: $square_sm; top: $square_sm * 2;}
+  75% {left: 0; top: $square_sm * 2;}
+  85.5% {left: 0; top: $square_sm * 2;}
+  87.5% {left: 0; top: $square_sm;}
+  98% {left: 0; top: $square_sm;}
+  100% {left: 0; top: 0;}
+}
+@keyframes hue-rotate {
+  0% {filter: hue-rotate(0deg)}
+  100% {filter: hue-rotate(360deg)}
 }
 
