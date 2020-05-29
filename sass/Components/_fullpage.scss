@@ -1,0 +1,29 @@
+#fp-nav.fp-right {
+    right: 10rem !important;
+    top: 45% !important;
+}
+#fp-nav ul li, .fp-slidesNav ul li {
+    margin-top: 4rem !important;
+}
+#fp-nav ul li a, .fp-slidesNav ul li a {
+    width: 5rem !important;
+    height: 5rem !important;
+    margin:  0 !important;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: transparent !important;
+    border:1px solid $color-white !important;
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    margin: 0 !important;
+    
+}
+#fp-nav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li a.active span, 
+.fp-slidesNav ul li:hover a.active span { //active
+    transform: scale(3) translate(0);
+    margin: 0 !important;
+    background: $color-secondary !important;
+    border:1px solid $color-secondary !important;
+}

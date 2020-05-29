@@ -1,3 +1,4 @@
+
 window.onload = function(){
     const BackgroundHeader =document.querySelector(".rem-navbar--background");
     window.addEventListener('scroll',scrollbg);
@@ -17,10 +18,16 @@ window.onload = function(){
 };
 
 
-new fullpage('#main',{
-	anchors : ['hero','features','pricing','footer'],
-	fitToSectionDelay : 2000,
-	//easing : easeInOutQuad,
-    scrollingSpeed : 1000,
-    setAutoSrolling: false
-});
+
+new fullpage('#main', {
+    autoScrolling: true,
+    navigation : true,
+    scrollingSpeed: 800,
+    scrollBar: true,
+    // easing: 'easeInOutQuad',
+    
+    // navigationPosition: right,
+    anchors : ['scrollTop','srollFeatures','srollPricing'],
+    navigationTooltips: ['Home', 'Features','About'],
+
+    });
