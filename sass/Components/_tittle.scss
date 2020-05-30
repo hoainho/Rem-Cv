@@ -1,0 +1,14 @@
+.slogan {
+    top: 90%;
+    right:98%;
+    transform: rotate(-90deg);
+    position: absolute;
+    &--shadow {
+      width: 40.5vw;
+      position: absolute;
+      font-size: 10rem;
+      font-weight: 800;
+      letter-spacing: 1rem;
+      opacity: .05;
+    }
+  }
