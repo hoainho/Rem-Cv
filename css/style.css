@@ -251,21 +251,27 @@ html {
           height: 100%; }
       .hero-container--row_download {
         top: 25%;
-        width: 100%;
-        height: 30%; }
+        width: 30%;
+        height: 10%; }
+        .hero-container--row_download:hover::after {
+          right: 90%;
+          transition: 0.4s; }
         .hero-container--row_download__box {
           color: #fff;
           font-size: 3rem;
-          bottom: 80%;
+          top: -13%;
           position: absolute;
           text-align: center;
           width: 8rem;
           height: 8rem;
           border: 1px solid;
           border-radius: 50%; }
+          .hero-container--row_download__box:link, .hero-container--row_download__box:active {
+            color: #fff;
+            text-decoration: none; }
           .hero-container--row_download__box:hover {
             text-decoration: none;
-            animation: chuyendongxoay 1s infinite; }
+            color: rgba(200, 156, 33, 0.5); }
           .hero-container--row_download__box___icon {
             color: #fff;
             font-size: 5rem;
@@ -276,21 +282,43 @@ html {
             transform: translate(50%, -50%); }
           .hero-container--row_download__box___content____font {
             padding-left: 5rem;
+            padding-top: 0.3rem;
             vertical-align: inherit;
-            width: 37rem; }
+            width: 37rem;
+            top: 80%; }
       .hero-container--row_download::before {
-        animation: bounceInLeft 1s infinite;
         position: absolute;
-        top: 2%;
-        right: 97%;
-        width: 100vw;
+        display: block;
+        top: 40%;
+        right: 90%;
+        width: 15vw;
+        height: 1px;
         margin-right: 2rem;
+        background: white;
         content: '';
         -webkit-transition: -webkit-transform 1s ease-out;
         transition: -webkit-transform 1s ease-out;
         transition: transform 1s ease-out;
         transition: transform 1s ease-out,-webkit-transform 1s ease-out;
         border-top: 1px solid #fff;
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1); }
+      .hero-container--row_download::after {
+        position: absolute;
+        display: block;
+        top: 40%;
+        right: 150%;
+        width: 15vw;
+        height: 1px;
+        margin-right: 2rem;
+        background: linear-gradient(90deg, transparent, #c89c21);
+        content: '';
+        -webkit-transition: -webkit-transform 1s ease-out;
+        transition: -webkit-transform 1s ease-out;
+        transition: transform 1s ease-out;
+        transition: transform 1s ease-out,-webkit-transform 1s ease-out;
+        border-top: 1px solid rgba(200, 156, 33, 0.5);
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1); }
