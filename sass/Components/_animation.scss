@@ -130,6 +130,9 @@
 @keyframes rotate {
   100% { transform: rotateY(-40deg) rotateX(-43deg); }
 }
+@keyframes rotate360 {
+  100% { transform: rotateY(360deg) translateX(-3rem); }
+}
 @keyframes wave{
   0%{clip-path: polygon(0 79%, 7% 89%, 18% 90%, 33% 86%, 46% 79%, 61% 75%, 80% 74%, 100% 84%, 100% 100%, 0 100%);
   }

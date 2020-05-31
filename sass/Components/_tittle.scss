@@ -24,6 +24,7 @@
         position: absolute;
         top: 13%; 
         left: 10%;
+        z-index: 25;
         perspective: 999rem;
         transform-style: preserve-3d;
         &--layer {
