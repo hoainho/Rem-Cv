@@ -1,0 +1,88 @@
+.about {
+    background-color: $color-black;
+    &-container {
+        &--left{
+            width: 30vw;
+            height: 100vh;
+            position: relative;
+            padding: 5rem !important;
+            &_box{
+                position: relative;
+                border: 1px solid $color-white ;
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                top:15%;
+                padding: 3rem;
+                &__year{
+                    position: relative;
+                    width: 23rem;
+                    height: 30rem;
+                    margin: 5rem;
+                    font-size: 23rem;
+                    left: 27%;
+                    top: -6rem;
+                    color: transparent;
+                    font-weight: 800;
+                    -webkit-text-stroke: 0.2rem $color-white;
+                    text-align: center;
+                    
+                }
+                &__content{
+                    position: relative;
+                    font-size: 3rem;
+                    color: $color-white;
+                    font-weight: 300;
+                    right: 3rem;
+                    top: 25rem;
+
+                }
+
+            }
+        }
+        &--right{
+                &_tittle{
+                    color: white;
+                    &__slogan {
+                        position: relative;
+                        display: inline-block;
+                        top: 10rem;
+                        width: 15vw;
+                        height: 13vh;
+                        font-size: 5rem ;
+                    }
+                    &__introduce {
+                        position: relative;
+                        top: 12rem;
+                        width: 35vw;
+                    }
+                }
+                &_content{
+                    color: white;
+                    &__tittlepressbar {
+                        position: relative;
+                        display: inline-block;
+                        top: 10rem;
+                        width: 15vw;
+                        height: 13vh;
+                        font-size: 5rem ;
+                        margin-top: 1rem;
+
+                    }
+                    &__box{
+                       position: relative;
+                       top: 10rem;
+                       height: 4rem;
+                       background: rgba($color-white, 0.5);
+                        &___pressbar {
+                            top: 10rem;
+                            height: 4rem;
+                            background-color: #c32865;
+                        }
+                    }
+                   
+                   
+                }
+        }
+    }
+}
