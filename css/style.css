@@ -3636,3 +3636,70 @@ html {
 .divider {
   border-top: 2px solid #c89c21 !important;
   opacity: 0; }
+
+.about {
+  background-color: #222; }
+  .about-container--left {
+    width: 30vw;
+    height: 100vh;
+    position: relative;
+    padding: 5rem !important; }
+    .about-container--left_box {
+      position: relative;
+      border: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      top: 15%;
+      padding: 3rem; }
+      .about-container--left_box__year {
+        position: relative;
+        width: 23rem;
+        height: 30rem;
+        margin: 5rem;
+        font-size: 23rem;
+        left: 27%;
+        top: -6rem;
+        color: transparent;
+        font-weight: 800;
+        -webkit-text-stroke: 0.2rem #fff;
+        text-align: center; }
+      .about-container--left_box__content {
+        position: relative;
+        font-size: 3rem;
+        color: #fff;
+        font-weight: 300;
+        right: 3rem;
+        top: 25rem; }
+  .about-container--right_tittle {
+    color: white; }
+    .about-container--right_tittle__slogan {
+      position: relative;
+      display: inline-block;
+      top: 10rem;
+      width: 15vw;
+      height: 13vh;
+      font-size: 5rem; }
+    .about-container--right_tittle__introduce {
+      position: relative;
+      top: 12rem;
+      width: 35vw; }
+  .about-container--right_content {
+    color: white; }
+    .about-container--right_content__tittlepressbar {
+      position: relative;
+      display: inline-block;
+      top: 10rem;
+      width: 15vw;
+      height: 13vh;
+      font-size: 5rem;
+      margin-top: 1rem; }
+    .about-container--right_content__box {
+      position: relative;
+      top: 10rem;
+      height: 4rem;
+      background: rgba(255, 255, 255, 0.5); }
+      .about-container--right_content__box___pressbar {
+        top: 10rem;
+        height: 4rem;
+        background-color: #c32865; }
