@@ -9,8 +9,26 @@
     color: white;
     position: relative;
     &-content{
-      &--web{
+      &--box{
           margin-top: 15rem;
+          transition: 2s;
+          &:hover{
+            .web-divider {
+              opacity: 1;
+              animation: bounceInLeft 1s ease-in-out;
+            }
+            .photoshop-divider {
+              opacity: 1;
+              animation: bounceInUp 1s ease-in-out;
+            }
+            .creative-divider {
+              opacity: 1;
+              animation: bounceInRight 1s ease-in-out;
+            }
+            .features-content--box_tittle{
+              color: $color-secondary;
+            }
+          }
         &_logo{
           display: flex;
           justify-content: flex-start;
@@ -26,9 +44,9 @@
           letter-spacing: .5rem;
         }
         &_content{
-          
           font-size: 1.7rem;
           opacity: 0.5;
+          padding-bottom: 5rem;
         }
       }
     }

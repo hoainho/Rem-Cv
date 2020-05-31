@@ -16,3 +16,8 @@
         z-index: -1;
     }
 }
+
+.divider {
+    border-top: 2px solid $color-secondary !important;
+    opacity: 0;
+}

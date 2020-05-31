@@ -32,11 +32,6 @@
                     color: $color-secondary;
                     animation: lightSpeedInLeft 1s ease-in-out;
                 }
-                // .resume-content--education_box__tittle {
-                //     color: transparent;
-                //     -webkit-text-stroke: 1px $color-secondary;
-                //     animation: fadeInUpBig 1s ease-in-out ;
-                // }
                 .resume-content--education_box__tittleE {
                     color: transparent;
                     -webkit-text-stroke: 1px $color-secondary;
@@ -190,13 +185,12 @@
         &--experience{
             background: linear-gradient(to right top,
                                         transparent,
-                                       white
+                                        $color-secondary-light  
              );
             opacity: .05;
             margin-top: 20rem;
             padding: 0rem;
             transition: all 1s;
-            
             &:hover {
                 opacity: 1;
                 background: linear-gradient(to right top,
