@@ -27,7 +27,7 @@ new fullpage('#main', {
     // easing: 'easeInOutQuad',
     
     // navigationPosition: right,
-    anchors : ['scrollTop','srollFeatures','srollPricing'],
+    anchors : ['scrollTop','srollFeatures','srollResume'],
     navigationTooltips: ['Home', 'Features','About'],
 
     });

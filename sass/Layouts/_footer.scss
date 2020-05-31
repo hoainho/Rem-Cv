@@ -1,0 +1,43 @@
+
+.footer {
+    position: fixed;
+    width: 100%;
+    padding: 5vh 0;
+    bottom: 5%;
+    left: 5%;
+    background: transparent;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    font-weight: 200;
+    color: white;
+    z-index: 1000;
+    &-copyright{
+      position: absolute;
+      width: 100%;
+    }
+    &-address{
+      right: 10%;
+      width: 100%;
+      position: absolute;
+      &--list{
+        display: flex;
+        justify-content: flex-end;
+        justify-items: flex-end;
+        list-style-type: none;
+      }
+      &--item{
+        margin-left: 5rem;
+      }
+      &--link{
+        text-decoration: none;
+        font-size: 2rem;
+        color: $color-white;
+        transition: .5s;
+        &:hover {
+          color: $color-secondary;
+          font-size: 4rem;
+          transform: translate(2px);
+        }
+      }
+    }
+  }
