@@ -11,6 +11,12 @@
 html {
   overflow-x: hidden; }
 
+.l-0 {
+  left: 0rem !important; }
+
+.l--3 {
+  left: -3rem !important; }
+
 html {
   font-size: 10px;
   font-family: sans-serif; }
@@ -400,6 +406,10 @@ html {
   100% {
     transform: rotateY(-40deg) rotateX(-43deg); } }
 
+@keyframes rotate360 {
+  100% {
+    transform: rotateY(360deg) translateX(-3rem); } }
+
 @keyframes wave {
   0% {
     clip-path: polygon(0 79%, 7% 89%, 18% 90%, 33% 86%, 46% 79%, 61% 75%, 80% 74%, 100% 84%, 100% 100%, 0 100%); }
@@ -523,6 +533,31 @@ html {
   90% {
     -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0); } }
+
+@keyframes bouncePercent {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3D(6.5rem, 0.7rem, 9.5rem) rotateY(270deg) rotateX(90deg);
+    transform: translate3D(6.5rem, 0.7rem, 9.5rem) rotateY(270deg) rotateX(90deg); }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3D(5.5rem, 0.7rem, 9.5rem) rotateY(270deg) rotateX(90deg);
+    transform: translate3D(5.5rem, 0.7rem, 9.5rem) rotateY(270deg) rotateX(90deg); }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3D(6rem, 0.7rem, 9.5rem) rotateY(270deg) rotateX(90deg);
+    transform: translate3D(6rem, 0.7rem, 9.5rem) rotateY(270deg) rotateX(90deg); }
+  90% {
+    -webkit-transform: translate3D(6.3rem, 0.7rem, 9.5rem) rotateY(270deg) rotateX(90deg);
+    transform: translate3D(6.3rem, 0.7rem, 9.5rem) rotateY(270deg) rotateX(90deg); } }
 
 @keyframes bounce {
   from,
@@ -3129,6 +3164,7 @@ html {
   position: absolute;
   top: 13%;
   left: 10%;
+  z-index: 25;
   perspective: 999rem;
   transform-style: preserve-3d; }
   .tittle-box--layer {
@@ -3671,35 +3707,145 @@ html {
         font-weight: 300;
         right: 3rem;
         top: 25rem; }
-  .about-container--right_tittle {
-    color: white; }
-    .about-container--right_tittle__slogan {
-      position: relative;
-      display: inline-block;
-      top: 10rem;
-      width: 15vw;
-      height: 13vh;
-      font-size: 5rem; }
-    .about-container--right_tittle__introduce {
-      position: relative;
-      top: 12rem;
-      width: 35vw; }
+  .about-container--right_tittle__skill {
+    position: absolute;
+    left: 27rem;
+    top: 1rem; }
+    .about-container--right_tittle__skill___layer:after {
+      font: 8rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+      content: 'Skill'; }
   .about-container--right_content {
     color: white; }
-    .about-container--right_content__tittlepressbar {
+    .about-container--right_content__rowfirst {
       position: relative;
-      display: inline-block;
-      top: 10rem;
-      width: 15vw;
-      height: 13vh;
-      font-size: 5rem;
-      margin-top: 1rem; }
-    .about-container--right_content__box {
-      position: relative;
-      top: 10rem;
-      height: 4rem;
-      background: rgba(255, 255, 255, 0.5); }
-      .about-container--right_content__box___pressbar {
-        top: 10rem;
-        height: 4rem;
-        background-color: #c32865; }
+      top: 15rem;
+      height: 20vh; }
+      .about-container--right_content__rowfirst___propressbar {
+        position: absolute;
+        top: 2rem;
+        right: 9rem;
+        width: 17rem;
+        height: 13rem;
+        transform-style: preserve-3d;
+        transform: perspective(55rem) rotateX(-102deg) rotateY(93deg) rotateZ(-6deg); }
+      .about-container--right_content__rowfirst___propressbarname {
+        width: 15%;
+        height: 15%;
+        top: 19rem;
+        left: -1.5rem;
+        font-size: 2.5rem; }
+    .about-container--right_content__dev {
+      left: 10rem;
+      width: 15%;
+      height: 115%;
+      top: -5rem;
+      margin: 5rem; }
+      .about-container--right_content__dev___namepropressbar {
+        width: 1%; }
+      .about-container--right_content__dev___propressbar {
+        animation: none;
+        top: -15rem;
+        left: 10.5rem;
+        transform: rotateY(-5deg) rotateX(2deg) translateZ(-16px); }
+        .about-container--right_content__dev___propressbar____html::after {
+          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+          content: 'HTML';
+          letter-spacing: 10px; }
+        .about-container--right_content__dev___propressbar____css::after {
+          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+          content: 'CSS'; }
+        .about-container--right_content__dev___propressbar____jquery::after {
+          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+          content: 'JQuery'; }
+        .about-container--right_content__dev___propressbar____sass::after {
+          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+          content: 'SASS'; }
+        .about-container--right_content__dev___propressbar____react::after {
+          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+          content: 'REACT'; }
+        .about-container--right_content__dev___propressbar____C::after {
+          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+          content: 'C++'; }
+        .about-container--right_content__dev___propressbar:first-child:after {
+          color: #fff;
+          text-shadow: none; }
+        .about-container--right_content__dev___propressbar:last-child:after {
+          -webkit-text-stroke: 1.7rem rgba(255, 255, 255, 0.1);
+          color: #fff; }
+
+.cube {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background-color: transparent; }
+  .cube-Above {
+    transform: translateZ(7rem);
+    border-top: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+    border-left: 5px solid #fff;
+    border-right: 1px solid #fff; }
+  .cube-Ahead {
+    width: 7rem;
+    height: 70%;
+    background: transparent;
+    transform: translate3D(13.6rem, 0rem, 10.5rem) rotateY(90deg);
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff; }
+  .cube-left {
+    width: 7rem;
+    height: 70%;
+    background: #c89c21;
+    transform: translate3D(-3.6rem, 0.3rem, 10.5rem) rotateY(-90deg);
+    border: 0.1rem solid #fff; }
+  .cube-below {
+    transform: translateZ(14rem);
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    border-left: 5px solid #fff;
+    border-right: 1px solid #fff; }
+  .cube-mid {
+    width: 7rem;
+    height: 70%;
+    background: #c89c21;
+    transform: translate3D(-0.4rem, 0rem, 10.5rem) rotateY(90deg);
+    border: 0.1rem solid #fff; }
+    .cube-mid::before {
+      content: '%';
+      color: #242424;
+      -webkit-text-stroke: 0.1rem #fff;
+      font-weight: 800;
+      position: absolute;
+      transform: rotate(180deg);
+      top: 29%;
+      left: 29%; }
+  .cube-right {
+    width: 3rem;
+    height: 68%;
+    background: #c89c21;
+    transform: translate3D(0rem, 0.5rem, 7.2rem) rotateX(0deg);
+    border: 0.1rem solid #fff; }
+  .cube-after {
+    width: 3rem;
+    height: 54%;
+    background: #c89c21;
+    transform: translate3D(0rem, -3.3rem, 10.5rem) rotateX(90deg);
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff; }
+  .cube-percent {
+    animation: bouncePercent 1s infinite alternate ease-in-out -7.5s;
+    animation-fill-mode: forwards;
+    width: 3.5rem;
+    height: 54%;
+    color: #242424;
+    -webkit-text-stroke: 0.1rem #fff;
+    font-weight: 200;
+    font-size: 4rem;
+    left: -4rem;
+    background: transparent;
+    transform: translate3D(5.6rem, 0.7rem, 9rem) rotateY(270deg) rotateX(90deg); }
