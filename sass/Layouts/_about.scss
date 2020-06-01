@@ -2,6 +2,11 @@
     background-color: $color-black;
     color: $color-white;
     &-container {
+        background-image: url(../img/codebag.png);
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position-x: 9rem;
+        background-position-y: 14rem;
         &--left{
             width: 30vw;
             height: 100vh;
