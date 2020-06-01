@@ -1,91 +1,5 @@
 
-@keyframes chuyendongmauvarung
-{
-    0%{
-        transform: translateY(-1.5rem);
-        box-shadow: 0 0 10px $color-secondary-light ,
-      0 0 40px $color-blue,
-      0 0 60px $color-red,
-      0 0 80px $color-blue,
-      0 0 100px $color-red;
-    }
-    20%{
-        transform: translateY(1.5rem);
-        box-shadow: 0 0 10px $color-secondary-light ,
-      0 0 40px $color-blue,
-      0 0 60px $color-red,
-      0 0 80px $color-blue,
-      0 0 100px $color-red;
-    }
-    40%{
-        transform: translateY(-1.5rem);
-        box-shadow: 0 0 10px $color-red-light ,
-      0 0 40px $color-green,
-      0 0 60px $color-secondary-light,
-      0 0 80px $color-blue,
-      0 0 100px $color-purple;
-    }
-    60%{
-        transform: translateY(1.5rem);
-        box-shadow: 0 0 10px $color-secondary-light ,
-      0 0 40px $color-blue,
-      0 0 60px $color-red,
-      0 0 80px $color-blue,
-      0 0 100px $color-red;
-    }
-    100%{
-        transform: translate(0);
-        box-shadow: 0 0 10px $color-red-light ,
-      0 0 40px $color-green,
-      0 0 60px $color-secondary-light,
-      0 0 80px $color-blue,
-      0 0 100px $color-purple;
-    }
-}
-@keyframes chuyendongrung
-{
-    0%{
-        transform: translateY(-1.5rem);
 
-    }
-    20%{
-        transform: translateY(1.5rem);
-
-    }
-    40%{
-        transform: translateY(-1.5rem);
-      
-    }
-    60%{
-        transform: translateY(1.5rem);
-      
-    }
-    100%{
-        transform: translate(0);
-       
-    }
-}
-@keyframes chuyendongmau
-{
-    0%{
-        box-shadow: 0 0 10px $color-secondary-light ,
-      0 0 40px $color-blue,
-      0 0 60px $color-red,
-      0 0 80px $color-blue,
-      0 0 100px $color-red;
-    }
-    100% {
-    box-shadow: 0 0 10px $color-red-light ,
-      0 0 40px $color-green,
-      0 0 60px $color-secondary-light,
-      0 0 80px $color-blue,
-      0 0 100px $color-purple;
-    }
-}
-@keyframes chuyendongxoay{
-    0%{ color: transparent;}
-    100%{color: $color-secondary;}
-}
 @keyframes loop {
   from    {transform: rotateX(0deg) rotateY(0deg);     }
   to      {transform: rotateX(360deg) rotateY(360deg); }
@@ -103,29 +17,6 @@
   33%   {transform: scale(1.5);   }
   66%  {transform: scale(1);      }
   100%  {transform: scale(0);      }
-}
-@keyframes chuyendongrungvaxoay{
-  0%{
-    transform:translateY(0rem);
-  }
-  40%{
-    transform:translateY(-6.5rem);
-  }
-  49%{
-    transform:translateY(-6.5rem);
-  }
-  50%{
-    transform:translateY(-6.5rem) rotate(360deg);
-  }
-  51%{
-    transform:translateY(-6.5rem);
-  }
-  60%{
-    transform:translateY(-4rem);
-  }
-  100%{
-    transform:translateY(0rem);
-  }
 }
 @keyframes rotate {
   100% { transform: rotateY(-40deg) rotateX(-43deg); }
@@ -149,6 +40,23 @@
   100%{clip-path: polygon(0% 76%, 11% 73%, 26% 78%, 40% 84%, 64% 81%, 79% 81%, 93% 85%, 100% 90%, 100% 100%, 0% 100%);
   }
 }
+@keyframes progressing{
+  0%{clip-path: polygon(0 79%, 7% 89%, 18% 90%, 33% 86%, 46% 79%, 61% 75%, 80% 74%, 100% 84%, 100% 100%, 0 100%);
+  }
+  40%{clip-path: polygon(0 90%, 8% 81%, 23% 74%, 34% 80%, 44% 87%, 61% 91%, 79% 88%, 100% 76%, 100% 100%, 0 100%);
+  }  
+  55%{clip-path: polygon(0 79%, 7% 89%, 18% 90%, 33% 86%, 46% 79%, 61% 75%, 80% 74%, 100% 84%, 100% 100%, 0 100%);
+  }
+  70%{clip-path: polygon(0% 76%, 11% 73%, 26% 78%, 40% 84%, 64% 81%, 79% 81%, 93% 85%, 100% 90%, 100% 100%, 0% 100%);
+  }
+  85%{clip-path: polygon(0 90%, 8% 84%, 21% 92%, 34% 84%, 44% 84%, 57% 91%, 78% 91%, 100% 76%, 100% 100%, 0 100%);
+  }
+  90%{clip-path: polygon(0 90%, 8% 81%, 23% 74%, 34% 80%, 44% 87%, 61% 91%, 79% 88%, 100% 76%, 100% 100%, 0 100%);
+  }
+  100%{clip-path: polygon(0% 76%, 11% 73%, 26% 78%, 40% 84%, 64% 81%, 79% 81%, 93% 85%, 100% 90%, 100% 100%, 0% 100%);
+  }
+}
+
 @keyframes scale{
   0%{
     transform: scale(1);

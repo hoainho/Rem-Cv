@@ -1,0 +1,167 @@
+.product {
+    background-color: $color-gray;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &-background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/bgproduct.png);
+        background-repeat: no-repeat;
+        background-size: inherit;
+        background-position-x: center;
+        background-position-y: center;
+
+        &--merge{
+            opacity: 0;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        &--first{
+            background-image: url(../img/Background.gif);
+        }
+        &--second{
+            background-image: url(../img/bgMain.gif);
+        }
+    }
+    &-container {
+        &--website{
+            display: inline;
+            flex-direction: row;
+            position: relative;
+            z-index: 2;
+            padding-left: 2.91667rem;
+            -webkit-transition: opacity 2s ease-out;
+            transition: opacity 1s ease-out;
+            opacity: .5;
+            color: #fff;
+            &_first{
+                margin-bottom: 5rem;
+                &__index{
+                    margin-left: 5rem;
+                    font-size: 5rem;
+                    font-weight: 600;
+                    color: $color-black;
+                    -webkit-text-stroke: 5px white;
+                }
+                    &__name{
+                        margin-left: 30rem;
+                        display: inline-flex;
+                        flex-direction: column;
+                        &___tittle{
+                            list-style-type: none;
+                            color: $color-secondary;
+                            top: -9rem;
+                            left: -2rem;
+                            position: relative;
+                            &____details,
+                            &____details:active,
+                            &____details:link{
+                                position: absolute;
+                                text-decoration: none;
+                                font-size: 10rem;
+                                font-weight: 800;
+                            }
+                            &____details{
+                                &-before{
+                                    color: transparent !important;
+                                    -webkit-text-stroke: 0.2rem $color-white !important;
+                                    }
+                                &-after{
+                                    color: $color-white !important;
+                                                // clip-path: polygon(0% 0%, 6% 88%, 13% 19%, 22% 96%, 31% 17%, 38% 89%, 44% 16%, 51% 100%, 56% 0, 60% 75%, 70% 14%, 79% 95%, 86% 10%, 96% 73%, 99% 1%);                      
+                                    clip-path: polygon(0% 0%, 0 43%, 8% 59%, 18% 58%, 33% 42%, 40% 62%, 52% 62%, 64% 46%, 71% 60%, 84% 68%, 91% 65%, 100% 56%, 100% 1%);
+                                    transition: 1s ;
+                                    &:hover{
+                                                // clip-path: polygon(0% 0%, 0 100%, 11% 100%, 24% 100%, 34% 100%, 42% 100%, 45% 100%, 51% 100%, 57% 100%, 63% 100%, 70% 100%, 79% 100%, 87% 100%, 100% 100%, 100% 0);                                
+                                    clip-path: polygon(0% 0%, 0 100%, 12% 100%, 24% 100%, 34% 100%, 45% 100%, 59% 100%, 68% 100%, 78% 100%, 88% 100%, 96% 100%, 100% 100%, 100% 1%);
+                                    }
+                                }
+                                
+                            }
+                        }
+                        &___sub{
+                            font-style:bold italic;
+                            font-size: 3rem;
+                            color: $color-white;
+                            opacity: 0.8;
+                        }
+                }
+            }
+            &_second{
+                &__index{
+                    margin-left: 5rem;
+                    font-size: 5rem;
+                    font-weight: 600;
+                    color: $color-black;
+                    -webkit-text-stroke: 5px white;
+                }
+                &__name{
+                    margin-left: 30rem;
+                    display: inline-flex;
+                    flex-direction: column;
+                    &___tittle{
+                        list-style-type: none;
+                        color: $color-white;
+                        top: 2rem;
+                        left: -2rem;
+                        width: 30vw;
+                        height: 10vh;
+                        position: relative;
+                        &____details,
+                        &____details:active,
+                        &____details:link{
+                            position: absolute;
+                            text-decoration: none;
+                            font-size: 10rem;
+                            font-weight: 800;
+                            top: -4rem;
+                        }
+                        &____details{
+                            
+                            &-before{
+                                color: transparent !important;
+                                -webkit-text-stroke: 0.2rem $color-white !important;
+                                &:hover{
+                                    
+                                }
+                                }
+                            &-after{
+                                color: $color-black !important;
+                                            // clip-path: polygon(0% 0%, 6% 88%, 13% 19%, 22% 96%, 31% 17%, 38% 89%, 44% 16%, 51% 100%, 56% 0, 60% 75%, 70% 14%, 79% 95%, 86% 10%, 96% 73%, 99% 1%);                      
+                                clip-path: polygon(0% 0%, 0 43%, 8% 59%, 18% 58%, 33% 42%, 40% 62%, 52% 62%, 64% 46%, 71% 60%, 84% 68%, 91% 65%, 100% 56%, 100% 1%);
+                                transition: 1s ;
+                                &:hover{
+                                    // clip-path: polygon(0% 0%, 0 100%, 11% 100%, 24% 100%, 34% 100%, 42% 100%, 45% 100%, 51% 100%, 57% 100%, 63% 100%, 70% 100%, 79% 100%, 87% 100%, 100% 100%, 100% 0);                                
+                                    clip-path: polygon(0% 0%, 0 100%, 12% 100%, 24% 100%, 34% 100%, 45% 100%, 59% 100%, 68% 100%, 78% 100%, 88% 100%, 96% 100%, 100% 100%, 100% 1%);
+                                    }
+                            }
+                            
+                        }
+                    }
+                    &___sub{
+                        font-style: bold italic;
+                        font-size: 3rem;
+                        color: $color-white;
+                        opacity: 0.8;
+                    }
+                }
+            }
+            
+        }
+    }
+}
