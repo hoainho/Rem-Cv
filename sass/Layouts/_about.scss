@@ -1,41 +1,97 @@
 .about {
     background-color: $color-black;
+    color: $color-white;
     &-container {
         &--left{
             width: 30vw;
             height: 100vh;
             position: relative;
             padding: 5rem !important;
+            
             &_box{
-                position: relative;
-                border: 1px solid $color-white ;
-                display: flex;
-                justify-content: center;
-                justify-items: center;
-                top:15%;
-                padding: 3rem;
+                    position: relative;
+                    border: 1px solid #fff;
+                    display: flex;
+                    justify-content: center;
+                    justify-items: center;
+                    top: 21%;
+                    padding: 0rem;
+                    width: 16vw;
+                    left: 12rem;
+                    transition:all 1s;
+                &:hover {
+                    position: relative;
+                    border: 1px solid #fff;
+                    display: flex;
+                    justify-content: center;
+                    justify-items: center;
+                    top: 13%;
+                    padding: 4rem;
+                    width: 23vw;
+                    left: 6rem;
+                    .about-container--left_box__content{
+                        position: relative;
+                        font-size: 3rem;
+                        color: #fff;
+                        font-weight: 500;
+                        right: 5rem;
+                        top: 26rem;
+                        opacity: 1;
+                        animation: zoomIn 1s;
+                        }
+                    .about-container--left_box__year{
+                        position: relative;
+                            width: 23rem;
+                            height: 30rem;
+                            margin: 5rem;
+                            font-size: 23rem;
+                            left: 27%;
+                            top: -6rem;
+                            color: transparent;
+                            font-weight: 800;
+                            -webkit-text-stroke: 0.2rem #fff;
+                            text-align: center;
+                            animation: flipInY 3s infinite ease-in-out;
+                        }
+                        .about-container--left_box__content___experience::before{
+                            animation: fadeInLeftBig 1s;
+                        }
+                }
                 &__year{
                     position: relative;
                     width: 23rem;
-                    height: 30rem;
-                    margin: 5rem;
+                    height: 25rem;
+                    margin: 0rem;
                     font-size: 23rem;
-                    left: 27%;
-                    top: -6rem;
+                    left: 1%;
+                    top: -1rem;
                     color: transparent;
                     font-weight: 800;
-                    -webkit-text-stroke: 0.2rem $color-white;
+                    -webkit-text-stroke: 0.2rem #fff;
                     text-align: center;
-                    
+                    animation: flipInY 3s infinite ease-in-out;
+
                 }
                 &__content{
                     position: relative;
-                    font-size: 3rem;
                     color: $color-white;
                     font-weight: 300;
                     right: 3rem;
                     top: 25rem;
+                    opacity: 0;
+                    font-size: 0rem;
+                        &___experience::before{
+                            content: '';
+                            border-bottom: 3px solid #fff;
+                            width: 8vw;
+                            color: white;
+                            height: 1.5rem;
+                            position: absolute;
+                            top: 5rem;
+                            right: 19rem;
+                            opacity: 1;
 
+                        }
                 }
 
             }
