@@ -1,0 +1,67 @@
+.product {
+    &-container {
+        &--website{
+            display: inline;
+            flex-direction: row;
+            &_first{
+            }
+            &_index{
+                margin-left: 5rem;
+                font-size: 5rem;
+                font-weight: 600;
+                color: $color-black;
+                -webkit-text-stroke: 5px white;
+            }
+            &_name{
+                margin-left: 30rem;
+                display: inline-flex;
+                flex-direction: column;
+                &__tittle{
+                    list-style-type: none;
+                    color: $color-secondary;
+                    &___details,
+                    &___details:active,
+                    &___details:link{
+                        position: absolute;
+                        text-decoration: none;
+                        font-size: 10rem;
+                        font-weight: 800;
+                        
+                    }
+                    &___details{
+                       
+                        &-before{
+                            color: transparent !important;
+                            -webkit-text-stroke: 0.2rem $color-secondary !important;
+                            
+                            }
+                            
+                        &-after{
+                            color: $color-secondary !important;
+                            //1 clip-path: polygon(81% 0, 0% 27%, 75% 8%, 9% 30%, 85% 10%, 4% 46%, 88% 16%, 18% 48%, 91% 23%, 5% 63%, 93% 29%, 17% 68%, 95% 34%, 3% 82%, 95% 40%, 19% 84%, 99% 43%, 26% 94%, 100% 50%);
+                            //2 clip-path: polygon(0% 0%, 6% 88%, 13% 19%, 22% 96%, 31% 17%, 38% 89%, 44% 16%, 51% 100%, 56% 0, 60% 75%, 70% 14%, 79% 95%, 86% 10%, 96% 73%, 99% 1%);                      
+                            //3 clip-path: polygon(0% 0%, 0 45%, 1% 57%, 5% 66%, 11% 70%, 23% 68%, 31% 45%, 32% 57%, 38% 68%, 48% 69%, 53% 63%, 56% 56%, 59% 44%, 66% 64%, 71% 70%, 81% 72%, 87% 66%, 92% 59%, 95% 52%, 100% 45%, 100% 35%, 100% 0);
+                            clip-path: polygon(0% 0%, 0 55%, 22% 75%, 37% 52%, 57% 77%, 81% 49%, 100% 74%, 100% 1%);
+
+                            transition: 1s ;
+                            &:hover{
+                                // 1 clip-path: polygon(100% 0, 0 0, 0 35%, 0 38%, 0 38%, 4% 46%, 0 44%, 0 54%, 0 57%, 5% 63%, 0 62%, 0 71%, 1% 69%, 3% 82%, 0 85%, 0 91%, 0 91%, 4% 100%, 100% 100%);
+                                // 2 clip-path: polygon(0% 0%, 0 100%, 11% 100%, 24% 100%, 34% 100%, 42% 100%, 45% 100%, 51% 100%, 57% 100%, 63% 100%, 70% 100%, 79% 100%, 87% 100%, 100% 100%, 100% 0);                                
+                                 clip-path: polygon(0% 0%, 0 100%, 23% 100%, 39% 100%, 58% 100%, 79% 100%, 100% 100%, 100% 1%);
+
+
+                            }
+                        }
+                        
+                    }
+                }
+                &__sub{
+                    font-style: italic;
+                    font-size: 2rem;
+                    color: $color-secondary;
+                    opacity: 0.3;
+                }
+            }
+        }
+    }
+}

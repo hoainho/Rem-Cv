@@ -14,7 +14,7 @@
                     display: flex;
                     justify-content: center;
                     justify-items: center;
-                    top: 21%;
+                    top: 30%;
                     padding: 0rem;
                     width: 16vw;
                     left: 12rem;
@@ -51,7 +51,7 @@
                             font-weight: 800;
                             -webkit-text-stroke: 0.2rem #fff;
                             text-align: center;
-                            animation: flipInY 3s infinite ease-in-out;
+                            animation: heartBeat 3s infinite ease-in-out;
                         }
                         .about-container--left_box__content___experience::before{
                             animation: fadeInLeftBig 1s;
@@ -69,7 +69,7 @@
                     font-weight: 800;
                     -webkit-text-stroke: 0.2rem #fff;
                     text-align: center;
-                    animation: flipInY 3s infinite ease-in-out;
+                    animation:rubberBand 3s infinite ease-in-out;
 
                 }
                 &__content{
