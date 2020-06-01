@@ -193,14 +193,14 @@
     justify-items: center;
     justify-content: center;  
     &--img{
-    top:0rem;
-    right:20rem;
-    z-index: 1;
-    box-sizing: border-box;
-    position: absolute; 
-    width: 45rem;
-    height: 100vh;
-    background-repeat: no-repeat;
+      top: -13rem;
+      right: 21rem;
+      z-index: 1;
+      box-sizing: border-box;
+      position: absolute;
+      width: 81rem;
+      height: 118vh;
+      background-repeat: no-repeat;
     }
   }
   &-container {

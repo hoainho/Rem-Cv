@@ -202,13 +202,13 @@ html {
     justify-items: center;
     justify-content: center; }
     .hero-bg--img {
-      top: 0rem;
-      right: 20rem;
+      top: -13rem;
+      right: 21rem;
       z-index: 1;
       box-sizing: border-box;
       position: absolute;
-      width: 45rem;
-      height: 100vh;
+      width: 81rem;
+      height: 118vh;
       background-repeat: no-repeat; }
   .hero-container {
     height: 100vh; }
@@ -3639,152 +3639,158 @@ html {
 .about {
   background-color: #222;
   color: #fff; }
-  .about-container--left {
-    width: 30vw;
-    height: 100vh;
-    position: relative;
-    padding: 5rem !important; }
-    .about-container--left_box {
+  .about-container {
+    background-image: url(../img/codebag.png);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position-x: 9rem;
+    background-position-y: 14rem; }
+    .about-container--left {
+      width: 30vw;
+      height: 100vh;
       position: relative;
-      border: 1px solid #fff;
-      display: flex;
-      justify-content: center;
-      justify-items: center;
-      top: 30%;
-      padding: 0rem;
-      width: 16vw;
-      left: 12rem;
-      transition: all 1s; }
-      .about-container--left_box:hover {
+      padding: 5rem !important; }
+      .about-container--left_box {
         position: relative;
         border: 1px solid #fff;
         display: flex;
         justify-content: center;
         justify-items: center;
-        top: 13%;
-        padding: 4rem;
-        width: 23vw;
-        left: 6rem; }
-        .about-container--left_box:hover .about-container--left_box__content {
+        top: 30%;
+        padding: 0rem;
+        width: 16vw;
+        left: 12rem;
+        transition: all 1s; }
+        .about-container--left_box:hover {
           position: relative;
-          font-size: 3rem;
-          color: #fff;
-          font-weight: 500;
-          right: 5rem;
-          top: 26rem;
-          opacity: 1;
-          animation: zoomIn 1s; }
-        .about-container--left_box:hover .about-container--left_box__year {
+          border: 1px solid #fff;
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+          top: 13%;
+          padding: 4rem;
+          width: 23vw;
+          left: 6rem; }
+          .about-container--left_box:hover .about-container--left_box__content {
+            position: relative;
+            font-size: 3rem;
+            color: #fff;
+            font-weight: 500;
+            right: 5rem;
+            top: 26rem;
+            opacity: 1;
+            animation: zoomIn 1s; }
+          .about-container--left_box:hover .about-container--left_box__year {
+            position: relative;
+            width: 23rem;
+            height: 30rem;
+            margin: 5rem;
+            font-size: 23rem;
+            left: 27%;
+            top: -6rem;
+            color: transparent;
+            font-weight: 800;
+            -webkit-text-stroke: 0.2rem #fff;
+            text-align: center;
+            animation: heartBeat 3s infinite ease-in-out; }
+          .about-container--left_box:hover .about-container--left_box__content___experience::before {
+            animation: fadeInLeftBig 1s; }
+        .about-container--left_box__year {
           position: relative;
           width: 23rem;
-          height: 30rem;
-          margin: 5rem;
+          height: 25rem;
+          margin: 0rem;
           font-size: 23rem;
-          left: 27%;
-          top: -6rem;
+          left: 1%;
+          top: -1rem;
           color: transparent;
           font-weight: 800;
           -webkit-text-stroke: 0.2rem #fff;
           text-align: center;
-          animation: heartBeat 3s infinite ease-in-out; }
-        .about-container--left_box:hover .about-container--left_box__content___experience::before {
-          animation: fadeInLeftBig 1s; }
-      .about-container--left_box__year {
-        position: relative;
-        width: 23rem;
-        height: 25rem;
-        margin: 0rem;
-        font-size: 23rem;
-        left: 1%;
-        top: -1rem;
-        color: transparent;
-        font-weight: 800;
-        -webkit-text-stroke: 0.2rem #fff;
-        text-align: center;
-        animation: rubberBand 3s infinite ease-in-out; }
-      .about-container--left_box__content {
-        position: relative;
-        color: #fff;
-        font-weight: 300;
-        right: 3rem;
-        top: 25rem;
-        opacity: 0;
-        font-size: 0rem; }
-        .about-container--left_box__content___experience::before {
-          content: '';
-          border-bottom: 3px solid #fff;
-          width: 8vw;
-          color: white;
-          height: 1.5rem;
-          position: absolute;
-          top: 5rem;
-          right: 19rem;
-          opacity: 1; }
-  .about-container--right_tittle__skill {
-    position: absolute;
-    left: 27rem;
-    top: 1rem; }
-    .about-container--right_tittle__skill___layer:after {
-      font: 8rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
-      content: 'Skill'; }
-  .about-container--right_content {
-    color: white; }
-    .about-container--right_content__rowfirst {
-      position: relative;
-      top: 15rem;
-      height: 20vh; }
-      .about-container--right_content__rowfirst___propressbar {
-        position: absolute;
-        top: 2rem;
-        right: 9rem;
-        width: 17rem;
-        height: 13rem;
-        transform-style: preserve-3d;
-        transform: perspective(55rem) rotateX(-102deg) rotateY(93deg) rotateZ(-6deg); }
-      .about-container--right_content__rowfirst___propressbarname {
-        width: 15%;
-        height: 15%;
-        top: 19rem;
-        left: -1.5rem;
-        font-size: 2.5rem; }
-    .about-container--right_content__dev {
-      left: 10rem;
-      width: 15%;
-      height: 115%;
-      top: -5rem;
-      margin: 5rem; }
-      .about-container--right_content__dev___namepropressbar {
-        width: 1%; }
-      .about-container--right_content__dev___propressbar {
-        animation: none;
-        top: -15rem;
-        left: 10.5rem;
-        transform: rotateY(-5deg) rotateX(2deg) translateZ(-16px); }
-        .about-container--right_content__dev___propressbar____html::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'HTML';
-          letter-spacing: 10px; }
-        .about-container--right_content__dev___propressbar____css::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'CSS'; }
-        .about-container--right_content__dev___propressbar____jquery::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'JQuery'; }
-        .about-container--right_content__dev___propressbar____sass::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'SASS'; }
-        .about-container--right_content__dev___propressbar____react::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'REACT'; }
-        .about-container--right_content__dev___propressbar____C::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'C++'; }
-        .about-container--right_content__dev___propressbar:first-child:after {
+          animation: rubberBand 3s infinite ease-in-out; }
+        .about-container--left_box__content {
+          position: relative;
           color: #fff;
-          text-shadow: none; }
-        .about-container--right_content__dev___propressbar:last-child:after {
-          -webkit-text-stroke: 1.7rem rgba(255, 255, 255, 0.1);
-          color: #fff; }
+          font-weight: 300;
+          right: 3rem;
+          top: 25rem;
+          opacity: 0;
+          font-size: 0rem; }
+          .about-container--left_box__content___experience::before {
+            content: '';
+            border-bottom: 3px solid #fff;
+            width: 8vw;
+            color: white;
+            height: 1.5rem;
+            position: absolute;
+            top: 5rem;
+            right: 19rem;
+            opacity: 1; }
+    .about-container--right_tittle__skill {
+      position: absolute;
+      left: 27rem;
+      top: 1rem; }
+      .about-container--right_tittle__skill___layer:after {
+        font: 8rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+        content: 'Skill'; }
+    .about-container--right_content {
+      color: white; }
+      .about-container--right_content__rowfirst {
+        position: relative;
+        top: 15rem;
+        height: 20vh; }
+        .about-container--right_content__rowfirst___propressbar {
+          position: absolute;
+          top: 2rem;
+          right: 9rem;
+          width: 17rem;
+          height: 13rem;
+          transform-style: preserve-3d;
+          transform: perspective(55rem) rotateX(-102deg) rotateY(93deg) rotateZ(-6deg); }
+        .about-container--right_content__rowfirst___propressbarname {
+          width: 15%;
+          height: 15%;
+          top: 19rem;
+          left: -1.5rem;
+          font-size: 2.5rem; }
+      .about-container--right_content__dev {
+        left: 10rem;
+        width: 15%;
+        height: 115%;
+        top: -5rem;
+        margin: 5rem; }
+        .about-container--right_content__dev___namepropressbar {
+          width: 1%; }
+        .about-container--right_content__dev___propressbar {
+          animation: none;
+          top: -15rem;
+          left: 10.5rem;
+          transform: rotateY(-5deg) rotateX(2deg) translateZ(-16px); }
+          .about-container--right_content__dev___propressbar____html::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'HTML';
+            letter-spacing: 10px; }
+          .about-container--right_content__dev___propressbar____css::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'CSS'; }
+          .about-container--right_content__dev___propressbar____jquery::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'JQuery'; }
+          .about-container--right_content__dev___propressbar____sass::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'SASS'; }
+          .about-container--right_content__dev___propressbar____react::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'REACT'; }
+          .about-container--right_content__dev___propressbar____C::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'C++'; }
+          .about-container--right_content__dev___propressbar:first-child:after {
+            color: #fff;
+            text-shadow: none; }
+          .about-container--right_content__dev___propressbar:last-child:after {
+            -webkit-text-stroke: 1.7rem rgba(255, 255, 255, 0.1);
+            color: #fff; }
 
 .cube {
   position: absolute;
@@ -3896,7 +3902,7 @@ html {
     .product-background--first {
       background-image: url(../img/Background.gif); }
     .product-background--second {
-      background-image: url(../img/bgMain.gif); }
+      background-image: url(../img/cpu.gif); }
   .product-container--website {
     display: inline;
     flex-direction: row;
@@ -3935,10 +3941,10 @@ html {
             -webkit-text-stroke: 0.2rem #fff !important; }
           .product-container--website_first__name___tittle____details-after {
             color: #fff !important;
-            clip-path: polygon(0% 0%, 0 43%, 8% 59%, 18% 58%, 33% 42%, 40% 62%, 52% 62%, 64% 46%, 71% 60%, 84% 68%, 91% 65%, 100% 56%, 100% 1%);
+            clip-path: polygon(0% 100%, 0 65%, 7% 56%, 18% 56%, 25% 65%, 31% 71%, 36% 57%, 49% 56%, 55% 65%, 63% 63%, 71% 53%, 84% 54%, 88% 65%, 94% 70%, 100% 54%, 100% 100%);
             transition: 1s; }
             .product-container--website_first__name___tittle____details-after:hover {
-              clip-path: polygon(0% 0%, 0 100%, 12% 100%, 24% 100%, 34% 100%, 45% 100%, 59% 100%, 68% 100%, 78% 100%, 88% 100%, 96% 100%, 100% 100%, 100% 1%); }
+              clip-path: polygon(0% 100%, 0 0, 13% 0, 24% 0, 29% 0, 39% 0, 46% 0, 55% 0, 63% 0, 71% 0, 83% 0, 87% 0, 92% 0, 96% 0, 100% 0, 100% 100%); }
         .product-container--website_first__name___sub {
           font-style: bold italic;
           font-size: 3rem;
@@ -3972,7 +3978,7 @@ html {
           color: transparent !important;
           -webkit-text-stroke: 0.2rem #fff !important; }
         .product-container--website_second__name___tittle____details-after {
-          color: #222 !important;
+          color: #fff !important;
           clip-path: polygon(0% 0%, 0 43%, 8% 59%, 18% 58%, 33% 42%, 40% 62%, 52% 62%, 64% 46%, 71% 60%, 84% 68%, 91% 65%, 100% 56%, 100% 1%);
           transition: 1s; }
           .product-container--website_second__name___tittle____details-after:hover {
