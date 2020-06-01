@@ -17,6 +17,9 @@ html {
 .l--3 {
   left: -3rem !important; }
 
+.is-active {
+  opacity: 1 !important; }
+
 html {
   font-size: 10px;
   font-family: sans-serif; }
@@ -199,13 +202,13 @@ html {
     justify-items: center;
     justify-content: center; }
     .hero-bg--img {
-      top: 0rem;
-      right: 20rem;
+      top: -13rem;
+      right: 21rem;
       z-index: 1;
       box-sizing: border-box;
       position: absolute;
-      width: 45rem;
-      height: 100vh;
+      width: 81rem;
+      height: 118vh;
       background-repeat: no-repeat; }
   .hero-container {
     height: 100vh; }
@@ -317,47 +320,6 @@ html {
         -ms-transform: scaleX(1);
         transform: scaleX(1); }
 
-@keyframes chuyendongmauvarung {
-  0% {
-    transform: translateY(-1.5rem);
-    box-shadow: 0 0 10px #EECDA3, 0 0 40px #464ee2, 0 0 60px #d62828, 0 0 80px #464ee2, 0 0 100px #d62828; }
-  20% {
-    transform: translateY(1.5rem);
-    box-shadow: 0 0 10px #EECDA3, 0 0 40px #464ee2, 0 0 60px #d62828, 0 0 80px #464ee2, 0 0 100px #d62828; }
-  40% {
-    transform: translateY(-1.5rem);
-    box-shadow: 0 0 10px #e08d8d, 0 0 40px #5fd631, 0 0 60px #EECDA3, 0 0 80px #464ee2, 0 0 100px #d82fc7; }
-  60% {
-    transform: translateY(1.5rem);
-    box-shadow: 0 0 10px #EECDA3, 0 0 40px #464ee2, 0 0 60px #d62828, 0 0 80px #464ee2, 0 0 100px #d62828; }
-  100% {
-    transform: translate(0);
-    box-shadow: 0 0 10px #e08d8d, 0 0 40px #5fd631, 0 0 60px #EECDA3, 0 0 80px #464ee2, 0 0 100px #d82fc7; } }
-
-@keyframes chuyendongrung {
-  0% {
-    transform: translateY(-1.5rem); }
-  20% {
-    transform: translateY(1.5rem); }
-  40% {
-    transform: translateY(-1.5rem); }
-  60% {
-    transform: translateY(1.5rem); }
-  100% {
-    transform: translate(0); } }
-
-@keyframes chuyendongmau {
-  0% {
-    box-shadow: 0 0 10px #EECDA3, 0 0 40px #464ee2, 0 0 60px #d62828, 0 0 80px #464ee2, 0 0 100px #d62828; }
-  100% {
-    box-shadow: 0 0 10px #e08d8d, 0 0 40px #5fd631, 0 0 60px #EECDA3, 0 0 80px #464ee2, 0 0 100px #d82fc7; } }
-
-@keyframes chuyendongxoay {
-  0% {
-    color: transparent; }
-  100% {
-    color: #c89c21; } }
-
 @keyframes loop {
   from {
     transform: rotateX(0deg) rotateY(0deg); }
@@ -386,22 +348,6 @@ html {
   100% {
     transform: scale(0); } }
 
-@keyframes chuyendongrungvaxoay {
-  0% {
-    transform: translateY(0rem); }
-  40% {
-    transform: translateY(-6.5rem); }
-  49% {
-    transform: translateY(-6.5rem); }
-  50% {
-    transform: translateY(-6.5rem) rotate(360deg); }
-  51% {
-    transform: translateY(-6.5rem); }
-  60% {
-    transform: translateY(-4rem); }
-  100% {
-    transform: translateY(0rem); } }
-
 @keyframes rotate {
   100% {
     transform: rotateY(-40deg) rotateX(-43deg); } }
@@ -411,6 +357,22 @@ html {
     transform: rotateY(360deg) translateX(-3rem); } }
 
 @keyframes wave {
+  0% {
+    clip-path: polygon(0 79%, 7% 89%, 18% 90%, 33% 86%, 46% 79%, 61% 75%, 80% 74%, 100% 84%, 100% 100%, 0 100%); }
+  40% {
+    clip-path: polygon(0 90%, 8% 81%, 23% 74%, 34% 80%, 44% 87%, 61% 91%, 79% 88%, 100% 76%, 100% 100%, 0 100%); }
+  55% {
+    clip-path: polygon(0 79%, 7% 89%, 18% 90%, 33% 86%, 46% 79%, 61% 75%, 80% 74%, 100% 84%, 100% 100%, 0 100%); }
+  70% {
+    clip-path: polygon(0% 76%, 11% 73%, 26% 78%, 40% 84%, 64% 81%, 79% 81%, 93% 85%, 100% 90%, 100% 100%, 0% 100%); }
+  85% {
+    clip-path: polygon(0 90%, 8% 84%, 21% 92%, 34% 84%, 44% 84%, 57% 91%, 78% 91%, 100% 76%, 100% 100%, 0 100%); }
+  90% {
+    clip-path: polygon(0 90%, 8% 81%, 23% 74%, 34% 80%, 44% 87%, 61% 91%, 79% 88%, 100% 76%, 100% 100%, 0 100%); }
+  100% {
+    clip-path: polygon(0% 76%, 11% 73%, 26% 78%, 40% 84%, 64% 81%, 79% 81%, 93% 85%, 100% 90%, 100% 100%, 0% 100%); } }
+
+@keyframes progressing {
   0% {
     clip-path: polygon(0 79%, 7% 89%, 18% 90%, 33% 86%, 46% 79%, 61% 75%, 80% 74%, 100% 84%, 100% 100%, 0 100%); }
   40% {
@@ -3154,9 +3116,10 @@ html {
     font-size: 10rem;
     font-weight: 800;
     letter-spacing: 1rem;
-    opacity: .05; }
+    opacity: .05;
+    transition: .5s; }
     .slogan--shadow:hover {
-      opacity: 1; }
+      opacity: 0.4; }
 
 .tittle-box {
   height: 100px;
@@ -3294,7 +3257,7 @@ html {
   width: 100%;
   height: 100vh;
   background: #222;
-  color: white;
+  color: #fff;
   position: relative; }
   .features-content--box {
     margin-top: 15rem;
@@ -3403,7 +3366,7 @@ html {
       top: -12rem; }
       .resume-content--education_logo__icon {
         color: #c89c21;
-        font-size: 10rem;
+        font-size: 8rem;
         color: transparent;
         -webkit-text-stroke: 1px #c89c21; }
     .resume-content--education_sticket {
@@ -3594,7 +3557,7 @@ html {
   font-size: 1rem;
   letter-spacing: 5px;
   font-weight: 200;
-  color: white;
+  color: #fff;
   z-index: 1000; }
   .footer-copyright {
     position: absolute;
@@ -3674,104 +3637,160 @@ html {
   opacity: 0; }
 
 .about {
-  background-color: #222; }
-  .about-container--left {
-    width: 30vw;
-    height: 100vh;
-    position: relative;
-    padding: 5rem !important; }
-    .about-container--left_box {
+  background-color: #222;
+  color: #fff; }
+  .about-container {
+    background-image: url(../img/codebag.png);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position-x: 9rem;
+    background-position-y: 14rem; }
+    .about-container--left {
+      width: 30vw;
+      height: 100vh;
       position: relative;
-      border: 1px solid #fff;
-      display: flex;
-      justify-content: center;
-      justify-items: center;
-      top: 15%;
-      padding: 3rem; }
-      .about-container--left_box__year {
+      padding: 5rem !important; }
+      .about-container--left_box {
         position: relative;
-        width: 23rem;
-        height: 30rem;
-        margin: 5rem;
-        font-size: 23rem;
-        left: 27%;
-        top: -6rem;
-        color: transparent;
-        font-weight: 800;
-        -webkit-text-stroke: 0.2rem #fff;
-        text-align: center; }
-      .about-container--left_box__content {
-        position: relative;
-        font-size: 3rem;
-        color: #fff;
-        font-weight: 300;
-        right: 3rem;
-        top: 25rem; }
-  .about-container--right_tittle__skill {
-    position: absolute;
-    left: 27rem;
-    top: 1rem; }
-    .about-container--right_tittle__skill___layer:after {
-      font: 8rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
-      content: 'Skill'; }
-  .about-container--right_content {
-    color: white; }
-    .about-container--right_content__rowfirst {
-      position: relative;
-      top: 15rem;
-      height: 20vh; }
-      .about-container--right_content__rowfirst___propressbar {
-        position: absolute;
-        top: 2rem;
-        right: 9rem;
-        width: 17rem;
-        height: 13rem;
-        transform-style: preserve-3d;
-        transform: perspective(55rem) rotateX(-102deg) rotateY(93deg) rotateZ(-6deg); }
-      .about-container--right_content__rowfirst___propressbarname {
-        width: 15%;
-        height: 15%;
-        top: 19rem;
-        left: -1.5rem;
-        font-size: 2.5rem; }
-    .about-container--right_content__dev {
-      left: 10rem;
-      width: 15%;
-      height: 115%;
-      top: -5rem;
-      margin: 5rem; }
-      .about-container--right_content__dev___namepropressbar {
-        width: 1%; }
-      .about-container--right_content__dev___propressbar {
-        animation: none;
-        top: -15rem;
-        left: 10.5rem;
-        transform: rotateY(-5deg) rotateX(2deg) translateZ(-16px); }
-        .about-container--right_content__dev___propressbar____html::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'HTML';
-          letter-spacing: 10px; }
-        .about-container--right_content__dev___propressbar____css::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'CSS'; }
-        .about-container--right_content__dev___propressbar____jquery::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'JQuery'; }
-        .about-container--right_content__dev___propressbar____sass::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'SASS'; }
-        .about-container--right_content__dev___propressbar____react::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'REACT'; }
-        .about-container--right_content__dev___propressbar____C::after {
-          font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
-          content: 'C++'; }
-        .about-container--right_content__dev___propressbar:first-child:after {
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        top: 30%;
+        padding: 0rem;
+        width: 16vw;
+        left: 12rem;
+        transition: all 1s; }
+        .about-container--left_box:hover {
+          position: relative;
+          border: 1px solid #fff;
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+          top: 13%;
+          padding: 4rem;
+          width: 23vw;
+          left: 6rem; }
+          .about-container--left_box:hover .about-container--left_box__content {
+            position: relative;
+            font-size: 3rem;
+            color: #fff;
+            font-weight: 500;
+            right: 5rem;
+            top: 26rem;
+            opacity: 1;
+            animation: zoomIn 1s; }
+          .about-container--left_box:hover .about-container--left_box__year {
+            position: relative;
+            width: 23rem;
+            height: 30rem;
+            margin: 5rem;
+            font-size: 23rem;
+            left: 27%;
+            top: -6rem;
+            color: transparent;
+            font-weight: 800;
+            -webkit-text-stroke: 0.2rem #fff;
+            text-align: center;
+            animation: heartBeat 3s infinite ease-in-out; }
+          .about-container--left_box:hover .about-container--left_box__content___experience::before {
+            animation: fadeInLeftBig 1s; }
+        .about-container--left_box__year {
+          position: relative;
+          width: 23rem;
+          height: 25rem;
+          margin: 0rem;
+          font-size: 23rem;
+          left: 1%;
+          top: -1rem;
+          color: transparent;
+          font-weight: 800;
+          -webkit-text-stroke: 0.2rem #fff;
+          text-align: center;
+          animation: rubberBand 3s infinite ease-in-out; }
+        .about-container--left_box__content {
+          position: relative;
           color: #fff;
-          text-shadow: none; }
-        .about-container--right_content__dev___propressbar:last-child:after {
-          -webkit-text-stroke: 1.7rem rgba(255, 255, 255, 0.1);
-          color: #fff; }
+          font-weight: 300;
+          right: 3rem;
+          top: 25rem;
+          opacity: 0;
+          font-size: 0rem; }
+          .about-container--left_box__content___experience::before {
+            content: '';
+            border-bottom: 3px solid #fff;
+            width: 8vw;
+            color: white;
+            height: 1.5rem;
+            position: absolute;
+            top: 5rem;
+            right: 19rem;
+            opacity: 1; }
+    .about-container--right_tittle__skill {
+      position: absolute;
+      left: 27rem;
+      top: 1rem; }
+      .about-container--right_tittle__skill___layer:after {
+        font: 8rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+        content: 'Skill'; }
+    .about-container--right_content {
+      color: white; }
+      .about-container--right_content__rowfirst {
+        position: relative;
+        top: 15rem;
+        height: 20vh; }
+        .about-container--right_content__rowfirst___propressbar {
+          position: absolute;
+          top: 2rem;
+          right: 9rem;
+          width: 17rem;
+          height: 13rem;
+          transform-style: preserve-3d;
+          transform: perspective(55rem) rotateX(-102deg) rotateY(93deg) rotateZ(-6deg); }
+        .about-container--right_content__rowfirst___propressbarname {
+          width: 15%;
+          height: 15%;
+          top: 19rem;
+          left: -1.5rem;
+          font-size: 2.5rem; }
+      .about-container--right_content__dev {
+        left: 10rem;
+        width: 15%;
+        height: 115%;
+        top: -5rem;
+        margin: 5rem; }
+        .about-container--right_content__dev___namepropressbar {
+          width: 1%; }
+        .about-container--right_content__dev___propressbar {
+          animation: none;
+          top: -15rem;
+          left: 10.5rem;
+          transform: rotateY(-5deg) rotateX(2deg) translateZ(-16px); }
+          .about-container--right_content__dev___propressbar____html::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'HTML';
+            letter-spacing: 10px; }
+          .about-container--right_content__dev___propressbar____css::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'CSS'; }
+          .about-container--right_content__dev___propressbar____jquery::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'JQuery'; }
+          .about-container--right_content__dev___propressbar____sass::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'SASS'; }
+          .about-container--right_content__dev___propressbar____react::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'REACT'; }
+          .about-container--right_content__dev___propressbar____C::after {
+            font: 3rem/0.13  Helvetica,'Kaushan Script', 'Roboto','Pacifico', 'Trebuchet MS', sans-serif;
+            content: 'C++'; }
+          .about-container--right_content__dev___propressbar:first-child:after {
+            color: #fff;
+            text-shadow: none; }
+          .about-container--right_content__dev___propressbar:last-child:after {
+            -webkit-text-stroke: 1.7rem rgba(255, 255, 255, 0.1);
+            color: #fff; }
 
 .cube {
   position: absolute;
@@ -3849,3 +3868,123 @@ html {
     left: -4rem;
     background: transparent;
     transform: translate3D(5.6rem, 0.7rem, 9rem) rotateY(270deg) rotateX(90deg); }
+
+.product {
+  background-color: #242424;
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .product-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bgproduct.png);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position-x: center;
+    background-position-y: center; }
+    .product-background--merge {
+      opacity: 0;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      background-position: center;
+      background-size: cover; }
+    .product-background--first {
+      background-image: url(../img/Background.gif); }
+    .product-background--second {
+      background-image: url(../img/cpu.gif); }
+  .product-container--website {
+    display: inline;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+    padding-left: 2.91667rem;
+    -webkit-transition: opacity 2s ease-out;
+    transition: opacity 1s ease-out;
+    opacity: .5;
+    color: #fff; }
+    .product-container--website_first {
+      margin-bottom: 5rem; }
+      .product-container--website_first__index {
+        margin-left: 5rem;
+        font-size: 5rem;
+        font-weight: 600;
+        color: #222;
+        -webkit-text-stroke: 5px white; }
+      .product-container--website_first__name {
+        margin-left: 30rem;
+        display: inline-flex;
+        flex-direction: column; }
+        .product-container--website_first__name___tittle {
+          list-style-type: none;
+          color: #c89c21;
+          top: -9rem;
+          left: -2rem;
+          position: relative; }
+          .product-container--website_first__name___tittle____details, .product-container--website_first__name___tittle____details:active, .product-container--website_first__name___tittle____details:link {
+            position: absolute;
+            text-decoration: none;
+            font-size: 10rem;
+            font-weight: 800; }
+          .product-container--website_first__name___tittle____details-before {
+            color: transparent !important;
+            -webkit-text-stroke: 0.2rem #fff !important; }
+          .product-container--website_first__name___tittle____details-after {
+            color: #fff !important;
+            clip-path: polygon(0% 100%, 0 65%, 7% 56%, 18% 56%, 25% 65%, 31% 71%, 36% 57%, 49% 56%, 55% 65%, 63% 63%, 71% 53%, 84% 54%, 88% 65%, 94% 70%, 100% 54%, 100% 100%);
+            transition: 1s; }
+            .product-container--website_first__name___tittle____details-after:hover {
+              clip-path: polygon(0% 100%, 0 0, 13% 0, 24% 0, 29% 0, 39% 0, 46% 0, 55% 0, 63% 0, 71% 0, 83% 0, 87% 0, 92% 0, 96% 0, 100% 0, 100% 100%); }
+        .product-container--website_first__name___sub {
+          font-style: bold italic;
+          font-size: 3rem;
+          color: #fff;
+          opacity: 0.8; }
+    .product-container--website_second__index {
+      margin-left: 5rem;
+      font-size: 5rem;
+      font-weight: 600;
+      color: #222;
+      -webkit-text-stroke: 5px white; }
+    .product-container--website_second__name {
+      margin-left: 30rem;
+      display: inline-flex;
+      flex-direction: column; }
+      .product-container--website_second__name___tittle {
+        list-style-type: none;
+        color: #fff;
+        top: 2rem;
+        left: -2rem;
+        width: 30vw;
+        height: 10vh;
+        position: relative; }
+        .product-container--website_second__name___tittle____details, .product-container--website_second__name___tittle____details:active, .product-container--website_second__name___tittle____details:link {
+          position: absolute;
+          text-decoration: none;
+          font-size: 10rem;
+          font-weight: 800;
+          top: -4rem; }
+        .product-container--website_second__name___tittle____details-before {
+          color: transparent !important;
+          -webkit-text-stroke: 0.2rem #fff !important; }
+        .product-container--website_second__name___tittle____details-after {
+          color: #fff !important;
+          clip-path: polygon(0% 0%, 0 43%, 8% 59%, 18% 58%, 33% 42%, 40% 62%, 52% 62%, 64% 46%, 71% 60%, 84% 68%, 91% 65%, 100% 56%, 100% 1%);
+          transition: 1s; }
+          .product-container--website_second__name___tittle____details-after:hover {
+            clip-path: polygon(0% 0%, 0 100%, 12% 100%, 24% 100%, 34% 100%, 45% 100%, 59% 100%, 68% 100%, 78% 100%, 88% 100%, 96% 100%, 100% 100%, 100% 1%); }
+      .product-container--website_second__name___sub {
+        font-style: bold italic;
+        font-size: 3rem;
+        color: #fff;
+        opacity: 0.8; }
