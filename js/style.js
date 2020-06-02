@@ -1,25 +1,35 @@
 AOS.init({
   });
 
-// window.onload = function(){
-//     const ShowSlogan =document.querySelector(".slogan");
-//     window.addEventListener('scroll',scrollSlogan);
-//     function scrollSlogan(){
-//         if(window.scrollY >=750) {
-//             ShowSlogan.style.opacity = '1';
-         
-//             ShowSlogan.style.transition = '2s ease-in-out';
-//                      ShowSlogan.style.animation = 'rubberBand';
-           
-//           }
-//           else
-//           {
-//           }
-//     }
-// };
-
-
-
+window.onload = function(){
+    const ShowEdu =document.querySelector(".resume-content--education");
+    const ShowExp =document.querySelector(".resume-content--experience");
+    window.addEventListener('scroll',scrollOpacityEdu);
+    window.addEventListener('scroll',scrollOpacityExp);
+    function scrollOpacityEdu(){
+        if(window.scrollY >=1300) {
+            ShowEdu.style.opacity = '0.05';
+            ShowEdu.style.transition = ' ease-in-out';
+            ShowEdu.style.transition = '2s' ;
+          }
+          else
+          {
+            ShowEdu.style.opacity = '1';
+          }
+    }
+    function scrollOpacityExp(){
+        if(window.scrollY >=1300) {
+            ShowExp.style.opacity = '0.05';
+            ShowExp.style.transition = ' ease-in-out';
+            ShowExp.style.transition = '2s' ;
+          }
+          else
+          {
+            ShowExp.style.opacity = '1';
+          }
+    };
+    
+}
 new fullpage('#main', {
     autoScrolling: true,
     navigation : true,

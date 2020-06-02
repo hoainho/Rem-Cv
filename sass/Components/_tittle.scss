@@ -3,8 +3,10 @@
     right:98%;
     transform: rotate(-90deg);
     position: absolute;
+    z-index: 50;
     &--shadow {
-      width: 40.5vw;
+      color: white;
+      width: 41.5vw;
       position: absolute;
       font-size: 10rem;
       font-weight: 800;
