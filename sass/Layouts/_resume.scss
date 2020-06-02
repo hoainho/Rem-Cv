@@ -13,7 +13,7 @@
             transition: all 2s;
             height: 0vh;
             &:hover {
-                opacity: 1;
+                opacity: 1 !important;
                 background: linear-gradient(to right top,
                                         transparent,
                                        white
@@ -192,7 +192,7 @@
             padding: 0rem;
             transition: all 1s;
             &:hover {
-                opacity: 1;
+                opacity: 1 !important;
                 background: linear-gradient(to right top,
                                         transparent,
                                        $color-secondary

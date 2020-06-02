@@ -3117,9 +3117,11 @@ html {
   top: 90%;
   right: 98%;
   transform: rotate(-90deg);
-  position: absolute; }
+  position: absolute;
+  z-index: 50; }
   .slogan--shadow {
-    width: 40.5vw;
+    color: white;
+    width: 41.5vw;
     position: absolute;
     font-size: 10rem;
     font-weight: 800;
@@ -3310,7 +3312,7 @@ html {
     transition: all 2s;
     height: 0vh; }
     .resume-content--education:hover {
-      opacity: 1;
+      opacity: 1 !important;
       background: linear-gradient(to right top, transparent, white);
       height: 70vh;
       padding: 5rem;
@@ -3451,7 +3453,7 @@ html {
     padding: 0rem;
     transition: all 1s; }
     .resume-content--experience:hover {
-      opacity: 1;
+      opacity: 1 !important;
       background: linear-gradient(to right top, transparent, #c89c21);
       padding: 5rem;
       margin-top: 15rem;
@@ -4087,8 +4089,7 @@ html {
         opacity: 0.8; }
 
 .customer-containter {
-  background-color: #242424;
-  background-image: url(../img/trol.gif);
+  background-image: url(../img/commentbackground.gif);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh; }
