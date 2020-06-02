@@ -211,114 +211,140 @@
 
     }
 }
+:root{
+    //-------------------Mid
+    --mid-percent-html : 90rem !important; // => rem = %
 
+    --mid-percent-css  : 80rem ;// ==> rem = %
+
+    --mid-percent-sass  : 90rem ;// => rem = %
+
+    --mid-percent-js  : 20rem ;// ==> rem = %
+
+    --mid-percent-react  : 30rem ;// => rem = %
+
+    --mid-percent-jquery  : 50rem ;// ==> rem = %
+    //-------------------Right
+    --percent-right-html  : 90rem ;// => rem = %
+  
+    --percent-right-css  : 80rem ;// ==> rem = %
+     
+    --percent-right-sass  : 90rem ;// => rem = %
+     
+    --percent-right-js  : 20rem ;// ==> rem = %
+      
+    --percent-right-react  : 30rem ;// => rem = %
+    
+    --percent-right-jquery  : 50rem ;// ==> rem = %
+    //-------------------After
+    --percent-after-html  : 90rem ;// => rem = %
+  
+    --percent-after-css  : 80rem ;// ==> rem = %
+     
+    --percent-after-sass  : 90rem ;// => rem = %
+     
+    --percent-after-js  : 20rem ;// ==> rem = %
+      
+    --percent-after-react  : 30rem ;// => rem = %
+    
+    --percent-after-jquery  : 50rem ;// ==> rem = %
+}
 .percent {
     &-mid{//---default=18.18%(3rank) max=16.5rank  ====> Return max-default = 13.5rank => 1rank : 7.4
         &-html {
-            --mid-percent-html  : 90rem ;// => rem = %
-            transform: translate3D(calc(var(--mid-percent-html)/7.4), 0rem, 10.5rem) rotateY(90deg); 
+            transform: translate3D(calc(var(--mid-percent-html)/7.4), 0rem, 10.5rem) rotateY(90deg) ; 
         }
         &-css {
-            --mid-percent-css  : 80rem ;// ==> rem = %
+           
             transform: translate3D(calc(var(--mid-percent-css)/7.4), 0rem, 10.5rem) rotateY(90deg); 
         }
         &-sass {
-            --mid-percent-sass  : 90rem ;// => rem = %
+           
             transform: translate3D(calc(var(--mid-percent-sass)/7.4), 0rem, 10.5rem) rotateY(90deg); 
         }
         &-js {
-            --mid-percent-js  : 20rem ;// ==> rem = %
+          
             transform: translate3D(calc(var(--mid-percent-js)/7.4), 0rem, 10.5rem) rotateY(90deg); 
         }
         &-react {
-            --mid-percent-react  : 30rem ;// => rem = %
+           
             transform: translate3D(calc(var(--mid-percent-react)/7.4), 0rem, 10.5rem) rotateY(90deg); 
         }
         &-jquery {
-            --mid-percent-jquery  : 50rem ;// ==> rem = %
+           
             transform: translate3D(calc(var(--mid-percent-jquery)/7.4), 0rem, 10.5rem) rotateY(90deg); 
         }
     }
     &-right{//---default=0(0rank) max=17rank  ====> Return max-default = 17rank => 1rank : 5.75
         &-html {
-            --percent-right-html  : 90rem ;// => rem = %
-            width: calc(var(--percent-right-html)/5.75) !important ;
+                     width: calc(var(--percent-right-html)/5.75)  ;
             
         }
         &-css {
-            --percent-right-css  : 80rem ;// ==> rem = %
-            width: calc(var(--percent-right-css)/5.75) !important ;
+                     width: calc(var(--percent-right-css)/5.75)  ;
 
         }
         &-sass {
-            --percent-right-sass  : 90rem ;// => rem = %
-            width: calc(var(--percent-right-sass)/5.75) !important ;
+                     width: calc(var(--percent-right-sass)/5.75)  ;
             
         }
         &-js {
-            --percent-right-js  : 20rem ;// ==> rem = %
-            width: calc(var(--percent-right-js)/3.79) !important ;
+                    width: calc(var(--percent-right-js)/3.79)  ;
         }
         &-react {
-            --percent-right-react  : 30rem ;// => rem = %
-            width: calc(var(--percent-right-react)/4.3) !important ;
+                      width: calc(var(--percent-right-react)/4.3)  ;
             
         }
         &-jquery {
-            --percent-right-jquery  : 50rem ;// ==> rem = %
-            width: calc(var(--percent-right-jquery)/5.1) !important ;
+           
+            width: calc(var(--percent-right-jquery)/5.1)  ;
         }
     }
     &-after{//---default=0(0rank) max=17rank  ====> Return max-default = 17rank => 1rank : 5.75
         &-html {
-            --percent-after-html  : 90rem ;// => rem = %
-            width: calc(var(--percent-after-html)/5.75) !important ;
+                     width: calc(var(--percent-after-html)/5.75)  ;
             
         }
         &-css {
-            --percent-after-css  : 80rem ;// ==> rem = %
-            width: calc(var(--percent-after-css)/5.5) !important ;
+                     width: calc(var(--percent-after-css)/5.5)  ;
 
         }
         &-sass {
-            --percent-after-sass  : 90rem ;// => rem = %
-            width: calc(var(--percent-after-sass)/5.75) !important ;
+                     width: calc(var(--percent-after-sass)/5.75)  ;
             
         }
         &-js {
-            --percent-after-js  : 20rem ;// ==> rem = %
-            width: calc(var(--percent-after-js)/3.26) !important ;
+                    width: calc(var(--percent-after-js)/3.26)  ;
         }
         &-react {
-            --percent-after-react  : 30rem ;// => rem = %
-            width: calc(var(--percent-after-react)/4) !important ;
+                      width: calc(var(--percent-after-react)/4)  ;
             
         }
         &-jquery {
-            --percent-after-jquery  : 50rem ;// ==> rem = %
-            width: calc(var(--percent-after-jquery)/4.9) !important ;
+           
+            width: calc(var(--percent-after-jquery)/4.9)  ;
         }
     }
     &-number{
         &-html{
-            left: 9rem !important;
+            left: 9rem ;
         }
         &-css{
-            left: 8rem !important;
+            left: 8rem ;
         }
         &-sass{
-            left: 9rem !important;
+            left: 9rem ;
         }
 
         &-js{
-            left: 0rem !important;
+            left: 0rem ;
         }
         &-react{
-            left: 1rem !important;
+            left: 1rem ;
         }
 
         &-jquery{
-            left: 4rem !important;
+            left: 4rem ;
         }
     }
 }

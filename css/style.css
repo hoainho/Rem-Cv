@@ -3802,95 +3802,97 @@ html {
             -webkit-text-stroke: 1.7rem rgba(255, 255, 255, 0.1);
             color: #fff; }
 
+:root {
+  --mid-percent-html: 90rem !important;
+  --mid-percent-css: 80rem ;
+  --mid-percent-sass: 90rem ;
+  --mid-percent-js: 20rem ;
+  --mid-percent-react: 30rem ;
+  --mid-percent-jquery: 50rem ;
+  --percent-right-html: 90rem ;
+  --percent-right-css: 80rem ;
+  --percent-right-sass: 90rem ;
+  --percent-right-js: 20rem ;
+  --percent-right-react: 30rem ;
+  --percent-right-jquery: 50rem ;
+  --percent-after-html: 90rem ;
+  --percent-after-css: 80rem ;
+  --percent-after-sass: 90rem ;
+  --percent-after-js: 20rem ;
+  --percent-after-react: 30rem ;
+  --percent-after-jquery: 50rem ; }
+
 .percent-mid-html {
-  --mid-percent-html: 90rem ;
   transform: translate3D(calc(var(--mid-percent-html)/7.4), 0rem, 10.5rem) rotateY(90deg); }
 
 .percent-mid-css {
-  --mid-percent-css: 80rem ;
   transform: translate3D(calc(var(--mid-percent-css)/7.4), 0rem, 10.5rem) rotateY(90deg); }
 
 .percent-mid-sass {
-  --mid-percent-sass: 90rem ;
   transform: translate3D(calc(var(--mid-percent-sass)/7.4), 0rem, 10.5rem) rotateY(90deg); }
 
 .percent-mid-js {
-  --mid-percent-js: 20rem ;
   transform: translate3D(calc(var(--mid-percent-js)/7.4), 0rem, 10.5rem) rotateY(90deg); }
 
 .percent-mid-react {
-  --mid-percent-react: 30rem ;
   transform: translate3D(calc(var(--mid-percent-react)/7.4), 0rem, 10.5rem) rotateY(90deg); }
 
 .percent-mid-jquery {
-  --mid-percent-jquery: 50rem ;
   transform: translate3D(calc(var(--mid-percent-jquery)/7.4), 0rem, 10.5rem) rotateY(90deg); }
 
 .percent-right-html {
-  --percent-right-html: 90rem ;
-  width: calc(var(--percent-right-html)/5.75) !important; }
+  width: calc(var(--percent-right-html)/5.75); }
 
 .percent-right-css {
-  --percent-right-css: 80rem ;
-  width: calc(var(--percent-right-css)/5.75) !important; }
+  width: calc(var(--percent-right-css)/5.75); }
 
 .percent-right-sass {
-  --percent-right-sass: 90rem ;
-  width: calc(var(--percent-right-sass)/5.75) !important; }
+  width: calc(var(--percent-right-sass)/5.75); }
 
 .percent-right-js {
-  --percent-right-js: 20rem ;
-  width: calc(var(--percent-right-js)/3.79) !important; }
+  width: calc(var(--percent-right-js)/3.79); }
 
 .percent-right-react {
-  --percent-right-react: 30rem ;
-  width: calc(var(--percent-right-react)/4.3) !important; }
+  width: calc(var(--percent-right-react)/4.3); }
 
 .percent-right-jquery {
-  --percent-right-jquery: 50rem ;
-  width: calc(var(--percent-right-jquery)/5.1) !important; }
+  width: calc(var(--percent-right-jquery)/5.1); }
 
 .percent-after-html {
-  --percent-after-html: 90rem ;
-  width: calc(var(--percent-after-html)/5.75) !important; }
+  width: calc(var(--percent-after-html)/5.75); }
 
 .percent-after-css {
-  --percent-after-css: 80rem ;
-  width: calc(var(--percent-after-css)/5.5) !important; }
+  width: calc(var(--percent-after-css)/5.5); }
 
 .percent-after-sass {
-  --percent-after-sass: 90rem ;
-  width: calc(var(--percent-after-sass)/5.75) !important; }
+  width: calc(var(--percent-after-sass)/5.75); }
 
 .percent-after-js {
-  --percent-after-js: 20rem ;
-  width: calc(var(--percent-after-js)/3.26) !important; }
+  width: calc(var(--percent-after-js)/3.26); }
 
 .percent-after-react {
-  --percent-after-react: 30rem ;
-  width: calc(var(--percent-after-react)/4) !important; }
+  width: calc(var(--percent-after-react)/4); }
 
 .percent-after-jquery {
-  --percent-after-jquery: 50rem ;
-  width: calc(var(--percent-after-jquery)/4.9) !important; }
+  width: calc(var(--percent-after-jquery)/4.9); }
 
 .percent-number-html {
-  left: 9rem !important; }
+  left: 9rem; }
 
 .percent-number-css {
-  left: 8rem !important; }
+  left: 8rem; }
 
 .percent-number-sass {
-  left: 9rem !important; }
+  left: 9rem; }
 
 .percent-number-js {
-  left: 0rem !important; }
+  left: 0rem; }
 
 .percent-number-react {
-  left: 1rem !important; }
+  left: 1rem; }
 
 .percent-number-jquery {
-  left: 4rem !important; }
+  left: 4rem; }
 
 .cube {
   position: absolute;
