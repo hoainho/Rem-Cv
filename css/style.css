@@ -223,6 +223,8 @@ html {
           position: absolute;
           color: #fff;
           z-index: 1; }
+          .hero-container--row_box__slogan___howdy {
+            opacity: 0; }
           .hero-container--row_box__slogan___after {
             color: transparent;
             -webkit-text-stroke: 0.1rem #c89c21; }

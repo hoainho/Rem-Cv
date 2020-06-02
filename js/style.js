@@ -1,21 +1,25 @@
+AOS.init({
+  });
 
-window.onload = function(){
-    const BackgroundHeader =document.querySelector(".rem-navbar--background");
-    window.addEventListener('scroll',scrollbg);
-    function scrollbg(){
-        if(window.scrollY >=10) {
-			BackgroundHeader.style.backgroundColor = '#242424';
-			BackgroundHeader.style.transition = '1s ease-in-out';
-			BackgroundHeader.style.height = '10vh';
-        }
-        else
-        {
-			BackgroundHeader.style.backgroundColor = 'transparent';
-			BackgroundHeader.style.transition = '1s ease-in-out';
-			BackgroundHeader.style.height = '0vh';
-        }
-    }
-};
+// window.onload = function(){
+//     const ShowSlogan =document.querySelector(".slogan");
+//     window.addEventListener('scroll',scrollSlogan);
+//     function scrollSlogan(){
+//         if(window.scrollY >=750) {
+//             ShowSlogan.style.opacity = '1';
+         
+//             ShowSlogan.style.transition = '2s ease-in-out';
+//                      ShowSlogan.style.animation = 'rubberBand';
+           
+//           }
+//           else
+//           {
+//           }
+//     }
+// };
+
+
+
 new fullpage('#main', {
     autoScrolling: true,
     navigation : true,
@@ -38,4 +42,6 @@ new fullpage('#main', {
             function(){ $(this).addClass('is-active') , $('#imgSecond',).addClass('is-active')},
             function(){ $(this).removeClass('is-active'), $('#imgSecond',).removeClass('is-active') }
         )
+        
+
         
