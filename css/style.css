@@ -9,7 +9,7 @@
   box-sizing: border-box; }
 
 html {
-  overflow-x: hidden; }
+  overflow: hidden !important; }
 
 .l-0 {
   left: 0rem !important; }
