@@ -277,12 +277,18 @@ html {
           width: 8rem;
           height: 8rem;
           border-radius: 50%; }
+          .hero-container--row_download__box:active, .hero-container--row_download__box:link {
+            color: #fff; }
           .hero-container--row_download__box___content____font {
             position: absolute;
             padding-left: 5rem;
             vertical-align: inherit;
             width: 37rem;
             top: 0.5rem; }
+          .hero-container--row_download__box___icon {
+            color: #c89c21; }
+            .hero-container--row_download__box___icon:active, .hero-container--row_download__box___icon:link, .hero-container--row_download__box___icon:visited {
+              color: white !important; }
       .hero-container--row_download::before {
         position: absolute;
         display: block;
@@ -3792,6 +3798,96 @@ html {
             -webkit-text-stroke: 1.7rem rgba(255, 255, 255, 0.1);
             color: #fff; }
 
+.percent-mid-html {
+  --mid-percent-html: 90rem ;
+  transform: translate3D(calc(var(--mid-percent-html)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+
+.percent-mid-css {
+  --mid-percent-css: 80rem ;
+  transform: translate3D(calc(var(--mid-percent-css)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+
+.percent-mid-sass {
+  --mid-percent-sass: 90rem ;
+  transform: translate3D(calc(var(--mid-percent-sass)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+
+.percent-mid-js {
+  --mid-percent-js: 20rem ;
+  transform: translate3D(calc(var(--mid-percent-js)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+
+.percent-mid-react {
+  --mid-percent-react: 30rem ;
+  transform: translate3D(calc(var(--mid-percent-react)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+
+.percent-mid-jquery {
+  --mid-percent-jquery: 50rem ;
+  transform: translate3D(calc(var(--mid-percent-jquery)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+
+.percent-right-html {
+  --percent-right-html: 90rem ;
+  width: calc(var(--percent-right-html)/5.75) !important; }
+
+.percent-right-css {
+  --percent-right-css: 80rem ;
+  width: calc(var(--percent-right-css)/5.75) !important; }
+
+.percent-right-sass {
+  --percent-right-sass: 90rem ;
+  width: calc(var(--percent-right-sass)/5.75) !important; }
+
+.percent-right-js {
+  --percent-right-js: 20rem ;
+  width: calc(var(--percent-right-js)/3.79) !important; }
+
+.percent-right-react {
+  --percent-right-react: 30rem ;
+  width: calc(var(--percent-right-react)/4.3) !important; }
+
+.percent-right-jquery {
+  --percent-right-jquery: 50rem ;
+  width: calc(var(--percent-right-jquery)/5.1) !important; }
+
+.percent-after-html {
+  --percent-after-html: 90rem ;
+  width: calc(var(--percent-after-html)/5.75) !important; }
+
+.percent-after-css {
+  --percent-after-css: 80rem ;
+  width: calc(var(--percent-after-css)/5.5) !important; }
+
+.percent-after-sass {
+  --percent-after-sass: 90rem ;
+  width: calc(var(--percent-after-sass)/5.75) !important; }
+
+.percent-after-js {
+  --percent-after-js: 20rem ;
+  width: calc(var(--percent-after-js)/3.26) !important; }
+
+.percent-after-react {
+  --percent-after-react: 30rem ;
+  width: calc(var(--percent-after-react)/4) !important; }
+
+.percent-after-jquery {
+  --percent-after-jquery: 50rem ;
+  width: calc(var(--percent-after-jquery)/4.9) !important; }
+
+.percent-number-html {
+  left: 9rem !important; }
+
+.percent-number-css {
+  left: 8rem !important; }
+
+.percent-number-sass {
+  left: 9rem !important; }
+
+.percent-number-js {
+  left: 0rem !important; }
+
+.percent-number-react {
+  left: 1rem !important; }
+
+.percent-number-jquery {
+  left: 4rem !important; }
+
 .cube {
   position: absolute;
   width: 100%;
@@ -3832,7 +3928,6 @@ html {
     width: 7rem;
     height: 70%;
     background: #c89c21;
-    transform: translate3D(-0.4rem, 0rem, 10.5rem) rotateY(90deg);
     border: 0.1rem solid #fff; }
     .cube-mid::before {
       content: '%';
@@ -4042,6 +4137,16 @@ button,
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.25);
   text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.2); }
 
+.signup-button,
+.signup-button-trigger {
+  width: 12vw  !important;
+  border-radius: 100% 0% 0% 100%;
+  border-right: 2px solid #936c00; }
+  .signup-button:hover,
+  .signup-button-trigger:hover {
+    border-radius: 0% 0% 0% 0% !important;
+    border: 2px solid #936c00 !important; }
+
 input:focus,
 button:focus {
   opacity: 1;
@@ -4125,6 +4230,7 @@ input:focus + label .nav-dot:before {
   transition: all 0.4s cubic-bezier(0.4, 0.25, 0.8, 0.3) 0.05s; }
 
 .nav-dot {
+  opacity: 0;
   cursor: pointer;
   position: absolute;
   padding: .625rem 1.25rem .625rem .625rem;

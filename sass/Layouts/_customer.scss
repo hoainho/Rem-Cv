@@ -54,7 +54,16 @@ button,
   box-shadow: 0 3px 5px 1px rgba(#000, 0.25);
   text-shadow: 0 -2px 0 rgba(#000, 0.25), 0 1px 0 rgba(#fff, 0.2);
 }
-
+.signup-button,
+.signup-button-trigger{
+  width: 12vw  !important;
+  border-radius: 100% 0% 0% 100%;
+  border-right: 2px solid $color-secondary-dark;
+  &:hover{
+    border-radius: 0% 0% 0% 0% !important;
+    border: 2px solid $color-secondary-dark !important;
+  }
+}
 input:focus,
 button:focus {
   opacity: 1;
@@ -145,6 +154,7 @@ input:focus + label .nav-dot:before {
 }
 
 .nav-dot {
+  opacity: 0;
   cursor: pointer;
   position: absolute;
   padding: .625rem 1.25rem .625rem .625rem;  
