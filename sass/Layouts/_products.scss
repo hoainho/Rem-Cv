@@ -32,9 +32,13 @@
             
         }
         &--first{
+            transition: 0.6s;
+            animation: pulse 5s infinite linear;
             background-image: url(../img/Background.gif);
         }
         &--second{
+            transition: 0.6s;
+            animation: pulse 5s infinite linear;
             background-image: url(../img/cpu.gif);
         }
     }

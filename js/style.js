@@ -363,24 +363,18 @@ window.onload = function(){
 
 }
 
-
-
-
-
-
-
-
-
 new fullpage('#main', {
     autoScrolling: true,
     navigation : true,
+    fitToSectionDelay: 1000,
     scrollingSpeed: 800,
     scrollBar: true,
-    // easing: 'easeInOutQuad',
+    css3: true,
+    easing: 'easeInOutCubic',
+    easingcss3: 'ease',
     
-    // navigationPosition: right,
-    anchors : ['scrollTop','srollFeatures','srollResume'],
-    navigationTooltips: ['Home', 'Features','About'],
+    anchors : ['Home','Specialzation','Resume','About','Myproduct','Customer'],
+    navigationTooltips: ['Home','Specialzation','Resume','About','Myproduct','Customer'],
 
     });
 

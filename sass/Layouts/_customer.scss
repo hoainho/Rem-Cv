@@ -1,9 +1,19 @@
 .customer-containter{
-    background-image: url(../img/commentbackground.gif);
+    background: $color-gray;;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+.map{
+  position: absolute;
+  color: $color-gray;
+  width: 100vw; 
+  &-img{
+    width: 100%;
+  }
+}
+
 form {
     width: 100%;
     height: 100%;
