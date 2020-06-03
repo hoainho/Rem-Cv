@@ -13,10 +13,8 @@
   to      {transform:  rotateY(360deg);}
 }
 @keyframes zoom {
-  0%    {transform: scale(1);     }
-  33%   {transform: scale(1.5);   }
-  66%  {transform: scale(1);      }
-  100%  {transform: scale(0);      }
+  0%    {transform: scale(0.2);     }
+  100%   {transform: scale(1);   }
 }
 @keyframes rotate {
   100% { transform: rotateY(-40deg) rotateX(-43deg); }

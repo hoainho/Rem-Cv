@@ -348,13 +348,9 @@ html {
 
 @keyframes zoom {
   0% {
-    transform: scale(1); }
-  33% {
-    transform: scale(1.5); }
-  66% {
-    transform: scale(1); }
+    transform: scale(0.2); }
   100% {
-    transform: scale(0); } }
+    transform: scale(1); } }
 
 @keyframes rotate {
   100% {
@@ -3113,6 +3109,9 @@ html {
   background: #c89c21 !important;
   border: 1px solid #c89c21 !important; }
 
+#fp-nav ul li .fp-tooltip {
+  top: 1.6rem !important; }
+
 .slogan {
   top: 90%;
   right: 98%;
@@ -4001,8 +4000,12 @@ html {
       background-position: center;
       background-size: cover; }
     .product-background--first {
+      transition: 0.6s;
+      animation: pulse 5s infinite linear;
       background-image: url(../img/Background.gif); }
     .product-background--second {
+      transition: 0.6s;
+      animation: pulse 5s infinite linear;
       background-image: url(../img/cpu.gif); }
   .product-container--website {
     display: inline;
@@ -4091,10 +4094,17 @@ html {
         opacity: 0.8; }
 
 .customer-containter {
-  background-image: url(../img/commentbackground.gif);
+  background: #242424;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh; }
+
+.map {
+  position: absolute;
+  color: #242424;
+  width: 100vw; }
+  .map-img {
+    width: 100%; }
 
 form {
   width: 100%;
