@@ -1,1 +1,27 @@
 //button
+/* //// Curtain Down  //// */
+
+.curtaindown{
+    border: 1px solid #eee !important;
+    border-bottom: 4px solid #eee !important;
+  }
+  
+  .curtaindown:before,
+  .curtaindown:after{
+    background: #259f6c !important;
+    transform: translate3D(0,-100%,0) !important;
+  }
+  
+  .curtaindown:after{
+transform: translate3D(0,100%,0) !important;
+  }
+  
+  .curtaindown:hover:before,
+  .curtaindown:hover:after{
+    transform: translate3D(0,-50%,0) !important;
+    transition: all .5s !important;
+  }
+  
+  .curtaindown:hover:after{
+    transform: translate3D(0,50%,0) !important;
+  }

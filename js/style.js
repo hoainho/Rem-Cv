@@ -364,7 +364,7 @@ window.onload = function(){
 }
 
 new fullpage('#main', {
-    autoScrolling: true,
+    autoScrolling: false,
     navigation : true,
     fitToSectionDelay: 1000,
     scrollingSpeed: 800,

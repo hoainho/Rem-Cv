@@ -55,7 +55,7 @@ button,
   padding: .25em 0;
   border: 0;
   outline: 0;
-  background: $color-secondary;
+  background: transparent;
   color: rgba(#fff, 0.85);
   font-size: 2rem;
   line-height: 3.6rem;
@@ -66,12 +66,13 @@ button,
 .signup-button,
 .signup-button-trigger{
   width: 12vw  !important;
-  border-radius: 100% 0% 0% 100%;
-  border-right: 2px solid $color-secondary-dark;
-  &:hover{
-    border-radius: 0% 0% 0% 0% !important;
-    border: 2px solid $color-secondary-dark !important;
-  }
+  
+  //border-radius: 100% 0% 0% 100%;
+  //border-right: 2px solid $color-secondary-dark;
+  // &:hover{
+  //   border-radius: 0% 0% 0% 0% !important;
+  //   border: 2px solid $color-secondary-dark !important;
+  // }
 }
 input:focus,
 button:focus {
