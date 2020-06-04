@@ -4,6 +4,12 @@
     transform: rotate(-90deg);
     position: absolute;
     z-index: 50;
+      @include mobile{
+        top: 10%;
+       right: -37%;
+       width: 28%;
+       height: 40%;
+      }
     &--shadow {
       color: white;
       width: 41.5vw;
@@ -13,6 +19,13 @@
       letter-spacing: 1rem;
       opacity: .05;
       transition: .5s;
+      @include mobile 
+      {
+        width: 148.5vw;
+        font-size: 8rem;
+        font-weight: 800;
+       
+      }
       &:hover{
         opacity: 0.4;
       }
