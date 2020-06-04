@@ -234,20 +234,19 @@ html {
           height: 75vh; } }
   .hero-container {
     height: 100vh; }
-    @media (max-width: 479px) {
-      .hero-container {
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        top: 0; } }
     .hero-container--row {
       height: 100vh; }
+      @media (max-width: 479px) {
+        .hero-container--row {
+          width: 100%;
+          position: relative;
+          top: 37rem; } }
       .hero-container--row_box {
         top: 25%;
         height: 50%; }
         @media (max-width: 479px) {
           .hero-container--row_box {
-            top: 0%; } }
+            top: -46%; } }
         .hero-container--row_box__slogan {
           font-size: 9rem;
           font-weight: 800;
@@ -281,7 +280,7 @@ html {
         height: 10%; }
         @media (max-width: 479px) {
           .hero-container--row_download {
-            top: 25% !important;
+            top: -20% !important;
             z-index: 55; } }
         .hero-container--row_download:hover::after {
           right: 90%;
