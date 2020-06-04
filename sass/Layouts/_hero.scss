@@ -7,16 +7,17 @@
     justify-items: center;
     justify-content: center;
     background: $color-gray;
+    
     &-bg{
       display: flex;
       justify-items: center;
       justify-content: center;  
       &--img{
-          @include iphoneX{
-            top: 0rem;
+          @include mobile {
+            top: 20rem;
             right: 2rem;
-            width: 120vw;
-            height: 100vh;
+            width: 130vw;
+            height: 75vh;
           }
           top: -17rem;
           right: 17rem;
@@ -29,21 +30,31 @@
       }
     }
     &-container {
+      @include mobile {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        top: 0;
+      }
       height: 100vh;
       &--row{
         height: 100vh;
         &_box{
           top: 25%;
           height: 50%;
+          @include mobile
+          {
+            top: 0%;
+          }
           &__slogan{
             font-size: 9rem;
             font-weight:800;
             position: absolute;
             color:$color-white;
             z-index: 1;
-            @include  iphoneX{
-              font-size: 4rem;
-              top: -81%;
+            @include  mobile {
+              font-size: 5rem;
+              top: 28%;
             }
             &___howdy{
               opacity: 0;
@@ -74,8 +85,8 @@
           top:25%;
           width: 30%;
           height: 10%; 
-          @include iphoneX{
-            top: -17%;
+          @include mobile{
+            top: 25% !important;
             z-index: 55;
           }
           &:hover{
@@ -121,7 +132,7 @@
             width: 8rem;
             height: 8rem;
             border-radius: 50%;
-            @include iphoneX{
+            @include mobile {
               font-size: 2rem;
               z-index: 55;
             }
@@ -136,7 +147,7 @@
                   vertical-align: inherit;
                   width: 37rem;
                   top:0.5rem;
-                  @include iphoneX{
+                  @include mobile {
                     font-size: 2rem;
                     width: 32rem;
                   }
@@ -145,7 +156,7 @@
                 
               }
               &___icon {
-                @include iphoneX{
+                @include mobile {
                   width: 5rem !important;
                   height: 5rem !important;
                   bottom: -6rem !important;
@@ -161,6 +172,7 @@
               }
           }
         }
+        
         &_download::before{
           //animation: bounceInLeft 1s infinite;
           position: absolute;
@@ -180,9 +192,9 @@
           -webkit-transform: scaleX(1);
           -ms-transform: scaleX(1);
           transform: scaleX(1);
-          @include iphoneX{
-            top: 31%;
-            right: 19%;
+          @include mobile {
+            top: 30%;
+            right: 21%;
             width: 23vw;
           }
         }
@@ -204,7 +216,13 @@
           -webkit-transform: scaleX(1);
           -ms-transform: scaleX(1);
           transform: scaleX(1);
+          @include mobile
+          {
+            right: 21% !important;
+            width: 8rem;
+            top: 30%;
+          }
         }
       }
     }
-  }
+}

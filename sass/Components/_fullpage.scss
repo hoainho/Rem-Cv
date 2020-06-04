@@ -1,7 +1,7 @@
 #fp-nav.fp-right {
     right: 10rem !important;
     top: 45% !important;
-    @include iphoneX{
+    @include mobile{
         right: 51rem !important;
         top: 23% !important;
     }
