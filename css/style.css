@@ -3186,6 +3186,12 @@ html {
   transform: rotate(-90deg);
   position: absolute;
   z-index: 50; }
+  @media (max-width: 479px) {
+    .slogan {
+      top: 10%;
+      right: -37%;
+      width: 28%;
+      height: 40%; } }
   .slogan--shadow {
     color: white;
     width: 41.5vw;
@@ -3195,6 +3201,11 @@ html {
     letter-spacing: 1rem;
     opacity: .05;
     transition: .5s; }
+    @media (max-width: 479px) {
+      .slogan--shadow {
+        width: 148.5vw;
+        font-size: 8rem;
+        font-weight: 800; } }
     .slogan--shadow:hover {
       opacity: 0.4; }
 
@@ -3336,6 +3347,12 @@ html {
   background: #222;
   color: #fff;
   position: relative; }
+  @media (max-width: 479px) {
+    .features {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 0; } }
   .features-content--box {
     margin-top: 15rem;
     transition: 2s; }
