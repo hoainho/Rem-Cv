@@ -1,6 +1,10 @@
 #fp-nav.fp-right {
     right: 10rem !important;
     top: 45% !important;
+    @include iphoneX{
+        right: 51rem !important;
+        top: 23% !important;
+    }
 }
 #fp-nav ul li, .fp-slidesNav ul li {
     margin-top: 4rem !important;

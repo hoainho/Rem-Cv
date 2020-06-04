@@ -372,8 +372,7 @@ new fullpage('#main', {
     css3: true,
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
-    
-    anchors : ['Home','Specialzation','Resume','About','Myproduct','Customer'],
+    // anchors : ['Home','Specialzation','Resume','About','Myproduct','Customer'],
     navigationTooltips: ['Home','Specialzation','Resume','About','Myproduct','Customer'],
 
     });

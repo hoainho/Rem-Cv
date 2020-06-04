@@ -17,12 +17,17 @@
     vertical-align: middle;
     position: absolute;
     bottom: -7.5rem;
+
   }
   .circle::before, .circle::after {
     top: 0%;
     left: 0;
     border-radius: 100%;
     position: absolute;
+    @include iphoneX{
+      top: -7%;
+      left: -5px;
+    }
   }
   .circle::before {
     border: 2px solid transparent;
