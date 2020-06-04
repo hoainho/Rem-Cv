@@ -220,6 +220,44 @@
     transform: scale3d(1, 1, 1);
   }
 }
+@keyframes rubberBandSlogan {
+  from {
+    -webkit-transform: scale3d(1, 1, 1) rotate(-90deg);
+    transform: scale3d(1, 1, 1) rotate(-90deg);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1)  rotate(-90deg);
+    transform: scale3d(1.25, 0.75, 1)  rotate(-90deg);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1)  rotate(-90deg);
+    transform: scale3d(0.75, 1.25, 1)  rotate(-90deg);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1)  rotate(-90deg);
+    transform: scale3d(1.15, 0.85, 1)  rotate(-90deg);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1)  rotate(-90deg);
+    transform: scale3d(0.95, 1.05, 1)  rotate(-90deg);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1)  rotate(-90deg);
+    transform: scale3d(1.05, 0.95, 1)  rotate(-90deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1)  rotate(-90deg);
+    transform: scale3d(1, 1, 1)  rotate(-90deg);
+  }
+}
+
+
 
 @keyframes rubberBand {
   from {

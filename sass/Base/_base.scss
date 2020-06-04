@@ -6,7 +6,6 @@
 html{
     overflow: hidden !important; 
     @include mobile{
-        overflow: auto;
     } 
 }
 .l-0{

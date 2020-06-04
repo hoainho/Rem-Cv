@@ -10,9 +10,6 @@
 
 html {
   overflow: hidden !important; }
-  @media (max-width: 479px) {
-    html {
-      overflow: auto; } }
 
 .l-0 {
   left: 0rem !important; }
@@ -692,6 +689,29 @@ html {
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
+
+@keyframes rubberBandSlogan {
+  from {
+    -webkit-transform: scale3d(1, 1, 1) rotate(-90deg);
+    transform: scale3d(1, 1, 1) rotate(-90deg); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1) rotate(-90deg);
+    transform: scale3d(1.25, 0.75, 1) rotate(-90deg); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1) rotate(-90deg);
+    transform: scale3d(0.75, 1.25, 1) rotate(-90deg); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1) rotate(-90deg);
+    transform: scale3d(1.15, 0.85, 1) rotate(-90deg); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1) rotate(-90deg);
+    transform: scale3d(0.95, 1.05, 1) rotate(-90deg); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1) rotate(-90deg);
+    transform: scale3d(1.05, 0.95, 1) rotate(-90deg); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1) rotate(-90deg);
+    transform: scale3d(1, 1, 1) rotate(-90deg); } }
 
 @keyframes rubberBand {
   from {
@@ -3309,6 +3329,14 @@ html {
     .tittle-box--content_before {
       color: transparent;
       -webkit-text-stroke: 0.1rem #fff; }
+
+[data-aos^='rubberBandSlogan'] {
+  opacity: 0;
+  animation: rubberBandSlogan 2s;
+  transition: all; }
+  [data-aos^='rubberBandSlogan'].aos-animate {
+    opacity: 1;
+    transform: none; }
 
 .logo {
   width: 0;
