@@ -14,6 +14,12 @@
     &-copyright{
       position: absolute;
       width: 100%;
+      @include mobile {
+        position: absolute;
+        width: 100%;
+        top: 4.7rem;
+        margin-right: 1rem;
+      }
     }
     &-address{
       right: 10%;
@@ -27,6 +33,9 @@
       }
       &--item{
         margin-left: 5rem;
+        @include mobile {
+          margin-left: 2rem;
+        }
       }
       &--link{
         text-decoration: none;

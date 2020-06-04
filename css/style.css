@@ -3637,6 +3637,12 @@ html {
   .footer-copyright {
     position: absolute;
     width: 100%; }
+    @media (max-width: 479px) {
+      .footer-copyright {
+        position: absolute;
+        width: 100%;
+        top: 4.7rem;
+        margin-right: 1rem; } }
   .footer-address {
     right: 10%;
     width: 100%;
@@ -3648,6 +3654,9 @@ html {
       list-style-type: none; }
     .footer-address--item {
       margin-left: 5rem; }
+      @media (max-width: 479px) {
+        .footer-address--item {
+          margin-left: 2rem; } }
     .footer-address--link {
       text-decoration: none;
       font-size: 2rem;
