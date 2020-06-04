@@ -374,7 +374,7 @@ new fullpage('#main', {
     easingcss3: 'ease',
     // anchors : ['Home','Specialzation','Resume','About','Myproduct','Customer'],
     navigationTooltips: ['Home','Specialzation','Resume','About','Myproduct','Customer'],
-
+ 
     });
 
 //Product

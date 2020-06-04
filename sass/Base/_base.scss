@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 html{
-    overflow: hidden !important;  
+    overflow: hidden !important; 
+    @include mobile{
+        overflow: auto;
+    } 
 }
 .l-0{
     left: 0rem !important;

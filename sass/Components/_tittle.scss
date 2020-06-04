@@ -5,10 +5,10 @@
     position: absolute;
     z-index: 50;
       @include mobile{
-        top: 10%;
-       right: -37%;
-       width: 28%;
-       height: 40%;
+        top: 27%;
+        right: -25%;
+        width: 28%;
+        height: 40%;
       }
     &--shadow {
       color: white;
@@ -60,6 +60,9 @@
             top: 50px; 
             letter-spacing: -1px;
             text-shadow: 4px 0 10px hsla(0, 0%, 0%, .13);
+            @include mobile {
+              font: 4rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+            }
           }
             //TranslateZ for Layers
             $i: 1;
