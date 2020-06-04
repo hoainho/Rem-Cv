@@ -114,3 +114,14 @@
         }
       }
 }
+
+
+[data-aos^='rubberBandSlogan'] {
+  opacity: 0;
+  animation: rubberBandSlogan 2s;
+  transition: all;
+  &.aos-animate {
+    opacity: 1;
+    transform: none;
+  }
+}

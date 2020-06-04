@@ -19,6 +19,7 @@ $aos-distance: 100px !default;
         transform: none;
       }
     }
+    
 
     [data-aos='fade-up'] {
       transform: translate3d(0, $aos-distance, 0);
