@@ -24,7 +24,7 @@
     left: 0;
     border-radius: 100%;
     position: absolute;
-    @include iphoneX{
+    @include mobile{
       top: -7%;
       left: -5px;
     }

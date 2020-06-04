@@ -132,7 +132,7 @@ html {
           padding: 0;
           list-style-type: none;
           left: 19rem; }
-          @media (min-width: 375px) and (max-width: 424px) {
+          @media (max-width: 479px) {
             .rem-navbar--inner_left__contacts___list {
               display: flex;
               flex-direction: column-reverse;
@@ -149,7 +149,7 @@ html {
             color: rgba(200, 156, 33, 0.5); }
           .rem-navbar--inner_left__contacts___link:link, .rem-navbar--inner_left__contacts___link:active {
             text-decoration: none; }
-      @media (min-width: 375px) and (max-width: 424px) {
+      @media (max-width: 479px) {
         .rem-navbar--inner_left__logoHeader {
           font-size: 10rem !important;
           top: -7rem !important; } }
@@ -169,7 +169,7 @@ html {
         height: 10px;
         transform: rotate(45deg);
         animation: hue-rotate 10s linear infinite both; }
-        @media (min-width: 375px) and (max-width: 424px) {
+        @media (max-width: 479px) {
           .rem-navbar--inner_right__loading {
             right: 45rem; } }
         .rem-navbar--inner_right__loading___square {
@@ -226,29 +226,38 @@ html {
       width: 55vw;
       height: 123vh;
       background-repeat: no-repeat; }
-      @media (min-width: 375px) and (max-width: 424px) {
+      @media (max-width: 479px) {
         .hero-bg--img {
-          top: 0rem;
+          top: 20rem;
           right: 2rem;
-          width: 120vw;
-          height: 100vh; } }
+          width: 130vw;
+          height: 75vh; } }
   .hero-container {
     height: 100vh; }
+    @media (max-width: 479px) {
+      .hero-container {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        top: 0; } }
     .hero-container--row {
       height: 100vh; }
       .hero-container--row_box {
         top: 25%;
         height: 50%; }
+        @media (max-width: 479px) {
+          .hero-container--row_box {
+            top: 0%; } }
         .hero-container--row_box__slogan {
           font-size: 9rem;
           font-weight: 800;
           position: absolute;
           color: #fff;
           z-index: 1; }
-          @media (min-width: 375px) and (max-width: 424px) {
+          @media (max-width: 479px) {
             .hero-container--row_box__slogan {
-              font-size: 4rem;
-              top: -81%; } }
+              font-size: 5rem;
+              top: 28%; } }
           .hero-container--row_box__slogan___howdy {
             opacity: 0; }
           .hero-container--row_box__slogan___after {
@@ -270,9 +279,9 @@ html {
         top: 25%;
         width: 30%;
         height: 10%; }
-        @media (min-width: 375px) and (max-width: 424px) {
+        @media (max-width: 479px) {
           .hero-container--row_download {
-            top: -17%;
+            top: 25% !important;
             z-index: 55; } }
         .hero-container--row_download:hover::after {
           right: 90%;
@@ -309,7 +318,7 @@ html {
           width: 8rem;
           height: 8rem;
           border-radius: 50%; }
-          @media (min-width: 375px) and (max-width: 424px) {
+          @media (max-width: 479px) {
             .hero-container--row_download__box {
               font-size: 2rem;
               z-index: 55; } }
@@ -321,13 +330,13 @@ html {
             vertical-align: inherit;
             width: 37rem;
             top: 0.5rem; }
-            @media (min-width: 375px) and (max-width: 424px) {
+            @media (max-width: 479px) {
               .hero-container--row_download__box___content____font {
                 font-size: 2rem;
                 width: 32rem; } }
           .hero-container--row_download__box___icon {
             color: #c89c21; }
-            @media (min-width: 375px) and (max-width: 424px) {
+            @media (max-width: 479px) {
               .hero-container--row_download__box___icon {
                 width: 5rem !important;
                 height: 5rem !important;
@@ -353,10 +362,10 @@ html {
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1); }
-        @media (min-width: 375px) and (max-width: 424px) {
+        @media (max-width: 479px) {
           .hero-container--row_download::before {
-            top: 31%;
-            right: 19%;
+            top: 30%;
+            right: 21%;
             width: 23vw; } }
       .hero-container--row_download::after {
         position: absolute;
@@ -376,6 +385,11 @@ html {
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1); }
+        @media (max-width: 479px) {
+          .hero-container--row_download::after {
+            right: 21% !important;
+            width: 8rem;
+            top: 30%; } }
 
 @keyframes loop {
   from {
@@ -3133,7 +3147,7 @@ html {
 #fp-nav.fp-right {
   right: 10rem !important;
   top: 45% !important; }
-  @media (min-width: 375px) and (max-width: 424px) {
+  @media (max-width: 479px) {
     #fp-nav.fp-right {
       right: 51rem !important;
       top: 23% !important; } }
@@ -3669,7 +3683,7 @@ html {
   left: 0;
   border-radius: 100%;
   position: absolute; }
-  @media (min-width: 375px) and (max-width: 424px) {
+  @media (max-width: 479px) {
     .circle::before, .circle::after {
       top: -7%;
       left: -5px; } }
