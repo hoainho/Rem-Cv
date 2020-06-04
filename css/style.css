@@ -3148,11 +3148,13 @@ html {
   top: 45% !important; }
   @media (max-width: 479px) {
     #fp-nav.fp-right {
-      right: 51rem !important;
-      top: 23% !important; } }
+      right: 7rem !important; } }
 
 #fp-nav ul li, .fp-slidesNav ul li {
   margin-top: 4rem !important; }
+  @media (max-width: 479px) {
+    #fp-nav ul li, .fp-slidesNav ul li {
+      margin-top: 2rem; } }
 
 #fp-nav ul li a, .fp-slidesNav ul li a {
   width: 5rem !important;
