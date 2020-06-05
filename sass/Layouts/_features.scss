@@ -18,7 +18,7 @@
       &--content{
             @include mobile{
             position: absolute;
-            top: 10rem;
+            top: 8rem;
             left: 8rem;
             &_before{
               font-size: 3rem;
@@ -40,8 +40,9 @@
           margin-top: 15rem;
           transition: 2s;
           @include mobile {
-            margin-top: 5rem;
-            top: 12rem;
+            margin-top: -2rem;
+            top: 3rem;
+            height: 28vh;
           }
           &:hover{
             .web-divider {
@@ -63,6 +64,10 @@
         &_logo{
           display: flex;
           justify-content: flex-start;
+          @include mobile{
+            position: relative;
+            top: 6rem;
+          }
           &__icon{
             color: $color-secondary;  
             font-size: 5rem;
@@ -73,11 +78,20 @@
           margin: 3rem 0;
           text-transform: uppercase;
           letter-spacing: .5rem;
+          @include mobile {
+            margin: 2rem 0;
+            width: 60%;
+            right: -22%;
+            position: relative;
+          }
         }
         &_content{
           font-size: 1.7rem;
           opacity: 0.5;
           padding-bottom: 5rem;
+          @include mobile {
+            padding-bottom: 0rem;
+          }
         }
       }
     }
