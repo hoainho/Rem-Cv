@@ -4,6 +4,14 @@
     background: $color-black;
     color: $color-white;
     position: relative;
+    @include mobile{
+        top: 0;
+        &-slogan {
+            top: 48%;
+            right: -22%;
+        }
+        }
+    
     &-content{
         &--education{
             background: transparent;
@@ -12,6 +20,14 @@
             padding: 0 5rem;
             transition: all 2s;
             height: 0vh;
+            @include mobile{
+                margin-top: 2rem;
+                padding: 0px 3rem;
+                height: 40vh;
+                width: 100%;
+                position: relative;
+                top:5rem;
+            }
             &:hover {
                 opacity: 1 !important;
                 background: linear-gradient(to right top,
@@ -23,6 +39,12 @@
                 width: 45%;
                 margin-right: 2rem;
                 animation: pulse 2s infinite;
+                @include mobile{
+                    height: 40vh;
+                    padding: 3rem;
+                    width: 95%;
+                    margin: 0 1rem;
+                }
                 .resume-content--education_logo__icon{
                     color: $color-white;
                     color: $color-secondary;
@@ -90,11 +112,19 @@
                 position: relative;
                 margin: 2rem;
                 top: -12rem;
+                @include mobile{
+                    top: -3rem;
+                    left: 0.5rem;
+                    width: 88%;
+                }
                 &__icon{    
                     color: $color-secondary;  
                     font-size: 8rem;
                     color: transparent;
                     -webkit-text-stroke: 1px $color-secondary;
+                    @include mobile{
+                        font-size : 6rem;
+                    }
                 }
             }
             &_sticket{
@@ -107,7 +137,10 @@
                     color: transparent;
                     -webkit-text-stroke: 1px $color-white;  
                     font-size: 5rem;
-                    
+                    @include mobile
+                    {
+                        font-size: 3rem;
+                    }
                 }
             }
             &_box{
@@ -115,6 +148,10 @@
                 height: 10vh;
                 position: relative;
                 top: -17.5rem;
+                @include mobile{
+                    height: 5vh;    
+                    top: -8.5rem;
+                    }
                 &__tittle{
                 position: absolute;
                 text-transform: uppercase;
@@ -129,11 +166,17 @@
                     top: -85%;
                     left: 14%;
                     transform: translate(0%, 0%);
+                        @include mobile{
+                            left: 12%;
+                        }
                     }
                 &__tittleD{
                     top: -85%;
                     left: 22%;
                     transform: translate(0%, 0%);
+                        @include mobile{
+                            left: 21%;
+                        }
                 }
                 &__tittleU{
                     top: -85%;
@@ -159,25 +202,45 @@
                     top: -85%;
                     left: 65%;
                     transform: translate(0%, 0%);
+                    @include mobile{
+                        left: 65%;
+                    }
                 }
                 &__tittleO{
                     top: -85%;
                     left: 70.5%;
                     transform: translate(0%, 0%);
+                    @include mobile{
+                        left: 68.5%;
+                    }
                 }
                 &__tittleN{
                     top: -85%;
                     left: 78.5%;
                     transform: translate(0%, 0%);
+                    @include mobile {
+                        left: 78.5%;
+                    }
                 }
             }
             &_hamberger{
                 position: relative;
                 bottom: 8rem;
+                @include mobile{
+                    bottom: 6rem;
+                }
+                &__sub{
+                    @include mobile{
+                        font-size: 1.5rem;
+                    }
+                }
                 &__content{
                     margin-top: 2rem;
                     font-size: 1.7rem;
                     opacity: 0.5;
+                    @include mobile{
+                        font-size: 1.3rem;
+                    }
                 }
                
             }
@@ -185,12 +248,21 @@
         &--experience{
             background: linear-gradient(to right top,
                                         transparent,
-                                        $color-secondary-light  
+                                        $color-secondary-light,
+                                        .8
              );
             opacity: .05;
             margin-top: 20rem;
             padding: 0rem;
             transition: all 1s;
+            @include mobile{
+                margin-top: 2rem;
+                padding: 0px 3rem;
+                height: 40vh;
+                width: 100%;
+                position: relative;
+                top: -3rem;
+            }
             &:hover {
                 opacity: 1 !important;
                 background: linear-gradient(to right top,
@@ -204,6 +276,12 @@
                 height: 70vh;
                 transform: translateY(1rem);
                 animation: pulse 2s infinite;
+                @include mobile{
+                    height: 40vh;
+                    padding: 3rem;
+                    width: 95%;
+                    margin: 0 1rem;
+                }
                 .resume-content--experience_logo__icon{
                     color: $color-white;
                     transform: translateX(1rem);
@@ -224,9 +302,9 @@
                 .resume-content--experience_hamberger__tittle{
                     animation: fadeInRightBig 1s ease-in;
                 }
-
-
-
+                .resume-content--experience_logo {
+                    left: -0.5rem;
+                }
             }
             &_logo{
                 display: flex;
@@ -234,9 +312,17 @@
                 position: relative;
                 margin: 2rem;
                 top: -12rem;
+                @include mobile{
+                    top: -3rem;
+                    left: 0.5rem;
+                    width: 88%;
+                }
                 &__icon{
                     color: $color-secondary;  
                     font-size: 10rem;
+                    @include mobile{
+                        font-size: 6rem;
+                    }
                 }
             }
             &_sticket{
@@ -248,6 +334,9 @@
                     right: 0;
                     color: $color-secondary;  
                     font-size: 5rem;
+                    @include mobile{
+                        font-size: 3rem;
+                    }
                 }
             }
             &_box{
@@ -255,6 +344,10 @@
                 height: 10vh;
                 position: relative;
                 top: -17.5rem;
+                @include mobile{
+                    height: 5vh;    
+                    top: -8.5rem;
+                    }
                 &__tittle{
                 position: absolute;
                 text-transform: uppercase;
@@ -319,15 +412,23 @@
             &_hamberger{
                 position: relative;
                 bottom: 8rem;
+                @include mobile{
+                    bottom:  6rem;
+                }
                 &__content{
                     margin-top: 2rem;
                     font-size: 1.7rem;
                     opacity: 0.5;
                     color: $color-secondary;
+                    @include mobile{
+                        font-size: 1.3rem;
+                    }
+                }
+                &__tittle{
+                    font-size: 1.5rem;
                 }
                
             }
         }
 }
 }
-  
