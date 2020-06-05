@@ -7,6 +7,9 @@
     @include mobile{
         top: 0;
         }
+    @include smtablet{
+        top: 0;
+        }
     
     &-content{
         &--education{
@@ -17,6 +20,14 @@
             transition: all 2s;
             height: 0vh;
             @include mobile{
+                margin-top: 2rem;
+                padding: 0px 3rem;
+                height: 40vh;
+                width: 100%;
+                position: relative;
+                top:5rem;
+            }
+            @include smtablet{
                 margin-top: 2rem;
                 padding: 0px 3rem;
                 height: 40vh;
@@ -40,6 +51,12 @@
                     padding: 3rem;
                     width: 95%;
                     margin: 0 1rem;
+                }
+                @include smtablet{
+                    height: 40vh;
+                    padding: 3rem;
+                    width: 95%;
+                    margin: 0 3rem;
                 }
                 .resume-content--education_logo__icon{
                     color: $color-white;
@@ -113,6 +130,9 @@
                     left: 0.5rem;
                     width: 88%;
                 }
+                @include smtablet{
+                    top: -3rem;
+                }
                 &__icon{    
                     color: $color-secondary;  
                     font-size: 8rem;
@@ -148,6 +168,9 @@
                     height: 5vh;    
                     top: -8.5rem;
                     }
+                @include smtablet{
+                    top: -8.5rem;
+                }
                 &__tittle{
                 position: absolute;
                 text-transform: uppercase;
@@ -259,6 +282,14 @@
                 position: relative;
                 top: -3rem;
             }
+            @include smtablet{
+                margin-top: 2rem;
+                padding: 0px 3rem;
+                height: 40vh;
+                width: 100%;
+                position: relative;
+                top: -3rem;
+            }
             &:hover {
                 opacity: 1 !important;
                 background: linear-gradient(to right top,
@@ -273,6 +304,12 @@
                 transform: translateY(1rem);
                 animation: pulse 2s infinite;
                 @include mobile{
+                    height: 40vh;
+                    padding: 3rem;
+                    width: 95%;
+                    margin: 0 1rem;
+                }
+                @include smtablet{
                     height: 40vh;
                     padding: 3rem;
                     width: 95%;
@@ -308,6 +345,9 @@
                 position: relative;
                 margin: 2rem;
                 top: -12rem;
+                @include smtablet{
+                    top: -5rem;
+                }
                 @include mobile{
                     top: -3rem;
                     left: 0.5rem;
@@ -343,7 +383,10 @@
                 @include mobile{
                     height: 5vh;    
                     top: -8.5rem;
-                    }
+                }
+                @include smtablet{
+                    top: -10.5rem;
+                }
                 &__tittle{
                 position: absolute;
                 text-transform: uppercase;

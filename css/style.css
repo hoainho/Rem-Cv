@@ -3576,6 +3576,9 @@ html {
   @media (max-width: 479px) {
     .resume {
       top: 0; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .resume {
+      top: 0; } }
   .resume-content--education {
     background: transparent;
     opacity: .05;
@@ -3584,6 +3587,14 @@ html {
     transition: all 2s;
     height: 0vh; }
     @media (max-width: 479px) {
+      .resume-content--education {
+        margin-top: 2rem;
+        padding: 0px 3rem;
+        height: 40vh;
+        width: 100%;
+        position: relative;
+        top: 5rem; } }
+    @media (min-width: 480px) and (max-width: 767px) {
       .resume-content--education {
         margin-top: 2rem;
         padding: 0px 3rem;
@@ -3605,6 +3616,12 @@ html {
           padding: 3rem;
           width: 95%;
           margin: 0 1rem; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .resume-content--education:hover {
+          height: 40vh;
+          padding: 3rem;
+          width: 95%;
+          margin: 0 3rem; } }
       .resume-content--education:hover .resume-content--education_logo__icon {
         color: #fff;
         color: #c89c21;
@@ -3665,6 +3682,9 @@ html {
           top: -3rem;
           left: 0.5rem;
           width: 88%; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .resume-content--education_logo {
+          top: -3rem; } }
       .resume-content--education_logo__icon {
         color: #c89c21;
         font-size: 8rem;
@@ -3694,6 +3714,9 @@ html {
       @media (max-width: 479px) {
         .resume-content--education_box {
           height: 5vh;
+          top: -8.5rem; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .resume-content--education_box {
           top: -8.5rem; } }
       .resume-content--education_box__tittle {
         position: absolute;
@@ -3785,6 +3808,14 @@ html {
         width: 100%;
         position: relative;
         top: -3rem; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .resume-content--experience {
+        margin-top: 2rem;
+        padding: 0px 3rem;
+        height: 40vh;
+        width: 100%;
+        position: relative;
+        top: -3rem; } }
     .resume-content--experience:hover {
       opacity: 1 !important;
       background: linear-gradient(to right top, transparent, #c89c21);
@@ -3796,6 +3827,12 @@ html {
       transform: translateY(1rem);
       animation: pulse 2s infinite; }
       @media (max-width: 479px) {
+        .resume-content--experience:hover {
+          height: 40vh;
+          padding: 3rem;
+          width: 95%;
+          margin: 0 1rem; } }
+      @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--experience:hover {
           height: 40vh;
           padding: 3rem;
@@ -3823,6 +3860,9 @@ html {
       position: relative;
       margin: 2rem;
       top: -12rem; }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .resume-content--experience_logo {
+          top: -5rem; } }
       @media (max-width: 479px) {
         .resume-content--experience_logo {
           top: -3rem;
@@ -3855,6 +3895,9 @@ html {
         .resume-content--experience_box {
           height: 5vh;
           top: -8.5rem; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .resume-content--experience_box {
+          top: -10.5rem; } }
       .resume-content--experience_box__tittle {
         position: absolute;
         text-transform: uppercase;
