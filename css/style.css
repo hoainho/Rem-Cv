@@ -4486,15 +4486,19 @@ html {
     .product-background--first {
       transition: 0.6s;
       animation: pulse 5s infinite linear;
-      background-image: url(../img/Background.gif);
-      background-size: 40rem;
-      background-repeat: no-repeat; }
+      background-image: url(../img/Background.gif); }
+      @media (max-width: 479px) {
+        .product-background--first {
+          background-size: 40rem;
+          background-repeat: no-repeat; } }
     .product-background--second {
       transition: 0.6s;
       animation: pulse 5s infinite linear;
-      background-image: url(../img/cpu.gif);
-      background-size: 40rem;
-      background-repeat: no-repeat; }
+      background-image: url(../img/cpu.gif); }
+      @media (max-width: 479px) {
+        .product-background--second {
+          background-size: 40rem;
+          background-repeat: no-repeat; } }
   .product-container--website {
     display: inline;
     flex-direction: row;
