@@ -1,5 +1,4 @@
 @import 'animate.compat.css';
-
 .rem{
     &-header{
         position: absolute;
@@ -126,6 +125,14 @@
                               left: 12rem;
                               top: 1rem;
                             }
+                            @include smtablet
+                            {
+                              left: 12rem !important;
+                            }
+                            @include tablet
+                            {
+                              left: 21rem !important;
+                            }
                         }
                         &___item{
                             margin:0 2rem;
@@ -146,7 +153,6 @@
                       @include mobile {
                         font-size: 10rem !important;
                         top:-7rem !important;
-                        
                       }
                     }
             }
@@ -169,6 +175,9 @@
                 animation: hue-rotate $duration linear infinite both;
                 @include mobile{
                   right: 45rem;
+                }
+                @include tablet{
+                  right: 3rem;
                 }
                   &___square{
                     position: absolute;

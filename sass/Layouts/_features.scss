@@ -14,6 +14,14 @@
           top: 4% !important;
           left: -16% !important;
         }
+        @include smtablet{
+              top: 9% !important;
+              left: 4% !important;
+        }
+        @include tablet{
+              top: 8% !important;
+              left: 4% !important;
+        }
       }
       &--content{
             @include mobile{
@@ -25,7 +33,17 @@
             }
             &_after{
               font-size: 3rem;
-            }}
+            }
+          }
+            @include smtablet {
+              top: 11%;
+              left: 31%;
+              font-size: 4rem;
+          }
+            @include tablet {
+              top: 10%;
+              left: 26%;
+            }
       }
     }
     @include mobile{
@@ -43,6 +61,16 @@
             margin-top: -2rem;
             top: 3rem;
             height: 28vh;
+          }
+          @include smtablet{
+            margin-top: 0;
+            top: 4rem;
+            height: 22vh;
+          }
+          @include tablet{
+            margin-top: 0;
+            top: 4rem;
+            height: 22vh;
           }
           &:hover{
             .web-divider {
@@ -68,6 +96,17 @@
             position: relative;
             top: 6rem;
           }
+          @include smtablet{
+            position: relative;
+            top: 2rem;
+            left: 2rem;
+          }
+          @include tablet{
+            position: relative;
+            width: 11vw;
+            top: 2rem;
+            left: 2rem;
+          }
           &__icon{
             color: $color-secondary;  
             font-size: 5rem;
@@ -84,6 +123,20 @@
             right: -22%;
             position: relative;
           }
+          @include smtablet{
+            margin: 0;
+            position: relative;
+            right: -10rem;
+            width: 34vw;
+            top: -1.5rem;
+          }
+          @include tablet{
+            margin: 0;
+            position: relative;
+            right: -10rem;
+            width: 34vw;
+            top: -1.5rem;
+          }
         }
         &_content{
           font-size: 1.7rem;
@@ -92,6 +145,13 @@
           @include mobile {
             padding-bottom: 0rem;
           }
+          @include smtablet {
+            padding-bottom: 2rem;
+          }
+          @include tablet {
+            padding-bottom: 3rem;
+          }
+
         }
       }
     }

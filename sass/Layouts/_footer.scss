@@ -11,14 +11,23 @@
     font-weight: 200;
     color: $color-white;
     z-index: 1000;
+    @include tablet{
+      bottom: 13%;
+      left: 2%;
+      font-size: 1.5rem;
+    }
     &-copyright{
       position: absolute;
       width: 100%;
       @include mobile {
-        position: absolute;
         width: 100%;
         top: 4.7rem;
         margin-right: 1rem;
+      }
+      @include tablet{
+        width: 38%;
+        top: 4.7rem;
+        left: 2rem;
       }
     }
     &-address{
@@ -36,12 +45,18 @@
         @include mobile {
           margin-left: 2rem;
         }
+        @include tablet{
+          margin-left: 6rem;
+        }
       }
       &--link{
         text-decoration: none;
         font-size: 2rem;
         color: $color-white;
         transition: .5s;
+        @include tablet{
+          font-size: 3rem;
+        }
         &:hover {
           color: $color-secondary;
           font-size: 4rem;
