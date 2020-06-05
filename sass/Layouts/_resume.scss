@@ -6,10 +6,6 @@
     position: relative;
     @include mobile{
         top: 0;
-        &-slogan {
-            top: 48%;
-            right: -22%;
-        }
         }
     
     &-content{

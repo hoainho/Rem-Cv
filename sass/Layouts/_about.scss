@@ -1,18 +1,32 @@
 .about {
     background-color: $color-black;
     color: $color-white;
+    @include mobile{
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        top: 0;
+    }
     &-container {
         background-image: url(../img/codebag.png);
         background-size: inherit;
         background-repeat: no-repeat;
         background-position-x: 9rem;
         background-position-y: 14rem;
+        @include mobile{
+            background-size: 17rem;
+            background-position-x: 10rem;
+            background-position-y: 8rem;
+        }
         &--left{
             width: 30vw;
             height: 100vh;
             position: relative;
             padding: 5rem !important;
-            
+            @include mobile{
+                width: 67vw;
+                height: 38vh;
+            }
             &_box{
                     position: relative;
                     border: 1px solid #fff;
@@ -24,6 +38,11 @@
                     width: 16vw;
                     left: 12rem;
                     transition:all 1s;
+                    @include mobile {
+                        top: 34%;
+                        width: 44vw;
+                        left: 9rem;
+                    }
                 &:hover {
                     position: relative;
                     border: 1px solid #fff;
@@ -75,7 +94,13 @@
                     -webkit-text-stroke: 0.2rem #fff;
                     text-align: center;
                     animation:rubberBand 3s infinite ease-in-out;
-
+                    @include mobile{
+                        width: 13rem;
+                        height: 17rem;
+                        font-size: 15rem;
+                        left: 3%;
+                        top: -1rem;
+                    }
                 }
                 &__content{
                     position: relative;
@@ -103,24 +128,49 @@
         }
         &--right{
                 &_tittle{
+                    @include mobile{
+                            height: 11vh;
+                            width: 50%;
+                            top: -4rem;
+                            left: 12rem;
+                            position: relative;
+                    }
                     &__skill{
                         position: absolute;
                         left: 27rem;
                         top: 1rem;
+                        @include mobile{
+                            left: -1rem;
+                        }
                         &___layer{
                             &:after {
                                 font: 8rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
                                 content: 'Skill';
+                                @include mobile{
+                                    font: 4rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+                                }
                             }
                         }
                 }
             }
                 &_content{
                     color: white;
+                    @include mobile{
+                        height: 76vh;
+                        position: relative;
+                        top: -16rem;
+                        right: 4rem;
+                    }
                     &__rowfirst{
                         position: relative;
                         top: 15rem;
                         height: 20vh;
+                        @include mobile{
+                            top: 14rem;
+                            height: 28vh;
+                            width: 100vw;
+                            left: 4rem;
+                        }
                         &___propressbar{
                             position: absolute;
                             top: 2rem;
@@ -129,6 +179,11 @@
                             height: 13rem;
                             transform-style: preserve-3d;
                             transform: perspective(55rem) rotateX(-102deg) rotateY(93deg) rotateZ(-6deg); 
+                            @include mobile{
+                                top: 4rem;
+                                width: 14rem;
+                                height: 10rem;
+                            }
                         }
                         &___propressbarname{
                             width: 15%;
@@ -136,6 +191,13 @@
                             top: 19rem;
                             left: -1.5rem;
                             font-size: 2.5rem;
+                            @include mobile{
+                                width: 13vw;
+                                height: 7%;
+                                top: 18rem;
+                                left: -3.5rem;
+                                font-size: 2rem;
+                            }
                         }
                     }
                     &__dev {
@@ -144,8 +206,15 @@
                         height: 115%;
                         top: -5rem;
                         margin: 5rem;
+                        @include mobile{
+                            left: 3rem;
+                            width: 12%;
+                            top: -5rem;
+                            margin: -1rem 3rem;
+                        }
                         &___namepropressbar{
                             width: 1%;
+
                         }
                         &___propressbar{
                             animation: none;
