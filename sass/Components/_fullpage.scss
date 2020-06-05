@@ -4,6 +4,12 @@
     @include mobile{
         right: 7rem !important ;
     }
+    @include smtablet{
+        right: 6rem !important;
+    }
+    @include tablet{
+        right: 8rem !important;
+    }
 }
 #fp-nav ul li, .fp-slidesNav ul li {
     margin-top: 4rem !important;

@@ -141,6 +141,12 @@ html {
               text-align: center;
               left: 12rem;
               top: 1rem; } }
+          @media (min-width: 480px) and (max-width: 767px) {
+            .rem-navbar--inner_left__contacts___list {
+              left: 12rem !important; } }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            .rem-navbar--inner_left__contacts___list {
+              left: 21rem !important; } }
         .rem-navbar--inner_left__contacts___item {
           margin: 0 2rem; }
         .rem-navbar--inner_left__contacts___link {
@@ -173,6 +179,9 @@ html {
         @media (max-width: 479px) {
           .rem-navbar--inner_right__loading {
             right: 45rem; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .rem-navbar--inner_right__loading {
+            right: 3rem; } }
         .rem-navbar--inner_right__loading___square {
           position: absolute;
           top: 0;
@@ -258,6 +267,9 @@ html {
             .hero-container--row_box__slogan {
               font-size: 5rem;
               top: 28%; } }
+          @media (min-width: 480px) and (max-width: 767px) {
+            .hero-container--row_box__slogan {
+              font-size: 8rem; } }
           .hero-container--row_box__slogan___howdy {
             opacity: 0; }
           .hero-container--row_box__slogan___after {
@@ -283,6 +295,15 @@ html {
           .hero-container--row_download {
             top: -20% !important;
             z-index: 55; } }
+        @media (min-width: 480px) and (max-width: 767px) {
+          .hero-container--row_download {
+            z-index: 2;
+            left: 7rem !important; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .hero-container--row_download {
+            top: 18%;
+            left: 8%;
+            z-index: 2; } }
         .hero-container--row_download:hover::after {
           right: 90%;
           transition: 0.4s; }
@@ -367,6 +388,16 @@ html {
             top: 30%;
             right: 21%;
             width: 23vw; } }
+        @media (min-width: 480px) and (max-width: 767px) {
+          .hero-container--row_download::before {
+            right: 80%;
+            width: 23vw;
+            top: 45%; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .hero-container--row_download::before {
+            top: 38%;
+            right: 84%;
+            width: 23vw; } }
       .hero-container--row_download::after {
         position: absolute;
         display: block;
@@ -390,6 +421,16 @@ html {
             right: 21% !important;
             width: 8rem;
             top: 30%; } }
+        @media (min-width: 480px) and (max-width: 767px) {
+          .hero-container--row_download::after {
+            right: 78% !important;
+            width: 27vw !important;
+            top: 45% !important; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .hero-container--row_download::after {
+            top: 38%;
+            right: 83% !important;
+            width: 22vw; } }
 
 @keyframes loop {
   from {
@@ -3173,6 +3214,12 @@ html {
   @media (max-width: 479px) {
     #fp-nav.fp-right {
       right: 7rem !important; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    #fp-nav.fp-right {
+      right: 6rem !important; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #fp-nav.fp-right {
+      right: 8rem !important; } }
 
 #fp-nav ul li, .fp-slidesNav ul li {
   margin-top: 4rem !important; }
@@ -3230,6 +3277,12 @@ html {
         width: 148.5vw;
         font-size: 8rem;
         font-weight: 800; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .slogan--shadow {
+        width: 103.5vw; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .slogan--shadow {
+        width: 103.5vw; } }
     .slogan--shadow:hover {
       opacity: 0.4; }
 
@@ -3242,6 +3295,14 @@ html {
   z-index: 25;
   perspective: 999rem;
   transform-style: preserve-3d; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .tittle-box {
+      top: 8%;
+      left: 6%; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .tittle-box {
+      top: 9%;
+      left: 10%; } }
   .tittle-box--layer {
     width: 100%;
     height: 100%;
@@ -3386,6 +3447,14 @@ html {
     .features-tittle--icon {
       top: 4% !important;
       left: -16% !important; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .features-tittle--icon {
+      top: 9% !important;
+      left: 4% !important; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .features-tittle--icon {
+      top: 8% !important;
+      left: 4% !important; } }
   @media (max-width: 479px) {
     .features-tittle--content {
       position: absolute;
@@ -3395,6 +3464,15 @@ html {
         font-size: 3rem; }
       .features-tittle--content_after {
         font-size: 3rem; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .features-tittle--content {
+      top: 11%;
+      left: 31%;
+      font-size: 4rem; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .features-tittle--content {
+      top: 10%;
+      left: 26%; } }
   @media (max-width: 479px) {
     .features {
       width: 100%;
@@ -3409,6 +3487,16 @@ html {
         margin-top: -2rem;
         top: 3rem;
         height: 28vh; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .features-content--box {
+        margin-top: 0;
+        top: 4rem;
+        height: 22vh; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .features-content--box {
+        margin-top: 0;
+        top: 4rem;
+        height: 22vh; } }
     .features-content--box:hover .web-divider {
       opacity: 1;
       animation: bounceInLeft 1s ease-in-out; }
@@ -3427,6 +3515,17 @@ html {
         .features-content--box_logo {
           position: relative;
           top: 6rem; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .features-content--box_logo {
+          position: relative;
+          top: 2rem;
+          left: 2rem; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .features-content--box_logo {
+          position: relative;
+          width: 11vw;
+          top: 2rem;
+          left: 2rem; } }
       .features-content--box_logo__icon {
         color: #c89c21;
         font-size: 5rem; }
@@ -3440,6 +3539,20 @@ html {
           width: 60%;
           right: -22%;
           position: relative; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .features-content--box_tittle {
+          margin: 0;
+          position: relative;
+          right: -10rem;
+          width: 34vw;
+          top: -1.5rem; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .features-content--box_tittle {
+          margin: 0;
+          position: relative;
+          right: -10rem;
+          width: 34vw;
+          top: -1.5rem; } }
     .features-content--box_content {
       font-size: 1.7rem;
       opacity: 0.5;
@@ -3447,6 +3560,12 @@ html {
       @media (max-width: 479px) {
         .features-content--box_content {
           padding-bottom: 0rem; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .features-content--box_content {
+          padding-bottom: 2rem; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .features-content--box_content {
+          padding-bottom: 3rem; } }
 
 .resume {
   width: 100%;
@@ -3814,15 +3933,24 @@ html {
   font-weight: 200;
   color: #fff;
   z-index: 1000; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .footer {
+      bottom: 13%;
+      left: 2%;
+      font-size: 1.5rem; } }
   .footer-copyright {
     position: absolute;
     width: 100%; }
     @media (max-width: 479px) {
       .footer-copyright {
-        position: absolute;
         width: 100%;
         top: 4.7rem;
         margin-right: 1rem; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .footer-copyright {
+        width: 38%;
+        top: 4.7rem;
+        left: 2rem; } }
   .footer-address {
     right: 10%;
     width: 100%;
@@ -3837,11 +3965,17 @@ html {
       @media (max-width: 479px) {
         .footer-address--item {
           margin-left: 2rem; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .footer-address--item {
+          margin-left: 6rem; } }
     .footer-address--link {
       text-decoration: none;
       font-size: 2rem;
       color: #fff;
       transition: .5s; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .footer-address--link {
+          font-size: 3rem; } }
       .footer-address--link:hover {
         color: #c89c21;
         font-size: 4rem;

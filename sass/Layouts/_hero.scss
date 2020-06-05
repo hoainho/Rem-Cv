@@ -39,6 +39,9 @@
           position: relative;
           top: 37rem;
         }
+        @include smtablet{
+
+        }
         &_box{
           top: 25%;
           height: 50%;
@@ -55,6 +58,9 @@
             @include  mobile {
               font-size: 5rem;
               top: 28%;
+            }
+            @include smtablet{
+              font-size: 8rem;
             }
             &___howdy{
               opacity: 0;
@@ -88,6 +94,15 @@
           @include mobile{
             top: -20% !important;
             z-index: 55;
+          }
+          @include smtablet {
+            z-index: 2;
+            left: 7rem !important;
+          }
+          @include tablet{
+            top: 18%;
+            left: 8%;
+            z-index: 2;
           }
           &:hover{
             &::after{
@@ -197,6 +212,16 @@
             right: 21%;
             width: 23vw;
           }
+          @include smtablet{
+            right: 80%;
+            width: 23vw;
+            top: 45%;
+          }
+          @include tablet{
+            top: 38%;
+            right: 84%;
+            width: 23vw;
+          }
         }
         &_download::after{
           position: absolute;
@@ -221,6 +246,16 @@
             right: 21% !important;
             width: 8rem;
             top: 30%;
+          }
+          @include smtablet{
+            right: 78% !important;
+            width: 27vw !important;
+            top: 45% !important;
+          }
+          @include tablet{
+            top: 38%;
+            right: 83% !important;
+            width: 22vw;
           }
         }
       }
