@@ -3,17 +3,4 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    overflow: hidden !important; 
-    @include mobile{
-    } 
-}
-.l-0{
-    left: 0rem !important;
-}
-.l--3{
-    left: -3rem !important;
-}
-.is-active{
-    opacity: 1 !important;
-}
+

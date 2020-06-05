@@ -171,7 +171,8 @@
                         left: 27rem;
                         top: 1rem;
                         @include mobile{
-                            left: -1rem;
+                            left: -9rem;
+                            top: -1rem;
                         }
                         &___layer{
                             &:after {
@@ -474,23 +475,47 @@
     &-number{
         &-html{
             left: 9rem ;
+            @include mobile{
+                left: 5rem !important;
+                top: -6rem !important;
+            }
         }
         &-css{
             left: 8rem ;
+            @include mobile{
+                left: 4rem !important;
+                top: -6rem !important;
+            }
         }
         &-sass{
             left: 9rem ;
+            @include mobile{
+                left: 5rem  !important;
+                top: -6rem !important;
+            }
         }
 
         &-js{
             left: 0rem ;
+            @include mobile{
+                left: -3rem !important;
+                top: -6rem !important;
+            }
         }
         &-react{
             left: 1rem ;
+            @include mobile{
+                left: -2rem !important;
+                top: -6rem !important;
+            }
         }
 
         &-jquery{
             left: 4rem ;
+            @include mobile{
+                left: 0rem !important;
+                top: -6rem !important; 
+            }
         }
     }
 }
