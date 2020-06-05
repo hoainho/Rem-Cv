@@ -24,6 +24,11 @@
             background-position-x: 10rem;
             background-position-y: 8rem;
         }
+        @include smtablet{
+                background-size: 20rem;
+                background-position-x: 21rem;
+                background-position-y: 12rem;
+        }
         &--left{
             width: 30vw;
             height: 100vh;
