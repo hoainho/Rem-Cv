@@ -3211,8 +3211,8 @@ html {
   z-index: 50; }
   @media (max-width: 479px) {
     .slogan {
-      top: 27%;
-      right: -25%;
+      top: 52%;
+      right: -33%;
       width: 28%;
       height: 40%; } }
   .slogan--shadow {
@@ -3455,10 +3455,7 @@ html {
   position: relative; }
   @media (max-width: 479px) {
     .resume {
-      top: 0; }
-      .resume-slogan {
-        top: 48%;
-        right: -22%; } }
+      top: 0; } }
   .resume-content--education {
     background: transparent;
     opacity: .05;
@@ -3909,17 +3906,32 @@ html {
 .about {
   background-color: #222;
   color: #fff; }
+  @media (max-width: 479px) {
+    .about {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      top: 0; } }
   .about-container {
     background-image: url(../img/codebag.png);
     background-size: inherit;
     background-repeat: no-repeat;
     background-position-x: 9rem;
     background-position-y: 14rem; }
+    @media (max-width: 479px) {
+      .about-container {
+        background-size: 17rem;
+        background-position-x: 10rem;
+        background-position-y: 8rem; } }
     .about-container--left {
       width: 30vw;
       height: 100vh;
       position: relative;
       padding: 5rem !important; }
+      @media (max-width: 479px) {
+        .about-container--left {
+          width: 67vw;
+          height: 38vh; } }
       .about-container--left_box {
         position: relative;
         border: 1px solid #fff;
@@ -3931,6 +3943,11 @@ html {
         width: 16vw;
         left: 12rem;
         transition: all 1s; }
+        @media (max-width: 479px) {
+          .about-container--left_box {
+            top: 34%;
+            width: 44vw;
+            left: 9rem; } }
         .about-container--left_box:hover {
           position: relative;
           border: 1px solid #fff;
@@ -3978,6 +3995,13 @@ html {
           -webkit-text-stroke: 0.2rem #fff;
           text-align: center;
           animation: rubberBand 3s infinite ease-in-out; }
+          @media (max-width: 479px) {
+            .about-container--left_box__year {
+              width: 13rem;
+              height: 17rem;
+              font-size: 15rem;
+              left: 3%;
+              top: -1rem; } }
         .about-container--left_box__content {
           position: relative;
           color: #fff;
@@ -3996,19 +4020,44 @@ html {
             top: 5rem;
             right: 19rem;
             opacity: 1; }
+    @media (max-width: 479px) {
+      .about-container--right_tittle {
+        height: 11vh;
+        width: 50%;
+        top: -4rem;
+        left: 12rem;
+        position: relative; } }
     .about-container--right_tittle__skill {
       position: absolute;
       left: 27rem;
       top: 1rem; }
+      @media (max-width: 479px) {
+        .about-container--right_tittle__skill {
+          left: -1rem; } }
       .about-container--right_tittle__skill___layer:after {
         font: 8rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
         content: 'Skill'; }
+        @media (max-width: 479px) {
+          .about-container--right_tittle__skill___layer:after {
+            font: 4rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif; } }
     .about-container--right_content {
       color: white; }
+      @media (max-width: 479px) {
+        .about-container--right_content {
+          height: 76vh;
+          position: relative;
+          top: -16rem;
+          right: 4rem; } }
       .about-container--right_content__rowfirst {
         position: relative;
         top: 15rem;
         height: 20vh; }
+        @media (max-width: 479px) {
+          .about-container--right_content__rowfirst {
+            top: 14rem;
+            height: 28vh;
+            width: 100vw;
+            left: 4rem; } }
         .about-container--right_content__rowfirst___propressbar {
           position: absolute;
           top: 2rem;
@@ -4017,18 +4066,36 @@ html {
           height: 13rem;
           transform-style: preserve-3d;
           transform: perspective(55rem) rotateX(-102deg) rotateY(93deg) rotateZ(-6deg); }
+          @media (max-width: 479px) {
+            .about-container--right_content__rowfirst___propressbar {
+              top: 4rem;
+              width: 14rem;
+              height: 10rem; } }
         .about-container--right_content__rowfirst___propressbarname {
           width: 15%;
           height: 15%;
           top: 19rem;
           left: -1.5rem;
           font-size: 2.5rem; }
+          @media (max-width: 479px) {
+            .about-container--right_content__rowfirst___propressbarname {
+              width: 13vw;
+              height: 7%;
+              top: 18rem;
+              left: -3.5rem;
+              font-size: 2rem; } }
       .about-container--right_content__dev {
         left: 10rem;
         width: 15%;
         height: 115%;
         top: -5rem;
         margin: 5rem; }
+        @media (max-width: 479px) {
+          .about-container--right_content__dev {
+            left: 3rem;
+            width: 12%;
+            top: -5rem;
+            margin: -1rem 3rem; } }
         .about-container--right_content__dev___namepropressbar {
           width: 1%; }
         .about-container--right_content__dev___propressbar {
@@ -4163,12 +4230,26 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   background-color: transparent; }
+  @media (max-width: 479px) {
+    .cube {
+      position: absolute;
+      width: 85%;
+      height: 65%;
+      text-align: center;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      background-color: transparent; } }
   .cube-Above {
     transform: translateZ(7rem);
     border-top: 20px solid #fff;
     border-bottom: 20px solid #fff;
     border-left: 5px solid #fff;
     border-right: 1px solid #fff; }
+    @media (max-width: 479px) {
+      .cube-Above {
+        transform: translateZ(8rem);
+        border-right: 5px solid #fff; } }
   .cube-Ahead {
     width: 7rem;
     height: 70%;
@@ -4178,23 +4259,39 @@ html {
     border-bottom: 10px solid #fff;
     border-left: 5px solid #fff;
     border-right: 5px solid #fff; }
+    @media (max-width: 479px) {
+      .cube-Ahead {
+        width: 5rem;
+        height: 6.7rem;
+        transform: translate3D(8.6rem, 0rem, 10.5rem) rotateY(90deg); } }
   .cube-left {
     width: 7rem;
     height: 70%;
     background: #c89c21;
     transform: translate3D(-3.6rem, 0.3rem, 10.5rem) rotateY(-90deg);
     border: 0.1rem solid #fff; }
+    @media (max-width: 479px) {
+      .cube-left {
+        width: 5rem;
+        height: 6rem;
+        transform: translate3D(-2.6rem, 0.3rem, 10.5rem) rotateY(-90deg); } }
   .cube-below {
     transform: translateZ(14rem);
     border-top: 10px solid #fff;
     border-bottom: 10px solid #fff;
     border-left: 5px solid #fff;
     border-right: 1px solid #fff; }
+    @media (max-width: 479px) {
+      .cube-below {
+        transform: translateZ(12.8rem); } }
   .cube-mid {
     width: 7rem;
     height: 70%;
     background: #c89c21;
     border: 0.1rem solid #fff; }
+    @media (max-width: 479px) {
+      .cube-mid {
+        width: 5rem; } }
     .cube-mid::before {
       content: '%';
       color: #242424;
@@ -4210,6 +4307,10 @@ html {
     background: #c89c21;
     transform: translate3D(0rem, 0.5rem, 7.2rem) rotateX(0deg);
     border: 0.1rem solid #fff; }
+    @media (max-width: 479px) {
+      .cube-right {
+        width: 10rem !important;
+        height: 46%; } }
   .cube-after {
     width: 3rem;
     height: 54%;
@@ -4217,6 +4318,11 @@ html {
     transform: translate3D(0rem, -3.3rem, 10.5rem) rotateX(90deg);
     border-left: 3px solid #fff;
     border-bottom: 3px solid #fff; }
+    @media (max-width: 479px) {
+      .cube-after {
+        width: 11rem !important;
+        height: 49%;
+        transform: translate3D(0rem, -2.3rem, 10.5rem) rotateX(90deg); } }
   .cube-percent {
     animation: bouncePercent 1s infinite alternate ease-in-out -7.5s;
     animation-fill-mode: forwards;
@@ -4229,6 +4335,9 @@ html {
     left: -4rem;
     background: transparent;
     transform: translate3D(5.6rem, 0.7rem, 9rem) rotateY(270deg) rotateX(90deg); }
+    @media (max-width: 479px) {
+      .cube-percent {
+        font-size: 2rem; } }
 
 .product {
   background-color: #242424;
