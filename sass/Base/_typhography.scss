@@ -1,4 +1,17 @@
 html{
     font-size: 10px;
     font-family: sans-serif;
+    overflow: hidden !important; 
+    @include mobile{
+        overflow-y: scroll;
+    } 
+}
+.l-0{
+    left: 0rem !important;
+}
+.l--3{
+    left: -3rem !important;
+}
+.is-active{
+    opacity: 1 !important;
 }
