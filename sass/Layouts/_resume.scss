@@ -10,6 +10,9 @@
     @include smtablet{
         top: 0;
         }
+    @include tablet{
+        top: 0;
+        }
     
     &-content{
         &--education{
@@ -35,6 +38,14 @@
                 position: relative;
                 top:5rem;
             }
+            @include tablet{
+                margin-top: 2rem;
+                padding: 0px 3rem;
+                height: 40vh;
+                width: 100%;
+                position: relative;
+                top:3rem;
+            }
             &:hover {
                 opacity: 1 !important;
                 background: linear-gradient(to right top,
@@ -57,6 +68,14 @@
                     padding: 3rem;
                     width: 95%;
                     margin: 0 3rem;
+                }
+                @include tablet{
+                    height: 34vh;
+                    padding: 3rem;
+                    width: 95%;
+                    margin: 0 3rem;
+                    top: 0rem;
+                    left: -1rem;
                 }
                 .resume-content--education_logo__icon{
                     color: $color-white;
@@ -133,6 +152,9 @@
                 @include smtablet{
                     top: -3rem;
                 }
+                @include tablet{
+                    top: -3rem;
+                }
                 &__icon{    
                     color: $color-secondary;  
                     font-size: 8rem;
@@ -170,6 +192,12 @@
                     }
                 @include smtablet{
                     top: -8.5rem;
+                }
+                @include tablet{
+                    top: -8.5rem;
+                    left: 2rem;
+                    width: 94%;
+                    height: 6vh;
                 }
                 &__tittle{
                 position: absolute;
@@ -290,6 +318,14 @@
                 position: relative;
                 top: -3rem;
             }
+            @include tablet{
+                margin-top: 2rem;
+                padding: 0px 3rem;
+                height: 40vh;
+                width: 100%;
+                position: relative;
+                top: -3rem;
+            }
             &:hover {
                 opacity: 1 !important;
                 background: linear-gradient(to right top,
@@ -314,6 +350,14 @@
                     padding: 3rem;
                     width: 95%;
                     margin: 0 1rem;
+                }
+                @include tablet{
+                    height: 32vh;
+                    top: -10rem;
+                    padding: 3rem;
+                    width: 95%;
+                    margin: 0 1rem;
+                    left: 1rem;
                 }
                 .resume-content--experience_logo__icon{
                     color: $color-white;
@@ -345,6 +389,9 @@
                 position: relative;
                 margin: 2rem;
                 top: -12rem;
+                @include tablet{
+                    top: -5rem;
+                }
                 @include smtablet{
                     top: -5rem;
                 }
@@ -385,6 +432,10 @@
                     top: -8.5rem;
                 }
                 @include smtablet{
+                    top: -10.5rem;
+                }
+                @include tablet{
+                    height: 7vh;
                     top: -10.5rem;
                 }
                 &__tittle{
