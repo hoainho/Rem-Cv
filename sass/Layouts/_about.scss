@@ -7,6 +7,12 @@
         height: 100% !important;
         top: 0;
     }
+    &-slogan{
+        @include mobile{
+            top: 38%;
+            right: -43%;
+        }
+    }
     &-container {
         background-image: url(../img/codebag.png);
         background-size: inherit;
@@ -39,9 +45,9 @@
                     left: 12rem;
                     transition:all 1s;
                     @include mobile {
-                        top: 34%;
+                        top: 25%;
                         width: 44vw;
-                        left: 9rem;
+                        left: 5rem;
                     }
                 &:hover {
                     position: relative;
@@ -53,6 +59,12 @@
                     padding: 4rem;
                     width: 23vw;
                     left: 6rem;
+                    @include mobile{
+                        top: 20%;
+                        width: 70vw;
+                        height: 23vh;
+                        left: -1rem;
+                    }
                     .about-container--left_box__content{
                         position: relative;
                         font-size: 3rem;
@@ -62,6 +74,11 @@
                         top: 26rem;
                         opacity: 1;
                         animation: zoomIn 1s;
+                        @include mobile{
+                            font-size: 2rem;
+                            right: 4rem;
+                            top: 2rem;
+                        }
                         }
                     .about-container--left_box__year{
                         position: relative;
@@ -76,9 +93,23 @@
                             -webkit-text-stroke: 0.2rem #fff;
                             text-align: center;
                             animation: heartBeat 3s infinite ease-in-out;
+                            @include mobile
+                            {
+                                width: 13rem;
+                                height: 19rem;
+                                font-size: 15rem;
+                                left: -9%;
+                                top: -8rem;
+                            }
                         }
                         .about-container--left_box__content___experience::before{
                             animation: fadeInLeftBig 1s;
+                            @include mobile{
+                                border-bottom: 1px solid #fff;
+                                height: 1.5rem;
+                                top: 2.8rem;
+                                right: 11rem;
+                            }
                         }
                 }
                 &__year{
@@ -166,10 +197,10 @@
                         top: 15rem;
                         height: 20vh;
                         @include mobile{
-                            top: 14rem;
-                            height: 28vh;
-                            width: 100vw;
-                            left: 4rem;
+                            top: 15rem;
+                            height: 22vh;
+                            width: 84vw;
+                            left: 2rem;
                         }
                         &___propressbar{
                             position: absolute;
@@ -183,10 +214,10 @@
                                 top: 4rem;
                                 width: 14rem;
                                 height: 10rem;
+                                
                             }
                         }
                         &___propressbarname{
-                            width: 15%;
                             height: 15%;
                             top: 19rem;
                             left: -1.5rem;
@@ -195,7 +226,7 @@
                                 width: 13vw;
                                 height: 7%;
                                 top: 18rem;
-                                left: -3.5rem;
+                                left: -3.5rem !important;
                                 font-size: 2rem;
                             }
                         }
@@ -321,77 +352,123 @@
 .percent {
     &-mid{//---default=18.18%(3rank) max=16.5rank  ====> Return max-default = 13.5rank => 1rank : 7.4
         &-html {
-            transform: translate3D(calc(var(--mid-percent-html)/7.4), 0rem, 10.5rem) rotateY(90deg) ; 
+            transform: translate3D(calc(var(--mid-percent-html)/7.4), 0rem, 10.5rem) rotateY(90deg) ;
+            @include mobile{
+                transform: translate3d(8rem, 0rem, 10.5rem) rotateY(90deg) !important;
+            }
         }
         &-css {
-           
             transform: translate3D(calc(var(--mid-percent-css)/7.4), 0rem, 10.5rem) rotateY(90deg); 
+            @include mobile {
+            transform: translate3d(7.5rem, 0rem, 10.5rem) rotateY(90deg) !important;
+            }
         }
         &-sass {
            
             transform: translate3D(calc(var(--mid-percent-sass)/7.4), 0rem, 10.5rem) rotateY(90deg); 
+            @include mobile{
+                transform: translate3d(8rem, 0rem, 10.5rem) rotateY(90deg) !important;
+            }
         }
         &-js {
           
             transform: translate3D(calc(var(--mid-percent-js)/7.4), 0rem, 10.5rem) rotateY(90deg); 
+            @include mobile {
+                transform: translate3d(-0.2973rem, 0rem, 10.5rem) rotateY(90deg) !important;
+            }
         }
         &-react {
-           
             transform: translate3D(calc(var(--mid-percent-react)/7.4), 0rem, 10.5rem) rotateY(90deg); 
+            @include mobile {
+                transform: translate3d(0.75rem, 0rem, 10.5rem) rotateY(90deg) !important;
+            }
         }
         &-jquery {
            
             transform: translate3D(calc(var(--mid-percent-jquery)/7.4), 0rem, 10.5rem) rotateY(90deg); 
+            @include mobile {
+                transform: translate3d(3.5rem, 0rem, 10.5rem) rotateY(90deg) !important;
+            }
         }
     }
     &-right{//---default=0(0rank) max=17rank  ====> Return max-default = 17rank => 1rank : 5.75
         &-html {
                      width: calc(var(--percent-right-html)/5.75)  ;
-            
+                    @include mobile{
+                        width: 10.5rem !important;
+                    }
         }
         &-css {
                      width: calc(var(--percent-right-css)/5.75)  ;
-
+                     @include mobile{
+                        width: 9.5rem !important;
+                    }
         }
         &-sass {
                      width: calc(var(--percent-right-sass)/5.75)  ;
-            
+                     @include mobile{
+                        width: 10.5rem !important;
+                    }
         }
         &-js {
                     width: calc(var(--percent-right-js)/3.79)  ;
+                    @include mobile{
+                        width: 1.6rem !important;
+                    }
         }
         &-react {
                       width: calc(var(--percent-right-react)/4.3)  ;
+                      @include mobile{
+                        width: 3rem !important;
+                    }
             
         }
         &-jquery {
            
-            width: calc(var(--percent-right-jquery)/5.1)  ;
+                    width: calc(var(--percent-right-jquery)/5.1)  ;
+                    @include mobile{
+                        width: 5.5rem !important;
+                    }
         }
     }
     &-after{//---default=0(0rank) max=17rank  ====> Return max-default = 17rank => 1rank : 5.75
         &-html {
                      width: calc(var(--percent-after-html)/5.75)  ;
-            
+                        @include mobile{
+                        width: 10.5rem !important;
+                    }
         }
         &-css {
                      width: calc(var(--percent-after-css)/5.5)  ;
-
+                     @include mobile{
+                        width: 10rem !important;
+                    }
         }
         &-sass {
                      width: calc(var(--percent-after-sass)/5.75)  ;
-            
+                     @include mobile{
+                        width: 10.5rem !important;
+                    }
         }
         &-js {
                     width: calc(var(--percent-after-js)/3.26)  ;
+                    @include mobile{
+                        width: 2.2rem !important;
+                    }
         }
         &-react {
                       width: calc(var(--percent-after-react)/4)  ;
-            
+                      @include mobile{
+                        width: 3.2rem !important;
+                    }
         }
         &-jquery {
            
             width: calc(var(--percent-after-jquery)/4.9)  ;
+            @include mobile{
+                width: 6rem !important;
+            }
+
         }
     }
     &-number{

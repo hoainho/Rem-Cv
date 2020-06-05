@@ -3912,6 +3912,10 @@ html {
       width: 100% !important;
       height: 100% !important;
       top: 0; } }
+  @media (max-width: 479px) {
+    .about-slogan {
+      top: 38%;
+      right: -43%; } }
   .about-container {
     background-image: url(../img/codebag.png);
     background-size: inherit;
@@ -3945,9 +3949,9 @@ html {
         transition: all 1s; }
         @media (max-width: 479px) {
           .about-container--left_box {
-            top: 34%;
+            top: 25%;
             width: 44vw;
-            left: 9rem; } }
+            left: 5rem; } }
         .about-container--left_box:hover {
           position: relative;
           border: 1px solid #fff;
@@ -3958,6 +3962,12 @@ html {
           padding: 4rem;
           width: 23vw;
           left: 6rem; }
+          @media (max-width: 479px) {
+            .about-container--left_box:hover {
+              top: 20%;
+              width: 70vw;
+              height: 23vh;
+              left: -1rem; } }
           .about-container--left_box:hover .about-container--left_box__content {
             position: relative;
             font-size: 3rem;
@@ -3967,6 +3977,11 @@ html {
             top: 26rem;
             opacity: 1;
             animation: zoomIn 1s; }
+            @media (max-width: 479px) {
+              .about-container--left_box:hover .about-container--left_box__content {
+                font-size: 2rem;
+                right: 4rem;
+                top: 2rem; } }
           .about-container--left_box:hover .about-container--left_box__year {
             position: relative;
             width: 23rem;
@@ -3980,8 +3995,21 @@ html {
             -webkit-text-stroke: 0.2rem #fff;
             text-align: center;
             animation: heartBeat 3s infinite ease-in-out; }
+            @media (max-width: 479px) {
+              .about-container--left_box:hover .about-container--left_box__year {
+                width: 13rem;
+                height: 19rem;
+                font-size: 15rem;
+                left: -9%;
+                top: -8rem; } }
           .about-container--left_box:hover .about-container--left_box__content___experience::before {
             animation: fadeInLeftBig 1s; }
+            @media (max-width: 479px) {
+              .about-container--left_box:hover .about-container--left_box__content___experience::before {
+                border-bottom: 1px solid #fff;
+                height: 1.5rem;
+                top: 2.8rem;
+                right: 11rem; } }
         .about-container--left_box__year {
           position: relative;
           width: 23rem;
@@ -4054,10 +4082,10 @@ html {
         height: 20vh; }
         @media (max-width: 479px) {
           .about-container--right_content__rowfirst {
-            top: 14rem;
-            height: 28vh;
-            width: 100vw;
-            left: 4rem; } }
+            top: 15rem;
+            height: 22vh;
+            width: 84vw;
+            left: 2rem; } }
         .about-container--right_content__rowfirst___propressbar {
           position: absolute;
           top: 2rem;
@@ -4072,7 +4100,6 @@ html {
               width: 14rem;
               height: 10rem; } }
         .about-container--right_content__rowfirst___propressbarname {
-          width: 15%;
           height: 15%;
           top: 19rem;
           left: -1.5rem;
@@ -4082,7 +4109,7 @@ html {
               width: 13vw;
               height: 7%;
               top: 18rem;
-              left: -3.5rem;
+              left: -3.5rem !important;
               font-size: 2rem; } }
       .about-container--right_content__dev {
         left: 10rem;
@@ -4151,57 +4178,111 @@ html {
 
 .percent-mid-html {
   transform: translate3D(calc(var(--mid-percent-html)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+  @media (max-width: 479px) {
+    .percent-mid-html {
+      transform: translate3d(8rem, 0rem, 10.5rem) rotateY(90deg) !important; } }
 
 .percent-mid-css {
   transform: translate3D(calc(var(--mid-percent-css)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+  @media (max-width: 479px) {
+    .percent-mid-css {
+      transform: translate3d(7.5rem, 0rem, 10.5rem) rotateY(90deg) !important; } }
 
 .percent-mid-sass {
   transform: translate3D(calc(var(--mid-percent-sass)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+  @media (max-width: 479px) {
+    .percent-mid-sass {
+      transform: translate3d(8rem, 0rem, 10.5rem) rotateY(90deg) !important; } }
 
 .percent-mid-js {
   transform: translate3D(calc(var(--mid-percent-js)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+  @media (max-width: 479px) {
+    .percent-mid-js {
+      transform: translate3d(-0.2973rem, 0rem, 10.5rem) rotateY(90deg) !important; } }
 
 .percent-mid-react {
   transform: translate3D(calc(var(--mid-percent-react)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+  @media (max-width: 479px) {
+    .percent-mid-react {
+      transform: translate3d(0.75rem, 0rem, 10.5rem) rotateY(90deg) !important; } }
 
 .percent-mid-jquery {
   transform: translate3D(calc(var(--mid-percent-jquery)/7.4), 0rem, 10.5rem) rotateY(90deg); }
+  @media (max-width: 479px) {
+    .percent-mid-jquery {
+      transform: translate3d(3.5rem, 0rem, 10.5rem) rotateY(90deg) !important; } }
 
 .percent-right-html {
   width: calc(var(--percent-right-html)/5.75); }
+  @media (max-width: 479px) {
+    .percent-right-html {
+      width: 10.5rem !important; } }
 
 .percent-right-css {
   width: calc(var(--percent-right-css)/5.75); }
+  @media (max-width: 479px) {
+    .percent-right-css {
+      width: 9.5rem !important; } }
 
 .percent-right-sass {
   width: calc(var(--percent-right-sass)/5.75); }
+  @media (max-width: 479px) {
+    .percent-right-sass {
+      width: 10.5rem !important; } }
 
 .percent-right-js {
   width: calc(var(--percent-right-js)/3.79); }
+  @media (max-width: 479px) {
+    .percent-right-js {
+      width: 1.6rem !important; } }
 
 .percent-right-react {
   width: calc(var(--percent-right-react)/4.3); }
+  @media (max-width: 479px) {
+    .percent-right-react {
+      width: 3rem !important; } }
 
 .percent-right-jquery {
   width: calc(var(--percent-right-jquery)/5.1); }
+  @media (max-width: 479px) {
+    .percent-right-jquery {
+      width: 5.5rem !important; } }
 
 .percent-after-html {
   width: calc(var(--percent-after-html)/5.75); }
+  @media (max-width: 479px) {
+    .percent-after-html {
+      width: 10.5rem !important; } }
 
 .percent-after-css {
   width: calc(var(--percent-after-css)/5.5); }
+  @media (max-width: 479px) {
+    .percent-after-css {
+      width: 10rem !important; } }
 
 .percent-after-sass {
   width: calc(var(--percent-after-sass)/5.75); }
+  @media (max-width: 479px) {
+    .percent-after-sass {
+      width: 10.5rem !important; } }
 
 .percent-after-js {
   width: calc(var(--percent-after-js)/3.26); }
+  @media (max-width: 479px) {
+    .percent-after-js {
+      width: 2.2rem !important; } }
 
 .percent-after-react {
   width: calc(var(--percent-after-react)/4); }
+  @media (max-width: 479px) {
+    .percent-after-react {
+      width: 3.2rem !important; } }
 
 .percent-after-jquery {
   width: calc(var(--percent-after-jquery)/4.9); }
+  @media (max-width: 479px) {
+    .percent-after-jquery {
+      width: 6rem !important; } }
 
 .percent-number-html {
   left: 9rem; }
@@ -4233,7 +4314,7 @@ html {
   @media (max-width: 479px) {
     .cube {
       position: absolute;
-      width: 85%;
+      width: 80%;
       height: 65%;
       text-align: center;
       font-size: 2.5rem;
@@ -4263,7 +4344,11 @@ html {
       .cube-Ahead {
         width: 5rem;
         height: 6.7rem;
-        transform: translate3D(8.6rem, 0rem, 10.5rem) rotateY(90deg); } }
+        transform: translate3D(8.6rem, 0rem, 10.5rem) rotateY(90deg);
+        border-top: 7px solid #fff;
+        border-bottom: 7px solid #fff;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff; } }
   .cube-left {
     width: 7rem;
     height: 70%;
@@ -4309,8 +4394,8 @@ html {
     border: 0.1rem solid #fff; }
     @media (max-width: 479px) {
       .cube-right {
-        width: 10rem !important;
-        height: 46%; } }
+        height: 55%;
+        transform: translate3D(0rem, 0.5rem, 8.2rem) rotateX(0deg); } }
   .cube-after {
     width: 3rem;
     height: 54%;
@@ -4320,7 +4405,7 @@ html {
     border-bottom: 3px solid #fff; }
     @media (max-width: 479px) {
       .cube-after {
-        width: 11rem !important;
+        width: 10rem;
         height: 49%;
         transform: translate3D(0rem, -2.3rem, 10.5rem) rotateX(90deg); } }
   .cube-percent {
