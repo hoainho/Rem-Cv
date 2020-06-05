@@ -3388,7 +3388,7 @@ html {
   @media (max-width: 479px) {
     .features-tittle--content {
       position: absolute;
-      top: 10rem;
+      top: 8rem;
       left: 8rem; }
       .features-tittle--content_before {
         font-size: 3rem; }
@@ -3405,8 +3405,9 @@ html {
     transition: 2s; }
     @media (max-width: 479px) {
       .features-content--box {
-        margin-top: 5rem;
-        top: 12rem; } }
+        margin-top: -2rem;
+        top: 3rem;
+        height: 28vh; } }
     .features-content--box:hover .web-divider {
       opacity: 1;
       animation: bounceInLeft 1s ease-in-out; }
@@ -3421,6 +3422,10 @@ html {
     .features-content--box_logo {
       display: flex;
       justify-content: flex-start; }
+      @media (max-width: 479px) {
+        .features-content--box_logo {
+          position: relative;
+          top: 6rem; } }
       .features-content--box_logo__icon {
         color: #c89c21;
         font-size: 5rem; }
@@ -3428,10 +3433,19 @@ html {
       margin: 3rem 0;
       text-transform: uppercase;
       letter-spacing: .5rem; }
+      @media (max-width: 479px) {
+        .features-content--box_tittle {
+          margin: 2rem 0;
+          width: 60%;
+          right: -22%;
+          position: relative; } }
     .features-content--box_content {
       font-size: 1.7rem;
       opacity: 0.5;
       padding-bottom: 5rem; }
+      @media (max-width: 479px) {
+        .features-content--box_content {
+          padding-bottom: 0rem; } }
 
 .resume {
   width: 100%;
