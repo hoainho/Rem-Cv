@@ -11,8 +11,8 @@
     &-tittle{
       &--icon{
         @include mobile{
-          top: 4% !important;
-          left: -16% !important;
+          top: 7% !important;
+          left: -9% !important;
         }
         @include smtablet{
               top: 9% !important;
@@ -25,9 +25,9 @@
       }
       &--content{
             @include mobile{
-            position: absolute;
-            top: 8rem;
-            left: 8rem;
+              position: absolute;
+              top: 4rem;
+              left: 5rem;
             &_before{
               font-size: 3rem;
             }

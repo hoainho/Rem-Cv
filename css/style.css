@@ -18,6 +18,9 @@ html {
 
 .l-0 {
   left: 0rem !important; }
+  @media (max-width: 479px) {
+    .l-0 {
+      left: -3rem !important; } }
   @media (min-width: 480px) and (max-width: 767px) {
     .l-0 {
       left: -6rem !important; } }
@@ -3459,8 +3462,8 @@ html {
   position: relative; }
   @media (max-width: 479px) {
     .features-tittle--icon {
-      top: 4% !important;
-      left: -16% !important; } }
+      top: 7% !important;
+      left: -9% !important; } }
   @media (min-width: 480px) and (max-width: 767px) {
     .features-tittle--icon {
       top: 9% !important;
@@ -3472,8 +3475,8 @@ html {
   @media (max-width: 479px) {
     .features-tittle--content {
       position: absolute;
-      top: 8rem;
-      left: 8rem; }
+      top: 4rem;
+      left: 5rem; }
       .features-tittle--content_before {
         font-size: 3rem; }
       .features-tittle--content_after {
