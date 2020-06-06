@@ -92,6 +92,9 @@
                         @include smtablet{
                             margin-left: 5rem;
                         }
+                        @include tablet{
+                            margin-left: 10rem;
+                        }
                         &___tittle{
                             list-style-type: none;
                             color: $color-secondary;
@@ -172,6 +175,9 @@
                     }
                     @include smtablet{
                         margin-left: 5rem;
+                    }
+                    @include tablet{
+                        margin-left: 10rem;
                     }
                     &___tittle{
                         list-style-type: none;

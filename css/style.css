@@ -21,7 +21,7 @@ html {
   @media (min-width: 480px) and (max-width: 767px) {
     .l-0 {
       left: -6rem !important; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .l-0 {
       left: 2rem !important; } }
 
@@ -150,7 +150,7 @@ html {
           @media (min-width: 480px) and (max-width: 767px) {
             .rem-navbar--inner_left__contacts___list {
               left: 12rem !important; } }
-          @media (min-width: 768px) and (max-width: 1023px) {
+          @media (min-width: 768px) and (max-width: 1024px) {
             .rem-navbar--inner_left__contacts___list {
               left: 21rem !important; } }
         .rem-navbar--inner_left__contacts___item {
@@ -185,7 +185,7 @@ html {
         @media (max-width: 479px) {
           .rem-navbar--inner_right__loading {
             right: 45rem; } }
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
           .rem-navbar--inner_right__loading {
             right: 3rem; } }
         .rem-navbar--inner_right__loading___square {
@@ -248,7 +248,7 @@ html {
           right: 2rem;
           width: 130vw;
           height: 75vh; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .hero-bg--img {
           top: -4rem;
           right: 0rem;
@@ -311,7 +311,7 @@ html {
           .hero-container--row_download {
             z-index: 2;
             left: 7rem !important; } }
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
           .hero-container--row_download {
             top: 18%;
             left: 8%;
@@ -405,7 +405,7 @@ html {
             right: 80%;
             width: 23vw;
             top: 45%; } }
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
           .hero-container--row_download::before {
             top: 38%;
             right: 84%;
@@ -438,7 +438,7 @@ html {
             right: 78% !important;
             width: 27vw !important;
             top: 45% !important; } }
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
           .hero-container--row_download::after {
             top: 38%;
             right: 83% !important;
@@ -3229,7 +3229,7 @@ html {
   @media (min-width: 480px) and (max-width: 767px) {
     #fp-nav.fp-right {
       right: 6rem !important; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     #fp-nav.fp-right {
       right: 8rem !important; } }
 
@@ -3292,7 +3292,7 @@ html {
     @media (min-width: 480px) and (max-width: 767px) {
       .slogan--shadow {
         width: 103.5vw; } }
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       .slogan--shadow {
         width: 103.5vw;
         left: 11rem;
@@ -3313,7 +3313,7 @@ html {
     .tittle-box {
       top: 8%;
       left: 6%; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .tittle-box {
       top: 9%;
       left: 10%; } }
@@ -3465,7 +3465,7 @@ html {
     .features-tittle--icon {
       top: 9% !important;
       left: 4% !important; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .features-tittle--icon {
       top: 8% !important;
       left: 4% !important; } }
@@ -3483,7 +3483,7 @@ html {
       top: 11%;
       left: 31%;
       font-size: 4rem; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .features-tittle--content {
       top: 10%;
       left: 26%; } }
@@ -3506,7 +3506,7 @@ html {
         margin-top: 0;
         top: 4rem;
         height: 22vh; } }
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       .features-content--box {
         margin-top: 0;
         top: 4rem;
@@ -3534,7 +3534,7 @@ html {
           position: relative;
           top: 2rem;
           left: 2rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .features-content--box_logo {
           position: relative;
           width: 11vw;
@@ -3560,7 +3560,7 @@ html {
           right: -10rem;
           width: 34vw;
           top: -1.5rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .features-content--box_tittle {
           margin: 0;
           position: relative;
@@ -3577,7 +3577,7 @@ html {
       @media (min-width: 480px) and (max-width: 767px) {
         .features-content--box_content {
           padding-bottom: 2rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .features-content--box_content {
           padding-bottom: 3rem; } }
 
@@ -3593,7 +3593,7 @@ html {
   @media (min-width: 480px) and (max-width: 767px) {
     .resume {
       top: 0; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .resume {
       top: 0; } }
   .resume-content--education {
@@ -3619,7 +3619,7 @@ html {
         width: 100%;
         position: relative;
         top: 5rem; } }
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       .resume-content--education {
         margin-top: 2rem;
         padding: 0px 3rem;
@@ -3647,7 +3647,7 @@ html {
           padding: 3rem;
           width: 95%;
           margin: 0 3rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--education:hover {
           height: 34vh;
           padding: 3rem;
@@ -3718,7 +3718,7 @@ html {
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--education_logo {
           top: -3rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--education_logo {
           top: -3rem; } }
       .resume-content--education_logo__icon {
@@ -3754,7 +3754,7 @@ html {
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--education_box {
           top: -8.5rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--education_box {
           top: -8.5rem;
           left: 2rem;
@@ -3858,7 +3858,7 @@ html {
         width: 100%;
         position: relative;
         top: -3rem; } }
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       .resume-content--experience {
         margin-top: 2rem;
         padding: 0px 3rem;
@@ -3888,7 +3888,7 @@ html {
           padding: 3rem;
           width: 95%;
           margin: 0 1rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--experience:hover {
           height: 32vh;
           top: -10rem;
@@ -3918,7 +3918,7 @@ html {
       position: relative;
       margin: 2rem;
       top: -12rem; }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--experience_logo {
           top: -5rem; } }
       @media (min-width: 480px) and (max-width: 767px) {
@@ -3959,7 +3959,7 @@ html {
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--experience_box {
           top: -10.5rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--experience_box {
           height: 7vh;
           top: -10.5rem; } }
@@ -4041,9 +4041,9 @@ html {
   font-weight: 200;
   color: #fff;
   z-index: 1000; }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .footer {
-      bottom: 6%;
+      bottom: 12%;
       left: 2%;
       font-size: 2rem; } }
   .footer-copyright {
@@ -4054,7 +4054,7 @@ html {
         width: 100%;
         top: 4.7rem;
         margin-right: 1rem; } }
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       .footer-copyright {
         width: 38%;
         top: 5.7rem;
@@ -4073,7 +4073,7 @@ html {
       @media (max-width: 479px) {
         .footer-address--item {
           margin-left: 2rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .footer-address--item {
           margin-left: 6rem; } }
     .footer-address--link {
@@ -4081,7 +4081,7 @@ html {
       font-size: 2rem;
       color: #fff;
       transition: .5s; }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .footer-address--link {
           font-size: 3rem; } }
       .footer-address--link:hover {
@@ -4161,7 +4161,7 @@ html {
       width: 100% !important;
       height: 100% !important;
       top: 0; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .about {
       position: relative !important;
       width: 100% !important;
@@ -4187,7 +4187,7 @@ html {
         background-size: 15rem;
         background-position-x: 3.5rem;
         background-position-y: 23rem; } }
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       .about-container {
         background-size: 25rem;
         background-repeat: no-repeat;
@@ -4209,7 +4209,7 @@ html {
           height: 35vh;
           top: 28rem;
           left: -1rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .about-container--left {
           width: 32vw;
           height: 30vh;
@@ -4240,7 +4240,7 @@ html {
             width: 25vw;
             height: 23vh;
             left: 0rem; } }
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
           .about-container--left_box {
             top: -2rem;
             height: 24rem;
@@ -4268,7 +4268,7 @@ html {
               width: 29vw;
               left: -2rem;
               height: 58vh; } }
-          @media (min-width: 768px) and (max-width: 1023px) {
+          @media (min-width: 768px) and (max-width: 1024px) {
             .about-container--left_box:hover {
               top: -21rem;
               width: 40vw;
@@ -4293,7 +4293,7 @@ html {
                 right: 11rem;
                 top: 24rem;
                 height: 20vh; } }
-            @media (min-width: 768px) and (max-width: 1023px) {
+            @media (min-width: 768px) and (max-width: 1024px) {
               .about-container--left_box:hover .about-container--left_box__content {
                 right: 9rem;
                 top: 37rem; } }
@@ -4322,7 +4322,7 @@ html {
                 font-size: 17rem;
                 left: 89%;
                 top: -8rem; } }
-            @media (min-width: 768px) and (max-width: 1023px) {
+            @media (min-width: 768px) and (max-width: 1024px) {
               .about-container--left_box:hover .about-container--left_box__year {
                 font-size: 30rem; } }
           .about-container--left_box:hover .about-container--left_box__content___experience::before {
@@ -4388,7 +4388,7 @@ html {
         position: relative;
         width: 55%;
         height: 80vh; } }
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       .about-container--right {
         top: 0vh;
         right: 0rem;
@@ -4421,7 +4421,7 @@ html {
         .about-container--right_tittle__skill {
           left: -2rem;
           top: -2rem; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .about-container--right_tittle__skill {
           position: absolute;
           left: 12rem;
@@ -4450,7 +4450,7 @@ html {
           right: 0rem;
           height: 80vh;
           width: 100%; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
         .about-container--right_content {
           width: 55vw;
           height: 80vh;
@@ -4472,7 +4472,7 @@ html {
             height: 80vh;
             width: 107%;
             left: 1rem; } }
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
           .about-container--right_content__rowfirst {
             top: 0rem;
             height: 80vh;
@@ -4506,7 +4506,7 @@ html {
           @media (min-width: 480px) and (max-width: 767px) {
             .about-container--right_content__rowfirst___propressbarname {
               left: -6.5rem; } }
-          @media (min-width: 768px) and (max-width: 1023px) {
+          @media (min-width: 768px) and (max-width: 1024px) {
             .about-container--right_content__rowfirst___propressbarname {
               left: 0.5rem; } }
       .about-container--right_content__dev {
@@ -4528,7 +4528,7 @@ html {
             height: 22%;
             top: 3rem;
             margin: 5rem 3rem !important; } }
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
           .about-container--right_content__dev {
             left: 4rem;
             width: 15vw;
@@ -4945,6 +4945,9 @@ html {
         @media (min-width: 480px) and (max-width: 767px) {
           .product-container--website_first__name {
             margin-left: 5rem; } }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .product-container--website_first__name {
+            margin-left: 10rem; } }
         .product-container--website_first__name___tittle {
           list-style-type: none;
           color: #c89c21;
@@ -5005,6 +5008,9 @@ html {
       @media (min-width: 480px) and (max-width: 767px) {
         .product-container--website_second__name {
           margin-left: 5rem; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .product-container--website_second__name {
+          margin-left: 10rem; } }
       .product-container--website_second__name___tittle {
         list-style-type: none;
         color: #fff;
