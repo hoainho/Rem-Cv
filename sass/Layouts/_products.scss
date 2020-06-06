@@ -65,6 +65,9 @@
             transition: opacity 1s ease-out;
             opacity: .5;
             color: #fff;
+            @include smtablet{
+                left: -5rem;
+            }
             &_first{
                 margin-bottom: 5rem;
                 &__index{
@@ -85,6 +88,9 @@
                         flex-direction: column;
                         @include mobile{
                             margin-left: 0rem;
+                        }
+                        @include smtablet{
+                            margin-left: 5rem;
                         }
                         &___tittle{
                             list-style-type: none;
@@ -163,6 +169,9 @@
                     flex-direction: column;
                     @include mobile{
                         margin-left: 0rem;
+                    }
+                    @include smtablet{
+                        margin-left: 5rem;
                     }
                     &___tittle{
                         list-style-type: none;
