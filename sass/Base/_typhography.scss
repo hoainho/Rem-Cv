@@ -11,6 +11,9 @@ html{
     @include smtablet{
         left: -6rem !important;
     }
+    @include tablet{
+        left: 2rem !important;
+    }
 }
 
 .l--3{
