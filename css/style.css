@@ -17,7 +17,10 @@ html {
       overflow-y: scroll; } }
 
 .l-0 {
-  left: -6rem !important; }
+  left: 0rem !important; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .l-0 {
+      left: -6rem !important; } }
 
 .l--3 {
   left: -3rem !important; }
@@ -4419,14 +4422,14 @@ html {
         .about-container--right_content__rowfirst___propressbarname {
           height: 15%;
           top: 19rem;
-          left: -1.5rem;
+          left: -2.5rem;
           font-size: 2.5rem; }
           @media (max-width: 479px) {
             .about-container--right_content__rowfirst___propressbarname {
               width: 13vw;
               height: 7%;
               top: 18rem;
-              left: -3.5rem !important;
+              left: -3.5rem;
               font-size: 2rem; } }
           @media (min-width: 480px) and (max-width: 767px) {
             .about-container--right_content__rowfirst___propressbarname {
@@ -4834,6 +4837,9 @@ html {
     transition: opacity 1s ease-out;
     opacity: .5;
     color: #fff; }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .product-container--website {
+        left: -5rem; } }
     .product-container--website_first {
       margin-bottom: 5rem; }
       .product-container--website_first__index {
@@ -4854,6 +4860,9 @@ html {
         @media (max-width: 479px) {
           .product-container--website_first__name {
             margin-left: 0rem; } }
+        @media (min-width: 480px) and (max-width: 767px) {
+          .product-container--website_first__name {
+            margin-left: 5rem; } }
         .product-container--website_first__name___tittle {
           list-style-type: none;
           color: #c89c21;
@@ -4911,6 +4920,9 @@ html {
       @media (max-width: 479px) {
         .product-container--website_second__name {
           margin-left: 0rem; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .product-container--website_second__name {
+          margin-left: 5rem; } }
       .product-container--website_second__name___tittle {
         list-style-type: none;
         color: #fff;
