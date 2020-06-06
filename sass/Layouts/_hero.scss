@@ -19,6 +19,12 @@
             width: 130vw;
             height: 75vh;
           }
+          @include tablet{
+            top: -4rem;
+            right: 0rem;
+            width: 105vw;
+            height: 104vh;
+          }
           top: -17rem;
           right: 17rem;
           z-index: 1;

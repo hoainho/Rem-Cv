@@ -12,10 +12,11 @@
     color: $color-white;
     z-index: 1000;
     @include tablet{
-      bottom: 13%;
+      bottom: 6%;
       left: 2%;
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
+  
     &-copyright{
       position: absolute;
       width: 100%;
@@ -26,7 +27,7 @@
       }
       @include tablet{
         width: 38%;
-        top: 4.7rem;
+        top: 5.7rem;
         left: 2rem;
       }
     }
