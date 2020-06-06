@@ -259,10 +259,10 @@ html {
           height: 100vh; } }
       @media (min-width: 768px) and (max-width: 1024px) {
         .hero-bg--img {
-          top: -4rem;
-          right: 0rem;
-          width: 105vw;
-          height: 104vh; } }
+          top: 5rem;
+          right: 2rem;
+          width: 93vw;
+          height: 95vh; } }
   .hero-container {
     height: 100vh; }
     .hero-container--row {
