@@ -251,6 +251,12 @@ html {
           right: 2rem;
           width: 130vw;
           height: 75vh; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .hero-bg--img {
+          top: 0rem;
+          right: 2rem;
+          width: 88vw;
+          height: 100vh; } }
       @media (min-width: 768px) and (max-width: 1024px) {
         .hero-bg--img {
           top: -4rem;
@@ -4387,7 +4393,7 @@ html {
     @media (min-width: 480px) and (max-width: 767px) {
       .about-container--right {
         top: 0vh;
-        right: -1rem;
+        right: -21rem;
         position: relative;
         width: 55%;
         height: 80vh; } }

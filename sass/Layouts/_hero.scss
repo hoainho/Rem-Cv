@@ -19,6 +19,12 @@
             width: 130vw;
             height: 75vh;
           }
+          @include smtablet{
+            top: 0rem;
+            right: 2rem;
+            width: 88vw;
+            height: 100vh;
+          }
           @include tablet{
             top: -4rem;
             right: 0rem;
