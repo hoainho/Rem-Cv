@@ -3721,15 +3721,15 @@ html {
       top: -12rem; }
       @media (max-width: 479px) {
         .resume-content--education_logo {
-          top: -3rem;
+          top: -7rem;
           left: 0.5rem;
           width: 88%; } }
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--education_logo {
-          top: -3rem; } }
+          top: -9rem; } }
       @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--education_logo {
-          top: -3rem; } }
+          top: -8rem; } }
       .resume-content--education_logo__icon {
         color: #c89c21;
         font-size: 8rem;
@@ -3759,13 +3759,13 @@ html {
       @media (max-width: 479px) {
         .resume-content--education_box {
           height: 5vh;
-          top: -8.5rem; } }
+          top: -12.5rem; } }
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--education_box {
-          top: -8.5rem; } }
+          top: -14.5rem; } }
       @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--education_box {
-          top: -8.5rem;
+          top: -14.5rem;
           left: 2rem;
           width: 94%;
           height: 6vh; } }
@@ -3834,7 +3834,13 @@ html {
       bottom: 8rem; }
       @media (max-width: 479px) {
         .resume-content--education_hamberger {
-          bottom: 6rem; } }
+          bottom: 10rem; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .resume-content--education_hamberger {
+          bottom: 15rem; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .resume-content--education_hamberger {
+          bottom: 11rem; } }
       @media (max-width: 479px) {
         .resume-content--education_hamberger__sub {
           font-size: 1.5rem; } }
@@ -3878,9 +3884,9 @@ html {
     .resume-content--experience:hover {
       opacity: 1 !important;
       background: linear-gradient(to right top, transparent, #c89c21);
-      padding: 5rem;
+      padding: 4rem;
       margin-top: 15rem;
-      width: 40%;
+      width: 45%;
       margin-left: 2rem;
       height: 70vh;
       transform: translateY(1rem);
@@ -3929,13 +3935,13 @@ html {
       top: -12rem; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--experience_logo {
-          top: -5rem; } }
+          top: -10rem; } }
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--experience_logo {
-          top: -5rem; } }
+          top: -10rem; } }
       @media (max-width: 479px) {
         .resume-content--experience_logo {
-          top: -3rem;
+          top: -9rem;
           left: 0.5rem;
           width: 88%; } }
       .resume-content--experience_logo__icon {
@@ -3964,14 +3970,14 @@ html {
       @media (max-width: 479px) {
         .resume-content--experience_box {
           height: 5vh;
-          top: -8.5rem; } }
+          top: -14.5rem; } }
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--experience_box {
-          top: -10.5rem; } }
+          top: -16.5rem; } }
       @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--experience_box {
           height: 7vh;
-          top: -10.5rem; } }
+          top: -15.5rem; } }
       .resume-content--experience_box__tittle {
         position: absolute;
         text-transform: uppercase;
@@ -4023,10 +4029,10 @@ html {
         transform: translate(0%, 0%); }
     .resume-content--experience_hamberger {
       position: relative;
-      bottom: 8rem; }
+      bottom: 18rem; }
       @media (max-width: 479px) {
         .resume-content--experience_hamberger {
-          bottom: 6rem; } }
+          bottom: 12rem; } }
       .resume-content--experience_hamberger__content {
         margin-top: 2rem;
         font-size: 1.7rem;
@@ -4034,9 +4040,18 @@ html {
         color: #c89c21; }
         @media (max-width: 479px) {
           .resume-content--experience_hamberger__content {
+            font-size: 1.06rem; } }
+        @media (min-width: 480px) and (max-width: 767px) {
+          .resume-content--experience_hamberger__content {
             font-size: 1.3rem; } }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .resume-content--experience_hamberger__content {
+            font-size: 1.5rem; } }
       .resume-content--experience_hamberger__tittle {
-        font-size: 1.5rem; }
+        font-size: 2rem; }
+        @media (max-width: 479px) {
+          .resume-content--experience_hamberger__tittle {
+            font-size: 1.5rem; } }
 
 .footer {
   position: fixed;
