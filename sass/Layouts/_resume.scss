@@ -145,15 +145,15 @@
                 margin: 2rem;
                 top: -12rem;
                 @include mobile{
-                    top: -3rem;
+                    top: -7rem;
                     left: 0.5rem;
                     width: 88%;
                 }
                 @include smtablet{
-                    top: -3rem;
+                    top: -9rem;
                 }
                 @include tablet{
-                    top: -3rem;
+                    top: -8rem;
                 }
                 &__icon{    
                     color: $color-secondary;  
@@ -188,13 +188,13 @@
                 top: -17.5rem;
                 @include mobile{
                     height: 5vh;    
-                    top: -8.5rem;
+                    top: -12.5rem;
                     }
                 @include smtablet{
-                    top: -8.5rem;
+                    top: -14.5rem;
                 }
                 @include tablet{
-                    top: -8.5rem;
+                    top: -14.5rem;
                     left: 2rem;
                     width: 94%;
                     height: 6vh;
@@ -274,7 +274,13 @@
                 position: relative;
                 bottom: 8rem;
                 @include mobile{
-                    bottom: 6rem;
+                    bottom: 10rem;
+                }
+                @include smtablet{
+                    bottom: 15rem;
+                }
+                @include tablet{
+                    bottom: 11rem;
                 }
                 &__sub{
                     @include mobile{
@@ -332,9 +338,9 @@
                                         transparent,
                                        $color-secondary
                 );
-                padding: 5rem;
+                padding: 4rem;
                 margin-top: 15rem;
-                width: 40%;
+                width: 45%;
                 margin-left: 2rem;
                 height: 70vh;
                 transform: translateY(1rem);
@@ -390,13 +396,13 @@
                 margin: 2rem;
                 top: -12rem;
                 @include tablet{
-                    top: -5rem;
+                    top: -10rem;
                 }
                 @include smtablet{
-                    top: -5rem;
+                    top: -10rem;
                 }
                 @include mobile{
-                    top: -3rem;
+                    top: -9rem;
                     left: 0.5rem;
                     width: 88%;
                 }
@@ -429,14 +435,14 @@
                 top: -17.5rem;
                 @include mobile{
                     height: 5vh;    
-                    top: -8.5rem;
+                    top: -14.5rem;
                 }
                 @include smtablet{
-                    top: -10.5rem;
+                    top: -16.5rem;
                 }
                 @include tablet{
                     height: 7vh;
-                    top: -10.5rem;
+                    top: -15.5rem;
                 }
                 &__tittle{
                 position: absolute;
@@ -501,9 +507,9 @@
             }
             &_hamberger{
                 position: relative;
-                bottom: 8rem;
+                bottom: 18rem;
                 @include mobile{
-                    bottom:  6rem;
+                    bottom: 12rem;
                 }
                 &__content{
                     margin-top: 2rem;
@@ -511,11 +517,22 @@
                     opacity: 0.5;
                     color: $color-secondary;
                     @include mobile{
+                        font-size: 1.06rem;
+                    }
+                    @include smtablet
+                    {
                         font-size: 1.3rem;
+                    }
+                    @include tablet
+                    {
+                        font-size: 1.5rem;
                     }
                 }
                 &__tittle{
-                    font-size: 1.5rem;
+                    font-size: 2rem;
+                    @include mobile{
+                        font-size: 1.5rem;
+                    }
                 }
                
             }
