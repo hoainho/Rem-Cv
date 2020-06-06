@@ -7,6 +7,12 @@
         height: 100% !important;
         top: 0;
     }
+    @include smtablet{
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        top: 0;
+    }
     &-slogan{
         @include mobile{
             top: 38%;
@@ -25,10 +31,11 @@
             background-position-y: 8rem;
         }
         @include smtablet{
-                background-size: 20rem;
-                background-position-x: 21rem;
-                background-position-y: 12rem;
+            background-size: 15rem;
+            background-position-x: 3.5rem;
+            background-position-y: 23rem;
         }
+        
         &--left{
             width: 30vw;
             height: 100vh;
@@ -37,6 +44,13 @@
             @include mobile{
                 width: 67vw;
                 height: 38vh;
+            }
+            @include smtablet{
+                position: absolute;
+                width: 40vw;
+                height: 35vh;
+                top: 28rem;
+                left: -1rem;
             }
             &_box{
                     position: relative;
@@ -54,6 +68,13 @@
                         width: 44vw;
                         left: 5rem;
                     }
+                    @include smtablet{
+                        top: -1rem;
+                        padding: 0rem;
+                        width: 25vw;
+                        height: 23vh;
+                        left: 0rem;
+                    }
                 &:hover {
                     position: relative;
                     border: 1px solid #fff;
@@ -70,7 +91,14 @@
                         height: 23vh;
                         left: -1rem;
                     }
-                    .about-container--left_box__content{
+                    @include smtablet{
+                        top: -14rem;
+                        padding: 4rem;
+                        width: 29vw;
+                        left: -2rem;
+                        height: 58vh;
+                    }
+                        .about-container--left_box__content{
                         position: relative;
                         font-size: 3rem;
                         color: #fff;
@@ -84,8 +112,13 @@
                             right: 4rem;
                             top: 2rem;
                         }
+                        @include smtablet{
+                            right: 11rem;
+                            top: 24rem;
+                            height: 20vh;
                         }
-                    .about-container--left_box__year{
+                        }
+                        .about-container--left_box__year{
                         position: relative;
                             width: 23rem;
                             height: 30rem;
@@ -106,6 +139,11 @@
                                 left: -9%;
                                 top: -8rem;
                             }
+                            @include smtablet{
+                                font-size: 17rem;
+                                left: 89%;
+                                top: -8rem;
+                            }
                         }
                         .about-container--left_box__content___experience::before{
                             animation: fadeInLeftBig 1s;
@@ -114,6 +152,12 @@
                                 height: 1.5rem;
                                 top: 2.8rem;
                                 right: 11rem;
+                            }
+                            @include smtablet{
+                                width: 24vw;
+                                height: 1.5rem;
+                                top: -6rem;
+                                right: 0rem;
                             }
                         }
                 }
@@ -136,6 +180,10 @@
                         font-size: 15rem;
                         left: 3%;
                         top: -1rem;
+                    }
+                    @include smtablet{
+                        top: -2rem;
+                        font-size: 18rem;
                     }
                 }
                 &__content{
@@ -163,6 +211,13 @@
             }
         }
         &--right{
+            @include smtablet{
+                top: 0vh;
+                right: -21rem;
+                position: relative;
+                width: 55%;
+                height: 80vh;
+            }
                 &_tittle{
                     @include mobile{
                             height: 11vh;
@@ -170,6 +225,13 @@
                             top: -4rem;
                             left: 12rem;
                             position: relative;
+                    }
+                    @include smtablet{
+                        height: 11vh;
+                        width: 57%;
+                        top: 0rem;
+                        left: 5rem;
+                        position: relative;
                     }
                     &__skill{
                         position: absolute;
@@ -179,12 +241,19 @@
                             left: -9rem;
                             top: -1rem;
                         }
+                        @include smtablet{
+                            left: -2rem;
+                            top: -2rem;
+                        }
                         &___layer{
                             &:after {
                                 font: 8rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
                                 content: 'Skill';
                                 @include mobile{
                                     font: 4rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+                                }
+                                @include smtablet{
+                                    font: 6rem/0.13 'Pacifico', 'Kaushan Script', 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
                                 }
                             }
                         }
@@ -198,6 +267,13 @@
                         top: -16rem;
                         right: 4rem;
                     }
+                    @include smtablet{
+                        position: relative;
+                        top: -9rem;
+                        right: 0rem;
+                        height: 80vh;
+                        width: 100%;
+                    }
                     &__rowfirst{
                         position: relative;
                         top: 15rem;
@@ -207,6 +283,12 @@
                             height: 22vh;
                             width: 84vw;
                             left: 2rem;
+                        }
+                        @include smtablet{
+                            top: 4rem;
+                            height: 80vh;
+                            width: 107%;
+                            left: 1rem;
                         }
                         &___propressbar{
                             position: absolute;
@@ -235,6 +317,9 @@
                                 left: -3.5rem !important;
                                 font-size: 2rem;
                             }
+                            @include smtablet{
+                                left: -6.5rem;
+                            }
                         }
                     }
                     &__dev {
@@ -249,9 +334,15 @@
                             top: -5rem;
                             margin: -1rem 3rem;
                         }
+                        @include smtablet{
+                            left: 2rem;
+                            width: 14%;
+                            height: 22%;
+                            top: 3rem;
+                            margin: 5rem 3rem !important;
+                        }
                         &___namepropressbar{
                             width: 1%;
-
                         }
                         &___propressbar{
                             animation: none;
