@@ -8,6 +8,9 @@ html{
 }
 .l-0{
     left: 0rem !important;
+    @include mobile{
+        left: -3rem !important;
+    }
     @include smtablet{
         left: -6rem !important;
     }
