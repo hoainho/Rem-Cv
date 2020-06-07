@@ -6,6 +6,11 @@ html{
         overflow-y: scroll;
     } 
 }
+
+.preloading{
+    transition-delay:2s ;
+    display: block;
+}
 .l-0{
     left: 0rem !important;
     @include mobile{
