@@ -1,6 +1,7 @@
+//AOS
 AOS.init({
   });
-
+//AnimationWhenScrollYPage
 window.onload = function(){
     const ShowEdu =document.querySelector(".resume-content--education");
     const ShowExp =document.querySelector(".resume-content--experience");
@@ -362,8 +363,13 @@ window.onload = function(){
 
 
 }
+// LoadingPage
+$(window).on('load', () =>  {
+	$('.loading').delay(2000).fadeOut('slow');
+});
 
-new fullpage('#main', {
+//FullPage
+new fullpage('#fullPage', {
     autoScrolling: true,
     navigation : true,
     fitToSectionDelay: 1000,
@@ -372,11 +378,10 @@ new fullpage('#main', {
     css3: true,
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
-    // anchors : ['Home','Specialzation','Resume','About','Myproduct','Customer'],
+     anchors : ['Home','Specialzation','Resume','About','Myproduct','Customer'],
     navigationTooltips: ['Home','Specialzation','Resume','About','Myproduct','Customer'],
  
     });
-
 //Product
         $('#bgFirst').hover(
             function(){ $('#imgFirst',).addClass('is-active'),$(this).addClass('is-active') },
@@ -387,5 +392,9 @@ new fullpage('#main', {
             function(){ $(this).removeClass('is-active'), $('#imgSecond',).removeClass('is-active') }
         )
         
+
+
+       
+
 
         

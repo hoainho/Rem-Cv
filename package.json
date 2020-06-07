@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.0",
-    "animated-scroll-to": "^2.0.8"
+    "animated-scroll-to": "^2.0.8",
+    "lesshat": "^4.1.0"
   }
 }

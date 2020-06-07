@@ -14,7 +14,8 @@
     
 </head>
 <body>
-  
+      
+       <!-----------NAVBAR----------> 
     <header id="header" class="rem-header">
         <div class="rem-navbar rem-navbar--main">
             <div class="rem-navbar--background" ></div>
@@ -53,33 +54,63 @@
             </nav>
         
     </header>
-    <div class="rem-menu--overlay"></div>
+    <!-----------MENU-MOBILE---------->
+    <!-- <div class="rem-menu--overlay"></div>
     <div class="rem-menu--wrapper">
         <div class="rem-menu--wrapper_main">
             <div class="rem-menu--wrapper_main__header"></div>
             <div class="rem-menu--wrapper_main__navigation"></div>
             <div class="rem-menu--wrapper_main__footer"></div>
         </div>
-    </div>
-    <div id="main" class="scroll-container">
+    </div> -->
+    <!-----------CONTAINER---------->
+    <div id="fullPage" class="scroll-container">
+        <!-----------LOADING---------->
+        <div class="loading-bg">
+          <div class="loading">
+                  <div class="finger finger-1">
+                    <div class="finger-item">
+                      <span></span><i></i>
+                    </div>
+                  </div>
+                  <div class="finger finger-2">
+                    <div class="finger-item">
+                      <span></span><i></i>
+                    </div>
+                  </div>
+                <div class="finger finger-3">
+                    <div class="finger-item">
+                      <span></span><i></i>
+                    </div>
+                  </div>
+                  <div class="finger finger-4">
+                    <div class="finger-item">
+                      <span></span><i></i>
+                    </div>
+                  </div>
+                  <div class="last-finger">
+                    <div class="last-finger-item"><i></i></div>
+                  </div>
+          </div>
+        </div>
       <!-----------HERO---------->
-      <section  class="section hero active" id="top">
+      <section  class="section active hero" id="top">
+       
         <div class="hero-bg"><img 
             data-aos="zoom-in-up"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-delay="300" 
+            data-aos-delay="2000" 
             data-aos-offset="100"
           class="hero-bg--img" src="./img/rem.png" alt="Background-Header"></div>
         <div class="hero-container container ">   
           <div class="hero-container--row">
             <div class="hero-container--row_box col-lg-12" 
-            
             >
               <h1 data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-delay="300" 
+              data-aos-delay="2000" 
               data-aos-offset="100"  class="hero-container--row_box__slogan hero-container--row_box__slogan___before">
               <span  class="hero-container--row_box__slogan___howdy">Howdy, </span> I'm
                 <br>
@@ -88,7 +119,7 @@
               <h1 data-aos="fade-down"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-delay="300" 
+              data-aos-delay="2000" 
               data-aos-offset="100"
               class="hero-container--row_box__slogan hero-container--row_box__slogan___after"><span class="hero-container--row_box__slogan___color">Howdy, </span> I'm
                 <br>
@@ -100,7 +131,7 @@
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-delay="300" 
+            data-aos-delay="2000" 
             data-aos-offset="100"
             >
               <a href="#" class=" hero-container--row_download__box hero-container--row_download__circle">
@@ -114,7 +145,7 @@
         </div>
       </section>
       <!-----------FEATURES---------->
-      <section  class="section features " id="features">
+      <section class="section features" id="features">
         <div class="slogan" 
         >
             <span class="slogan--shadow" >
@@ -395,7 +426,7 @@
             
       </section>
       <!-----------PRODUCTS----------->
-        <section class="section product" id="product">
+        <section class="section product " id="product">
             <div class="slogan">
               <span class="slogan--shadow">
                  Products
@@ -514,7 +545,7 @@
         
       </footer>
     </div>
-    
+  </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
     <script src="js/aos.js"></script>
