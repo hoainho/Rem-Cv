@@ -1,3 +1,4 @@
+
 //AOS
 AOS.init({
   });
@@ -373,14 +374,14 @@ new fullpage('#fullPage', {
     autoScrolling: true,
     navigation : true,
     fitToSectionDelay: 1000,
-    scrollingSpeed: 800,
+    scrollingSpeed: 700,
     scrollBar: true,
     css3: true,
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
-     anchors : ['Home','Specialzation','Resume','About','Myproduct','Customer'],
+     //anchors : ['Home','Specialzation','Resume','About','Myproduct','Customer'],
     navigationTooltips: ['Home','Specialzation','Resume','About','Myproduct','Customer'],
- 
+    licenseKey: 'VNLjYxMTBW'
     });
 //Product
         $('#bgFirst').hover(
