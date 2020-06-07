@@ -5299,11 +5299,23 @@ label[for="input-5"] .nav-dot {
   top: 50%;
   left: 47%;
   position: relative; }
+  @media (max-width: 479px) {
+    .finger {
+      left: 38%; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .finger {
+      left: 41%; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .finger {
+      left: 43%; } }
 
 .finger-1 {
   animation: finger-1-animation 2s infinite ease-out;
   top: 24.15%;
-  height: 1.5%; }
+  height: 1.4%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .finger-1 {
+      height: 1.3%; } }
   .finger-1 span {
     animation: finger-1-animation-span 2s infinite ease-out; }
   .finger-1 i {
@@ -5312,7 +5324,10 @@ label[for="input-5"] .nav-dot {
 .finger-2 {
   animation: finger-2-animation 2s infinite ease-out;
   top: 24%;
-  height: 1.6%; }
+  height: 1.5%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .finger-2 {
+      height: 1.4%; } }
   .finger-2 span {
     animation: finger-2-animation-span 2s infinite ease-out; }
   .finger-2 i {
@@ -5321,7 +5336,10 @@ label[for="input-5"] .nav-dot {
 .finger-3 {
   animation: finger-3-animation 2s infinite ease-out;
   top: 24%;
-  height: 1.6%; }
+  height: 1.5%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .finger-3 {
+      height: 1.4%; } }
   .finger-3 span {
     animation: finger-3-animation-span 2s infinite ease-out; }
   .finger-3 i {
@@ -5329,8 +5347,11 @@ label[for="input-5"] .nav-dot {
 
 .finger-4 {
   animation: finger-4-animation 2s infinite ease-out;
-  height: 1.6%;
+  height: 1.5%;
   top: 24.05%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .finger-4 {
+      height: 1.4%; } }
   .finger-4 span {
     animation: finger-4-animation-span 2s infinite ease-out; }
   .finger-4 i {
@@ -5374,6 +5395,15 @@ label[for="input-5"] .nav-dot {
   overflow: hidden;
   top: 24%;
   left: 47%; }
+  @media (max-width: 479px) {
+    .last-finger {
+      left: 38%; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .last-finger {
+      left: 41%; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .last-finger {
+      left: 43%; } }
 
 .last-finger-item {
   position: absolute;

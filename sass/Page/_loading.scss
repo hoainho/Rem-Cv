@@ -28,11 +28,24 @@
     top: 50%;
     left: 47%;
     position: relative;
+    @include mobile{
+      left: 38%;
+    }
+    @include smtablet{
+      left: 41%;
+    }
+    @include tablet{
+      left: 43%;
+    }
   }
   .finger-1{
         animation : finger-1-animation 2s infinite ease-out;
         top: 24.15%;
-        height: 1.5%;
+        height: 1.4%;
+        @include tablet{
+          height: 1.3%;
+        }
+       
     span{
       animation : finger-1-animation-span 2s infinite ease-out;
     }
@@ -43,7 +56,11 @@
   .finger-2{
     animation : finger-2-animation 2s infinite ease-out;
     top: 24%;
-    height: 1.6%;
+    height: 1.5%;
+    @include tablet{
+      height: 1.4%;
+    }
+  
     span{
       animation : finger-2-animation-span 2s infinite ease-out;
     }
@@ -54,7 +71,11 @@
   .finger-3{
     animation: finger-3-animation 2s infinite ease-out;
     top: 24%;
-    height: 1.6%;
+    height: 1.5%;
+    @include tablet{
+      height: 1.4%;
+    }
+   
     span{
       animation: finger-3-animation-span 2s infinite ease-out;
     }
@@ -64,8 +85,12 @@
   }
   .finger-4{
     animation : finger-4-animation 2s infinite ease-out;
-    height: 1.6%;
+    height: 1.5%;
     top: 24.05%;
+    @include tablet{
+      height: 1.4%;
+    }
+    
     span{
       animation :finger-4-animation-span 2s infinite ease-out;
     }
@@ -117,6 +142,15 @@
     overflow: hidden;
     top: 24%;
     left: 47%;
+    @include mobile{
+      left: 38%;
+    }
+    @include smtablet{
+      left: 41%;
+    }
+    @include tablet{
+      left: 43%;
+    }
   }
   .last-finger-item{
     position:absolute;
