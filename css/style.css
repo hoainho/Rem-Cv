@@ -3471,7 +3471,7 @@ html {
 .features {
   width: 100%;
   height: 100vh;
-  background: #222;
+  background: #000;
   color: #fff;
   position: relative; }
   @media (max-width: 479px) {
@@ -3601,7 +3601,7 @@ html {
 .resume {
   width: 100%;
   height: 100vh;
-  background: #222;
+  background: #000;
   color: #fff;
   position: relative; }
   @media (max-width: 479px) {
@@ -3719,7 +3719,7 @@ html {
         -webkit-text-stroke: 1px #c89c21;
         animation: fadeInRightBig 1s ease-in-out; }
       .resume-content--education:hover .resume-content--education_hamberger__content {
-        color: #222;
+        color: #000;
         animation: zoomInUp 2s; }
     .resume-content--education_logo {
       display: flex;
@@ -4179,7 +4179,7 @@ html {
   opacity: 0; }
 
 .about {
-  background-color: #222;
+  background-color: #000;
   color: #fff; }
   @media (max-width: 479px) {
     .about {
@@ -4960,7 +4960,7 @@ html {
         margin-left: 5rem;
         font-size: 5rem;
         font-weight: 600;
-        color: #222;
+        color: #000;
         -webkit-text-stroke: 5px white; }
         @media (max-width: 479px) {
           .product-container--website_first__index {
@@ -5022,7 +5022,7 @@ html {
       margin-left: 5rem;
       font-size: 5rem;
       font-weight: 600;
-      color: #222;
+      color: #000;
       -webkit-text-stroke: 5px white; }
       @media (max-width: 479px) {
         .product-container--website_second__index {
@@ -5356,7 +5356,7 @@ label[for="input-5"] .nav-dot {
       margin: 0 0 2px 0;
       width: 100%;
       height: 2px;
-      background: #4492f4; }
+      background: #000; }
   .finger-item i {
     position: absolute;
     left: 3px;
@@ -5364,7 +5364,7 @@ label[for="input-5"] .nav-dot {
     width: 14px;
     height: 14px;
     border-radius: 10px 10px 7px 7px;
-    background: #4492f4; }
+    background: #000; }
 
 .last-finger {
   position: relative;
@@ -5400,7 +5400,7 @@ label[for="input-5"] .nav-dot {
       width: 34px;
       height: 20px;
       border-radius: 0 0 15px 15px;
-      background: #4492f4; }
+      background: #000; }
 
 @keyframes finger-1-animation {
   0% {
