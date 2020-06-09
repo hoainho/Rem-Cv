@@ -5128,7 +5128,7 @@ input:valid {
 
 .finger-1 {
   animation: finger-1-animation 2s infinite ease-out;
-  top: 24.15%;
+  top: 20.15%;
   height: 1.4%; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .finger-1 {
@@ -5140,7 +5140,7 @@ input:valid {
 
 .finger-2 {
   animation: finger-2-animation 2s infinite ease-out;
-  top: 24%;
+  top: 20%;
   height: 1.5%; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .finger-2 {
@@ -5152,7 +5152,7 @@ input:valid {
 
 .finger-3 {
   animation: finger-3-animation 2s infinite ease-out;
-  top: 24%;
+  top: 20%;
   height: 1.5%; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .finger-3 {
@@ -5165,7 +5165,7 @@ input:valid {
 .finger-4 {
   animation: finger-4-animation 2s infinite ease-out;
   height: 1.5%;
-  top: 24.05%; }
+  top: 20.05%; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .finger-4 {
       height: 1.4%; } }
@@ -5210,7 +5210,7 @@ input:valid {
   width: 24px;
   height: 100%;
   overflow: hidden;
-  top: 24%;
+  top: 20%;
   left: 47%; }
   @media (max-width: 479px) {
     .last-finger {
