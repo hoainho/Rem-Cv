@@ -392,6 +392,16 @@ new fullpage('#fullPage', {
             function(){ $(this).addClass('is-active') , $('#imgSecond',).addClass('is-active')},
             function(){ $(this).removeClass('is-active'), $('#imgSecond',).removeClass('is-active') }
         )
+
+
+//FORM 
+const submit = document.querySelector('#btn-submit'),
+			form = document.querySelector('#contact');
+
+submit.addEventListener('click', (e) => {
+	e.preventDefault();
+	form.reset();
+}, false);
         
 
 
