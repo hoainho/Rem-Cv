@@ -6,6 +6,15 @@ html{
         overflow-y: scroll;
     } 
 }
+/* Show red borders when filled, but invalid */
+input:not(:placeholder-shown) {
+    border-bottom: 2px solid $color-red-dark;
+  }
+  
+  /* Show green borders when valid */
+  input:valid {
+    border-bottom: 2px solid$color-secondary;
+  }
 .l-0{
     left: 0rem !important;
     @include mobile{
@@ -17,6 +26,9 @@ html{
     @include tablet{
         left: 2rem !important;
     }
+}
+.mr-05{
+    margin-right: 0.5rem;
 }
 
 .l--3{

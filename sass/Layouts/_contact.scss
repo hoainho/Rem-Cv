@@ -6,18 +6,147 @@
             display: inline-flex;
             flex-direction: row-reverse;
             justify-items: center;
-            justify-content: center;    
+            justify-content: center; 
+            position: relative;
+            top: 20rem;  
+            &_img{
+                position: relative;
+                bottom: 34rem;
+                right: 20rem;
+                &__details{
+                    border-bottom: 5px solid white;
+                    border-radius: 50%;
+                }
+            }
             &_introduce{
                 position: relative;
                 width: 50%;
                 left: 19rem;
                 top: -7rem;
                 &__tittle{
-                    margin-bottom: 3rem;    
+                    margin-bottom: 3rem; 
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    letter-spacing: 0.5rem;   
+                }
+                &__sub{
+                    width: 70%;
+                    font-size: 1.5rem;
                 }
                 &__list{
                     display: flex;
                     flex-direction: column-reverse;
+                    list-style-type: none;
+                    
+
+                }
+                &__link{
+                    text-decoration: none;
+                    font-size: 1.35rem;
+                    color: $color-white;
+                    &:active,
+                    &:link{
+                        color: $color-secondary;
+                        text-decoration: none;
+                    }
+                    &:hover{
+                        color: $color-secondary;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &--right{
+            color: white;
+            display: inline-flex;
+            flex-direction: column-reverse;
+            position: relative;
+            top: 20rem; 
+            margin-bottom: 5rem;
+            &_form{
+                position: relative;
+                left: 18rem;
+                width: 33%;
+                bottom: 16rem;
+                &__header{
+                    font-size: 3rem;
+                    margin-bottom: 5rem;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                &__information{
+                    margin-bottom: 1.5rem;
+                    width: 100%;
+                    height: 4vh;
+                    
+                    &___input{
+                        background-color: transparent;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        border-bottom: 1px solid rgba($color-secondary, 0.5);
+                        &:active,
+                        &:link{
+                            outline: none;
+                        }
+                    }
+                }
+
+                &__name{
+                    &___icon{
+                        display: flex;
+                        flex-direction: row-reverse;
+                        position: absolute;
+                        top: 11rem;
+                        right: 1rem;
+                        color: yellow;
+                    }
+                }
+                &__email{
+                    &___icon{
+                        display: flex;
+                        flex-direction: row-reverse;
+                        position: absolute;
+                        top: 15rem;
+                        right: 1rem;
+                        color: yellow;
+                    }
+                }
+                &__message{
+                    height: 8rem;
+                    &___icon{
+                        display: flex;
+                        flex-direction: row-reverse;
+                        position: absolute;
+                        top: 21.5rem;
+                        right: 1rem;
+                        color: yellow;
+                    }
+                    &___input{
+                        padding-bottom: 6rem;
+                        position: relative;
+                    }
+                }
+                &__btn{
+                    position: relative;
+                    left: 33%;
+                    &___details{
+                        font-size: 2rem;
+                        letter-spacing: 0.2rem;
+                        padding: 1rem;
+                        background: transparent;
+                        color: white;
+                        border: none;
+                        &::before{
+                            content: '';
+                            background: linear-gradient(180deg, white 50%, transparent 50%); ;
+                        }
+                        
+                    }
+                    &:hover &___details{
+                        background: linear-gradient(180deg,transparent 50%, white 50%);
+                        color: black;
+                    }
                 }
             }
         }

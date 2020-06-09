@@ -491,37 +491,45 @@
                       <h4 class="contact-container--left_introduce__tittle">RemAlw</h4>
                       <p class="contact-container--left_introduce__sub">Front-end developer, musician & Costa club card holder. I'm interested in design, performance & the future of the web...</p>
                       <div class="contact-container--left_introduce__list">
-                          <a href="#" class="contact-container--left_introduce__link">
-                            <i class="fab fa-github"></i>
+                          <a href="#" class="contact-container--left_introduce__link "> 
+                            <i class="fab fa-github mr-05"></i> Github
                           </a>
-                          <a href="#" class="contact-container--left_introduce__link">
-                            <i class="fab fa-facebook"></i>
+                          <a href="#" class="contact-container--left_introduce__link "> 
+                            <i class="fab fa-facebook mr-05"></i> Facebook
                           </a>  
-                          <a href="#" class="contact-container--left_introduce__link">
-                            <i class="fab fa-instagram"></i>
+                          <a href="#" class="contact-container--left_introduce__link ">
+                            <i class="fab fa-instagram mr-05"></i> Instagram
                           </a>    
                           
                       </div>
                   </div>
               </div>
               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 contact-container--right">
-                <form id="contact-container--right_form"></form> 
+                <form id="form" class="contact-container--right_form">
                     <h2  class="contact-container--right_form__header" >Get In Touch </h2>
-                    <fieldset>
-                      <label for="name-input" class="fa fa-user" aria-hidden="true"></label>
-                      <input type="text" placeholder="Your name..." id="name-input" >
-                    </fieldset>
-                    <fieldset>
-                      <label for="email-input" class="fa fa-envelope" aria-hidden="true"></label>
-                      <input type="email" placeholder="Your email..." id="email-input">
-                    </fieldset>
-                    <fieldset>
-                      <label for="message-input" class="fa fa-comment" aria-hidden="true" ></label>
-                      <text areaplaceholder="Your Message..." id="message-input" ></text>
-                    </fieldset>
-                    <fieldset>
-                      <button type="submit" id="btn-submit"> Send</button> 
-                    </fieldset>       
+                    <div class="contact-container--right_form__information contact-container--right_form__name">
+                      <label  for="name-input" class="fa fa-user contact-container--right_form__name___icon" aria-hidden="true"></label> 
+                      <input class="contact-container--right_form__information___input " 
+                                type="text" placeholder="Your name..." 
+                                id="name-input" 
+                                required pattern="\S+.*">
+                    </div>
+                    <div class="contact-container--right_form__information contact-container--right_form__email">
+                      <label for="email-input" class="fa fa-envelope contact-container--right_form__email___icon" aria-hidden="true"></label> 
+                      <input class="contact-container--right_form__information___input" type="email" placeholder="Your email..." id="email-input">
+                    </div>
+                    <div class=" contact-container--right_form__information contact-container--right_form__message">
+                      <label for="message-input" class="fa fa-comment contact-container--right_form__message___icon" aria-hidden="true" ></label>
+                      <input class="contact-container--right_form__information___input contact-container--right_form__message___input" 
+                                type="text" 
+                                placeholder="Your Message..." 
+                                id="message-input" 
+                                required pattern="\S+.*" ></text>
+                    </div>  
+                    <div class="contact-container--right_form__btn">
+                      <button class="contact-container--right_form__btn___details hvr-bounce-to-right" type="submit" id="btn-submit">Send</button> 
+                    </div>   
+                </form>     
               </div>
               
           </div>
