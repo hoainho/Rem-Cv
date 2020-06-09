@@ -14,6 +14,7 @@ input:not(:placeholder-shown) {
   /* Show green borders when valid */
   input:valid {
     border-bottom: 2px solid$color-secondary;
+    background: transparent;
   }
 .l-0{
     left: 0rem !important;
@@ -36,4 +37,7 @@ input:not(:placeholder-shown) {
 }
 .is-active{
     opacity: 1 !important;
+}
+.sent{
+    animation: fadeOutRightBig 1.5s ease-in-out;
 }

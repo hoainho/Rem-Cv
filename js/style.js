@@ -365,9 +365,9 @@ window.onload = function(){
 
 }
 //LoadingPage
-// $(window).on('load', () =>  {
-// 	$('.loading').delay(2000).fadeOut('slow');
-// });
+$(window).on('load', () =>  {
+	$('.loading').delay(2000).fadeOut('slow');
+});
 
 //FullPage
 new fullpage('#fullPage', {
@@ -392,10 +392,14 @@ new fullpage('#fullPage', {
             function(){ $(this).addClass('is-active') , $('#imgSecond',).addClass('is-active')},
             function(){ $(this).removeClass('is-active'), $('#imgSecond',).removeClass('is-active') }
         )
+//Contact
+        $('#btn-submit').click(
+          function(){ $(this).addClass('sent') },
+      )
 
 
 //FORM 
-const submit = document.querySelector('#btn-submit'),
+const submit = document.querySelector('#btn-submit','#btn-submits'),
 			form = document.querySelector('#contact');
 
 submit.addEventListener('click', (e) => {

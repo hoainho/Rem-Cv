@@ -489,15 +489,15 @@
                   </span>
                   <div class="contact-container--left_introduce">
                       <h4 class="contact-container--left_introduce__tittle">RemAlw</h4>
-                      <p class="contact-container--left_introduce__sub">Front-end developer, musician & Costa club card holder. I'm interested in design, performance & the future of the web...</p>
+                      <p class="contact-container--left_introduce__sub">Front-end developer</p>
                       <div class="contact-container--left_introduce__list">
-                          <a href="#" class="contact-container--left_introduce__link "> 
+                          <a href="https://github.com/hoainho" class="contact-container--left_introduce__link "> 
                             <i class="fab fa-github mr-05"></i> Github
                           </a>
-                          <a href="#" class="contact-container--left_introduce__link "> 
+                          <a href="https://www.facebook.com/nho.hoai.1610092" class="contact-container--left_introduce__link "> 
                             <i class="fab fa-facebook mr-05"></i> Facebook
                           </a>  
-                          <a href="#" class="contact-container--left_introduce__link ">
+                          <a href="https://www.instagram.com/rem.alw_/?hl=vi" class="contact-container--left_introduce__link ">
                             <i class="fab fa-instagram mr-05"></i> Instagram
                           </a>    
                           
@@ -505,8 +505,8 @@
                   </div>
               </div>
               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 contact-container--right">
-                <form id="form" class="contact-container--right_form">
-                    <h2  class="contact-container--right_form__header" >Get In Touch </h2>
+                <form method="POST" action="mailto:remalw2019@gmail.com" id="form" class="contact-container--right_form">
+                    <h2  class="contact-container--right_form__header" >Message</h2>
                     <div class="contact-container--right_form__information contact-container--right_form__name">
                       <label  for="name-input" class="fa fa-user contact-container--right_form__name___icon" aria-hidden="true"></label> 
                       <input class="contact-container--right_form__information___input " 
@@ -516,9 +516,13 @@
                     </div>
                     <div class="contact-container--right_form__information contact-container--right_form__email">
                       <label for="email-input" class="fa fa-envelope contact-container--right_form__email___icon" aria-hidden="true"></label> 
-                      <input class="contact-container--right_form__information___input" type="email" placeholder="Your email..." id="email-input">
+                      <input class="contact-container--right_form__information___input" 
+                              type="email" 
+                              placeholder="Your email..." 
+                              id="email-input"
+                              required pattern="\S+.*">
                     </div>
-                    <div class=" contact-container--right_form__information contact-container--right_form__message">
+                    <div class="contact-container--right_form__information contact-container--right_form__message">
                       <label for="message-input" class="fa fa-comment contact-container--right_form__message___icon" aria-hidden="true" ></label>
                       <input class="contact-container--right_form__information___input contact-container--right_form__message___input" 
                                 type="text" 
@@ -526,8 +530,9 @@
                                 id="message-input" 
                                 required pattern="\S+.*" ></text>
                     </div>  
-                    <div class="contact-container--right_form__btn">
-                      <button class="contact-container--right_form__btn___details hvr-bounce-to-right" type="submit" id="btn-submit">Send</button> 
+                    <div class="contact-container--right_form__btn" id="btn-submits">
+                      <button class="contact-container--right_form__btn___details" type="submit" >Send</button> 
+                      <button class="contact-container--right_form__btn___details-before" type="submit"  >Send</button> 
                     </div>   
                 </form>     
               </div>
