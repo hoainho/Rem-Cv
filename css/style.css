@@ -4931,7 +4931,7 @@ html {
     .product-background--second {
       transition: 0.6s;
       animation: pulse 5s infinite linear;
-      background-image: url(../img/CMS.gif); }
+      background-image: url(../img/CmS.jpg); }
       @media (max-width: 479px) {
         .product-background--second {
           background-size: 40rem;
