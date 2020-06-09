@@ -1,0 +1,25 @@
+.contact {
+    background: linear-gradient(120deg, #383745 50%, #22202B 50%);
+    &-container{
+        &--left{
+            color: $color-white;
+            display: inline-flex;
+            flex-direction: row-reverse;
+            justify-items: center;
+            justify-content: center;    
+            &_introduce{
+                position: relative;
+                width: 50%;
+                left: 19rem;
+                top: -7rem;
+                &__tittle{
+                    margin-bottom: 3rem;    
+                }
+                &__list{
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+    }
+}
