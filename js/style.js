@@ -365,9 +365,9 @@ window.onload = function(){
 
 }
 // LoadingPage
-$(window).on('load', () =>  {
-	$('.loading').delay(2000).fadeOut('slow');
-});
+// $(window).on('load', () =>  {
+// 	$('.loading').delay(2000).fadeOut('slow');
+// });
 
 //FullPage
 new fullpage('#fullPage', {
