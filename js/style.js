@@ -364,7 +364,7 @@ window.onload = function(){
 
 
 }
-// LoadingPage
+//LoadingPage
 // $(window).on('load', () =>  {
 // 	$('.loading').delay(2000).fadeOut('slow');
 // });
