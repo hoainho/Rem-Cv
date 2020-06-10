@@ -399,7 +399,7 @@ new fullpage('#fullPage', {
 
 
 //FORM 
-const submit = document.querySelector('#btn-submit','#btn-submits'),
+const submit = document.querySelector('#btn-submits'),
 			form = document.querySelector('#contact');
 
 submit.addEventListener('click', (e) => {
