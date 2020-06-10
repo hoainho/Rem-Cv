@@ -533,13 +533,14 @@
                   data-aos-delay="300" 
                   data-aos-offset="100"
               >
-                <form method="POST" action="mailto:remalw2019@gmail.com" id="form" class="contact-container--right_form">
+                <form action="contact.php" method="POST" id="form" class="contact-container--right_form">
                     <h2  class="contact-container--right_form__header" >Message</h2>
                     <div class="contact-container--right_form__information contact-container--right_form__name">
                       <label  for="name-input" class="fa fa-user contact-container--right_form__name___icon" aria-hidden="true"></label> 
                       <input class="contact-container--right_form__information___input " 
                                 type="text" placeholder="Your name..." 
                                 id="name-input" 
+                                name="name"
                                 required pattern="\S+.*">
                     </div>
                     <div class="contact-container--right_form__information contact-container--right_form__email">
@@ -548,6 +549,7 @@
                               type="email" 
                               placeholder="Your email..." 
                               id="email-input"
+                              name="email"
                               required pattern="\S+.*">
                     </div>
                     <div class="contact-container--right_form__information contact-container--right_form__message">
@@ -556,11 +558,13 @@
                                 type="text" 
                                 placeholder="Your Message..." 
                                 id="message-input" 
-                                required pattern="\S+.*" ></text>
+                                name="message"
+                                required pattern="\S+.*"
+                                rows="10" ></text>
                     </div>  
-                    <div class="contact-container--right_form__btn" id="btn-submits">
+                    <div class="contact-container--right_form__btn" name="submit" id="btn-submit">
                       <button class="contact-container--right_form__btn___details" type="submit" >Send</button> 
-                      <button class="contact-container--right_form__btn___details-before" type="submit">Send</button> 
+                      <button class="contact-container--right_form__btn___details-before" type="submit" >Send</button> 
                     </div>   
                 </form>     
               </div>
