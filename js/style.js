@@ -407,8 +407,38 @@ submit.addEventListener('click', (e) => {
 	form.reset();
 }, false);
         
+//Contact
 
+function sendEmail(){
+    var name = $('#name-input');
+    var email = $('#email-input');
+    var message = $('#message-input');
+  if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(message)) {
+    $.ajax({
+      url : 'contact.php',
+      method :'POST',
+      dataType : 'json',
+      data:{
+        name: name.val(),
+        email : email.val(),
+        message: message.val()
+      }, 
+      success : function(response){
+        $('#sendmail')[0].reset();  
 
+      }    
+    });
+  }
+}
+
+function isNotEmpty(caller){
+  if (caller.val()== ""){
+    caller.css('border', '1px solid red');
+    return false;
+  } else 
+    caller.css('border', '');
+    return true;
+}
        
 
 
