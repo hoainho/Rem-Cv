@@ -5691,7 +5691,8 @@ input:valid {
         @media (max-width: 479px) {
           .contact-container--left_introduce__link {
             font-size: 0.5rem;
-            margin-right: 1rem; } }
+            margin-right: 1rem;
+            text-align: center; } }
         @media (min-width: 480px) and (max-width: 767px) {
           .contact-container--left_introduce__link {
             font-size: 1rem;
