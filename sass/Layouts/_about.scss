@@ -123,10 +123,10 @@
                         height: 58vh;
                     }
                     @include tablet{
-                        top: -21rem;
-                        width: 40vw;
+                        top: -17rem;
+                        width: 35vw;
                         left: -6rem;
-                        height: 60vh;
+                        height: 45vh;
                     }
                         .about-container--left_box__content{
                         position: relative;
@@ -148,8 +148,8 @@
                             height: 20vh;
                         }
                         @include tablet{
-                            right: 9rem;
-                            top: 37rem;
+                            right: 7rem;
+                            top: 24rem;
                         }
                         }
                         .about-container--left_box__year{
@@ -180,6 +180,10 @@
                             }
                             @include tablet{
                                 font-size: 30rem;
+                            }
+                            @include tablet{
+                                font-size: 22rem;
+                                left: 8rem;
                             }
                         }
                         .about-container--left_box__content___experience::before{

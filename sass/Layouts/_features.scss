@@ -19,8 +19,8 @@
               left: 4% !important;
         }
         @include tablet{
-              top: 8% !important;
-              left: 4% !important;
+              top: 12% !important;
+              left: 10% !important;
         }
       }
       &--content{
@@ -41,8 +41,8 @@
               font-size: 4rem;
           }
             @include tablet {
-              top: 10%;
-              left: 26%;
+              top: 15%;
+              left: 32%;
             }
       }
     }
@@ -69,8 +69,9 @@
           }
           @include tablet{
             margin-top: 0;
-            top: 4rem;
-            height: 22vh;
+            top: -1rem;
+            height: 20vh;
+            padding: 0 20rem;
           }
           &:hover{
             .web-divider {
@@ -149,7 +150,7 @@
             padding-bottom: 2rem;
           }
           @include tablet {
-            padding-bottom: 3rem;
+            padding-bottom: 0rem;
           }
 
         }

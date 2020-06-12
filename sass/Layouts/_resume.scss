@@ -41,10 +41,10 @@
             @include tablet{
                 margin-top: 2rem;
                 padding: 0px 3rem;
-                height: 40vh;
+                height: 30vh;
                 width: 100%;
                 position: relative;
-                top:3rem;
+                top: -3rem;
             }
             &:hover {
                 opacity: 1 !important;
@@ -327,10 +327,10 @@
             @include tablet{
                 margin-top: 2rem;
                 padding: 0px 3rem;
-                height: 40vh;
+                height: 30vh;
                 width: 100%;
                 position: relative;
-                top: -3rem;
+                top: 5rem;
             }
             &:hover {
                 opacity: 1 !important;
@@ -359,7 +359,7 @@
                 }
                 @include tablet{
                     height: 32vh;
-                    top: -10rem;
+                    top: -1rem;
                     padding: 3rem;
                     width: 95%;
                     margin: 0 1rem;
