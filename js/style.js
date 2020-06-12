@@ -380,7 +380,7 @@ new fullpage('#fullPage', {
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
      //anchors : ['Home','Specialzation','Resume','About','Myproduct','Customer'],
-    navigationTooltips: ['Home','Specialzation','Resume','About','Myproduct','Customer'],
+    navigationTooltips: ['Home','Features','Resume','About','Myproduct','Customer'],
     licenseKey: 'VNLjYxMTBW'
     });
 //Product
