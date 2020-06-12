@@ -9,13 +9,51 @@
             justify-content: center; 
             position: relative;
             top: 25rem;  
+            @include mobile{
+                top: -5rem;
+                left: 10rem;
+            }
+            @include smtablet{
+                top: 4rem;
+                left: 10rem;
+                height: 23vh;
+                width: 53vw;
+            }
+            @include tablet{
+                top: -6rem;
+                left: 2rem;
+                height: 27vh;
+                width: 95%;
+            }
             &_img{
                 position: relative;
                 bottom: 30rem;
                 right: 22rem;
+                @include mobile{
+                    bottom: 8rem;
+                    right: 3rem;
+                    height: 50%;
+                }
+                @include smtablet{
+                    bottom: 8rem;
+                    right: 1rem;
+                }
+                @include tablet{
+                    bottom: 2rem;
+                    right: 21rem;
+                }
                 &__details{
                     border-bottom: 5px solid white;
                     border-radius: 50%;
+                    @include mobile{
+                        width: 100%;
+                    }
+                    @include smtablet{
+                        width: 100%;
+                    }
+                    @include tablet{
+                        width: 100%; 
+                    }
                 }
             }
             &_introduce{
@@ -23,12 +61,46 @@
                 width: 50%;
                 left: 19rem;
                 top: -7rem;
+                @include mobile{
+                    left: 6.5rem;
+                    top: 3.5rem;
+                }
+                @include smtablet{
+                    left: 16rem;
+                    top: 8rem;
+                }
+                @include tablet{
+                    left: 19rem;
+                    top: 20rem;
+                }
                 &__tittle{
+                    @include mobile{
+                        font-size: 1rem;
+                    }
+                    @include smtablet{
+                        font-size: 1.5rem;
+                    }
+                    @include tablet{
+                        width: 35%;
+                    }
                     font-size: 2.5rem;
                     font-weight: 600;
                     letter-spacing: 0.5rem;   
                 }
                 &__sub{
+                    @include mobile{
+                        font-size: 0.5rem;
+                        margin-bottom:0rem;
+                    }
+                    @include smtablet{
+                        width: 79%;
+                        font-size: 1rem;
+                        margin-bottom: 0rem;
+                    }
+                    @include tablet{
+                        width: 39%;
+                        margin-bottom:0rem;
+                    }
                     width: 70%;
                     font-size: 1.5rem;
                     margin-bottom: 3rem; 
@@ -37,7 +109,18 @@
                     display: flex;
                     flex-direction: column-reverse;
                     list-style-type: none;
-                    
+                    @include mobile{
+                        flex-direction: row-reverse;
+                    }
+                    @include smtablet{
+                        flex-direction: row-reverse;
+                    }
+                    @include tablet{
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
+                        position: relative;
+                        right: 6rem;
+                    }
 
                 }
                 &__link{
@@ -45,6 +128,16 @@
                     font-size: 1.35rem;
                     color: $color-white;
                     width: 24%;
+                    @include mobile{
+                        font-size: 0.5rem;
+                        margin-right: 1rem;
+                    }
+                    @include smtablet{
+                        font-size: 1rem;
+                        width: 30%;
+                        margin-right: 2rem;
+                        text-align: center;
+                    }
                     &:active,
                     &:link{
                         color: $color-secondary;
@@ -64,22 +157,73 @@
             position: relative;
             top: 20rem; 
             margin-bottom: 5rem;
+            @include mobile{
+                top: 7rem;
+                right: 11rem;
+                margin-bottom: 5rem;
+            }
+            @include smtablet{
+                top: 5rem;
+                left: 2rem;
+                width: 94%;
+                margin-bottom: 0rem;
+            }
+            @include tablet{
+                top: -2rem;
+                width: 100%;
+                margin-bottom: 0rem;
+            }
             &_form{
                 position: relative;
                 left: 18rem;
                 width: 33%;
                 bottom: 16rem;
+                @include mobile{
+                    left: -1rem;
+                    width: 100%;
+                    bottom: -5rem;
+                }
+                @include smtablet{
+                    left: 12rem;
+                    width: 55%;
+                    bottom: 4rem;
+                }
+                @include tablet{
+                    left: 16rem;
+                    width: 50%;
+                    bottom: -4rem;
+                }
                 &__header{
                     font-size: 3rem;
                     margin-bottom: 5rem;
                     text-transform: uppercase;
                     text-align: center;
+                    @include mobile{
+                        font-size: 1.5rem;
+                        margin-bottom: 3rem;
+                        width: 17rem;
+                    }
+                    @include smtablet{
+                        font-size: 2rem;
+                        margin: 3rem 0;
+                    }
+                    @include tablet{
+                        margin-bottom: 3rem;
+                    }
                 }
                 &__information{
                     margin-bottom: 1.5rem;
                     width: 100%;
                     height: 4vh;
-                    
+                    @include mobile {
+                        margin-bottom: 1.5rem;
+                        width: 18rem;
+                        font-size: 1rem;
+                    }
+                    @include smtablet {
+                        margin-bottom: 1.5rem;
+                        font-size: 1.2rem;
+                    }
                     &___input{
                         background-color: transparent;
                         width: 100%;
@@ -105,6 +249,17 @@
                         top: 11rem;
                         right: 1rem;
                         color: yellow;
+                        @include mobile{
+                            top: 8rem;
+                            right: 0rem;
+                        }
+                        @include smtablet{
+                            top: 9rem;
+                            right: 0rem;
+                        }
+                        @include tablet{
+                            top: 10rem;
+                        }
                     }
                 }
                 &__email{
@@ -115,6 +270,17 @@
                         top: 15rem;
                         right: 1rem;
                         color: yellow;
+                        @include mobile{
+                            top: 13rem;
+                            right: 0rem;
+                        }
+                        @include smtablet{
+                            top: 14rem;
+                            right: 0rem;
+                        }
+                        @include tablet{
+                            top: 16rem;
+                        }
                     }
                 }
                 &__message{
@@ -126,6 +292,17 @@
                         top: 21.5rem;
                         right: 1rem;
                         color: yellow;
+                        @include mobile{
+                            top: 18.5rem;
+                            right: 0rem;
+                        }
+                        @include smtablet{
+                            top: 20rem;
+                            right: 0rem;
+                        }
+                        @include tablet{
+                            top: 22rem;
+                        }
                     }
                     &___input{
                         padding-bottom: 6rem;
@@ -136,6 +313,16 @@
                     position: relative;
                     left: 34%;
                     width: 30%;
+                    @include mobile{
+                        width: 31%;
+                    }
+                    @include smtablet{
+                        left: 44%;
+                        width: 21%;
+                    }
+                    @include tablet{
+                        left: 42%;
+                    }
                     &:active,
                     &:link,
                     &:focus,
@@ -151,6 +338,12 @@
                         color: white;
                         border:1px solid $color-secondary;
                         transition: 0.8s;
+                        @include mobile{
+                            font-size: 1rem;
+                        }
+                        @include smtablet{
+                            font-size: 1.5rem;
+                        }
                             &:focus,
                             &:visited,
                             &:active,
@@ -169,6 +362,12 @@
                             transition: 0.8s;
                             left: 0;
                             top: 0;
+                            @include mobile{
+                                font-size: 1rem;
+                            }
+                            @include smtablet{
+                                font-size: 1.5rem;
+                            }
                             &:focus,
                             &:visited,
                             &:active,
