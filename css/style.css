@@ -3669,10 +3669,10 @@ input:valid {
       .resume-content--education {
         margin-top: 2rem;
         padding: 0px 3rem;
-        height: 40vh;
-        width: 100%;
+        height: 25vh;
+        width: 90%;
         position: relative;
-        top: 5rem; } }
+        top: 0rem; } }
     @media (min-width: 480px) and (max-width: 767px) {
       .resume-content--education {
         margin-top: 2rem;
@@ -3699,9 +3699,10 @@ input:valid {
       animation: pulse 2s infinite; }
       @media (max-width: 479px) {
         .resume-content--education:hover {
-          height: 40vh;
+          height: 30vh;
           padding: 3rem;
-          width: 95%;
+          width: 78%;
+          left: 1rem;
           margin: 0 1rem; } }
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--education:hover {
@@ -3721,9 +3722,16 @@ input:valid {
         color: #fff;
         color: #c89c21;
         animation: zoomInDown 1s ease-in-out; }
+        @media (max-width: 479px) {
+          .resume-content--education:hover .resume-content--education_logo__icon {
+            font-size: 4rem; } }
       .resume-content--education:hover .resume-content--education_sticket__icon {
         color: #c89c21;
         animation: lightSpeedInLeft 1s ease-in-out; }
+      @media (max-width: 479px) {
+        .resume-content--education:hover .resume-content--education_box__tittle {
+          margin: 1rem 0;
+          font-size: 2rem; } }
       .resume-content--education:hover .resume-content--education_box__tittleE {
         color: transparent;
         -webkit-text-stroke: 1px #c89c21;
@@ -3774,8 +3782,8 @@ input:valid {
       top: -12rem; }
       @media (max-width: 479px) {
         .resume-content--education_logo {
-          top: -7rem;
-          left: 0.5rem;
+          top: -4rem;
+          left: -0.5rem;
           width: 88%; } }
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--education_logo {
@@ -3790,7 +3798,7 @@ input:valid {
         -webkit-text-stroke: 1px #c89c21; }
         @media (max-width: 479px) {
           .resume-content--education_logo__icon {
-            font-size: 6rem; } }
+            font-size: 4rem; } }
     .resume-content--education_sticket {
       display: flex;
       justify-content: flex-end; }
@@ -3812,7 +3820,7 @@ input:valid {
       @media (max-width: 479px) {
         .resume-content--education_box {
           height: 5vh;
-          top: -12.5rem; } }
+          top: -7.5rem; } }
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--education_box {
           top: -14.5rem; } }
@@ -3829,8 +3837,11 @@ input:valid {
         margin: 2rem 0;
         font-size: 4rem;
         font-weight: 600;
-        -webkit-text-stroke: 0.1rem #c89c21;
-        color: transparent; }
+        -webkit-text-stroke: 0.1rem #c89c21; }
+        @media (max-width: 479px) {
+          .resume-content--education_box__tittle {
+            margin: 1rem 0;
+            font-size: 2rem; } }
       .resume-content--education_box__tittleE {
         top: -85%;
         left: 14%;
@@ -3887,7 +3898,7 @@ input:valid {
       bottom: 8rem; }
       @media (max-width: 479px) {
         .resume-content--education_hamberger {
-          bottom: 10rem; } }
+          bottom: 8rem; } }
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--education_hamberger {
           bottom: 15rem; } }
@@ -3896,14 +3907,17 @@ input:valid {
           bottom: 11rem; } }
       @media (max-width: 479px) {
         .resume-content--education_hamberger__sub {
-          font-size: 1.5rem; } }
+          font-size: 1.2rem;
+          margin: 0;
+          top: 1rem;
+          position: relative; } }
       .resume-content--education_hamberger__content {
         margin-top: 2rem;
         font-size: 1.7rem;
         opacity: 0.5; }
         @media (max-width: 479px) {
           .resume-content--education_hamberger__content {
-            font-size: 1.3rem; } }
+            font-size: 1rem; } }
   .resume-content--experience {
     background: linear-gradient(to right top, transparent, #EECDA3, 0.8);
     opacity: .05;
@@ -3914,10 +3928,10 @@ input:valid {
       .resume-content--experience {
         margin-top: 2rem;
         padding: 0px 3rem;
-        height: 40vh;
-        width: 100%;
+        height: 36vh;
+        width: 90%;
         position: relative;
-        top: -3rem; } }
+        top: 2rem; } }
     @media (min-width: 480px) and (max-width: 767px) {
       .resume-content--experience {
         margin-top: 2rem;
@@ -3973,6 +3987,10 @@ input:valid {
       .resume-content--experience:hover .resume-content--experience_box__tittle {
         color: transparent;
         -webkit-text-stroke: 1px #fff; }
+        @media (max-width: 479px) {
+          .resume-content--experience:hover .resume-content--experience_box__tittle {
+            font-size: 2rem;
+            margin: 1rem 0; } }
       .resume-content--experience:hover .resume-content--experience_hamberger__content {
         color: #fff;
         animation: fadeInLeftBig 1s ease-in; }
@@ -3988,13 +4006,15 @@ input:valid {
       top: -12rem; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .resume-content--experience_logo {
-          top: -10rem; } }
+          top: -10rem;
+          left: 0.5rem;
+          width: 88%; } }
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--experience_logo {
           top: -10rem; } }
       @media (max-width: 479px) {
         .resume-content--experience_logo {
-          top: -9rem;
+          top: -5rem;
           left: 0.5rem;
           width: 88%; } }
       .resume-content--experience_logo__icon {
@@ -4002,7 +4022,7 @@ input:valid {
         font-size: 10rem; }
         @media (max-width: 479px) {
           .resume-content--experience_logo__icon {
-            font-size: 6rem; } }
+            font-size: 4rem; } }
     .resume-content--experience_sticket {
       display: flex;
       justify-content: flex-end; }
@@ -4023,7 +4043,8 @@ input:valid {
       @media (max-width: 479px) {
         .resume-content--experience_box {
           height: 5vh;
-          top: -14.5rem; } }
+          top: -8.5rem;
+          left: 1rem; } }
       @media (min-width: 480px) and (max-width: 767px) {
         .resume-content--experience_box {
           top: -16.5rem; } }
@@ -4040,6 +4061,10 @@ input:valid {
         font-weight: 600;
         -webkit-text-stroke: 0.1rem #c89c21;
         color: #c89c21; }
+        @media (max-width: 479px) {
+          .resume-content--experience_box__tittle {
+            margin: 1rem 0;
+            font-size: 2rem; } }
       .resume-content--experience_box__tittleE1 {
         top: -85%;
         left: 14%;
@@ -4085,7 +4110,7 @@ input:valid {
       bottom: 18rem; }
       @media (max-width: 479px) {
         .resume-content--experience_hamberger {
-          bottom: 12rem; } }
+          bottom: 8rem; } }
       .resume-content--experience_hamberger__content {
         margin-top: 2rem;
         font-size: 1.7rem;
@@ -4093,7 +4118,7 @@ input:valid {
         color: #c89c21; }
         @media (max-width: 479px) {
           .resume-content--experience_hamberger__content {
-            font-size: 1.06rem; } }
+            font-size: 1rem; } }
         @media (min-width: 480px) and (max-width: 767px) {
           .resume-content--experience_hamberger__content {
             font-size: 1.3rem; } }
@@ -4104,7 +4129,7 @@ input:valid {
         font-size: 2rem; }
         @media (max-width: 479px) {
           .resume-content--experience_hamberger__tittle {
-            font-size: 1.5rem; } }
+            font-size: 1.2rem; } }
 
 .footer {
   position: fixed;
@@ -4363,7 +4388,7 @@ input:valid {
             @media (max-width: 479px) {
               .about-container--left_box:hover .about-container--left_box__content {
                 font-size: 2rem;
-                right: 4rem;
+                right: 1rem;
                 top: 2rem; } }
             @media (min-width: 480px) and (max-width: 767px) {
               .about-container--left_box:hover .about-container--left_box__content {
@@ -4391,9 +4416,9 @@ input:valid {
               .about-container--left_box:hover .about-container--left_box__year {
                 width: 13rem;
                 height: 19rem;
-                font-size: 15rem;
+                font-size: 11rem;
                 left: -9%;
-                top: -8rem; } }
+                top: -6rem; } }
             @media (min-width: 480px) and (max-width: 767px) {
               .about-container--left_box:hover .about-container--left_box__year {
                 font-size: 17rem;
