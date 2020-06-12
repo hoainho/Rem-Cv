@@ -11,8 +11,8 @@
     &-tittle{
       &--icon{
         @include mobile{
-          top: 7% !important;
-          left: -9% !important;
+          top: 14% !important;
+          left: -11% !important;
         }
         @include smtablet{
               top: 9% !important;
@@ -26,7 +26,7 @@
       &--content{
             @include mobile{
               position: absolute;
-              top: 4rem;
+              top: 7rem;
               left: 5rem;
             &_before{
               font-size: 3rem;
@@ -60,7 +60,9 @@
           @include mobile {
             margin-top: -2rem;
             top: 3rem;
-            height: 28vh;
+            left: -3rem;
+            height: 20vh;
+            padding: 0px 7rem;
           }
           @include smtablet{
             margin-top: 0;
@@ -111,7 +113,11 @@
           &__icon{
             color: $color-secondary;  
             font-size: 5rem;
-            
+            @include mobile{
+              position: relative;
+              bottom: 3rem;
+              font-size: 3rem;
+            }
           }
         }
         &_tittle{
@@ -119,10 +125,11 @@
           text-transform: uppercase;
           letter-spacing: .5rem;
           @include mobile {
-            margin: 2rem 0;
-            width: 60%;
+            margin: 1rem 0;
+            width: 76%;
             right: -22%;
             position: relative;
+            font-size: 1.5rem;
           }
           @include smtablet{
             margin: 0;
@@ -137,6 +144,7 @@
             right: -10rem;
             width: 34vw;
             top: -1.5rem;
+            font-size: 1.5rem;
           }
         }
         &_content{
@@ -145,6 +153,7 @@
           padding-bottom: 5rem;
           @include mobile {
             padding-bottom: 0rem;
+            font-size:1rem;
           }
           @include smtablet {
             padding-bottom: 2rem;

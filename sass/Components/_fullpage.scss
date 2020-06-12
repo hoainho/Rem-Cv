@@ -2,7 +2,7 @@
     right: 10rem !important;
     top: 45% !important;
     @include mobile{
-        right: 7rem !important ;
+        right: 2rem !important;
     }
     @include smtablet{
         right: 6rem !important;
@@ -11,10 +11,28 @@
         right: 8rem !important;
     }
 }
+#fp-nav ul, .fp-slidesNav ul {
+    
+    @include mobile{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: 5rem;
+        left: -2rem;
+        bottom: 4rem;
+    
+    }
+}
+#fp-nav ul li .fp-tooltip.fp-right {
+    @include mobile{
+        right: 3px;
+        top: 1.6rem !important;
+    }
+}
 #fp-nav ul li, .fp-slidesNav ul li {
     margin-top: 4rem !important;
-    @include    mobile{
-        margin-top: 2rem;
+    @include mobile{
+        height: 0px !important;
     }
     
 }
@@ -22,6 +40,13 @@
     width: 5rem !important;
     height: 5rem !important;
     margin:  0 !important;
+    @include mobile{
+        display: block;
+        width: 14px;
+        height: 0px;
+        margin: 7px;
+        position: relative;
+    }
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: transparent !important;
@@ -29,6 +54,9 @@
     width: 0.5rem !important;
     height: 0.5rem !important;
     margin: 0 !important;
+    @include mobile{
+
+    }
     
 }
 #fp-nav ul li a.active span, 
@@ -42,4 +70,7 @@
 }
 #fp-nav ul li .fp-tooltip{
     top: 1.6rem !important;
+    @include mobile{
+        top: 0.1rem !important;
+    }
 }
