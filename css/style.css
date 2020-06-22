@@ -4998,11 +4998,13 @@ input:valid {
       -ms-transform: scale(1);
       transform: scale(1);
       background-position: center;
-      background-size: cover; }
+      background-size: cover;
+      background-repeat: no-repeat; }
     .product-background--first {
       transition: 0.6s;
       animation: pulse 5s infinite linear;
-      background-image: url(../img/comingsoon.jpg); }
+      background-image: url(../img/more1A.png);
+      background-size: 60rem !important; }
       @media (max-width: 479px) {
         .product-background--first {
           background-size: 40rem;
