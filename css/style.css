@@ -5003,7 +5003,7 @@ input:valid {
     .product-background--first {
       transition: 0.6s;
       animation: pulse 5s infinite linear;
-      background-image: url(../img/more1A.png);
+      background-image: url(../img/backgroundtech1.png);
       background-size: 60rem !important; }
       @media (max-width: 479px) {
         .product-background--first {
