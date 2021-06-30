@@ -6,7 +6,8 @@
   display: flex;
   justify-items: center;
   justify-content: center;
-  background: $color-gray;
+  background: rgb(36, 36, 36);
+  background: linear-gradient(90deg, rgba(36, 36, 36, 1) 0%, rgba(5, 5, 5, 1) 70%, rgba(5, 5, 5, 1) 100%);
   overflow: hidden;
   &-bg {
     display: flex;
@@ -31,13 +32,13 @@
         width: 93vw;
         height: 95vh;
       }
-      top: -39rem;
+      // top: -39rem;
       right: 0rem;
       z-index: 1;
       box-sizing: border-box;
       position: absolute;
-      width: 60vw;
-      height: 154vh;
+      width: 40vw;
+      // height: 154vh;
       background-repeat: no-repeat;
     }
   }
