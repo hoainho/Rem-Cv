@@ -250,18 +250,19 @@ input:valid {
   justify-items: center;
   justify-content: center;
   background: #242424;
+  background: linear-gradient(90deg, #242424 0%, #050505 70%, #050505 100%);
   overflow: hidden; }
   .hero-bg {
     display: flex;
     justify-items: center;
     justify-content: center; }
     .hero-bg--img {
-      right: 32rem;
+      right: 0rem;
       z-index: 1;
       box-sizing: border-box;
       position: absolute;
-      width: 30vw;
-      height: 100vh; }
+      width: 40vw;
+      background-repeat: no-repeat; }
       @media (max-width: 479px) {
         .hero-bg--img {
           top: 20rem;
@@ -353,10 +354,8 @@ input:valid {
             border-left-color: #c89c21;
             border-right-color: #c89c21;
             border-bottom-color: #c89c21;
-            -webkit-transition: border-left-color 0.15s linear 0.4s, border-top-color 0.15s linear 0.5s,
- border-right-color 0.15s linear 0.6s, border-bottom-color 0.15s linear 0.7s;
-            transition: border-left-color 0.15s linear 0.3s, border-top-color 0.15s linear 0.4s,
- border-right-color 0.15s linear 0.5s, border-bottom-color 0.15s linear 0.6s; }
+            -webkit-transition: border-left-color 0.15s linear 0.4s, border-top-color 0.15s linear 0.5s, border-right-color 0.15s linear 0.6s, border-bottom-color 0.15s linear 0.7s;
+            transition: border-left-color 0.15s linear 0.3s, border-top-color 0.15s linear 0.4s, border-right-color 0.15s linear 0.5s, border-bottom-color 0.15s linear 0.6s; }
           .hero-container--row_download:hover .circle::after {
             border-top: 2px solid #c89c21;
             border-left-width: 2px;
@@ -611,6 +610,17 @@ input:valid {
     filter: hue-rotate(0deg); }
   100% {
     filter: hue-rotate(360deg); } }
+
+@keyframes displayNotifys {
+  0% {
+    opacity: 0;
+    transform: translateX(400px); }
+  100% {
+    opacity: 0;
+    transform: translateX(400px); }
+  50% {
+    opacity: 1;
+    transform: translateX(0px); } }
 
 /*!
  * animate.css -https://daneden.github.io/animate.css/
@@ -4534,17 +4544,14 @@ input:valid {
           left: 12rem;
           top: 1rem; } }
       .about-container--right_tittle__skill___layer:after {
-        font: 8rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica,
- sans-serif;
+        font: 8rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica, sans-serif;
         content: "Skill"; }
         @media (max-width: 479px) {
           .about-container--right_tittle__skill___layer:after {
-            font: 4rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica,
- sans-serif; } }
+            font: 4rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica, sans-serif; } }
         @media (min-width: 480px) and (max-width: 767px) {
           .about-container--right_tittle__skill___layer:after {
-            font: 6rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica,
- sans-serif; } }
+            font: 6rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica, sans-serif; } }
     .about-container--right_content {
       color: white; }
       @media (max-width: 479px) {
@@ -4653,29 +4660,23 @@ input:valid {
           left: 10.5rem;
           transform: rotateY(-5deg) rotateX(2deg) translateZ(-16px); }
           .about-container--right_content__dev___propressbar____html::after {
-            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS",
- sans-serif;
+            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS", sans-serif;
             content: "HTML";
             letter-spacing: 10px; }
           .about-container--right_content__dev___propressbar____css::after {
-            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS",
- sans-serif;
+            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS", sans-serif;
             content: "CSS"; }
           .about-container--right_content__dev___propressbar____jquery::after {
-            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS",
- sans-serif;
+            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS", sans-serif;
             content: "JQuery"; }
           .about-container--right_content__dev___propressbar____sass::after {
-            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS",
- sans-serif;
+            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS", sans-serif;
             content: "SASS"; }
           .about-container--right_content__dev___propressbar____react::after {
-            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS",
- sans-serif;
+            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS", sans-serif;
             content: "REACT"; }
           .about-container--right_content__dev___propressbar____C::after {
-            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS",
- sans-serif;
+            font: 3rem/0.13 Helvetica, "Kaushan Script", "Roboto", "Pacifico", "Trebuchet MS", sans-serif;
             content: "C++"; }
           .about-container--right_content__dev___propressbar:first-child:after {
             color: #fff;
@@ -5579,7 +5580,7 @@ input:valid {
     transform: rotate(0deg); } }
 
 .contact {
-  background: linear-gradient(120deg, #383745 50%, #22202b 50%); }
+  background: linear-gradient(120deg, #050505 50%, #242424 50%); }
   .contact-container--left {
     color: #fff;
     display: inline-flex;
@@ -5606,8 +5607,11 @@ input:valid {
         width: 95%; } }
     .contact-container--left_img {
       position: relative;
-      bottom: 30rem;
-      right: 22rem; }
+      bottom: 22rem;
+      right: 22rem;
+      width: 50%;
+      margin: 0 auto;
+      line-height: 0; }
       @media (max-width: 479px) {
         .contact-container--left_img {
           bottom: 8rem;
@@ -5622,8 +5626,9 @@ input:valid {
           bottom: 2rem;
           right: 21rem; } }
       .contact-container--left_img__details {
-        border-bottom: 5px solid white;
-        border-radius: 50%; }
+        width: 100%;
+        height: 100%;
+        border-bottom: 4px solid white; }
         @media (max-width: 479px) {
           .contact-container--left_img__details {
             width: 100%; } }
@@ -5633,11 +5638,30 @@ input:valid {
         @media (min-width: 768px) and (max-width: 1024px) {
           .contact-container--left_img__details {
             width: 100%; } }
+      .contact-container--left_img article {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4px;
+        mix-blend-mode: lighten; }
+      .contact-container--left_img div {
+        background: black;
+        height: 10vw; }
+      .contact-container--left_img div:nth-of-type(2) {
+        grid-column: 2/4; }
+      .contact-container--left_img div:nth-of-type(3) {
+        grid-column: 1/4; }
+      .contact-container--left_img div:last-child {
+        border-right: 4px solid white; }
     .contact-container--left_introduce {
       position: relative;
       width: 50%;
-      left: 19rem;
-      top: -7rem; }
+      height: fit-content;
+      left: 18rem;
+      top: 2rem; }
       @media (max-width: 479px) {
         .contact-container--left_introduce {
           left: 6.5rem;
@@ -5918,3 +5942,26 @@ input:valid {
         .contact-container--right_form__btn:hover .contact-container--right_form__btn___details {
           background-color: #c89c21;
           color: transparent; }
+  .contact-container-notify {
+    position: absolute;
+    width: fit-content;
+    height: 70px;
+    right: 0;
+    top: 13%;
+    background-color: #EECDA3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    transform: translateX(400px); }
+    .contact-container-notify--success {
+      border-left: 10px solid #5fd631; }
+    .contact-container-notify--faild {
+      border-left: 10px solid #d62828; }
+    .contact-container-notify-text {
+      font-size: 1.3rem; }
+    .contact-container-notify--active {
+      visibility: visible;
+      transform: translateX(0px); }

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
-
+  <link rel="stylesheet" href="./php/contact.php">
   <title>'Cv-Rem'</title>
   <link rel="icon" href="img/cropped-favicon.png">
 
@@ -97,10 +97,10 @@
       </div>
     </div>
     <!-----------HERO---------->
-    <section class="section active hero" id="top" style="background-image: url('');">
+    <section class="section active hero" id="top">
 
       <div class="hero-bg"><img data-aos="zoom-in-up" data-aos-duration="1400" data-aos-easing="ease-in-out"
-          data-aos-delay="2300" data-aos-offset="100" class="hero-bg--img" src="./img/avatarCV.png"
+          data-aos-delay="2300" data-aos-offset="100" class="hero-bg--img" src="./img/avaBW.jpg"
           alt="Background-Header"></div>
       <div class="hero-container container ">
         <div class="hero-container--row">
@@ -482,10 +482,24 @@
     <!-----------CONTACT----------->
     <section class="section contact" id="contact">
       <div class="row contact-container">
+        <div id="notify-success" class="contact-container-notify contact-container-notify--success">
+          <h3 class="contact-container-notify-text">Cảm ơn bạn đã quan tâm, tôi sẽ liên hệ lại trong 24h !</h3>
+        </div>
+        <div id="notify-faild" class="contact-container-notify contact-container-notify--faild">
+          <h3 class="contact-container-notify-text">Vui lòng nhập đầy đủ các thông tin !</h3>
+        </div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 contact-container--left" data-aos="fade-right"
           data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-offset="100">
           <span class="contact-container--left_img">
-            <img class="contact-container--left_img__details" src="./img/pictureContact.png" alt="RemAlw">
+            <img class="contact-container--left_img__details" src="./img/avaBW1.jpg" alt="RemAlw">
+            <article>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </article>
           </span>
           <div class="contact-container--left_introduce">
             <h4 class="contact-container--left_introduce__tittle">Hoài Nhớ</h4>
@@ -506,8 +520,9 @@
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 contact-container--right" data-aos="fade-left"
           data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-offset="100">
-          <form action="MAILTO:remalw2019@gmail.com" method="post" enctype="type/plain" id="sendmail"
-            class="contact-container--right_form">
+
+          <form action="" id="sendmail" class="contact-container--right_form">
+
             <h2 class="contact-container--right_form__header">Message</h2>
             <div class="contact-container--right_form__information contact-container--right_form__name">
               <label for="name-input" class="fa fa-user contact-container--right_form__name___icon"
@@ -526,10 +541,10 @@
                 aria-hidden="true"></label>
               <input
                 class="contact-container--right_form__information___input contact-container--right_form__message___input"
-                type="text" placeholder="Your Message..." id="message-input" name="message" pattern="\S+.*"
-                rows="10"></text>
+                type="text" placeholder="Your Message..." id="message-input" name="message" pattern="\S+.*" rows="10"
+                required />
             </div>
-            <div class="contact-container--right_form__btn" name="submit" id="btn-submit">
+            <div class="contact-container--right_form__btn" id="btn-submit" onclick="sendEmail();">
               <button class="contact-container--right_form__btn___details" type="submit">Send</button>
               <button class="contact-container--right_form__btn___details-before" type="submit">Send</button>
             </div>
@@ -572,9 +587,11 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
   <script src="js/aos.js"></script>
-  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
   <script src="js/popper.min.js"></script>
   <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="js/style.js"></script>
 </body>
 
