@@ -428,6 +428,11 @@ function isNotEmpty(caller) {
   return true;
 }
 
-
+VanillaTilt.init(document.querySelector("article div"), {
+  max: 60,
+  speed: 500
+});
+//It also supports NodeList
+VanillaTilt.init(document.querySelectorAll("article div"));
 
 

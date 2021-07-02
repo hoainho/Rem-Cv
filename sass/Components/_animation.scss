@@ -180,6 +180,76 @@
     top: 0;
   }
 }
+@keyframes squareBig-animation {
+  0% {
+    left: $square;
+    top: $square;
+  }
+  10.5% {
+    left: $square;
+    top: $square;
+  }
+  12.5% {
+    left: $square * 2;
+    top: $square;
+  }
+  23% {
+    left: $square * 2;
+    top: $square;
+  }
+  25% {
+    left: $square * 3;
+    top: $square;
+  }
+  35.5% {
+    left: $square * 3;
+    top: $square;
+  }
+  37.5% {
+    left: $square * 3;
+    top: $square * 2;
+  }
+  38% {
+    left: $square * 3;
+    top: $square * 3;
+  }
+  50% {
+    left: $square * 3;
+    top: $square * 3;
+  }
+  60.5% {
+    left: $square * 3;
+    top: $square * 3;
+  }
+  62.5% {
+    left: $square * 2;
+    top: $square * 3;
+  }
+  73% {
+    left: $square * 2;
+    top: $square * 3;
+  }
+  75% {
+    left: $square;
+    top: $square * 3;
+  }
+  85.5% {
+    left: $square;
+    top: $square * 3;
+  }
+  87.5% {
+    left: $square;
+    top: $square * 2;
+  }
+  98% {
+    left: $square;
+    top: $square * 2;
+  }
+  100% {
+    left: $square;
+    top: $square;
+  }
+}
 @keyframes hue-rotate {
   0% {
     filter: hue-rotate(0deg);
