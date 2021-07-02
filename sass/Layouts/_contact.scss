@@ -1,14 +1,18 @@
 .contact {
-    background: linear-gradient(120deg, #050505 50%, #242424 50%);
+    // background: linear-gradient(120deg, #050505 50%, #242424 50%);
+    background: #242424;
+    background: linear-gradient(90deg, #050505 0%, #050505 30%, #242424 100%);
     &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &--left {
             color: $color-white;
             display: inline-flex;
             flex-direction: row-reverse;
-            justify-items: center;
+            align-items: center;
             justify-content: center;
             position: relative;
-            top: 25rem;
             @include mobile {
                 top: -5rem;
                 left: 10rem;
@@ -27,8 +31,6 @@
             }
             &_img {
                 position: relative;
-                bottom: 22rem;
-                right: 22rem;
                 width: 50%;
                 margin: 0 auto;
                 line-height: 0;
@@ -48,7 +50,7 @@
                 &__details {
                     width: 100%;
                     height: 100%;
-                    border-bottom: 4px solid white;
+                    // border-bottom: 4px solid white;
                     @include mobile {
                         width: 100%;
                     }
@@ -61,37 +63,50 @@
                 }
                 & article {
                     position: absolute;
-                    top: 0;
+                    bottom: 1px;
                     width: 100%;
-                    background: white;
+                    background: black;
                     display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
                     grid-gap: 4px;
                     mix-blend-mode: lighten;
                 }
                 & div {
                     background: black;
-                    height: 10vw;
+                    width: 9.1rem;
+                    border: 1px solid white;
+                    padding: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform-style: preserve-3d;
+                    perspective: 500px;
+                    transition: all 0.5s ease-in-out;
+                    & img {
+                        max-width: 10rem;
+                        height: 7rem;
+                        transform: translateZ(20px);
+                    }
                 }
-                & div:nth-of-type(2) {
+                & div:nth-of-type(10) {
+                    width: auto;
                     grid-column: 2/4;
+                    border-bottom: none;
                 }
-                & div:nth-of-type(3) {
-                    grid-column: 1/4;
-                }
-                // & div:nth-of-type(4) {
-                //     grid-column: 2/4;
-                // }
-                & div:last-child {
-                    border-right: 4px solid white;
+                & div:nth-of-type(13) {
+                    width: auto;
+                    grid-column: 2/4;
+                    border-top: none;
                 }
             }
             &_introduce {
                 position: relative;
-                width: 50%;
-                height: fit-content;
-                left: 18rem;
-                top: 2rem;
+                width: fit-content;
+                left: 38rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 @include mobile {
                     left: 6.5rem;
                     top: 3.5rem;
@@ -116,7 +131,8 @@
                     }
                     font-size: 2.5rem;
                     font-weight: 600;
-                    letter-spacing: 0.5rem;
+                    letter-spacing: 0.3rem;
+                    margin: 0;
                 }
                 &__sub {
                     @include mobile {
@@ -132,14 +148,15 @@
                         width: 39%;
                         margin-bottom: 0rem;
                     }
-                    width: 70%;
+                    width: max-content;
                     font-size: 1.5rem;
-                    margin-bottom: 3rem;
+                    text-align: center;
                 }
                 &__list {
                     display: flex;
                     flex-direction: column-reverse;
                     list-style-type: none;
+                    width: max-content;
                     @include mobile {
                         flex-direction: row-reverse;
                     }
@@ -155,9 +172,13 @@
                 }
                 &__link {
                     text-decoration: none;
-                    font-size: 1.35rem;
-                    color: $color-white !important;
-                    width: 24%;
+                    font-size: 4rem;
+                    color: $color-white;
+                    text-transform: uppercase;
+                    color: $color-secondary-light;
+                    font-weight: bold;
+                    text-align: center;
+                    cursor: pointer;
                     @include mobile {
                         font-size: 0.5rem;
                         margin-right: 1rem;
@@ -169,12 +190,8 @@
                         margin-right: 2rem;
                         text-align: center;
                     }
-                    &:active,
-                    &:link {
-                        color: $color-secondary;
-                        text-decoration: none;
-                    }
-                    &:hover {
+                    &:hover,
+                    &:active {
                         color: $color-secondary;
                         text-decoration: none;
                     }
@@ -183,11 +200,9 @@
         }
         &--right {
             color: white;
-            display: inline-flex;
-            flex-direction: column-reverse;
-            position: relative;
-            top: 20rem;
-            margin-bottom: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             @include mobile {
                 top: 7rem;
                 right: 11rem;
@@ -206,9 +221,7 @@
             }
             &_form {
                 position: relative;
-                left: 18rem;
-                width: 33%;
-                bottom: 16rem;
+                width: 35%;
                 @include mobile {
                     left: -1rem;
                     width: 100%;
