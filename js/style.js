@@ -435,4 +435,25 @@ VanillaTilt.init(document.querySelector("article div"), {
 //It also supports NodeList
 VanillaTilt.init(document.querySelectorAll("article div"));
 
+//TYPING TEXT 
+var captionLength = 0;
+var valueText = ''
+$(document).ready(function () {
+  $('.resume-wrap-aside-link').click(function () {
+    var href = $(this).prop('href').slice(22);
+    testTypingEffect(href);
+  });
+});
+function testTypingEffect(href) {
+  captionEl = $(`${href} p`);
+  type();
+}
+function type() {
+  captionEl.html(valueText?.substr(0, captionLength++));
+  if (captionLength < valueText?.length + 1) {
+    setTimeout('type()', 50);
+  } else {
+    captionLength = 0;
+  }
 
+}
