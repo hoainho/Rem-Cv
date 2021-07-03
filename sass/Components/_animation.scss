@@ -272,3 +272,15 @@
     transform: translateX(0px);
   }
 }
+/// Css typing text
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
