@@ -1,68 +1,62 @@
-
 .footer {
-    position: fixed;
-    width: 100%;
-    padding: 5vh 0;
-    bottom: 5%;
-    left: 5%;
-    background: transparent;
-    font-size: 1rem;
-    letter-spacing: 5px;
-    font-weight: 200;
-    color: $color-white;
-    z-index: 1000;
-    @include tablet{
-      bottom: 5%;
-      left: 2%;
-      font-size: 2rem;
-    }
-  
-    &-copyright{
-      position: absolute;
-      width: 100%;
-      @include mobile {
-        width: 100%;
-        top: 4.7rem;
-        margin-right: 1rem;
-      }
-      @include tablet{
-        width: 38%;
-        top: 5.7rem;
-        left: 2rem;
-      }
-    }
-    &-address{
-      right: 10%;
-      width: 100%;
-      position: absolute;
-      &--list{
-        display: flex;
-        justify-content: flex-end;
-        justify-items: flex-end;
-        list-style-type: none;
-      }
-      &--item{
-        margin-left: 5rem;
-        @include mobile {
-          margin-left: 2rem;
-        }
-        @include tablet{
-          margin-left: 6rem;
-        }
-      }
-      &--link{
-        text-decoration: none;
+  position: fixed;
+  width: 100%;
+  padding: 5vh 0;
+  bottom: 0%;
+  background: transparent;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  font-weight: 200;
+  color: $color-white;
+  z-index: 1000;
+  @include tablet {
+    font-size: 2rem;
+  }
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+  }
+  &-box {
+    & p {
+      margin: 0 !important;
+      @include Pc {
         font-size: 2rem;
-        color: $color-white;
-        transition: .5s;
-        @include tablet{
-          font-size: 3rem;
-        }
-        &:hover {
-          color: $color-secondary;
-          font-size: 4rem;
-          transform: translate(2px);
-        }
+      }
+    }
+    width: 100%;
+    &--list {
+      display: flex;
+      justify-content: flex-end;
+      justify-items: flex-end;
+      list-style-type: none;
+      margin: 0;
+    }
+    &--item {
+      margin-left: 5rem;
+      @include mobile {
+        margin-left: 2rem;
+      }
+      @include tablet {
+        margin-left: 6rem;
+      }
+    }
+    &--link {
+      text-decoration: none;
+      font-size: 2rem;
+      color: $color-white;
+      transition: 0.5s;
+      @include tablet {
+        font-size: 3rem;
+      }
+      @include Pc {
+        font-size: 4rem;
+      }
+      &:hover {
+        color: $color-secondary;
+        transform: translateY(-2px) scale(1.5);
       }
     }
   }
+}

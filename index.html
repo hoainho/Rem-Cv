@@ -134,11 +134,11 @@
     </section>
     <!-----------FEATURES---------->
     <section class="section features" id="features">
-      <div class="slogan">
-        <span class="slogan--shadow">
-          What I Do
-        </span>
-      </div>
+      <!-- <div class="slogan"> -->
+      <span class="slogan--shadow">
+        What I Do
+      </span>
+      <!-- </div> -->
       <div class="features-container container">
         <div>
           <div class="tittle-box features-tittle--icon " data-aos="fade-up" data-aos-duration="600"
@@ -182,9 +182,12 @@
             <span class="features-content--box_logo"><i
                 class="fas fa-laptop-code features-content--box_logo__icon"></i></span>
             <h3 class="features-content--box_tittle">web design</h3>
-            <p class="features-content--box_content">Design Website is one of my favorite programming directions. From
-              here, I can freely create everything from my thoughts based on programming languages like css html
-              javascript</p>
+            <p class="features-content--box_content">Sở hữu đầy đủ các kiến thức cũng như các kĩ năng mà một lập trình
+              viên Front-end phải có như : Html, Css, JavaScript,Jquery,ReactJS. Đồng thời tu bổ thêm các kiến thức về
+              các
+              Framework, phần mềm hỗ trợ trong việc lập trình như : Bootstrap, Sass, AOS, SlickSlide, Git, Adobe
+              Illustrator, Photoshop... Song song bản thân cũng có một vài kinh nghiệm trong dự án thực tế về cắt layout
+              và thiết kế giao diện Web : betong24h.com </p>
             <hr class="divider web-divider">
           </div>
           <div class="col-md-4 features-content--box" data-aos="fade-up" data-aos-duration="1000"
@@ -192,17 +195,21 @@
             <span class="features-content--box_logo"><i
                 class="fas fa-fill-drip features-content--box_logo__icon"></i></span>
             <h3 class="features-content--box_tittle">Photoshop</h3>
-            <p class="features-content--box_content">Actually, I have just studied pts to support website design so I
-              didn't study it intensively, my strong point is designing web</p>
+            <p class="features-content--box_content">Do nhu cầu công việc cũng như hỗ trợ cắt layout nên những năm qua
+              tôi học tập và sử dụng các phần mềm chỉnh sửa ảnh như Photoshop,Adobe
+              Illustrator,... mặc dù kĩ năng không cao và lành nghề như các designer khác nhưng các vấn đề như cắt chỉnh
+              logo,banner theo yêu cầu, cắt PSD sang HTML và CSS vẫn hoàn toàn nằm trong khả năng của tôi. </p>
             <hr class="divider photoshop-divider">
           </div>
           <div class="col-md-4 features-content--box" data-aos="fade-left" data-aos-duration="1000"
             data-aos-easing="ease-in-out" data-aos-delay="100" data-aos-offset="100">
             <span class="features-content--box_logo"><i
                 class="fas fa-american-sign-language-interpreting features-content--box_logo__icon"></i></span>
-            <h3 class="features-content--box_tittle">Creative</h3>
-            <p class="features-content--box_content">"I could invent the universe", that i said with my friends for
-              joke, because ii usually do the thing who ever did</p>
+            <h3 class="features-content--box_tittle">Kĩ Năng Khác</h3>
+            <p class="features-content--box_content">Ngoài các kĩ năng chuyên ngành nên có, bản thân tôi cũng không
+              ngừng rèn luyện các kĩ năng mềm như giao tiếp, làm việc nhóm,... Hiện tại tôi có thể viết content cho các
+              bài viết trong lĩnh vực sale, blog, hỗ trợ
+              các dự án marketing. </p>
             <hr class="divider creative-divider">
 
           </div>
@@ -211,54 +218,51 @@
     </section>
     <!-----------RESUME----------->
     <section class="section resume " id="resume">
-      <div class="slogan ">
-        <span class="slogan--shadow">
-          Resume
-        </span>
-      </div>
+      <!-- <div class="slogan "> -->
+      <span class="slogan--shadow">
+        Resume
+      </span>
+      <!-- </div> -->
       <div class="container resume-container">
         <div class="row resume-wrap">
           <ul class="nav nav-tabs resume-wrap-aside">
-            <li class="resume-wrap-aside-item"><a href="#home" data-toggle="tab" class="resume-wrap-aside-link"><i
-                  class="fas fa-info-circle"></i></a></li>
-            <li class="resume-wrap-aside-item"><a href="#education" data-toggle="tab" class="resume-wrap-aside-link"><i
+            <li class="resume-wrap-aside-item" data-id="Giới thiệu"><a onclick="testTypingEffect('intro');"
+                href="#intro" data-toggle="tab" class="resume-wrap-aside-link"><i class="fas fa-info-circle"></i></a>
+            </li>
+            <li class="resume-wrap-aside-item" data-id="Học Vấn"><a onclick="testTypingEffect('education');"
+                href="#education" data-toggle="tab" class="resume-wrap-aside-link"><i
                   class="fas fa-user-graduate"></i></a></li>
-            <li class="resume-wrap-aside-item"><a href="#xyz" data-toggle="tab" class="resume-wrap-aside-link"><i
-                  class="fas fa-laptop-code"></i></a>
+            <li class="resume-wrap-aside-item" data-id="Tiểu sử"><a onclick="testTypingEffect('self');" href="#self"
+                data-toggle="tab" class="resume-wrap-aside-link"><i class="fas fa-laptop-code"></i></a>
+            </li>
+            <li class="resume-wrap-aside-item" data-id="Dự án"><a onclick="testTypingEffect('project');" href="#project"
+                data-toggle="tab" class="resume-wrap-aside-link"><i class="fab fa-product-hunt"></i></a>
             </li>
           </ul>
 
           <div class="tab-content resume-wrap-content">
-            <div class="tab-pane" id="home">
-              <p class=" resume-wrap-content-text" id="resume-typing">
-                Xin chào và cảm ơn bạn đã ghé thăm website của tôi.
-                Tôi xin được tự giới thiệu họ & tên của tôi là : Nguyễn Hoài Nhớ - 21 tuổi .
-                Hiện tại tôi đang là một Front-end Developer .
-                Tôi sinh ra và lớn lên tại Cà Mau, hiện tại đang học tập và làm việc tại TP.HCM .
+            <div class="tab-pane" id="intro">
+              <p class=" resume-wrap-content-text" id="resume-typing"></p>
             </div>
             <div class="tab-pane" id="education">
-              <p class=" resume-wrap-content-text" id="resume-typing">
-                💫 Năm 2018 : Tôi bắt đầu học tập và tìm hiểu các kiến thức cơ bản về lập trình Web .
-                💫 Năm 2019 : Thực hiện các dự án bằng Java Web, ASP.Net + SQL.
-                💫 Năm 2020 : Thực hiện các dự án bằng ReactJS, Redux + Axios.
-                💫 Hiện tại : Đang học tập và áp dụng các kiến thức React Native + GraphQL.
-              </p>
+              <p class=" resume-wrap-content-text" id="resume-typing"></p>
             </div>
-            <div class="tab-pane" id="xyz">
-              <p class=" resume-wrap-content-text" id="resume-typing"> tôi là : Nguyễn Hoài Nhớ - 21 tuổi Tôi sinh ra và
-                lớn lên tại Cà Mau, hiện tại
-                đang học tập và làm việc tại TP.HCM </p>
+            <div class="tab-pane" id="self">
+              <p class=" resume-wrap-content-text" id="resume-typing"></p>
+            </div>
+            <div class="tab-pane" id="project">
+              <p class=" resume-wrap-content-text" id="resume-typing"></p>
             </div>
           </div>
         </div>
     </section>
     <!-----------SKILL----------->
     <section class="section about " id="about">
-      <div class="slogan about-slogan">
-        <span class="slogan--shadow">
-          About me
-        </span>
-      </div>
+      <!-- <div class="slogan about-slogan"> -->
+      <span class="slogan--shadow">
+        About me
+      </span>
+      <!-- </div> -->
       <div class="container">
         <div class="row about-container">
           <div class="col-sx-6 col-sm-6 col-md-6 col-lg-6 about-container--left" data-aos="zoom-in-up"
@@ -398,11 +402,11 @@
     </section>
     <!-----------PRODUCTS----------->
     <section class="section product " id="product">
-      <div class="slogan">
-        <span class="slogan--shadow">
-          Products
-        </span>
-      </div>
+      <!-- <div class="slogan"> -->
+      <span class="slogan--shadow">
+        Products
+      </span>
+      <!-- </div> -->
       <div class="container">
         <div class="row product-container">
           <div id="bgFirst"
@@ -412,11 +416,11 @@
             <div class="product-container--website_first__name">
               <h1 class="product-container--website_first__name___tittle">
                 <a class="product-container--website_first__name___tittle____details product-container--website_first__name___tittle____details-before"
-                  href="http://remalw.online/">TechLib</a>
+                  href="https://betong24h.com/">Betong24</a>
                 <a class=" product-container--website_first__name___tittle____details product-container--website_first__name___tittle____details-after"
-                  href="http://remalw.online/">TechLib</a>
+                  href="https://betong24h.com/">Betong24</a>
               </h1>
-              <span class="product-container--website_first__name___sub">Technology Store</span>
+              <span class="product-container--website_first__name___sub">Thiết kế giao diện bằng code thuần</span>
             </div>
 
           </div>
@@ -427,11 +431,12 @@
             <div class="product-container--website_second__name">
               <h1 class="product-container--website_second__name___tittle">
                 <a class="product-container--website_second__name___tittle____details product-container--website_second__name___tittle____details-before"
-                  href="https://github.com/hoainho/mbookClient.git">M-Book</a>
+                  href="https://github.com/hoainho/mbook.git">M-Book</a>
                 <a class=" product-container--website_second__name___tittle____details product-container--website_second__name___tittle____details-after"
-                  href="https://github.com/hoainho/mbookClient.git">M-Book</a>
+                  href="https://github.com/hoainho/mbook.git">M-Book</a>
               </h1>
-              <span class="product-container--website_second__name___sub">Social Media Book</span>
+              <span class="product-container--website_second__name___sub">Fullstack ( ReactJS, Redux,
+                Java,SpringBoot)</span>
             </div>
 
           </div>
@@ -542,25 +547,25 @@
     </section>
     <!-----------FOOTER---------->
     <footer class="footer" id="footer">
-      <div class="row">
-        <div class="col-sx-6 col-sm-6 col-md-6 col-lg-6 footer-copyright">
+      <div class="footer-row">
+        <div class="footer-box footer-copyright">
           <p>&#169; RemAlw</p>
         </div>
-        <div class="col-sx-6 col-sm-6 col-md-6 col-lg-6 footer-address">
-          <ul class="footer-address--list">
-            <li class="footer-address--item">
-              <a class="footer-address--link" href="https://www.facebook.com/nho.hoai.1610092"> <i
+        <div class="footer-box">
+          <ul class="footer-box--list">
+            <li class="footer-box--item">
+              <a class="footer-box--link" href="https://www.facebook.com/nho.hoai.1610092"> <i
                   class="fab fa-facebook-f"></i> </a>
             </li>
-            <li class="footer-address--item">
-              <a class="footer-address--link" href="https://www.instagram.com/rem.alw_/?hl=vi"> <i
+            <li class="footer-box--item">
+              <a class="footer-box--link" href="https://www.instagram.com/rem.alw_/?hl=vi"> <i
                   class="fab fa-instagram"></i></a>
             </li>
-            <li class="footer-address--item">
-              <a class="footer-address--link" href="https://mail.google.com/"> <i class="fab fa-google"></i> </a>
+            <li class="footer-box--item">
+              <a class="footer-box--link" href="https://mail.google.com/"> <i class="fab fa-google"></i> </a>
             </li>
-            <li class="footer-address--item">
-              <a class="footer-address--link" href="https://github.com/hoainho"> <i class="fab fa-github"></i> </a>
+            <li class="footer-box--item">
+              <a class="footer-box--link" href="https://github.com/hoainho"> <i class="fab fa-github"></i> </a>
             </li>
           </ul>
         </div>

@@ -1,45 +1,46 @@
 #fp-nav.fp-right {
     right: 10rem !important;
     top: 45% !important;
-    @include mobile{
-        right: 2rem !important;
+    @include mobile {
+        display: none;
     }
-    @include smtablet{
+    @include smtablet {
         right: 6rem !important;
     }
-    @include tablet{
+    @include tablet {
         right: 8rem !important;
     }
 }
-#fp-nav ul, .fp-slidesNav ul {
-    @include mobile{
+#fp-nav ul,
+.fp-slidesNav ul {
+    @include mobile {
         margin: 0;
         padding: 0;
         position: relative;
         left: 5rem;
         left: -2rem;
         bottom: 4rem;
-    
     }
 }
 #fp-nav ul li .fp-tooltip.fp-right {
-    @include mobile{
+    @include mobile {
         right: 3px;
         top: 1.6rem !important;
     }
 }
-#fp-nav ul li, .fp-slidesNav ul li {
+#fp-nav ul li,
+.fp-slidesNav ul li {
     margin-top: 4rem !important;
-    @include mobile{
+    @include mobile {
         height: 0px !important;
     }
-    
 }
-#fp-nav ul li a, .fp-slidesNav ul li a {
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
     width: 5rem !important;
     height: 5rem !important;
-    margin:  0 !important;
-    @include mobile{
+    margin: 0 !important;
+    @include mobile {
         display: block;
         width: 14px;
         height: 0px;
@@ -47,29 +48,29 @@
         position: relative;
     }
 }
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
     background: transparent !important;
-    border:1px solid $color-white !important;
+    border: 1px solid $color-white !important;
     width: 0.5rem !important;
     height: 0.5rem !important;
     margin: 0 !important;
-    @include mobile{
-
+    @include mobile {
     }
-    
 }
-#fp-nav ul li a.active span, 
-#fp-nav ul li:hover a.active span, 
-.fp-slidesNav ul li a.active span, 
-.fp-slidesNav ul li:hover a.active span { //active
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    //active
     transform: scale(3) translate(0);
     margin: 0 !important;
     background: $color-secondary !important;
-    border:1px solid $color-secondary !important;
+    border: 1px solid $color-secondary !important;
 }
-#fp-nav ul li .fp-tooltip{
+#fp-nav ul li .fp-tooltip {
     top: 1.6rem !important;
-    @include mobile{
+    @include mobile {
         top: 0.1rem !important;
     }
 }

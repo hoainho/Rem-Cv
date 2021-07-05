@@ -1,169 +1,179 @@
-@import url('//fonts.googleapis.com/css?family=Pacifico&text=Pure');
-@import url('//fonts.googleapis.com/css?family=Roboto:700&text=css');
-@import url('//fonts.googleapis.com/css?family=Kaushan+Script&text=!');
+@import url("//fonts.googleapis.com/css?family=Pacifico&text=Pure");
+@import url("//fonts.googleapis.com/css?family=Roboto:700&text=css");
+@import url("//fonts.googleapis.com/css?family=Kaushan+Script&text=!");
 
 .features {
+  width: 100%;
+  height: 100vh;
+  background: $color-gray;
+  color: $color-white;
+  position: relative;
+  &-tittle {
+    &--icon {
+      @include mobile {
+        top: 14% !important;
+        left: -11% !important;
+      }
+      @include smtablet {
+        top: 9% !important;
+        left: 4% !important;
+      }
+      @include tablet {
+        top: 12% !important;
+        left: 10% !important;
+      }
+    }
+    &--content {
+      @include mobile {
+        position: absolute;
+        top: 7rem;
+        left: 5rem;
+        &_before {
+          font-size: 3rem;
+        }
+        &_after {
+          font-size: 3rem;
+        }
+      }
+      @include smtablet {
+        top: 11%;
+        left: 31%;
+        font-size: 4rem;
+      }
+      @include tablet {
+        top: 15%;
+        left: 32%;
+      }
+    }
+  }
+  @include mobile {
     width: 100%;
-    height: 100vh;
-    background: $color-gray;
-    color: $color-white;
+    height: 100%;
     position: relative;
-    &-tittle{
-      &--icon{
-        @include mobile{
-          top: 14% !important;
-          left: -11% !important;
-        }
-        @include smtablet{
-              top: 9% !important;
-              left: 4% !important;
-        }
-        @include tablet{
-              top: 12% !important;
-              left: 10% !important;
-        }
-      }
-      &--content{
-            @include mobile{
-              position: absolute;
-              top: 7rem;
-              left: 5rem;
-            &_before{
-              font-size: 3rem;
-            }
-            &_after{
-              font-size: 3rem;
-            }
-          }
-            @include smtablet {
-              top: 11%;
-              left: 31%;
-              font-size: 4rem;
-          }
-            @include tablet {
-              top: 15%;
-              left: 32%;
-            }
-      }
-    }
-    @include mobile{
-        width: 100%;
-        height: 100%;
-        position: relative;
-        top: 0;
-    }
-  
-    &-content{
-      &--box{
-          margin-top: 15rem;
-          transition: 2s;
-          @include mobile {
-            margin-top: -2rem;
-            top: 3rem;
-            left: -3rem;
-            height: 20vh;
-            padding: 0px 7rem;
-          }
-          @include smtablet{
-            margin-top: 0;
-            top: 4rem;
-            height: 22vh;
-          }
-          @include tablet{
-            margin-top: 0;
-            top: -1rem;
-            height: 20vh;
-            padding: 0 20rem;
-          }
-          &:hover{
-            .web-divider {
-              opacity: 1;
-              animation: bounceInLeft 1s ease-in-out;
-            }
-            .photoshop-divider {
-              opacity: 1;
-              animation: bounceInUp 1s ease-in-out;
-            }
-            .creative-divider {
-              opacity: 1;
-              animation: bounceInRight 1s ease-in-out;
-            }
-            .features-content--box_tittle{
-              color: $color-secondary;
-            }
-          }
-        &_logo{
-          display: flex;
-          justify-content: flex-start;
-          @include mobile{
-            position: relative;
-            top: 6rem;
-          }
-          @include smtablet{
-            position: relative;
-            top: 2rem;
-            left: 2rem;
-          }
-          @include tablet{
-            position: relative;
-            width: 11vw;
-            top: 2rem;
-            left: 2rem;
-          }
-          &__icon{
-            color: $color-secondary;  
-            font-size: 5rem;
-            @include mobile{
-              position: relative;
-              bottom: 3rem;
-              font-size: 3rem;
-            }
-          }
-        }
-        &_tittle{
-          margin: 3rem 0;
-          text-transform: uppercase;
-          letter-spacing: .5rem;
-          @include mobile {
-            margin: 1rem 0;
-            width: 76%;
-            right: -22%;
-            position: relative;
-            font-size: 1.5rem;
-          }
-          @include smtablet{
-            margin: 0;
-            position: relative;
-            right: -10rem;
-            width: 34vw;
-            top: -1.5rem;
-          }
-          @include tablet{
-            margin: 0;
-            position: relative;
-            right: -10rem;
-            width: 34vw;
-            top: -1.5rem;
-            font-size: 1.5rem;
-          }
-        }
-        &_content{
-          font-size: 1.7rem;
-          opacity: 0.5;
-          padding-bottom: 5rem;
-          @include mobile {
-            padding-bottom: 0rem;
-            font-size:1rem;
-          }
-          @include smtablet {
-            padding-bottom: 2rem;
-          }
-          @include tablet {
-            padding-bottom: 0rem;
-          }
+    top: 0;
+  }
 
+  &-content {
+    &--box {
+      margin-top: 15rem;
+      transition: 2s;
+      height: 55vh;
+      @include mobile {
+        margin-top: -2rem;
+        top: 3rem;
+        left: -3rem;
+        height: 20vh;
+        padding: 0px 7rem;
+      }
+      @include smtablet {
+        margin-top: 0;
+        top: 4rem;
+        height: 22vh;
+      }
+      @include tablet {
+        margin-top: 0;
+        top: -1rem;
+        height: 20vh;
+        padding: 0 20rem;
+      }
+      &:hover {
+        .web-divider {
+          opacity: 1;
+          animation: bounceInLeft 1s ease-in-out;
+        }
+        .photoshop-divider {
+          opacity: 1;
+          animation: bounceInUp 1s ease-in-out;
+        }
+        .creative-divider {
+          opacity: 1;
+          animation: bounceInRight 1s ease-in-out;
+        }
+        .features-content--box_tittle {
+          color: $color-secondary;
+        }
+      }
+      &_logo {
+        display: flex;
+        justify-content: flex-start;
+        @include mobile {
+          position: relative;
+          top: 6rem;
+        }
+        @include smtablet {
+          position: relative;
+          top: 2rem;
+          left: 2rem;
+        }
+        @include tablet {
+          position: relative;
+          width: 11vw;
+          top: 2rem;
+          left: 2rem;
+        }
+        &__icon {
+          color: $color-secondary;
+          font-size: 5rem;
+          @include mobile {
+            position: relative;
+            bottom: 3rem;
+            font-size: 3rem;
+          }
+        }
+      }
+      &_tittle {
+        margin: 3rem 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.5rem;
+        @include mobile {
+          margin: 1rem 0;
+          width: 76%;
+          right: -22%;
+          position: relative;
+          font-size: 1.5rem;
+        }
+        @include smtablet {
+          margin: 0;
+          position: relative;
+          right: -10rem;
+          width: 34vw;
+          top: -1.5rem;
+        }
+        @include tablet {
+          margin: 0;
+          position: relative;
+          right: -10rem;
+          width: 34vw;
+          top: -1.5rem;
+          font-size: 1.5rem;
+        }
+      }
+      &_content {
+        font-size: 1.7rem;
+        color: rgba(#ffffff, 0.5);
+        &::first-letter {
+          font-size: 5rem;
+          color: $color-secondary;
+          line-height: 4rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding-right: 5px;
+          margin-top: 5px;
+          float: left;
+        }
+        @include mobile {
+          padding-bottom: 0rem;
+          font-size: 1rem;
+        }
+        @include smtablet {
+          padding-bottom: 2rem;
+        }
+        @include tablet {
+          padding-bottom: 0rem;
         }
       }
     }
+  }
 }
-  

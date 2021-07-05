@@ -1,67 +1,48 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900);
-.logo{
-        width: 0;
-        height: 0;
-        &-letter{
+.logo {
+    width: 0;
+    height: 0;
+    &-letter {
         display: inline-block;
         font-weight: 900;
-        font-size: 15rem;
-        top: -10rem;
-        left:1rem;
+        font-size: 10rem;
+        top: -7rem;
         position: relative;
         color: $color-secondary;
         transform-style: preserve-3d;
         perspective: 400;
         z-index: 1;
-        &:before, &:after{
-            position:absolute;
+        &:before,
+        &:after {
+            position: absolute;
             content: attr(data-letter);
             transform-origin: top left;
-            top:0;
-            left:0;
-            }
-            
-        &, &:before, &:after{
-            transition: all 0.3s ease-in-out;
-            }
-            &:before{
-            color: #fff;
-            text-shadow: 
-                -1px 0px 1px rgba(255,255,255,.8),
-                1px 0px 1px rgba(0,0,0,.8);
-            z-index: 3;
-            transform:
-                rotateX(0deg)
-                rotateY(-15deg)
-                rotateZ(0deg);
-                }
-            &:after{
-            color: rgba(0,0,0,.11);
-            z-index:2;
-            transform:
-                scale(1.08,1)
-                rotateX(0deg)
-                rotateY(0deg)
-                rotateZ(0deg)
-                skew(0deg,1deg);
-            }
-            &:hover:before{
-            color: #fafafa;
-            transform:
-                rotateX(0deg)
-                rotateY(-40deg)
-                rotateZ(0deg);
-            }
-            &:hover:after{
-            transform:
-                scale(1.08,1)
-                rotateX(0deg)
-                rotateY(40deg)
-                rotateZ(0deg)
-                skew(0deg,22deg);
-            }
+            top: 0;
+            left: 0;
         }
-        
-        
-        
+
+        &,
+        &:before,
+        &:after {
+            transition: all 0.3s ease-in-out;
+        }
+        &:before {
+            color: #fff;
+            text-shadow: -1px 0px 1px rgba(255, 255, 255, 0.8), 1px 0px 1px rgba(0, 0, 0, 0.8);
+            z-index: 3;
+            transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+        }
+        &:after {
+            color: rgba(0, 0, 0, 0.11);
+            z-index: 2;
+            transform: scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
+        }
+        &:hover:before {
+            color: #fafafa;
+            transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+        }
+        &:hover:after {
+            transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+        }
+    }
 }
