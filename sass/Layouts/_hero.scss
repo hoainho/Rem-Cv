@@ -14,63 +14,76 @@
     justify-items: center;
     justify-content: center;
     &--img {
-      @include mobile {
-        top: 20rem;
-        right: 2rem;
-        width: 130vw;
-        height: 75vh;
-      }
-      @include smtablet {
-        top: 0rem;
-        right: 2rem;
-        width: 88vw;
-        height: 100vh;
-      }
-      @include tablet {
-        top: 5rem;
-        right: 2rem;
-        width: 93vw;
-        height: 95vh;
-      }
-      // top: -39rem;
-      right: 0rem;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: auto;
       z-index: 1;
-      box-sizing: border-box;
       position: absolute;
-      width: 40vw;
-      // height: 154vh;
       background-repeat: no-repeat;
+      @include mobile {
+        right: auto;
+      }
     }
   }
   &-container {
     height: 100vh;
+    width: 100%;
+    padding: 0;
+
     &--row {
-      height: 100vh;
-      @include mobile {
-        width: 100%;
-        position: relative;
-        top: 37rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: column;
+      height: 100%;
+
+      @include tablet {
+        justify-content: space-evenly;
       }
-      @include smtablet {
-      }
+
       &_box {
-        top: 25%;
-        height: 50%;
+        top: 0%;
+        width: 100%;
         @include mobile {
-          top: -46%;
+          top: 25%;
+        }
+        @include smtablet {
+          top: 20%;
+        }
+        @include tablet {
+          top: 30%;
+        }
+        @include desktop {
+          top: 0%;
+        }
+        @include FHD {
+          top: 0%;
+          height: auto;
         }
         &__slogan {
-          font-size: 9rem;
+          left: 10%;
+          font-size: 6.5vw;
           font-weight: 800;
           position: absolute;
           color: $color-white;
           z-index: 1;
           @include mobile {
             font-size: 5rem;
-            top: 28%;
           }
           @include smtablet {
             font-size: 8rem;
+          }
+          @include tablet {
+            font-size: 7.5vw;
+          }
+          @include FHD {
+            left: 10%;
+            font-size: 6.5vw;
+          }
+          @include Pc {
+            left: 10%;
+            font-size: 7.5vw;
           }
           &___howdy {
             opacity: 0;
@@ -97,25 +110,29 @@
         }
       }
       &_download {
-        top: 25%;
+        display: flex;
+        top: 0;
         width: 30%;
-        height: 10%;
+        height: auto;
         @include mobile {
-          top: -20% !important;
-          z-index: 55;
+          width: 70%;
+          z-index: 1;
         }
         @include smtablet {
-          z-index: 2;
-          left: 7rem !important;
+          width: 60%;
+          top: 10%;
+          z-index: 1;
         }
         @include tablet {
-          top: 26%;
-          left: 8%;
-          z-index: 2;
+          width: 50%;
+          top: 20%;
+          z-index: 1;
+        }
+        @include FHD {
         }
         &:hover {
           &::after {
-            right: 90%;
+            left: 0;
             transition: 0.4s;
           }
           .circle {
@@ -152,15 +169,21 @@
         &__box {
           color: $color-white;
           font-size: 3rem;
-          top: -13%;
           position: relative;
           text-align: center;
           width: 8rem;
           height: 8rem;
           border-radius: 50%;
+          top: 0;
+          left: 27%;
           @include mobile {
-            font-size: 2rem;
-            z-index: 55;
+            display: flex;
+            align-items: center;
+          }
+          @include tablet {
+            left: 18%;
+          }
+          @include FHD {
           }
           &:active,
           &:link {
@@ -175,16 +198,22 @@
               top: 0.5rem;
               @include mobile {
                 font-size: 2rem;
-                width: 32rem;
+                padding: 0;
+                width: max-content;
+                margin-top: 25px;
+                padding-left: 10px;
               }
             }
           }
           &___icon {
+            inset: 0 !important;
+            position: relative !important;
             @include mobile {
-              width: 5rem !important;
-              height: 5rem !important;
-              bottom: -6rem !important;
-              left: 5rem !important;
+              width: 5rem;
+              height: 5rem;
+              font-size: 2rem;
+            }
+            @include FHD {
             }
             color: $color-secondary;
             &:active,
@@ -200,12 +229,12 @@
         //animation: bounceInLeft 1s infinite;
         position: absolute;
         display: block;
-        top: 40%;
-        right: 90%;
-        width: 15vw;
+        inset: 0;
+        margin: 0;
+        width: 30%;
+        top: 50%;
+        transform: translateY(-50%);
         height: 1px;
-        margin-right: 2rem;
-        background: white;
         content: "";
         -webkit-transition: -webkit-transform 1s ease-out;
         transition: -webkit-transform 1s ease-out;
@@ -215,54 +244,39 @@
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1);
-        @include mobile {
-          top: 30%;
-          right: 21%;
-          width: 23vw;
-        }
         @include smtablet {
-          right: 80%;
-          width: 23vw;
-          top: 45%;
         }
         @include tablet {
-          top: 38%;
-          right: 84%;
-          width: 23vw;
+          width: 20%;
+        }
+        @include FHD {
         }
       }
       &_download::after {
         position: absolute;
         display: block;
-        top: 40%;
-        right: 150%;
-        width: 15vw;
-        height: 1px;
-        margin-right: 2rem;
-        background: linear-gradient(90deg, transparent, $color-secondary);
+        margin: 0;
+        inset: 0;
+        width: 30%;
+        top: 50%;
+        left: -30%;
+        transform: translateY(-50%);
+        height: 2px;
         content: "";
         -webkit-transition: -webkit-transform 1s ease-out;
         transition: -webkit-transform 1s ease-out;
         transition: transform 1s ease-out;
         transition: transform 1s ease-out, -webkit-transform 1s ease-out;
-        border-top: 1px solid rgba($color-secondary, 0.5);
+        border-top: 4px solid $color-secondary;
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1);
-        @include mobile {
-          right: 21% !important;
-          width: 8rem;
-          top: 30%;
-        }
         @include smtablet {
-          right: 78% !important;
-          width: 27vw !important;
-          top: 45% !important;
         }
         @include tablet {
-          top: 38%;
-          right: 83% !important;
-          width: 22vw;
+          width: 20%;
+        }
+        @include FHD {
         }
       }
     }

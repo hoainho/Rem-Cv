@@ -1,16 +1,12 @@
 .slogan {
-  top: 90%;
-  left: 3%;
-  transform: rotate(-90deg);
-  position: absolute;
-  z-index: 50;
+  // left: 3%;
+  // transform: rotate(-90deg);
+  // position: absolute;
+  // z-index: 50;
   @include mobile {
-    top: 52%;
-    right: -33%;
-    width: 28%;
-    height: 40%;
   }
   &--shadow {
+    z-index: 50;
     color: white;
     width: max-content;
     position: absolute;
@@ -19,18 +15,14 @@
     letter-spacing: 1rem;
     opacity: 0.05;
     transition: 0.5s;
+    left: -9%;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
     @include mobile {
-      width: 148.5vw;
-      font-size: 8rem;
-      font-weight: 800;
     }
     @include smtablet {
-      width: 103.5vw;
     }
     @include tablet {
-      width: 103.5vw;
-      left: 11rem;
-      top: -2rem;
     }
     &:hover {
       opacity: 0.4;

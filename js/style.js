@@ -4,30 +4,6 @@ AOS.init({
 });
 //AnimationWhenScrollYPage
 window.onload = function () {
-  const ShowEdu = document.querySelector(".resume-content--education");
-  const ShowExp = document.querySelector(".resume-content--experience");
-  window.addEventListener('scroll', scrollOpacityEdu);
-  window.addEventListener('scroll', scrollOpacityExp);
-  function scrollOpacityEdu() {
-    if (window.scrollY >= 1300) {
-      ShowEdu.style.opacity = '0.05';
-      ShowEdu.style.transition = ' ease-in-out';
-      ShowEdu.style.transition = '2s';
-    }
-    else {
-      ShowEdu.style.opacity = '1';
-    }
-  };
-  function scrollOpacityExp() {
-    if (window.scrollY >= 1300) {
-      ShowExp.style.opacity = '0.05';
-      ShowExp.style.transition = ' ease-in-out';
-      ShowExp.style.transition = '2s';
-    }
-    else {
-      ShowExp.style.opacity = '1';
-    }
-  };
   //MID
   const midhtml = document.querySelector(".percent-mid-html");
   const midsass = document.querySelector(".percent-mid-sass");
@@ -436,24 +412,50 @@ VanillaTilt.init(document.querySelector("article div"), {
 VanillaTilt.init(document.querySelectorAll("article div"));
 
 //TYPING TEXT 
-var captionLength = 0;
+var captionLength = 1;
 var valueText = ''
-$(document).ready(function () {
-  $('.resume-wrap-aside-link').click(function () {
-    var href = $(this).prop('href').slice(22);
-    testTypingEffect(href);
-  });
-});
+// $(document).ready(function () {
+//   $('.resume-wrap-aside-link').click(function () {
+//     var href = $(this).prop('href');
+//     var address = href.slice(href.indexOf('#'))
+//     testTypingEffect(address);
+//   });
+
+//   function testTypingEffect(href) {
+//     captionE1 = $(`${href} p`);
+//     valueText = captionE1.text().replaceAll("$br", "<br/>");
+//     type();
+//   }
+
+// });
+var string = " Xin chào và cảm ơn bạn đã ghé thăm website của tôi. <br> Tôi xin được tự giới thiệu họ & tên của tôi là : <b>Nguyễn Hoài Nhớ - 21 tuổi </b> . <br>Hiện tại tôi đang là một Front-end Developer . <br>Tôi sinh ra và lớn lên tại Cà Mau, hiện tại đang học tập và làm việc tại TP.HCM . <br>";
+var string2 = "Tiểu Sử : <br><br>✐ Năm 2018 : Theo học ngành công nghệ thông tin - chuyên ngành công nghệ phần mềm tại Hutech University, tôi bắt đầu học tập và tìm hiểu các kiến thức cơ bản về lập trình Web. <br> ✐ Năm 2019 : Thực hiện các dự án bằng Java Web, ASP.Net + SQL. <br> ✐ Năm 2020 : Thực hiện các dự án bằng ReactJS, Redux + Axios, tham gia dự án thực tế đầu tiên : thiết kế giao diện betong24h.com <br> ✐ Hiện tại : Đang học tập và áp dụng các kiến thức React Native + GraphQL. <br>";
+var string3 = "<span class='strong-letter'>👍 Điểm Mạnh:</span> <br><br> ✐ Đam mê và yêu thích lập trình. <br> ✐ Thân thiện, hòa động.<br> ✐ Có khả năng teamwork cao.<br> ✐ Dễ dàng thích nghi với các công nghệ mới.<br> ✐ Thường xuyên nâng cấp các kĩ năng của bản thân.<br> ✐ Tinh thần trách nhiệm cao.<br> ✐ Có thể làm OT ( nếu team cần ).<br><br><span class='strong-letter'>👎 Điểm Yếu: </span> <br><br> ✐ Thời gian làm việc còn hạn chế ( vẫn còn đang trong chương trình đại học ).<br> ✐ Theo học quá nhiều công nghệ cùng lúc dẫn đến lan man  <br>";
+var string4 = "<span class='strong-letter'>🌐 Dự án thực tế</span>: <br><br>🔗 betong24.com <br><br><span class='strong-letter'>🌐 Dự án bản thân : </span><br><br>🔗 https://github.com/hoainho/mbook <br> 🔗 https://github.com/hoainho/BE-MBook <br>🔗 https://github.com/hoainho/R-store.git";
+
 function testTypingEffect(href) {
-  captionEl = $(`${href} p`);
+  captionE1 = $(`#${href} p`);
+  if (href === 'intro') {
+    valueText = string;
+  } else if (href === 'education') {
+    valueText = string2;
+  } else if (href === 'self') {
+    valueText = string3;
+  }
+  else if (href === 'project') {
+    valueText = string4;
+  }
   type();
 }
 function type() {
-  captionEl.html(valueText?.substr(0, captionLength++));
+  captionE1.html(
+    valueText?.substr(0, captionLength++)
+  )
   if (captionLength < valueText?.length + 1) {
     setTimeout('type()', 50);
-  } else {
+  }
+  else {
     captionLength = 0;
   }
-
 }
+
