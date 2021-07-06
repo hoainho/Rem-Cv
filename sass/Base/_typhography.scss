@@ -1,43 +1,43 @@
-html{
+html {
     font-size: 10px;
     font-family: sans-serif;
-    overflow: hidden !important; 
-    @include mobile{
+    overflow: hidden !important;
+    @include mobile {
         overflow-y: scroll;
-    } 
+    }
 }
 /* Show red borders when filled, but invalid */
 input:not(:placeholder-shown) {
     border-bottom: 2px solid $color-red-dark;
-  }
-  
-  /* Show green borders when valid */
-  input:valid {
+}
+
+/* Show green borders when valid */
+input:valid {
     border-bottom: 2px solid$color-secondary;
     background: transparent;
-  }
-.l-0{
+}
+.l-0 {
     left: 0rem !important;
-    @include mobile{
+    @include mobile {
         left: -3rem !important;
     }
-    @include smtablet{
+    @include smtablet {
         left: -6rem !important;
     }
-    @include tablet{
+    @include tablet {
         left: 2rem !important;
     }
 }
-.mr-05{
+.mr-05 {
     margin-right: 0.5rem;
 }
 
-.l--3{
+.l--3 {
     left: -3rem !important;
 }
-.is-active{
+.is-active {
     opacity: 1 !important;
 }
-.sent{
+.sent {
     animation: fadeOutRightBig 1.5s ease-in-out;
 }

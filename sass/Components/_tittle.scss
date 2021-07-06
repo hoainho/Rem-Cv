@@ -8,21 +8,49 @@
   &--shadow {
     z-index: 50;
     color: white;
-    width: max-content;
+    width: 40vw;
     position: absolute;
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: 800;
     letter-spacing: 1rem;
     opacity: 0.05;
     transition: 0.5s;
-    left: -9%;
+    left: -12%;
     top: 50%;
-    transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-100%) rotate(-90deg);
     @include mobile {
     }
     @include smtablet {
+      width: 80vh;
+      font-size: 8rem;
+      left: 50%;
+      top: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%) rotate(-45deg);
     }
     @include tablet {
+      width: 80vh;
+      font-size: 13rem;
+      left: 50%;
+      top: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    @include desktop {
+      transform: translateY(-100%) rotate(-90deg);
+      width: 50vw;
+      font-size: 7rem;
+      left: -17%;
+    }
+    @include IpadPro {
+      transform: translateY(-100%) rotate(-90deg);
+      width: 50vw;
+      font-size: 10rem;
+      left: -17%;
+    }
+    @include Pc {
+      transform: translateY(-100%) rotate(-90deg);
+      font-size: 11rem;
     }
     &:hover {
       opacity: 0.4;
@@ -35,17 +63,12 @@
     width: 200px;
     position: absolute;
     top: 13%;
-    left: 10%;
+    left: 0%;
     z-index: 25;
     perspective: 999rem;
     transform-style: preserve-3d;
     @include smtablet {
-      top: 8%;
-      left: 6%;
-    }
-    @include tablet {
-      top: 9%;
-      left: 10%;
+      top: 0;
     }
     &--layer {
       width: 100%;
@@ -67,7 +90,19 @@
         letter-spacing: -1px;
         text-shadow: 4px 0 10px hsla(0, 0%, 0%, 0.13);
         @include mobile {
-          font: 4rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica, sans-serif;
+          font-size: 4rem/0.13;
+        }
+        @include smtablet {
+          font-size: 7rem;
+        }
+        @include desktop {
+          font-size: 7rem;
+        }
+        @include IpadPro {
+          font-size: 10rem;
+        }
+        @include Pc {
+          font-size: 11rem;
         }
       }
       //TranslateZ for Layers
@@ -99,14 +134,35 @@
         text-shadow: none;
       }
     }
-
     &--content {
-      top: 17%;
+      top: 12%;
       left: 21%;
       position: absolute;
       text-transform: uppercase;
       font-size: 5rem;
       font-weight: 600;
+      @include smtablet {
+        font-size: 4rem;
+        top: 30%;
+        margin-left: 1rem;
+      }
+      @include tablet {
+        top: 8%;
+        left: 25%;
+      }
+      @include desktop {
+        left: 25%;
+        top: 17%;
+      }
+      @include IpadPro {
+        top: 17%;
+        left: 20%;
+      }
+      @include Pc {
+        top: 17%;
+        left: 20%;
+        font-size: 6rem;
+      }
       &_after {
         color: $color-white;
         clip-path: polygon(0 19%, 100% 78%, 100% 100%, 0 100%);
