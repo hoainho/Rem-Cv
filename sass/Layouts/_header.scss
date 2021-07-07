@@ -141,6 +141,14 @@
             font-size: 6rem !important;
             top: -3rem !important;
           }
+          @include tablet {
+            font-size: 8rem !important;
+            top: -4rem !important;
+          }
+          @include smtablet {
+            font-size: 9rem !important;
+            top: -5rem !important;
+          }
           @include Pc {
             font-size: 15rem !important;
           }
