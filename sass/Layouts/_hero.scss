@@ -114,6 +114,7 @@
         top: 0;
         width: 30%;
         height: auto;
+        z-index: 1001;
         @include mobile {
           width: 70%;
           z-index: 1;
@@ -126,7 +127,6 @@
         @include tablet {
           width: 50%;
           top: 20%;
-          z-index: 1;
         }
         @include FHD {
         }
@@ -167,6 +167,9 @@
           }
         }
         &__box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           color: $color-white;
           font-size: 3rem;
           position: relative;
@@ -177,8 +180,6 @@
           top: 0;
           left: 27%;
           @include mobile {
-            display: flex;
-            align-items: center;
           }
           @include tablet {
             left: 18%;
@@ -192,9 +193,9 @@
           &___content {
             &____font {
               position: absolute;
-              padding-left: 5rem;
+              padding-left: 2rem;
               vertical-align: inherit;
-              width: 37rem;
+              width: max-content;
               top: 0.5rem;
               @include mobile {
                 font-size: 2rem;
@@ -206,12 +207,13 @@
             }
           }
           &___icon {
-            inset: 0 !important;
-            position: relative !important;
+            inset: 0;
+            position: relative;
             @include mobile {
               width: 5rem;
               height: 5rem;
               font-size: 2rem;
+              position: absolute;
             }
             @include FHD {
             }
@@ -226,7 +228,6 @@
       }
 
       &_download::before {
-        //animation: bounceInLeft 1s infinite;
         position: absolute;
         display: block;
         inset: 0;
@@ -244,9 +245,15 @@
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1);
+        @include mobile {
+          width: 32%;
+        }
         @include smtablet {
         }
         @include tablet {
+          width: 20%;
+        }
+        @include IpadPro {
           width: 20%;
         }
         @include FHD {
@@ -271,7 +278,14 @@
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1);
+        @include mobile {
+          left: -32%;
+          width: 32%;
+        }
         @include smtablet {
+        }
+        @include tablet {
+          width: 20%;
         }
         @include tablet {
           width: 20%;

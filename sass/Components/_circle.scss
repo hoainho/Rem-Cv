@@ -1,40 +1,37 @@
-
 .circle {
-    width: 7rem;
-    height: 7rem;
-    padding: 0rem;
-    border-radius: 100%;
-    box-shadow: none;
-    box-sizing: border-box;
-    border: 0;
-    margin: 0;
-    padding: 1rem 2rem;
-    background: none;
-    box-shadow: inset 0 0 0 2px $color-white;
-    font-size: inherit;
-    font-weight: 700;
-    position: relative;
-    vertical-align: middle;
-    position: absolute;
-    bottom: -7.5rem;
+  width: 7rem;
+  height: 7rem;
+  padding: 0rem;
+  border-radius: 100%;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 1rem 2rem;
+  background: none;
+  box-shadow: inset 0 0 0 2px $color-white;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+  position: relative;
+  bottom: -7.5rem;
+}
+.circle::before,
+.circle::after {
+  top: 0%;
+  left: 0;
+  border-radius: 100%;
+  position: absolute;
+  @include mobile {
+  }
+}
+.circle::before {
+  border: 2px solid transparent;
+  padding: 1.9rem;
+}
 
-  }
-  .circle::before, .circle::after {
-    top: 0%;
-    left: 0;
-    border-radius: 100%;
-    position: absolute;
-    @include mobile{
-      top: -7%;
-      left: -5px;
-    }
-  }
-  .circle::before {
-    border: 2px solid transparent;
-    padding: 1.9rem;
-  }
-  
-  .circle::after {
-    border: 0 solid transparent;
-    padding: 2rem;
-  }
+.circle::after {
+  border: 0 solid transparent;
+  padding: 2rem;
+}

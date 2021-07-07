@@ -138,8 +138,8 @@
         }
         &__logoHeader {
           @include mobile {
-            font-size: 10rem !important;
-            top: -7rem !important;
+            font-size: 6rem !important;
+            top: -3rem !important;
           }
           @include Pc {
             font-size: 15rem !important;
