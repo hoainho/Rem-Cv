@@ -19,6 +19,12 @@
     top: 50%;
     transform: translateY(-100%) rotate(-90deg);
     @include mobile {
+      width: 60vh;
+      font-size: 7rem;
+      left: 50%;
+      top: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%) rotate(-45deg);
     }
     @include smtablet {
       width: 80vh;
@@ -67,9 +73,15 @@
     z-index: 25;
     perspective: 999rem;
     transform-style: preserve-3d;
+    @include mobile {
+      height: 50px;
+    }
     @include smtablet {
       top: 0;
+      height: 75px;
+      width: 100px;
     }
+
     &--layer {
       width: 100%;
       height: 100%;
@@ -78,6 +90,9 @@
       animation: rotate 5s infinite alternate ease-in-out -7.5s;
       animation-fill-mode: forwards;
       transform: rotateY(40deg) rotateX(33deg) translateZ(0);
+      @include mobile {
+        bottom: 4rem;
+      }
       &:after {
         font: 8rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica, sans-serif;
         content: "My";
@@ -90,7 +105,7 @@
         letter-spacing: -1px;
         text-shadow: 4px 0 10px hsla(0, 0%, 0%, 0.13);
         @include mobile {
-          font-size: 4rem/0.13;
+          font-size: 4rem;
         }
         @include smtablet {
           font-size: 7rem;
@@ -141,6 +156,13 @@
       text-transform: uppercase;
       font-size: 5rem;
       font-weight: 600;
+      @include mobile {
+        top: 0;
+        left: 0;
+        font-size: 3rem;
+        position: absolute;
+        margin-top: 0;
+      }
       @include smtablet {
         font-size: 4rem;
         top: 30%;
@@ -166,6 +188,9 @@
       &_after {
         color: $color-white;
         clip-path: polygon(0 19%, 100% 78%, 100% 100%, 0 100%);
+        @include mobile {
+          position: relative !important;
+        }
       }
       &_before {
         color: transparent;
