@@ -12,6 +12,9 @@
 .nav-tabs > li.active > a:focus {
     pointer-events: none;
     box-shadow: 16px 0px 20px -10px white;
+    @include mobile {
+        box-shadow: 0px -16px 20px -10px white;
+    }
 }
 .strong-letter {
     font-size: 2rem;
@@ -22,4 +25,7 @@
     padding-right: 8px;
     margin-top: -5px;
     float: left;
+    @include mobile {
+        line-height: 3rem;
+    }
 }

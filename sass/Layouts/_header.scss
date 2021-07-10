@@ -181,6 +181,9 @@
           @include tablet {
             right: 3rem;
           }
+          @include IpadPro {
+            right: 0;
+          }
 
           &___square {
             position: absolute;
