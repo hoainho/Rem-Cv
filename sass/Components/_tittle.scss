@@ -1,8 +1,4 @@
 .slogan {
-  // left: 3%;
-  // transform: rotate(-90deg);
-  // position: absolute;
-  // z-index: 50;
   @include mobile {
   }
   &--shadow {
@@ -20,7 +16,7 @@
     transform: translateY(-100%) rotate(-90deg);
     @include mobile {
       width: 60vh;
-      font-size: 7rem;
+      font-size: 6rem;
       left: 50%;
       top: 50%;
       text-align: center;
@@ -53,9 +49,11 @@
       width: 50vw;
       font-size: 10rem;
       left: -17%;
+      text-align: left;
     }
     @include Pc {
       transform: translateY(-100%) rotate(-90deg);
+      text-align: left;
       font-size: 11rem;
     }
     &:hover {

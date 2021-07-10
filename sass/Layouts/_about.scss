@@ -1,29 +1,11 @@
 .about {
     background-color: $color-gray;
     color: $color-white;
-    @include mobile {
-        position: relative !important;
-        width: 100% !important;
-        height: 100% !important;
-        top: 0;
-    }
-    @include smtablet {
-        position: relative !important;
-        width: 100% !important;
-        height: 100% !important;
-        top: 0;
-    }
-    @include tablet {
-        position: relative !important;
-        width: 100% !important;
-        height: 100% !important;
-        top: 0;
-    }
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
     &-slogan {
-        @include mobile {
-            top: 38%;
-            right: -43%;
-        }
     }
     &-container {
         background-image: url(../img/codebag.png);
@@ -31,46 +13,11 @@
         background-repeat: no-repeat;
         background-position-x: 9rem;
         background-position-y: 14rem;
-        @include mobile {
-            background-size: 17rem;
-            background-position-x: 10rem;
-            background-position-y: 8rem;
-        }
-        @include smtablet {
-            background-size: 15rem;
-            background-position-x: 3.5rem;
-            background-position-y: 23rem;
-        }
-        @include tablet {
-            background-size: 25rem;
-            background-repeat: no-repeat;
-            background-position-x: 2rem;
-            background-position-y: 27rem;
-        }
+
         &--left {
-            width: 30vw;
             height: 100vh;
             position: relative;
-            padding: 5rem !important;
-            @include mobile {
-                width: 67vw;
-                height: 38vh;
-            }
-            @include smtablet {
-                position: absolute;
-                width: 40vw;
-                height: 35vh;
-                top: 28rem;
-                left: -1rem;
-            }
-            @include tablet {
-                width: 32vw;
-                height: 30vh;
-                position: relative;
-                padding: 5rem !important;
-                top: 29rem;
-                left: 2rem;
-            }
+
             &_box {
                 position: relative;
                 border: 1px solid #fff;
@@ -82,24 +29,7 @@
                 width: 16vw;
                 left: 12rem;
                 transition: all 1s;
-                @include mobile {
-                    top: 25%;
-                    width: 44vw;
-                    left: 5rem;
-                }
-                @include smtablet {
-                    top: -1rem;
-                    padding: 0rem;
-                    width: 25vw;
-                    height: 23vh;
-                    left: 0rem;
-                }
-                @include tablet {
-                    top: -2rem;
-                    height: 24rem;
-                    width: 22vw;
-                    left: -1rem;
-                }
+
                 &:hover {
                     position: relative;
                     border: 1px solid #fff;
@@ -109,25 +39,7 @@
                     top: 13%;
                     padding: 4rem;
                     width: 23vw;
-                    left: 6rem;
-                    @include mobile {
-                        top: 20%;
-                        width: 70vw;
-                        height: 23vh;
-                        left: -1rem;
-                    }
-                    @include smtablet {
-                        top: -14rem;
-                        width: 29vw;
-                        left: -2rem;
-                        height: 58vh;
-                    }
-                    @include tablet {
-                        top: -17rem;
-                        width: 35vw;
-                        left: -6rem;
-                        height: 45vh;
-                    }
+
                     .about-container--left_box__content {
                         position: relative;
                         font-size: 3rem;
@@ -137,20 +49,6 @@
                         top: 26rem;
                         opacity: 1;
                         animation: zoomIn 1s;
-                        @include mobile {
-                            font-size: 2rem;
-                            right: 1rem;
-                            top: 2rem;
-                        }
-                        @include smtablet {
-                            right: 11rem;
-                            top: 24rem;
-                            height: 20vh;
-                        }
-                        @include tablet {
-                            right: 7rem;
-                            top: 24rem;
-                        }
                     }
                     .about-container--left_box__year {
                         position: relative;
@@ -165,40 +63,9 @@
                         -webkit-text-stroke: 0.2rem #fff;
                         text-align: center;
                         animation: heartBeat 3s infinite ease-in-out;
-                        @include mobile {
-                            width: 13rem;
-                            height: 19rem;
-                            font-size: 11rem;
-                            left: -9%;
-                            top: -6rem;
-                        }
-                        @include smtablet {
-                            font-size: 17rem;
-                            left: 89%;
-                            top: -8rem;
-                        }
-                        @include tablet {
-                            font-size: 30rem;
-                        }
-                        @include tablet {
-                            font-size: 22rem;
-                            left: 8rem;
-                        }
                     }
                     .about-container--left_box__content___experience::before {
                         animation: fadeInLeftBig 1s;
-                        @include mobile {
-                            border-bottom: 1px solid #fff;
-                            height: 1.5rem;
-                            top: 2.8rem;
-                            right: 11rem;
-                        }
-                        @include smtablet {
-                            width: 24vw;
-                            height: 1.5rem;
-                            top: -6rem;
-                            right: 0rem;
-                        }
                     }
                 }
                 &__year {
@@ -214,17 +81,6 @@
                     -webkit-text-stroke: 0.2rem #fff;
                     text-align: center;
                     animation: rubberBand 3s infinite ease-in-out;
-                    @include mobile {
-                        width: 13rem;
-                        height: 17rem;
-                        font-size: 15rem;
-                        left: 3%;
-                        top: -1rem;
-                    }
-                    @include smtablet {
-                        top: -2rem;
-                        font-size: 18rem;
-                    }
                 }
                 &__content {
                     position: relative;
@@ -249,172 +105,81 @@
             }
         }
         &--right {
-            @include smtablet {
-                top: 0vh;
-                right: -21rem;
-                position: relative;
-                width: 55%;
-                height: 80vh;
-            }
-            @include tablet {
-                top: 0vh;
-                right: 0rem;
-                position: relative;
-                height: 80vh;
-                width: 55vw;
-            }
+            height: 100vh;
             &_tittle {
-                @include mobile {
-                    height: 11vh;
-                    width: 50%;
-                    top: -4rem;
-                    left: 12rem;
-                    position: relative;
-                }
-                @include smtablet {
-                    height: 11vh;
-                    width: 57%;
-                    top: 0rem;
-                    left: 5rem;
-                    position: relative;
-                }
+                position: relative;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // @include mobile {
+                //     height: 11vh;
+                //     width: 50%;
+                //     top: -4rem;
+                //     left: 12rem;
+                //     position: relative;
+                // }
+                // @include smtablet {
+                //     height: 11vh;
+                //     width: 57%;
+                //     top: 0rem;
+                //     left: 5rem;
+                //     position: relative;
+                // }
                 &__skill {
-                    position: absolute;
-                    left: 27rem;
-                    top: 1rem;
-                    @include mobile {
-                        left: -9rem;
-                        top: -1rem;
-                    }
-                    @include smtablet {
-                        left: -2rem;
-                        top: -2rem;
-                    }
-                    @include tablet {
-                        position: absolute;
-                        left: 12rem;
-                        top: 1rem;
-                    }
+                    position: relative;
                     &___layer {
                         &:after {
                             font: 8rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica,
                                 sans-serif;
                             content: "Skill";
-                            @include mobile {
-                                font: 4rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica,
-                                    sans-serif;
-                            }
-                            @include smtablet {
-                                font: 6rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica,
-                                    sans-serif;
-                            }
+                            // @include mobile {
+                            //     font: 4rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica,
+                            //         sans-serif;
+                            // }
+                            // @include smtablet {
+                            //     font: 6rem/0.13 "Pacifico", "Kaushan Script", "Roboto", "Trebuchet MS", Helvetica,
+                            //         sans-serif;
+                            // }
                         }
                     }
                 }
             }
             &_content {
                 color: white;
-                @include mobile {
-                    height: 76vh;
-                    position: relative;
-                    top: -16rem;
-                    right: 4rem;
-                }
-                @include smtablet {
-                    position: relative;
-                    top: -9rem;
-                    right: 0rem;
-                    height: 80vh;
-                    width: 100%;
-                }
-                @include tablet {
-                    width: 55vw;
-                    height: 80vh;
-                    position: relative;
-                    right: 2rem;
-                }
+                height: 80%;
+                padding-top: 6rem;
                 &__rowfirst {
                     position: relative;
-                    top: 15rem;
-                    height: 20vh;
-                    @include mobile {
-                        top: 15rem;
-                        height: 22vh;
-                        width: 84vw;
-                        left: 2rem;
-                    }
-                    @include smtablet {
-                        top: 4rem;
-                        height: 80vh;
-                        width: 107%;
-                        left: 1rem;
-                    }
-                    @include tablet {
-                        top: 0rem;
-                        height: 80vh;
-                        width: 55vw;
-                        position: relative;
+                    height: 100%;
+                    display: grid;
+                    gap: 5px;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    &::before {
+                        content: none;
                     }
                     &___propressbar {
                         position: absolute;
-                        top: 2rem;
-                        right: 9rem;
+                        top: 0;
+                        right: 0;
                         width: 17rem;
                         height: 13rem;
                         transform-style: preserve-3d;
-                        transform: perspective(55rem) rotateX(-102deg) rotateY(93deg) rotateZ(-6deg);
-                        @include mobile {
-                            top: 4rem;
-                            width: 14rem;
-                            height: 10rem;
-                        }
+                        transform: perspective(55rem) rotateX(-102deg) rotateY(93deg) rotateZ(-6deg) translateY(14rem);
                     }
                     &___propressbarname {
                         height: 15%;
-                        top: 19rem;
-                        left: -2.5rem;
                         font-size: 2.5rem;
-                        @include mobile {
-                            width: 13vw;
-                            height: 7%;
-                            top: 18rem;
-                            left: -3.5rem;
-                            font-size: 2rem;
-                        }
-                        @include smtablet {
-                            left: -6.5rem;
-                        }
-                        @include tablet {
-                            left: 0.5rem;
-                        }
+                        top: 0;
                     }
                 }
                 &__dev {
-                    left: 10rem;
-                    width: 15%;
-                    height: 115%;
-                    top: -5rem;
-                    margin: 5rem;
-                    @include mobile {
-                        left: 3rem;
-                        width: 12%;
-                        top: -5rem;
-                        margin: -1rem 3rem;
-                    }
-                    @include smtablet {
-                        left: 2rem;
-                        width: 14%;
-                        height: 22%;
-                        top: 3rem;
-                        margin: 5rem 3rem !important;
-                    }
-                    @include tablet {
-                        left: 4rem;
-                        width: 15vw;
-                        height: 10vh;
-                        top: 8rem;
-                        margin: 9rem 1rem;
-                    }
+                    position: relative;
+                    justify-self: start;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
                     &___namepropressbar {
                         width: 1%;
                     }
@@ -571,124 +336,124 @@
         //---default=0(0rank) max=17rank  ====> Return max-default = 17rank => 1rank : 5.75
         &-html {
             width: calc(var(--percent-right-html) / 5.75);
-            @include mobile {
-                width: 10.5rem !important;
-            }
+            // @include mobile {
+            //     width: 10.5rem !important;
+            // }
         }
         &-css {
             width: calc(var(--percent-right-css) / 5.75);
-            @include mobile {
-                width: 9.5rem !important;
-            }
+            // @include mobile {
+            //     width: 9.5rem !important;
+            // }
         }
         &-sass {
             width: calc(var(--percent-right-sass) / 5.75);
-            @include mobile {
-                width: 10.5rem !important;
-            }
+            // @include mobile {
+            //     width: 10.5rem !important;
+            // }
         }
         &-js {
             width: calc(var(--percent-right-js) / 5.6) !important;
-            @include mobile {
-                width: 1.6rem !important;
-            }
+            // @include mobile {
+            //     width: 1.6rem !important;
+            // }
         }
         &-react {
             width: calc(var(--percent-right-react) / 5.4) !important;
-            @include mobile {
-                width: 3rem !important;
-            }
+            // @include mobile {
+            //     width: 3rem !important;
+            // }
         }
         &-jquery {
             width: calc(var(--percent-right-jquery) / 5.1);
-            @include mobile {
-                width: 5.5rem !important;
-            }
+            // @include mobile {
+            //     width: 5.5rem !important;
+            // }
         }
     }
     &-after {
         //---default=0(0rank) max=17rank  ====> Return max-default = 17rank => 1rank : 5.75
         &-html {
             width: calc(var(--percent-after-html) / 5.75) !important;
-            @include mobile {
-                width: 10.5rem !important;
-            }
+            // @include mobile {
+            //     width: 10.5rem !important;
+            // }
         }
         &-css {
             width: calc(var(--percent-after-css) / 5.5) !important;
-            @include mobile {
-                width: 10rem !important;
-            }
+            // @include mobile {
+            //     width: 10rem !important;
+            // }
         }
         &-sass {
             width: calc(var(--percent-after-sass) / 5.75) !important;
-            @include mobile {
-                width: 10.5rem !important;
-            }
+            // @include mobile {
+            //     width: 10.5rem !important;
+            // }
         }
         &-js {
             width: calc(var(--percent-after-js) / 5.6) !important;
-            @include mobile {
-                width: 2.2rem !important;
-            }
+            // @include mobile {
+            //     width: 2.2rem !important;
+            // }
         }
         &-react {
             width: calc(var(--percent-after-react) / 5.4) !important;
-            @include mobile {
-                width: 3.2rem !important;
-            }
+            // @include mobile {
+            //     width: 3.2rem !important;
+            // }
         }
         &-jquery {
             width: calc(var(--percent-after-jquery) / 4.9) !important;
-            @include mobile {
-                width: 6rem !important;
-            }
+            // @include mobile {
+            //     width: 6rem !important;
+            // }
         }
     }
     &-number {
         &-html {
             left: 9rem;
-            @include mobile {
-                left: 5rem !important;
-                top: -6rem !important;
-            }
+            // @include mobile {
+            //     left: 5rem !important;
+            //     top: -6rem !important;
+            // }
         }
         &-css {
             left: 8rem;
-            @include mobile {
-                left: 4rem !important;
-                top: -6rem !important;
-            }
+            // @include mobile {
+            //     left: 4rem !important;
+            //     top: -6rem !important;
+            // }
         }
         &-sass {
             left: 9rem;
-            @include mobile {
-                left: 5rem !important;
-                top: -6rem !important;
-            }
+            // @include mobile {
+            //     left: 5rem !important;
+            //     top: -6rem !important;
+            // }
         }
 
         &-js {
             left: 8rem !important;
-            @include mobile {
-                left: -3rem !important;
-                top: -6rem !important;
-            }
+            // @include mobile {
+            //     left: -3rem !important;
+            //     top: -6rem !important;
+            // }
         }
         &-react {
             left: 7rem !important;
-            @include mobile {
-                left: -2rem !important;
-                top: -6rem !important;
-            }
+            // @include mobile {
+            //     left: -2rem !important;
+            //     top: -6rem !important;
+            // }
         }
 
         &-jquery {
             left: 4rem;
-            @include mobile {
-                left: 0rem !important;
-                top: -6rem !important;
-            }
+            // @include mobile {
+            //     left: 0rem !important;
+            //     top: -6rem !important;
+            // }
         }
     }
 }
