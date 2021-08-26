@@ -76,8 +76,6 @@
                         list-style-type: none;
                         color: $color-secondary;
                         position: relative;
-                        width: 45vw;
-                        height: 10vh;
                         &____details,
                         &____details:active,
                         &____details:link {
@@ -180,7 +178,7 @@
                         list-style-type: none;
                         color: $color-white;
                         top: 2rem;
-                        width: 45vw;
+                        width: 30vw;
                         height: 10vh;
                         position: relative;
                         @include mobile {

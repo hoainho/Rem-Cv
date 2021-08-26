@@ -346,10 +346,6 @@ $('#bgSecond').hover(
   function () { $(this).addClass('is-active'), $('#imgSecond',).addClass('is-active') },
   function () { $(this).removeClass('is-active'), $('#imgSecond',).removeClass('is-active') }
 )
-$('#bgThird').hover(
-  function () { $(this).addClass('is-active'), $('#imgThird',).addClass('is-active') },
-  function () { $(this).removeClass('is-active'), $('#imgThird',).removeClass('is-active') }
-)
 //Contact
 $('#btn-submit').click(
   function () { $(this).addClass('sent') },

@@ -1,7 +1,14 @@
 #fp-nav.fp-right {
-    top: 50% !important;
+    right: 10rem !important;
+    top: 45% !important;
     @include mobile {
         display: none;
+    }
+    @include smtablet {
+        right: 6rem !important;
+    }
+    @include tablet {
+        right: 8rem !important;
     }
 }
 #fp-nav ul,
@@ -30,6 +37,9 @@
 }
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
+    width: 5rem !important;
+    height: 5rem !important;
+    margin: 0 !important;
     @include mobile {
         display: block;
         width: 14px;
@@ -59,6 +69,7 @@
     border: 1px solid $color-secondary !important;
 }
 #fp-nav ul li .fp-tooltip {
+    top: 1.6rem !important;
     @include mobile {
         top: 0.1rem !important;
     }

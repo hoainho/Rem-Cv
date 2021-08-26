@@ -151,10 +151,6 @@
             &_form {
                 position: relative;
                 width: 25.5vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
                 @include mobile {
                     width: 70vw;
                 }
@@ -177,9 +173,7 @@
                 &__information {
                     margin-bottom: 1.5rem;
                     width: 100%;
-                    height: 4vh;
-                    display: flex;
-                    align-items: center;
+                    height: 6vh;
                     &___input {
                         background-color: transparent;
                         width: 100%;
@@ -211,11 +205,6 @@
                         }
                     }
                 }
-                &___icon {
-                    position: absolute;
-                    right: 1rem;
-                    color: yellow;
-                }
                 &__name {
                     &___icon {
                         display: flex;
@@ -238,9 +227,6 @@
                 }
                 &__message {
                     height: 20vh;
-                    @include mobile {
-                        height: 10vh;
-                    }
                     &___icon {
                         display: flex;
                         flex-direction: row-reverse;
@@ -250,16 +236,28 @@
                         color: yellow;
                     }
                     &___input {
+                        // padding-bottom: 6rem;
                         position: relative;
                     }
                 }
                 &__btn {
                     position: relative;
-                    width: auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 8rem;
+                    left: 34%;
+                    width: 30%;
+                    @include mobile {
+                        left: 0;
+                        width: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    @include smtablet {
+                        left: 44%;
+                        width: 21%;
+                    }
+                    @include tablet {
+                        left: 42%;
+                    }
                     &:active,
                     &:link,
                     &:focus,
@@ -275,6 +273,12 @@
                         color: white;
                         border: 1px solid $color-secondary;
                         transition: 0.8s;
+                        // @include mobile {
+                        //     font-size: 1rem;
+                        // }
+                        // @include smtablet {
+                        //     font-size: 1.5rem;
+                        // }
                         &:focus,
                         &:visited,
                         &:active,
@@ -291,9 +295,16 @@
                             color: transparent;
                             border: 1px solid $color-secondary;
                             transition: 0.8s;
-                            left: 50%;
-                            transform: translateX(-50%);
+                            left: 0;
                             top: 0;
+                            @include mobile {
+                                font-size: 2rem;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                            @include smtablet {
+                                font-size: 1.5rem;
+                            }
                             &:focus,
                             &:visited,
                             &:active,

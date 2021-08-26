@@ -143,7 +143,10 @@
         position: relative;
         z-index: 1;
         display: inline-block;
+        // width: $square_sm;
+        // height: $square_sm;
         cursor: pointer;
+        // vertical-align: middle;
         color: inherit;
         right: 1%;
         @include mobile {
