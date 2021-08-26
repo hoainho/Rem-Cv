@@ -1,8 +1,6 @@
 #fp-nav.fp-right {
     top: 50% !important;
-    @include mobile {
-        display: none;
-    }
+    transform: translateY(-50%) !important;
 }
 #fp-nav ul,
 .fp-slidesNav ul {

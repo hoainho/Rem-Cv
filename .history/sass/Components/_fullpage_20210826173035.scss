@@ -1,7 +1,14 @@
 #fp-nav.fp-right {
-    top: 50% !important;
+    // right: 10rem !important;
+    top: 45% !important;
     @include mobile {
         display: none;
+    }
+    @include smtablet {
+        right: 6rem !important;
+    }
+    @include tablet {
+        right: 8rem !important;
     }
 }
 #fp-nav ul,

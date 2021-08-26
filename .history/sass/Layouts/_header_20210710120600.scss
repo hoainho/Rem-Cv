@@ -137,13 +137,31 @@
           }
         }
         &__logoHeader {
+          @include mobile {
+            font-size: 6rem !important;
+            top: -3rem !important;
+          }
+          @include tablet {
+            font-size: 8rem !important;
+            top: -4rem !important;
+          }
+          @include smtablet {
+            font-size: 9rem !important;
+            top: -5rem !important;
+          }
+          @include Pc {
+            font-size: 15rem !important;
+          }
         }
       }
       &_right {
         position: relative;
         z-index: 1;
         display: inline-block;
+        // width: $square_sm;
+        // height: $square_sm;
         cursor: pointer;
+        // vertical-align: middle;
         color: inherit;
         right: 1%;
         @include mobile {

@@ -1,5 +1,6 @@
 #fp-nav.fp-right {
     top: 50% !important;
+    // transform: translateY(-50%) !important;
     @include mobile {
         display: none;
     }

@@ -4,33 +4,49 @@
     background: linear-gradient(90deg, #050505 0%, #050505 30%, #242424 100%);
     &-container {
         display: flex;
+        align-items: center;
         justify-content: center;
-        @include mobile {
-            display: flex;
-            justify-content: center;
-            width: 100vw;
-            margin: 0;
-            flex-direction: column;
-            align-items: center;
-        }
-        &--item {
+        &--left {
             color: $color-white;
-            display: flex;
+            display: inline-flex;
             flex-direction: row-reverse;
             align-items: center;
             justify-content: center;
             position: relative;
-            width: 50vw;
             @include mobile {
-                width: 60vw;
+                top: -5rem;
+                left: 10rem;
+            }
+            @include smtablet {
+                top: 4rem;
+                left: 10rem;
+                height: 23vh;
+                width: 53vw;
+            }
+            @include tablet {
+                top: -6rem;
+                left: 2rem;
+                height: 27vh;
+                width: 95%;
             }
             &_img {
                 position: relative;
-                width: 25.5vw;
+                width: 50%;
+                // margin: 0 auto;
                 line-height: 0;
-                @include mobile {
-                    width: 50vw;
-                }
+                // @include mobile {
+                //     bottom: 8rem;
+                //     right: 3rem;
+                //     height: 50%;
+                // }
+                // @include smtablet {
+                //     bottom: 8rem;
+                //     right: 1rem;
+                // }
+                // @include tablet {
+                //     bottom: 2rem;
+                //     right: 21rem;
+                // }
                 &__details {
                     width: 100%;
                     height: 100%;
@@ -57,9 +73,7 @@
                 }
                 & div {
                     background: black;
-                    max-height: 5.5vw;
-                    width: 6vw;
-                    height: 5.5vw;
+                    width: 9.1rem;
                     border: 1px solid white;
                     padding: 5px;
                     display: flex;
@@ -68,15 +82,9 @@
                     transform-style: preserve-3d;
                     perspective: 500px;
                     transition: all 0.5s ease-in-out;
-                    @include mobile {
-                        max-height: 11vw;
-                        width: 12vw;
-                        height: 11vw;
-                    }
                     & img {
                         max-width: 10rem;
-                        width: 80%;
-                        height: 80%;
+                        height: 7rem;
                         transform: translateZ(20px);
                     }
                 }
@@ -92,39 +100,79 @@
                 }
             }
             &_introduce {
-                position: absolute;
+                position: relative;
                 width: fit-content;
+                left: 38rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-
+                @include mobile {
+                    left: 6.5rem;
+                    top: 3.5rem;
+                }
+                @include smtablet {
+                    left: 16rem;
+                    top: 8rem;
+                }
+                @include tablet {
+                    left: 19rem;
+                    top: 20rem;
+                }
                 &__tittle {
-                    font-size: 2vw;
-                    font-weight: 600;
-                    letter-spacing: 0.1vw;
-                    margin: 0;
                     @include mobile {
-                        font-size: 4vw;
+                        font-size: 1rem;
                     }
+                    @include smtablet {
+                        font-size: 1.5rem;
+                    }
+                    @include tablet {
+                        width: 35%;
+                    }
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    letter-spacing: 0.3rem;
+                    margin: 0;
                 }
                 &__sub {
-                    width: max-content;
-                    font-size: 1vw;
-                    text-align: center;
                     @include mobile {
-                        font-size: 2vw;
+                        font-size: 0.5rem;
+                        margin-bottom: 0rem;
                     }
+                    @include smtablet {
+                        width: 79%;
+                        font-size: 1rem;
+                        margin-bottom: 0rem;
+                    }
+                    @include tablet {
+                        width: 39%;
+                        margin-bottom: 0rem;
+                    }
+                    width: max-content;
+                    font-size: 1.5rem;
+                    text-align: center;
                 }
                 &__list {
                     display: flex;
                     flex-direction: column-reverse;
                     list-style-type: none;
                     width: max-content;
+                    @include mobile {
+                        flex-direction: row-reverse;
+                    }
+                    @include smtablet {
+                        flex-direction: row-reverse;
+                    }
+                    @include tablet {
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
+                        position: relative;
+                        right: 6rem;
+                    }
                 }
                 &__link {
                     text-decoration: none;
-                    font-size: 2vw;
+                    font-size: 4rem;
                     color: $color-white;
                     text-transform: uppercase;
                     color: $color-secondary-light;
@@ -132,7 +180,15 @@
                     text-align: center;
                     cursor: pointer;
                     @include mobile {
-                        font-size: 4vw;
+                        font-size: 0.5rem;
+                        margin-right: 1rem;
+                        text-align: center;
+                    }
+                    @include smtablet {
+                        font-size: 1rem;
+                        width: 30%;
+                        margin-right: 2rem;
+                        text-align: center;
                     }
                     &:hover,
                     &:active {
@@ -146,40 +202,78 @@
             color: white;
             display: flex;
             justify-content: center;
-            flex: 1;
             align-items: center;
+            @include mobile {
+                top: 7rem;
+                right: 11rem;
+                margin-bottom: 5rem;
+            }
+            @include smtablet {
+                top: 5rem;
+                left: 2rem;
+                width: 94%;
+                margin-bottom: 0rem;
+            }
+            @include tablet {
+                top: -2rem;
+                width: 100%;
+                margin-bottom: 0rem;
+            }
             &_form {
                 position: relative;
-                width: 25.5vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                width: 35%;
                 @include mobile {
-                    width: 70vw;
+                    left: -1rem;
+                    width: 100%;
+                    bottom: -5rem;
+                }
+                @include smtablet {
+                    left: 12rem;
+                    width: 55%;
+                    bottom: 4rem;
+                }
+                @include tablet {
+                    left: 16rem;
+                    width: 50%;
+                    bottom: -4rem;
                 }
                 &__header {
-                    font-size: 3vw;
-                    margin-bottom: 5vh;
+                    font-size: 3rem;
+                    margin-bottom: 5rem;
                     text-transform: uppercase;
                     text-align: center;
                     font-weight: bold;
-                    letter-spacing: 0.1vw;
+                    letter-spacing: 1rem;
                     color: transparent;
                     background-clip: text;
                     -webkit-background-clip: text;
                     background-image: linear-gradient(to right, $color-secondary, $color-secondary, white);
                     @include mobile {
-                        font-size: 5vw;
-                        margin-bottom: 3vh;
+                        font-size: 1.5rem;
+                        margin-bottom: 3rem;
+                        width: 17rem;
+                    }
+                    @include smtablet {
+                        font-size: 2rem;
+                        margin: 3rem 0;
+                    }
+                    @include tablet {
+                        margin-bottom: 3rem;
                     }
                 }
                 &__information {
                     margin-bottom: 1.5rem;
                     width: 100%;
                     height: 4vh;
-                    display: flex;
-                    align-items: center;
+                    @include mobile {
+                        margin-bottom: 1.5rem;
+                        width: 18rem;
+                        font-size: 1rem;
+                    }
+                    @include smtablet {
+                        margin-bottom: 1.5rem;
+                        font-size: 1.2rem;
+                    }
                     &___input {
                         background-color: transparent;
                         width: 100%;
@@ -187,21 +281,6 @@
                         border: none;
                         border-bottom: 1px solid rgba($color-secondary, 0.5);
                         transition: 0.8s;
-                        resize: none;
-                        &::-webkit-scrollbar {
-                            width: 10px;
-                            background-color: $color-secondary-light;
-                        }
-                        &::-webkit-scrollbar-thumb {
-                            border-radius: 10px;
-                            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-                            background-color: $color-secondary;
-                            &:hover,
-                            &:visited,
-                            :active {
-                                cursor: pointer;
-                            }
-                        }
                         &:active,
                         &:link,
                         &:visited,
@@ -211,11 +290,7 @@
                         }
                     }
                 }
-                &___icon {
-                    position: absolute;
-                    right: 1rem;
-                    color: yellow;
-                }
+
                 &__name {
                     &___icon {
                         display: flex;
@@ -224,6 +299,17 @@
                         top: 11rem;
                         right: 1rem;
                         color: yellow;
+                        @include mobile {
+                            top: 8rem;
+                            right: 0rem;
+                        }
+                        @include smtablet {
+                            top: 9rem;
+                            right: 0rem;
+                        }
+                        @include tablet {
+                            top: 10rem;
+                        }
                     }
                 }
                 &__email {
@@ -234,13 +320,21 @@
                         top: 15rem;
                         right: 1rem;
                         color: yellow;
+                        @include mobile {
+                            top: 13rem;
+                            right: 0rem;
+                        }
+                        @include smtablet {
+                            top: 14rem;
+                            right: 0rem;
+                        }
+                        @include tablet {
+                            top: 16rem;
+                        }
                     }
                 }
                 &__message {
-                    height: 20vh;
-                    @include mobile {
-                        height: 10vh;
-                    }
+                    height: 8rem;
                     &___icon {
                         display: flex;
                         flex-direction: row-reverse;
@@ -248,18 +342,37 @@
                         top: 21.5rem;
                         right: 1rem;
                         color: yellow;
+                        @include mobile {
+                            top: 18.5rem;
+                            right: 0rem;
+                        }
+                        @include smtablet {
+                            top: 20rem;
+                            right: 0rem;
+                        }
+                        @include tablet {
+                            top: 22rem;
+                        }
                     }
                     &___input {
+                        padding-bottom: 6rem;
                         position: relative;
                     }
                 }
                 &__btn {
                     position: relative;
-                    width: auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 8rem;
+                    left: 34%;
+                    width: 30%;
+                    @include mobile {
+                        width: 31%;
+                    }
+                    @include smtablet {
+                        left: 44%;
+                        width: 21%;
+                    }
+                    @include tablet {
+                        left: 42%;
+                    }
                     &:active,
                     &:link,
                     &:focus,
@@ -275,6 +388,12 @@
                         color: white;
                         border: 1px solid $color-secondary;
                         transition: 0.8s;
+                        @include mobile {
+                            font-size: 1rem;
+                        }
+                        @include smtablet {
+                            font-size: 1.5rem;
+                        }
                         &:focus,
                         &:visited,
                         &:active,
@@ -291,9 +410,14 @@
                             color: transparent;
                             border: 1px solid $color-secondary;
                             transition: 0.8s;
-                            left: 50%;
-                            transform: translateX(-50%);
+                            left: 0;
                             top: 0;
+                            @include mobile {
+                                font-size: 1rem;
+                            }
+                            @include smtablet {
+                                font-size: 1.5rem;
+                            }
                             &:focus,
                             &:visited,
                             &:active,
