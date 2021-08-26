@@ -1,0 +1,63 @@
+#fp-nav.fp-right {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+    @include mobile {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: 5rem;
+        left: -2rem;
+        bottom: 4rem;
+    }
+}
+#fp-nav ul li .fp-tooltip.fp-right {
+    @include mobile {
+        right: 3px;
+        top: 1.6rem !important;
+    }
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    margin-top: 4rem !important;
+    @include mobile {
+        height: 0px !important;
+    }
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    @include mobile {
+        display: block;
+        width: 14px;
+        height: 0px;
+        margin: 7px;
+        position: relative;
+    }
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: transparent !important;
+    border: 1px solid $color-white !important;
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    margin: 0 !important;
+    @include mobile {
+    }
+}
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    //active
+    transform: scale(3) translate(0);
+    margin: 0 !important;
+    background: $color-secondary !important;
+    border: 1px solid $color-secondary !important;
+}
+#fp-nav ul li .fp-tooltip {
+    @include mobile {
+        top: 0.1rem !important;
+    }
+}

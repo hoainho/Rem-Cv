@@ -1,0 +1,265 @@
+.product {
+    background-color: $color-gray;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/bgproduct.png);
+        background-repeat: no-repeat;
+        background-size: inherit;
+        background-position-x: center;
+        background-position-y: center;
+        @include mobile {
+            background-size: 36rem;
+        }
+        &--merge {
+            opacity: 0;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &--first {
+            transition: 0.6s;
+            animation: pulse 5s infinite linear;
+            background-image: url(../img/backgroundtech1.png);
+            background-size: 60rem !important;
+            @include mobile {
+                background-size: 40rem;
+                background-repeat: no-repeat;
+            }
+        }
+        &--second {
+            transition: 0.6s;
+            animation: pulse 5s infinite linear;
+            background-image: url(../img/CmS.jpg);
+            @include mobile {
+                background-size: 40rem;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    &-container {
+        height: 60vh;
+        &--website {
+            z-index: 2;
+            -webkit-transition: opacity 2s ease-out;
+            transition: opacity 1s ease-out;
+            opacity: 0.5;
+            color: #fff;
+            &_first {
+                &__index {
+                    font-size: 5rem;
+                    font-weight: 600;
+                    color: $color-black;
+                    -webkit-text-stroke: 5px white;
+                }
+                &__name {
+                    display: inline-flex;
+                    flex-direction: column;
+                    margin-left: 10rem;
+                    &___tittle {
+                        list-style-type: none;
+                        color: $color-secondary;
+                        position: relative;
+                        width: 45vw;
+                        height: 10vh;
+                        &____details,
+                        &____details:active,
+                        &____details:link {
+                            position: absolute;
+                            text-decoration: none;
+                            font-size: 10rem;
+                            font-weight: 800;
+                            top: -4rem;
+                        }
+                        &____details {
+                            &-before {
+                                color: transparent !important;
+                                top: -4rem;
+                                -webkit-text-stroke: 0.2rem $color-white !important;
+                            }
+                            &-after {
+                                color: $color-white !important;
+                                // clip-path: polygon(0% 0%, 6% 88%, 13% 19%, 22% 96%, 31% 17%, 38% 89%, 44% 16%, 51% 100%, 56% 0, 60% 75%, 70% 14%, 79% 95%, 86% 10%, 96% 73%, 99% 1%);
+                                //clip-path: polygon(0% 0%, 0 43%, 8% 59%, 18% 58%, 33% 42%, 40% 62%, 52% 62%, 64% 46%, 71% 60%, 84% 68%, 91% 65%, 100% 56%, 100% 1%);
+                                clip-path: polygon(
+                                    0% 100%,
+                                    0 65%,
+                                    7% 56%,
+                                    18% 56%,
+                                    25% 65%,
+                                    31% 71%,
+                                    36% 57%,
+                                    49% 56%,
+                                    55% 65%,
+                                    63% 63%,
+                                    71% 53%,
+                                    84% 54%,
+                                    88% 65%,
+                                    94% 70%,
+                                    100% 54%,
+                                    100% 100%
+                                );
+                                transition: 1s;
+                                &:hover {
+                                    // clip-path: polygon(0% 0%, 0 100%, 11% 100%, 24% 100%, 34% 100%, 42% 100%, 45% 100%, 51% 100%, 57% 100%, 63% 100%, 70% 100%, 79% 100%, 87% 100%, 100% 100%, 100% 0);
+                                    //clip-path: polygon(0% 0%, 0 100%, 12% 100%, 24% 100%, 34% 100%, 45% 100%, 59% 100%, 68% 100%, 78% 100%, 88% 100%, 96% 100%, 100% 100%, 100% 1%);
+                                    clip-path: polygon(
+                                        0% 100%,
+                                        0 0,
+                                        13% 0,
+                                        24% 0,
+                                        29% 0,
+                                        39% 0,
+                                        46% 0,
+                                        55% 0,
+                                        63% 0,
+                                        71% 0,
+                                        83% 0,
+                                        87% 0,
+                                        92% 0,
+                                        96% 0,
+                                        100% 0,
+                                        100% 100%
+                                    );
+                                }
+                            }
+                        }
+                    }
+                    &___sub {
+                        font-style: bold italic;
+                        font-size: 3rem;
+                        color: $color-white;
+                        opacity: 0.8;
+                    }
+                }
+            }
+            &_second {
+                &__index {
+                    margin-left: 5rem;
+                    font-size: 5rem;
+                    font-weight: 600;
+                    color: $color-black;
+                    -webkit-text-stroke: 5px white;
+                    @include mobile {
+                        position: relative;
+                        top: 1rem;
+                        left: 6rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+                &__name {
+                    margin-left: 30rem;
+                    display: inline-flex;
+                    flex-direction: column;
+                    @include mobile {
+                        margin-left: 0rem;
+                    }
+                    @include smtablet {
+                        margin-left: 5rem;
+                    }
+                    @include tablet {
+                        margin-left: 10rem;
+                    }
+                    &___tittle {
+                        list-style-type: none;
+                        color: $color-white;
+                        top: 2rem;
+                        width: 30vw;
+                        height: 10vh;
+                        position: relative;
+                        @include mobile {
+                            top: 5rem;
+                            left: 1rem;
+                            position: relative;
+                        }
+                        &____details,
+                        &____details:active,
+                        &____details:link {
+                            position: absolute;
+                            text-decoration: none;
+                            font-size: 10rem;
+                            font-weight: 800;
+                            top: -4rem;
+                            @include mobile {
+                                font-size: 6rem;
+                            }
+                        }
+                        &____details {
+                            &-before {
+                                color: transparent !important;
+                                -webkit-text-stroke: 0.2rem $color-white !important;
+                                &:hover {
+                                }
+                            }
+                            &-after {
+                                color: $color-white !important;
+                                // clip-path: polygon(0% 0%, 6% 88%, 13% 19%, 22% 96%, 31% 17%, 38% 89%, 44% 16%, 51% 100%, 56% 0, 60% 75%, 70% 14%, 79% 95%, 86% 10%, 96% 73%, 99% 1%);
+                                clip-path: polygon(
+                                    0% 0%,
+                                    0 43%,
+                                    8% 59%,
+                                    18% 58%,
+                                    33% 42%,
+                                    40% 62%,
+                                    52% 62%,
+                                    64% 46%,
+                                    71% 60%,
+                                    84% 68%,
+                                    91% 65%,
+                                    100% 56%,
+                                    100% 1%
+                                );
+                                transition: 1s;
+                                &:hover {
+                                    // clip-path: polygon(0% 0%, 0 100%, 11% 100%, 24% 100%, 34% 100%, 42% 100%, 45% 100%, 51% 100%, 57% 100%, 63% 100%, 70% 100%, 79% 100%, 87% 100%, 100% 100%, 100% 0);
+                                    clip-path: polygon(
+                                        0% 0%,
+                                        0 100%,
+                                        12% 100%,
+                                        24% 100%,
+                                        34% 100%,
+                                        45% 100%,
+                                        59% 100%,
+                                        68% 100%,
+                                        78% 100%,
+                                        88% 100%,
+                                        96% 100%,
+                                        100% 100%,
+                                        100% 1%
+                                    );
+                                }
+                            }
+                        }
+                    }
+                    &___sub {
+                        font-style: bold italic;
+                        font-size: 3rem;
+                        color: $color-white;
+                        opacity: 0.8;
+                        @include mobile {
+                            top: -11rem;
+                            left: 2rem;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,213 @@
+.rem {
+  &-header {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: $color-secondary;
+  }
+  &-navbar {
+    position: relative;
+    z-index: 20;
+    &--main {
+      width: 100%;
+      height: 100%;
+    }
+    &--background {
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+    }
+    &--inner {
+      z-index: 22;
+      position: fixed;
+      width: 100%;
+      padding: 2% 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &_left {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        &__wrapper {
+          line-height: 1;
+          display: inline-block;
+          vertical-align: middle;
+          color: inherit;
+          // width: 100%;
+          font-family: "Source Code Pro", monospace;
+          margin: 0 auto;
+          height: 100%;
+          cursor: pointer;
+          background: black;
+          &___content {
+            text-transform: uppercase;
+            transform: translate(-50%, -50%) skew(24deg);
+            font-size: 8rem;
+            top: 50%;
+            left: 10%;
+            margin: 0;
+            position: absolute;
+            font-weight: 900;
+            color: rgba($color-secondary, 0.5);
+            //text-shadow: 1px 4px 6px $color-white, 0 0 0 #66303a, 1px 4px 6px $color-white;
+            white-space: nowrap;
+
+            &:before {
+              content: attr(data-heading);
+              position: absolute;
+              left: 0;
+              top: -4.8%;
+              overflow: hidden;
+              width: 100%;
+              height: 50%;
+              color: #fbf7f4;
+              transform: translate(1rem, 0) skew(-16deg) scale(1, 1.2);
+              text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.2);
+            }
+
+            &:after {
+              content: attr(data-heading);
+              position: absolute;
+              left: 0;
+              top: 0;
+              overflow: hidden;
+              width: 100%;
+              height: 100%;
+              z-index: 1;
+              color: #d3cfcc;
+              transform: translate(0.2rem, 0rem) skew(7deg) scale(1, 0.8);
+              clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+              text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.3);
+            }
+          }
+        }
+        &__contacts {
+          width: 100%;
+          height: 100%;
+          &___list {
+            width: 100%;
+            position: absolute;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            @include mobile {
+              display: flex;
+              flex-direction: column-reverse;
+              justify-content: center;
+              text-align: center;
+              top: 1rem;
+            }
+            @include smtablet {
+            }
+            @include tablet {
+            }
+            @include Pc {
+              font-size: 2rem;
+            }
+          }
+          &___item {
+            margin: 0 2rem;
+          }
+          &___link {
+            text-decoration: none;
+            color: $color-white;
+            &:hover {
+              color: rgba($color-secondary, 0.5);
+            }
+            &:link,
+            &:active {
+              text-decoration: none;
+            }
+          }
+        }
+        &__logoHeader {
+          // @include mobile {
+          //   font-size: 6rem !important;
+          //   top: -3rem !important;
+          // }
+          // @include tablet {
+          //   font-size: 8rem !important;
+          //   top: -4rem !important;
+          // }
+          // @include smtablet {
+          //   font-size: 9rem !important;
+          //   top: -5rem !important;
+          // }
+          // @include Pc {
+          //   font-size: 15rem !important;
+          // }
+        }
+      }
+      &_right {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        // width: $square_sm;
+        // height: $square_sm;
+        cursor: pointer;
+        // vertical-align: middle;
+        color: inherit;
+        right: 1%;
+        @include mobile {
+          right: 3%;
+        }
+        @include Pc {
+          right: 0;
+        }
+        &__loading {
+          position: relative;
+          width: $square_sm;
+          height: $square_sm;
+          transform: rotate(45deg);
+          animation: hue-rotate $duration linear infinite both;
+          @include mobile {
+          }
+          @include tablet {
+            right: 3rem;
+          }
+          @include IpadPro {
+            right: 0;
+          }
+
+          &___square {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $square_sm;
+            height: $square_sm;
+            margin: 2px;
+            border-radius: 2px;
+            background: $color-secondary;
+            background-image: linear-gradient(45deg, #fa0 40%, #0c9 60%);
+            background-image: -moz-linear-gradient(#fa0, #fa0);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            animation: square-animation $duration ease-in-out infinite both;
+            @for $i from 0 through 7 {
+              &:nth-of-type(#{$i}) {
+                animation-delay: -($duration / 7) * $i;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

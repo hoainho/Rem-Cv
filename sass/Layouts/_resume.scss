@@ -4,566 +4,140 @@
     background: $color-gray;
     color: $color-white;
     position: relative;
-    @include mobile{
+    &-container {
+        display: flex;
+        justify-content: center;
+    }
+    @include mobile {
         top: 0;
-        }
-    @include smtablet{
+    }
+    @include smtablet {
         top: 0;
-        }
-    @include tablet{
+    }
+    @include tablet {
         top: 0;
+    }
+
+    &-wrap {
+        height: 60vh;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        transform: perspective(75em) rotateX(18deg);
+        @include mobile {
+            width: 100%;
+            flex-direction: column-reverse;
         }
-    
-    &-content{
-        &--education{
-            background: transparent;
-            opacity: .05;
-            margin-top: 15rem;
-            padding: 0 5rem;
-            transition: all 2s;
-            height: 0vh;
-            @include mobile{
-                margin-top: 2rem;
-                padding: 0px 3rem;
-                height: 25vh;
-                width: 90%;
-                position: relative;
-                top: 0rem;
+        &-aside {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-bottom: none !important;
+            @include mobile {
+                flex-direction: row;
             }
-            @include smtablet{
-                margin-top: 2rem;
-                padding: 0px 3rem;
-                height: 40vh;
-                width: 100%;
-                position: relative;
-                top:5rem;
-            }
-            @include tablet{
-                margin-top: 2rem;
-                padding: 0px 3rem;
-                height: 30vh;
-                width: 100%;
-                position: relative;
-                top: -3rem;
-            }
-            &:hover {
-                opacity: 1 !important;
-                background: linear-gradient(to right top,
-                                        transparent,
-                                       white
-             );
-                height: 70vh;
-                padding: 5rem;
-                width: 45%;
-                margin-right: 2rem;
-                animation: pulse 2s infinite;
-                @include mobile{
-                    height: 30vh;
-                    padding: 3rem;
-                    width: 78%;
-                    left: 1rem;
-                    margin: 0 1rem;
+            &-item {
+                margin: 10px 0;
+                @include mobile {
+                    margin: 0;
                 }
-                @include smtablet{
-                    height: 40vh;
-                    padding: 3rem;
-                    width: 95%;
-                    margin: 0 3rem;
-                }
-                @include tablet{
-                    height: 34vh;
-                    padding: 3rem;
-                    width: 95%;
-                    margin: 0 3rem;
-                    top: 0rem;
-                    left: -1rem;
-                }
-                .resume-content--education_logo__icon{
-                    color: $color-white;
-                    color: $color-secondary;
-                    animation: zoomInDown 1s ease-in-out;
-                    @include mobile{
-                        font-size: 4rem;
-                    }
-                }
-                .resume-content--education_sticket__icon{
-                    color: $color-secondary;
-                    animation: lightSpeedInLeft 1s ease-in-out;
-                }
-                .resume-content--education_box__tittle {
-                    @include mobile{
-                        margin: 1rem 0;
-                        font-size: 2rem; 
-                    }
-                }
-                .resume-content--education_box__tittleE {
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-secondary;
-                    animation: fadeInLeftBig 1s ease-in-out ;
-                }
-                .resume-content--education_box__tittleD {
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-secondary;
-                    animation: rollIn 1s ease-in-out ;
-                }
-                .resume-content--education_box__tittleU {
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-secondary;
-                    animation: slideInDown 1s ease-in-out ;
-                }
-                .resume-content--education_box__tittleC {
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-secondary;
-                    animation: fadeOutDown 1s ease-in-out ;
-                    animation-delay: .75s;
-                }.resume-content--education_box__tittleA {
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-secondary;
-                    animation: fadeOutDown 1s ease-in-out ;
-                    animation-delay: .75s;
-                }
-                .resume-content--education_box__tittleT {
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-secondary;
-                    animation: fadeOutDown .75s ease-in-out ;
-                    animation-delay: 1s;
-                }
-                .resume-content--education_box__tittleI {
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-secondary;
-                    animation: slideInDown 1s ease-in-out ;
-                }
-                .resume-content--education_box__tittleO {
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-secondary;
-                    animation: zoomInUp 1s ease-in-out ;
-                }
-                .resume-content--education_box__tittleN {
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-secondary;
-                    animation: fadeInRightBig 1s ease-in-out ;
-                }
-                .resume-content--education_hamberger__content {
-                    color: $color-black;
-                    animation:zoomInUp 2s;
-                }
-            }
-            &_logo{
-                display: flex;
-                justify-content: center;
-                position: relative;
-                margin: 2rem;
-                top: -12rem;
-                @include mobile{
-                    top: -4rem;
-                    left: -0.5rem;
-                    width: 88%;
-                }
-                @include smtablet{
-                    top: -9rem;
-                }
-                @include tablet{
-                    top: -8rem;
-                }
-                &__icon{    
-                    color: $color-secondary;  
-                    font-size: 8rem;
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-secondary;
-                    @include mobile{
-                        font-size: 4rem;
-                    }
-                }
-            }
-            &_sticket{
-                display: flex;
-                justify-content: flex-end;
-                &__icon{
+                &::before {
+                    content: attr(data-id);
                     position: absolute;
                     top: 0;
-                    right: 0;
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-white;  
-                    font-size: 5rem;
-                    @include mobile
-                    {
-                        font-size: 3rem;
-                    }
-                }
-            }
-            &_box{
-                width: 100%;
-                height: 10vh;
-                position: relative;
-                top: -17.5rem;
-                @include mobile{
-                    height: 5vh;
-                    top: -7.5rem;
-                    }
-                @include smtablet{
-                    top: -14.5rem;
-                }
-                @include tablet{
-                    top: -14.5rem;
-                    left: 2rem;
-                    width: 94%;
-                    height: 6vh;
-                }
-                &__tittle{
-                position: absolute;
-                text-transform: uppercase;
-                letter-spacing: .5rem;
-                margin: 2rem 0;
-                font-size: 4rem;
-                font-weight: 600;
-                -webkit-text-stroke: 0.1rem $color-secondary;
-                    @include mobile{
-                        margin: 1rem 0;
-                        font-size: 2rem;
-                    }
-                }
-                &__tittleE{
-                    top: -85%;
-                    left: 14%;
-                    transform: translate(0%, 0%);
-                        @include mobile{
-                            left: 12%;
-                        }
-                    }
-                &__tittleD{
-                    top: -85%;
-                    left: 22%;
-                    transform: translate(0%, 0%);
-                        @include mobile{
-                            left: 21%;
-                        }
-                }
-                &__tittleU{
-                    top: -85%;
-                    left: 30%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleC{
-                    top: 0%;
-                    left: 38%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleA{
-                    top: 15%;
-                    left: 47%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleT{
-                    top: 0%;
-                    left: 56%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleI{
-                    top: -85%;
-                    left: 65%;
-                    transform: translate(0%, 0%);
-                    @include mobile{
-                        left: 65%;
-                    }
-                }
-                &__tittleO{
-                    top: -85%;
-                    left: 70.5%;
-                    transform: translate(0%, 0%);
-                    @include mobile{
-                        left: 68.5%;
-                    }
-                }
-                &__tittleN{
-                    top: -85%;
-                    left: 78.5%;
-                    transform: translate(0%, 0%);
+                    white-space: nowrap;
+                    left: 0;
+                    transform: translate(-100%, 50%);
+                    color: white;
+                    padding: 2px;
+                    opacity: 0;
+                    transition: 0.25s opacity;
                     @include mobile {
-                        left: 78.5%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, 100%);
                     }
+                }
+                &:hover::before {
+                    opacity: 1;
                 }
             }
-            &_hamberger{
-                position: relative;
-                bottom: 8rem;
-                @include mobile{
-                    bottom: 8rem;
-                }
-                @include smtablet{
-                    bottom: 15rem;
-                }
-                @include tablet{
-                    bottom: 11rem;
-                }
-                &__sub{
-                    @include mobile{
-                        font-size: 1.2rem;
-                        margin: 0;
-                        top: 1rem;
-                        position: relative;
-                    }
-                }
-                &__content{
-                    margin-top: 2rem;
-                    font-size: 1.7rem;
-                    opacity: 0.5;
-                    @include mobile{
-                        font-size: 1rem;
-                    }
-                }
-               
+            &-link {
+                border: 1px solid #fff !important;
+                width: max-content;
+                width: 50px;
+                font-size: 2rem;
+                height: fit-content;
+                padding: 10px !important;
+                border-radius: 0% !important;
+                // border: none !important;
+                text-align: center;
+                margin: 0 !important;
+                color: $color-secondary !important;
             }
         }
-        &--experience{
-            background: linear-gradient(to right top,
-                                        transparent,
-                                        $color-secondary-light,
-                                        .8
-             );
-            opacity: .05;
-            margin-top: 20rem;
-            padding: 0rem;
-            transition: all 1s;
-            @include mobile{
-                margin-top: 2rem;
-                padding: 0px 3rem;
-                height: 36vh;
-                width: 90%;
-                position: relative;
-                top: 2rem;
-            }
-            @include smtablet{
-                margin-top: 2rem;
-                padding: 0px 3rem;
-                height: 40vh;
+        &-content {
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            padding: 10px 20px;
+            width: 500px;
+            border: 1px solid white;
+            border-radius: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px, rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+            border-radius: 10px;
+            border: 1px solid;
+            border-color: rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
+            @include mobile {
                 width: 100%;
+                min-height: 49vh;
+            }
+            &-text {
                 position: relative;
-                top: -3rem;
-            }
-            @include tablet{
-                margin-top: 2rem;
-                padding: 0px 3rem;
-                height: 30vh;
-                width: 100%;
-                position: relative;
-                top: 5rem;
-            }
-            &:hover {
-                opacity: 1 !important;
-                background: linear-gradient(to right top,
-                                        transparent,
-                                       $color-secondary
-                );
-                padding: 4rem;
-                margin-top: 15rem;
-                width: 45%;
-                margin-left: 2rem;
-                height: 70vh;
-                transform: translateY(1rem);
-                animation: pulse 2s infinite;
-                @include mobile{
-                    height: 40vh;
-                    padding: 3rem;
-                    width: 95%;
-                    margin: 0 1rem;
+                letter-spacing: 2px;
+                line-height: 1.5;
+                word-spacing: 3px;
+                font-family: "Courier";
+                overflow: hidden;
+                margin: 0.8em 0;
+                color: white;
+                @include mobile {
+                    letter-spacing: normal;
+                    line-height: normal;
+                    word-spacing: normal;
                 }
-                @include smtablet{
-                    height: 40vh;
-                    padding: 3rem;
-                    width: 95%;
-                    margin: 0 1rem;
-                }
-                @include tablet{
-                    height: 32vh;
-                    top: -1rem;
-                    padding: 3rem;
-                    width: 95%;
-                    margin: 0 1rem;
-                    left: 1rem;
-                }
-                .resume-content--experience_logo__icon{
-                    color: $color-white;
-                    transform: translateX(1rem);
-                    animation:zoomIn 1s ease-in;
-                }
-                .resume-content--experience_sticket__icon{
-                    color: $color-white;
-                    
-                }
-                .resume-content--experience_box__tittle {
-                    color: transparent;
-                    -webkit-text-stroke: 1px $color-white;
-                    @include mobile{
-                        font-size: 2rem;
-                        margin: 1rem 0;
-                    }
-                    
-                }
-                .resume-content--experience_hamberger__content {
-                    color: $color-white;
-                    animation: fadeInLeftBig 1s ease-in;
-                }
-                .resume-content--experience_hamberger__tittle{
-                    animation: fadeInRightBig 1s ease-in;
-                }
-                .resume-content--experience_logo {
-                    left: -0.5rem;
-                }
-            }
-            &_logo{
-                display: flex;
-                justify-content: center;
-                position: relative;
-                margin: 2rem;
-                top: -12rem;
-                @include tablet{
-                    top: -10rem;
-                    left: 0.5rem;
-                    width: 88%;
-                }
-                @include smtablet{
-                    top: -10rem;
-                }
-                @include mobile{
-                    top: -5rem;
-                    left: 0.5rem;
-                    width: 88%;
-                }
-                &__icon{
-                    color: $color-secondary;  
-                    font-size: 10rem;
-                    @include mobile{
-                        font-size: 4rem;
-                    }
-                }
-            }
-            &_sticket{
-                display: flex;
-                justify-content: flex-end;
-                &__icon{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    color: $color-secondary;  
+                &:first-child:first-letter {
                     font-size: 5rem;
-                    @include mobile{
-                        font-size: 3rem;
-                    }
-                }
-            }
-            &_box{
-                width: 100%;
-                height: 10vh;
-                position: relative;
-                top: -17.5rem;
-                @include mobile{
-                    height: 5vh;
-                    top: -8.5rem;
-                    left: 1rem;
-                }
-                @include smtablet{
-                    top: -16.5rem;
-                }
-                @include tablet{
-                    height: 7vh;
-                    top: -15.5rem;
-                }
-                &__tittle{
-                position: absolute;
-                text-transform: uppercase;
-                letter-spacing: .5rem;
-                margin: 2rem 0;
-                font-size: 4rem;
-                font-weight: 600;
-                -webkit-text-stroke: 0.1rem $color-secondary;
-                color: $color-secondary;
-                @include mobile{
-                    margin: 1rem 0;
-                    font-size: 2rem;
-                }
-                }
-                &__tittleE1{
-                    top: -85%;
-                    left: 14%;
-                    transform: translate(0%, 0%);
-                    }
-                &__tittleX{
-                    top: -85%;
-                    left: 22%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleP{
-                    top: -85%;
-                    left: 30%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleE2{
-                    top: -5%;
-                    left: 35%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleR{
-                    top: 15%;
-                    left: 45%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleI{
-                    top: 15%;
-                    left: 54%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleE3{
-                    top: -5%;
-                    left: 60%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleN{
-                    top: -85%;
-                    left: 65%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleC{
-                    top: -85%;
-                    left: 75%;
-                    transform: translate(0%, 0%);
-                }
-                &__tittleE4{
-                    top: -85%;
-                    left: 85%;
-                    transform: translate(0%, 0%);
-                }
-            }
-            &_hamberger{
-                position: relative;
-                bottom: 18rem;
-                @include mobile{
-                    bottom: 8rem;
-                }
-                &__content{
-                    margin-top: 2rem;
-                    font-size: 1.7rem;
-                    opacity: 0.5;
                     color: $color-secondary;
-                    @include mobile{
-                        font-size: 1rem;
-                    }
-                    @include smtablet
-                    {
-                        font-size: 1.3rem;
-                    }
-                    @include tablet
-                    {
-                        font-size: 1.5rem;
-                    }
-                }
-                &__tittle{
-                    font-size: 2rem;
-                    @include mobile{
-                        font-size: 1.2rem;
+                    line-height: 4rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding-right: 8px;
+                    margin-top: -1px;
+                    float: left;
+                    @include mobile {
+                        font-size: 4rem;
+                        line-height: 3rem;
+                        margin-top: -3px;
                     }
                 }
-               
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    height: 20px;
+                    width: 3px;
+                    background-color: $color-secondary-light;
+                    animation: blink 0.5s infinite linear;
+                }
             }
         }
-}
+    }
+    &-title {
+    }
 }

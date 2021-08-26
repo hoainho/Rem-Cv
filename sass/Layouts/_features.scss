@@ -1,169 +1,237 @@
-@import url('//fonts.googleapis.com/css?family=Pacifico&text=Pure');
-@import url('//fonts.googleapis.com/css?family=Roboto:700&text=css');
-@import url('//fonts.googleapis.com/css?family=Kaushan+Script&text=!');
+@import url("//fonts.googleapis.com/css?family=Pacifico&text=Pure");
+@import url("//fonts.googleapis.com/css?family=Roboto:700&text=css");
+@import url("//fonts.googleapis.com/css?family=Kaushan+Script&text=!");
 
 .features {
-    width: 100%;
-    height: 100vh;
-    background: $color-gray;
-    color: $color-white;
+  width: 100%;
+  height: 100vh;
+  background: $color-gray;
+  color: $color-white;
+  position: relative;
+  &-container {
     position: relative;
-    &-tittle{
-      &--icon{
-        @include mobile{
-          top: 14% !important;
-          left: -11% !important;
-        }
-        @include smtablet{
-              top: 9% !important;
-              left: 4% !important;
-        }
-        @include tablet{
-              top: 12% !important;
-              left: 10% !important;
-        }
+    margin: 0 auto;
+    // margin: 5vw auto 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    @include smtablet {
+      margin: 0 auto;
+    }
+    @include desktop {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include IpadPro {
+      margin: 0 auto;
+      width: 75%;
+    }
+    @include Pc {
+      margin: 0 auto;
+    }
+  }
+  &-tittle {
+    display: flex;
+    flex-direction: row;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &--icon {
+      position: relative;
+    }
+    &--content {
+      &_before {
+        position: absolute;
       }
-      &--content{
-            @include mobile{
-              position: absolute;
-              top: 7rem;
-              left: 5rem;
-            &_before{
-              font-size: 3rem;
-            }
-            &_after{
-              font-size: 3rem;
-            }
-          }
-            @include smtablet {
-              top: 11%;
-              left: 31%;
-              font-size: 4rem;
-          }
-            @include tablet {
-              top: 15%;
-              left: 32%;
-            }
+      &_after {
+        position: absolute;
+      }
+      position: relative;
+      @include mobile {
+      }
+      @include Pc {
       }
     }
-    @include mobile{
-        width: 100%;
-        height: 100%;
-        position: relative;
-        top: 0;
+  }
+
+  &-content {
+    display: flex;
+    height: 60%;
+    position: relative;
+    margin-top: 3rem;
+    @include mobile {
+      width: 100%;
+      margin-top: 0;
+      height: 80%;
+      flex-direction: row;
+      overflow: hidden;
+      overflow-x: scroll;
+      scroll-snap-align: center;
     }
-  
-    &-content{
-      &--box{
-          margin-top: 15rem;
-          transition: 2s;
-          @include mobile {
-            margin-top: -2rem;
-            top: 3rem;
-            left: -3rem;
-            height: 20vh;
-            padding: 0px 7rem;
+    @include smtablet {
+      margin-top: 1rem;
+      height: 80%;
+      flex-direction: column;
+    }
+    @include tablet {
+      height: 80%;
+      flex-direction: column;
+    }
+    @include FHD {
+      flex-direction: row;
+    }
+    @include desktop {
+      flex-direction: row;
+      height: 60%;
+    }
+    @include IpadPro {
+      flex-direction: row;
+      height: 60%;
+    }
+    @include Pc {
+      flex-direction: row;
+      height: 60%;
+    }
+    &--box {
+      transition: 2s;
+      height: 100%;
+      &:hover {
+        .web-divider {
+          opacity: 1;
+          animation: bounceInLeft 1s ease-in-out;
+        }
+        .photoshop-divider {
+          opacity: 1;
+          animation: bounceInUp 1s ease-in-out;
+        }
+        .creative-divider {
+          opacity: 1;
+          animation: bounceInRight 1s ease-in-out;
+        }
+        .features-content--box_tittle {
+          color: $color-secondary;
+        }
+      }
+      &_logo {
+        display: flex;
+        justify-content: flex-start;
+
+        &__icon {
+          color: $color-secondary;
+          font-size: 5rem;
+          padding-right: 10px;
+          @include smtablet {
+            font-size: 4rem;
           }
-          @include smtablet{
-            margin-top: 0;
-            top: 4rem;
-            height: 22vh;
+          @include desktop {
+            font-size: 3rem;
           }
-          @include tablet{
-            margin-top: 0;
-            top: -1rem;
-            height: 20vh;
-            padding: 0 20rem;
-          }
-          &:hover{
-            .web-divider {
-              opacity: 1;
-              animation: bounceInLeft 1s ease-in-out;
-            }
-            .photoshop-divider {
-              opacity: 1;
-              animation: bounceInUp 1s ease-in-out;
-            }
-            .creative-divider {
-              opacity: 1;
-              animation: bounceInRight 1s ease-in-out;
-            }
-            .features-content--box_tittle{
-              color: $color-secondary;
-            }
-          }
-        &_logo{
-          display: flex;
-          justify-content: flex-start;
-          @include mobile{
-            position: relative;
-            top: 6rem;
-          }
-          @include smtablet{
-            position: relative;
-            top: 2rem;
-            left: 2rem;
-          }
-          @include tablet{
-            position: relative;
-            width: 11vw;
-            top: 2rem;
-            left: 2rem;
-          }
-          &__icon{
-            color: $color-secondary;  
+          @include IpadPro {
             font-size: 5rem;
-            @include mobile{
-              position: relative;
-              bottom: 3rem;
-              font-size: 3rem;
-            }
+          }
+          @include Pc {
+            font-size: 8rem;
           }
         }
-        &_tittle{
-          margin: 3rem 0;
-          text-transform: uppercase;
-          letter-spacing: .5rem;
-          @include mobile {
-            margin: 1rem 0;
-            width: 76%;
-            right: -22%;
-            position: relative;
-            font-size: 1.5rem;
-          }
-          @include smtablet{
-            margin: 0;
-            position: relative;
-            right: -10rem;
-            width: 34vw;
-            top: -1.5rem;
-          }
-          @include tablet{
-            margin: 0;
-            position: relative;
-            right: -10rem;
-            width: 34vw;
-            top: -1.5rem;
-            font-size: 1.5rem;
-          }
+      }
+      &_tittle {
+        margin: 3rem 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.5rem;
+        width: fit-content;
+        @include mobile {
+          width: max-content;
+          margin-top: 0;
         }
-        &_content{
+        @include smtablet {
+          margin: 1rem 0;
+        }
+        @include tablet {
+          margin: 2rem 0;
+        }
+        @include IpadPro {
+          font-size: 3rem;
+        }
+        @include desktop {
+          font-size: 2rem;
+          letter-spacing: 0.1rem;
+          word-spacing: 0.3rem;
+          width: fit-content;
+        }
+        @include Pc {
+          font-size: 4rem;
+        }
+      }
+      &_content {
+        font-size: 1.7rem;
+        color: rgba(#ffffff, 0.5);
+        @include mobile {
+          font-size: 1.5rem;
+        }
+        @include smtablet {
+          font-size: 1.4rem;
+        }
+        @include desktop {
+          font-size: 1.3rem;
+        }
+        @include IpadPro {
           font-size: 1.7rem;
-          opacity: 0.5;
-          padding-bottom: 5rem;
+        }
+        @include Pc {
+          font-size: 2.5rem;
+        }
+        &::first-letter {
+          font-size: 5rem;
+          color: $color-secondary;
+          line-height: 4rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding-right: 5px;
+          margin-top: 5px;
+          float: left;
           @include mobile {
-            padding-bottom: 0rem;
-            font-size:1rem;
+            font-size: 3rem;
+            line-height: 2rem;
+            margin-top: 0;
           }
           @include smtablet {
-            padding-bottom: 2rem;
+            font-size: 4rem;
+            line-height: 3rem;
+            margin-top: 5px;
           }
-          @include tablet {
-            padding-bottom: 0rem;
+          @include desktop {
+            font-size: 3rem;
+            font-size: 3rem;
+            line-height: 3rem;
+            margin-top: 5px;
           }
-
+          @include IpadPro {
+            font-size: 5rem;
+            line-height: 3rem;
+            margin-top: 10px;
+          }
+          @include Pc {
+            font-size: 8rem;
+            line-height: 5rem;
+            margin-top: 5px;
+          }
         }
+        // @include mobile {
+        //   padding-bottom: 0rem;
+        //   font-size: 1rem;
+        // }
+        // @include smtablet {
+        //   padding-bottom: 2rem;
+        // }
+        // @include tablet {
+        //   padding-bottom: 0rem;
+        // }
       }
     }
+  }
 }
-  

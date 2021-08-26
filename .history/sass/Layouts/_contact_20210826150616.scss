@@ -1,0 +1,473 @@
+.contact {
+    // background: linear-gradient(120deg, #050505 50%, #242424 50%);
+    background: #242424;
+    background: linear-gradient(90deg, #050505 0%, #050505 30%, #242424 100%);
+    &-container {
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        &--left {
+            color: $color-white;
+            display: flex;
+            flex-direction: row-reverse;
+            flex: 1;
+            // align-items: center;
+            // justify-content: center;
+            position: relative;
+            // @include mobile {
+            //     top: -5rem;
+            //     left: 10rem;
+            // }
+            // @include smtablet {
+            //     top: 4rem;
+            //     left: 10rem;
+            //     height: 23vh;
+            //     width: 53vw;
+            // }
+            // @include tablet {
+            //     top: -6rem;
+            //     left: 2rem;
+            //     height: 27vh;
+            //     width: 95%;
+            // }
+            &_img {
+                position: relative;
+                width: 50%;
+                // margin: 0 auto;
+                line-height: 0;
+                // @include mobile {
+                //     bottom: 8rem;
+                //     right: 3rem;
+                //     height: 50%;
+                // }
+                // @include smtablet {
+                //     bottom: 8rem;
+                //     right: 1rem;
+                // }
+                // @include tablet {
+                //     bottom: 2rem;
+                //     right: 21rem;
+                // }
+                &__details {
+                    width: 100%;
+                    height: 100%;
+                    // border-bottom: 4px solid white;
+                    @include mobile {
+                        width: 100%;
+                    }
+                    @include smtablet {
+                        width: 100%;
+                    }
+                    @include tablet {
+                        width: 100%;
+                    }
+                }
+                & article {
+                    position: absolute;
+                    bottom: 1px;
+                    width: 100%;
+                    background: black;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-gap: 4px;
+                    mix-blend-mode: lighten;
+                }
+                & div {
+                    background: black;
+                    width: 9.1rem;
+                    border: 1px solid white;
+                    padding: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform-style: preserve-3d;
+                    perspective: 500px;
+                    transition: all 0.5s ease-in-out;
+                    & img {
+                        max-width: 10rem;
+                        height: 7rem;
+                        transform: translateZ(20px);
+                    }
+                }
+                & div:nth-of-type(10) {
+                    width: auto;
+                    grid-column: 2/4;
+                    border-bottom: none;
+                }
+                & div:nth-of-type(13) {
+                    width: auto;
+                    grid-column: 2/4;
+                    border-top: none;
+                }
+            }
+            &_introduce {
+                position: relative;
+                width: fit-content;
+                left: 38rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                @include mobile {
+                    left: 6.5rem;
+                    top: 3.5rem;
+                }
+                @include smtablet {
+                    left: 16rem;
+                    top: 8rem;
+                }
+                @include tablet {
+                    left: 19rem;
+                    top: 20rem;
+                }
+                &__tittle {
+                    @include mobile {
+                        font-size: 1rem;
+                    }
+                    @include smtablet {
+                        font-size: 1.5rem;
+                    }
+                    @include tablet {
+                        width: 35%;
+                    }
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    letter-spacing: 0.3rem;
+                    margin: 0;
+                }
+                &__sub {
+                    @include mobile {
+                        font-size: 0.5rem;
+                        margin-bottom: 0rem;
+                    }
+                    @include smtablet {
+                        width: 79%;
+                        font-size: 1rem;
+                        margin-bottom: 0rem;
+                    }
+                    @include tablet {
+                        width: 39%;
+                        margin-bottom: 0rem;
+                    }
+                    width: max-content;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                &__list {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    list-style-type: none;
+                    width: max-content;
+                    @include mobile {
+                        flex-direction: row-reverse;
+                    }
+                    @include smtablet {
+                        flex-direction: row-reverse;
+                    }
+                    @include tablet {
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
+                        position: relative;
+                        right: 6rem;
+                    }
+                }
+                &__link {
+                    text-decoration: none;
+                    font-size: 4rem;
+                    color: $color-white;
+                    text-transform: uppercase;
+                    color: $color-secondary-light;
+                    font-weight: bold;
+                    text-align: center;
+                    cursor: pointer;
+                    @include mobile {
+                        font-size: 0.5rem;
+                        margin-right: 1rem;
+                        text-align: center;
+                    }
+                    @include smtablet {
+                        font-size: 1rem;
+                        width: 30%;
+                        margin-right: 2rem;
+                        text-align: center;
+                    }
+                    &:hover,
+                    &:active {
+                        color: $color-secondary;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &--right {
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            align-items: center;
+            // @include mobile {
+            //     top: 7rem;
+            //     right: 11rem;
+            //     margin-bottom: 5rem;
+            // }
+            // @include smtablet {
+            //     top: 5rem;
+            //     left: 2rem;
+            //     width: 94%;
+            //     margin-bottom: 0rem;
+            // }
+            // @include tablet {
+            //     top: -2rem;
+            //     width: 100%;
+            //     margin-bottom: 0rem;
+            // }
+            &_form {
+                position: relative;
+                width: 35%;
+                // @include mobile {
+                //     left: -1rem;
+                //     width: 100%;
+                //     bottom: -5rem;
+                // }
+                // @include smtablet {
+                //     left: 12rem;
+                //     width: 55%;
+                //     bottom: 4rem;
+                // }
+                // @include tablet {
+                //     left: 16rem;
+                //     width: 50%;
+                //     bottom: -4rem;
+                // }
+                &__header {
+                    font-size: 3rem;
+                    margin-bottom: 5rem;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: bold;
+                    letter-spacing: 1rem;
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    background-image: linear-gradient(to right, $color-secondary, $color-secondary, white);
+                    @include mobile {
+                        font-size: 1.5rem;
+                        margin-bottom: 3rem;
+                        width: 17rem;
+                    }
+                    @include smtablet {
+                        font-size: 2rem;
+                        margin: 3rem 0;
+                    }
+                    @include tablet {
+                        margin-bottom: 3rem;
+                    }
+                }
+                &__information {
+                    margin-bottom: 1.5rem;
+                    width: 100%;
+                    height: 4vh;
+                    @include mobile {
+                        margin-bottom: 1.5rem;
+                        width: 18rem;
+                        font-size: 1rem;
+                    }
+                    @include smtablet {
+                        margin-bottom: 1.5rem;
+                        font-size: 1.2rem;
+                    }
+                    &___input {
+                        background-color: transparent;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        border-bottom: 1px solid rgba($color-secondary, 0.5);
+                        transition: 0.8s;
+                        &:active,
+                        &:link,
+                        &:visited,
+                        &:focus {
+                            outline: none;
+                            border-bottom: 2px solid $color-secondary;
+                        }
+                    }
+                }
+
+                &__name {
+                    &___icon {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        position: absolute;
+                        top: 11rem;
+                        right: 1rem;
+                        color: yellow;
+                        @include mobile {
+                            top: 8rem;
+                            right: 0rem;
+                        }
+                        @include smtablet {
+                            top: 9rem;
+                            right: 0rem;
+                        }
+                        @include tablet {
+                            top: 10rem;
+                        }
+                    }
+                }
+                &__email {
+                    &___icon {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        position: absolute;
+                        top: 15rem;
+                        right: 1rem;
+                        color: yellow;
+                        @include mobile {
+                            top: 13rem;
+                            right: 0rem;
+                        }
+                        @include smtablet {
+                            top: 14rem;
+                            right: 0rem;
+                        }
+                        @include tablet {
+                            top: 16rem;
+                        }
+                    }
+                }
+                &__message {
+                    height: 8rem;
+                    &___icon {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        position: absolute;
+                        top: 21.5rem;
+                        right: 1rem;
+                        color: yellow;
+                        @include mobile {
+                            top: 18.5rem;
+                            right: 0rem;
+                        }
+                        @include smtablet {
+                            top: 20rem;
+                            right: 0rem;
+                        }
+                        @include tablet {
+                            top: 22rem;
+                        }
+                    }
+                    &___input {
+                        padding-bottom: 6rem;
+                        position: relative;
+                    }
+                }
+                &__btn {
+                    position: relative;
+                    left: 34%;
+                    width: 30%;
+                    @include mobile {
+                        width: 31%;
+                    }
+                    @include smtablet {
+                        left: 44%;
+                        width: 21%;
+                    }
+                    @include tablet {
+                        left: 42%;
+                    }
+                    &:active,
+                    &:link,
+                    &:focus,
+                    &:visited {
+                        animation: zoomOut 1s linear;
+                        border: 1px solid $color-secondary;
+                    }
+                    &___details {
+                        font-size: 2rem;
+                        letter-spacing: 0.2rem;
+                        padding: 1rem;
+                        background-color: transparent;
+                        color: white;
+                        border: 1px solid $color-secondary;
+                        transition: 0.8s;
+                        @include mobile {
+                            font-size: 1rem;
+                        }
+                        @include smtablet {
+                            font-size: 1.5rem;
+                        }
+                        &:focus,
+                        &:visited,
+                        &:active,
+                        &:link,
+                        &:hover {
+                            border: 1px solid $color-secondary;
+                        }
+                        &-before {
+                            position: absolute;
+                            font-size: 2rem;
+                            letter-spacing: 0.2rem;
+                            padding: 1rem;
+                            background: transparent;
+                            color: transparent;
+                            border: 1px solid $color-secondary;
+                            transition: 0.8s;
+                            left: 0;
+                            top: 0;
+                            @include mobile {
+                                font-size: 1rem;
+                            }
+                            @include smtablet {
+                                font-size: 1.5rem;
+                            }
+                            &:focus,
+                            &:visited,
+                            &:active,
+                            &:link,
+                            &:hover {
+                                border: 1px solid $color-secondary;
+                            }
+                        }
+                    }
+                    &:hover &___details-before {
+                        background-color: $color-secondary-dark;
+                        clip-path: polygon(0% 0%, 0 27%, 48% 62%, 52% 62%, 100% 27%, 100% 0);
+                    }
+
+                    &:hover &___details {
+                        background-color: $color-secondary;
+                        color: transparent;
+                    }
+                }
+            }
+        }
+        &-notify {
+            position: absolute;
+            width: fit-content;
+            height: 70px;
+            right: 0;
+            top: 13%;
+            background-color: $color-secondary-light;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            transition: all 0.5s ease-in-out;
+            visibility: hidden;
+            transform: translateX(400px);
+            &--success {
+                border-left: 10px solid $color-green;
+            }
+            &--faild {
+                border-left: 10px solid $color-red;
+            }
+            &-text {
+                font-size: 1.3rem;
+            }
+            &--active {
+                visibility: visible;
+                transform: translateX(0px);
+            }
+        }
+    }
+}
