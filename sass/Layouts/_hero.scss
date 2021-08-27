@@ -121,18 +121,17 @@
           text-align: center;
           height: 8rem;
           border-radius: 50%;
+          text-decoration: none !important;
           &:active,
           &:link {
             color: $color-white;
           }
           &___content {
             &____font {
-              position: absolute;
+              position: relative;
               padding-left: 2rem;
-              vertical-align: inherit;
               width: max-content;
-              top: 0.5rem;
-              font-size: 3rem;
+              font-size: 2.5rem;
             }
           }
           &___icon {

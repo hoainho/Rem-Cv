@@ -351,16 +351,15 @@ input:valid {
           position: relative;
           text-align: center;
           height: 8rem;
-          border-radius: 50%; }
+          border-radius: 50%;
+          text-decoration: none !important; }
           .hero-container--row_download__box:active, .hero-container--row_download__box:link {
             color: #fff; }
           .hero-container--row_download__box___content____font {
-            position: absolute;
+            position: relative;
             padding-left: 2rem;
-            vertical-align: inherit;
             width: max-content;
-            top: 0.5rem;
-            font-size: 3rem; }
+            font-size: 2.5rem; }
           .hero-container--row_download__box___icon {
             inset: 0;
             position: relative;
@@ -3961,11 +3960,7 @@ input:valid {
   background: none;
   box-shadow: inset 0 0 0 2px #fff;
   font-size: inherit;
-  font-weight: 700;
-  position: relative;
-  vertical-align: middle;
-  position: relative;
-  bottom: -7.5rem; }
+  font-weight: 700; }
 
 .circle::before,
 .circle::after {
