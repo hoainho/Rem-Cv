@@ -26,9 +26,6 @@
       margin: 0 auto;
       width: 75%;
     }
-    @include Pc {
-      margin: 0 auto;
-    }
   }
   &-tittle {
     display: flex;
@@ -51,8 +48,6 @@
       }
       position: relative;
       @include mobile {
-      }
-      @include Pc {
       }
     }
   }
@@ -88,10 +83,6 @@
       height: 60%;
     }
     @include IpadPro {
-      flex-direction: row;
-      height: 60%;
-    }
-    @include Pc {
       flex-direction: row;
       height: 60%;
     }
@@ -132,9 +123,6 @@
           @include IpadPro {
             font-size: 5rem;
           }
-          @include Pc {
-            font-size: 8rem;
-          }
         }
       }
       &_tittle {
@@ -163,9 +151,6 @@
           word-spacing: 0.3rem;
           width: fit-content;
         }
-        @include Pc {
-          font-size: 4rem;
-        }
       }
       &_content {
         font-size: 1.7rem;
@@ -181,9 +166,6 @@
         }
         @include IpadPro {
           font-size: 1.7rem;
-        }
-        @include Pc {
-          font-size: 2.5rem;
         }
         &::first-letter {
           font-size: 5rem;
@@ -215,22 +197,7 @@
             line-height: 3rem;
             margin-top: 10px;
           }
-          @include Pc {
-            font-size: 8rem;
-            line-height: 5rem;
-            margin-top: 5px;
-          }
         }
-        // @include mobile {
-        //   padding-bottom: 0rem;
-        //   font-size: 1rem;
-        // }
-        // @include smtablet {
-        //   padding-bottom: 2rem;
-        // }
-        // @include tablet {
-        //   padding-bottom: 0rem;
-        // }
       }
     }
   }

@@ -35,23 +35,17 @@
     }
     &--item {
       margin-left: 5rem;
-      @include mobile {
+      @include smtablet {
         margin-left: 2rem;
-      }
-      @include tablet {
-        margin-left: 6rem;
       }
     }
     &--link {
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 3rem;
       color: $color-white;
       transition: 0.5s;
-      @include tablet {
-        font-size: 3rem;
-      }
-      @include Pc {
-        font-size: 4rem;
+      @include smtablet {
+        font-size: 2rem;
       }
       &:hover {
         color: $color-secondary;

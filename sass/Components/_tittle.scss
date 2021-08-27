@@ -51,11 +51,6 @@
       left: -17%;
       text-align: left;
     }
-    @include Pc {
-      transform: translateY(-100%) rotate(-90deg);
-      text-align: left;
-      font-size: 11rem;
-    }
     &:hover {
       opacity: 0.4;
     }
@@ -113,9 +108,6 @@
         }
         @include IpadPro {
           font-size: 10rem;
-        }
-        @include Pc {
-          font-size: 11rem;
         }
       }
       //TranslateZ for Layers
@@ -177,11 +169,6 @@
       @include IpadPro {
         top: 17%;
         left: 20%;
-      }
-      @include Pc {
-        top: 17%;
-        left: 20%;
-        font-size: 6rem;
       }
       &_after {
         color: $color-white;

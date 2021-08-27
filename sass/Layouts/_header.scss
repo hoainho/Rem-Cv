@@ -11,8 +11,12 @@
     position: relative;
     z-index: 20;
     &--main {
+      display: flex;
+      justify-content: space-between;
+      padding: 5vh 5% 0;
+      position: fixed;
       width: 100%;
-      height: 100%;
+      z-index: 22;
     }
     &--background {
       z-index: -1;
@@ -93,14 +97,10 @@
           }
         }
         &__contacts {
-          width: 100%;
-          height: 100%;
+          flex: 1;
+          height: 5vh;
           &___list {
-            width: 100%;
             position: absolute;
-            display: -webkit-inline-box;
-            display: -webkit-inline-flex;
-            display: -ms-inline-flexbox;
             display: flex;
             justify-content: center;
             margin: 0;
@@ -142,16 +142,11 @@
       &_right {
         position: relative;
         z-index: 1;
-        display: inline-block;
         cursor: pointer;
         color: inherit;
-        right: 1%;
-        @include mobile {
-          right: 3%;
-        }
-        @include Pc {
-          right: 0;
-        }
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
         &__loading {
           position: relative;
           width: $square_sm;
