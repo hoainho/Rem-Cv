@@ -7,7 +7,7 @@
   justify-items: center;
   justify-content: center;
   background: rgb(36, 36, 36);
-  background: linear-gradient(90deg, rgba(36, 36, 36, 1) 0%, rgba(5, 5, 5, 1) 50%, rgba(5, 5, 5, 1) 100%);
+  background: linear-gradient(90deg, rgba(36, 36, 36, 1) 0%, rgba(5, 5, 5, 1) 30vw, rgba(5, 5, 5, 1) 100%);
   overflow: hidden;
   &-bg {
     display: flex;
@@ -21,9 +21,6 @@
       z-index: 1;
       position: absolute;
       background-repeat: no-repeat;
-      @include mobile {
-        right: auto;
-      }
     }
   }
   &-container {
@@ -38,28 +35,9 @@
       flex-direction: column;
       height: 100%;
 
-      @include tablet {
-        justify-content: space-evenly;
-      }
-
       &_box {
         top: 0%;
         width: 100%;
-        @include mobile {
-          top: 25%;
-        }
-        @include smtablet {
-          top: 25%;
-        }
-        @include tablet {
-          top: 30%;
-        }
-        @include FHD {
-          top: 30%;
-        }
-        @include desktop {
-          top: 0%;
-        }
         &__slogan {
           left: 10%;
           font-size: 6.5vw;
@@ -67,23 +45,6 @@
           position: absolute;
           color: $color-white;
           z-index: 1;
-          @include mobile {
-            font-size: 5rem;
-          }
-          @include smtablet {
-            font-size: 8rem;
-          }
-          @include tablet {
-            font-size: 7.5vw;
-          }
-          @include FHD {
-            left: 10%;
-            font-size: 6.5vw;
-          }
-          @include Pc {
-            left: 10%;
-            font-size: 7.5vw;
-          }
           &___howdy {
             opacity: 0;
           }
@@ -109,26 +70,9 @@
         }
       }
       &_download {
-        display: flex;
-        top: 0;
-        width: 30%;
-        height: auto;
-        z-index: 1001;
-        @include mobile {
-          width: 70%;
-          z-index: 1;
-        }
-        @include smtablet {
-          width: 60%;
-          top: 10%;
-          z-index: 1;
-        }
-        @include tablet {
-          width: 50%;
-          top: 20%;
-        }
-        @include FHD {
-        }
+        padding-left: 10vw !important;
+        max-width: fit-content;
+        z-index: 2;
         &:hover {
           &::after {
             left: 0;
@@ -168,23 +112,12 @@
         &__box {
           display: flex;
           align-items: center;
-          justify-content: center;
           color: $color-white;
           font-size: 3rem;
           position: relative;
           text-align: center;
-          width: 8rem;
           height: 8rem;
           border-radius: 50%;
-          top: 0;
-          left: 27%;
-          @include mobile {
-          }
-          @include tablet {
-            left: 18%;
-          }
-          @include FHD {
-          }
           &:active,
           &:link {
             color: $color-white;
@@ -196,26 +129,12 @@
               vertical-align: inherit;
               width: max-content;
               top: 0.5rem;
-              @include mobile {
-                font-size: 2rem;
-                padding: 0;
-                width: max-content;
-                margin-top: 25px;
-                padding-left: 10px;
-              }
+              font-size: 3rem;
             }
           }
           &___icon {
             inset: 0;
             position: relative;
-            @include mobile {
-              width: 5rem;
-              height: 5rem;
-              font-size: 2rem;
-              position: absolute;
-            }
-            @include FHD {
-            }
             color: $color-secondary;
             &:active,
             &:link,
@@ -231,7 +150,7 @@
         display: block;
         inset: 0;
         margin: 0;
-        width: 30%;
+        width: 10vw;
         top: 50%;
         transform: translateY(-50%);
         height: 1px;
@@ -244,28 +163,28 @@
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1);
-        @include mobile {
-          width: 32%;
-        }
-        @include smtablet {
-        }
-        @include tablet {
-          width: 20%;
-        }
-        @include IpadPro {
-          width: 20%;
-        }
-        @include FHD {
-        }
+        // @include mobile {
+        //   width: 32%;
+        // }
+        // @include smtablet {
+        // }
+        // @include tablet {
+        //   width: 20%;
+        // }
+        // @include IpadPro {
+        //   width: 20%;
+        // }
+        // @include FHD {
+        // }
       }
       &_download::after {
         position: absolute;
         display: block;
         margin: 0;
         inset: 0;
-        width: 30%;
+        width: 10vw;
         top: 50%;
-        left: -30%;
+        left: -100%;
         transform: translateY(-50%);
         height: 2px;
         content: "";
@@ -277,20 +196,20 @@
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1);
-        @include mobile {
-          left: -32%;
-          width: 32%;
-        }
-        @include smtablet {
-        }
-        @include tablet {
-          width: 20%;
-        }
-        @include tablet {
-          width: 20%;
-        }
-        @include FHD {
-        }
+        // @include mobile {
+        //   left: -32%;
+        //   width: 32%;
+        // }
+        // @include smtablet {
+        // }
+        // @include tablet {
+        //   width: 20%;
+        // }
+        // @include tablet {
+        //   width: 20%;
+        // }
+        // @include FHD {
+        // }
       }
     }
   }
