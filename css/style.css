@@ -57,7 +57,7 @@ input:valid {
   @media (max-width: 479px) and (orientation: portrait) {
     .l-0 {
       left: -3rem !important; } }
-  @media (max-width: 600px) and (orientation: portrait) {
+  @media (max-width: 625px) and (orientation: portrait) {
     .l-0 {
       left: -6rem !important; } }
   @media (max-width: 768px) {
@@ -273,7 +273,7 @@ input:valid {
       z-index: 1;
       position: absolute;
       background-repeat: no-repeat; }
-      @media (max-width: 600px) and (orientation: portrait) {
+      @media (max-width: 625px) and (orientation: portrait) {
         .hero-bg--img {
           right: auto; } }
   .hero-container {
@@ -296,7 +296,7 @@ input:valid {
           .hero-container--row_box {
             padding: 0;
             padding-top: 40vh; } }
-        @media (max-width: 600px) and (orientation: portrait) {
+        @media (max-width: 625px) and (orientation: portrait) {
           .hero-container--row_box {
             padding: 0;
             padding-top: 40vh; } }
@@ -308,7 +308,7 @@ input:valid {
           @media (max-width: 479px) and (orientation: portrait) {
             .hero-container--row_box__slogan {
               font-size: 10vw; } }
-          @media (max-width: 600px) and (orientation: portrait) {
+          @media (max-width: 625px) and (orientation: portrait) {
             .hero-container--row_box__slogan {
               font-size: 12vw; } }
           .hero-container--row_box__slogan___howdy {
@@ -3353,7 +3353,7 @@ input:valid {
       top: 50%;
       text-align: center;
       transform: translate(-50%, -50%) rotate(-45deg); } }
-  @media (max-width: 600px) and (orientation: portrait) {
+  @media (max-width: 625px) and (orientation: portrait) {
     .slogan--shadow {
       width: 80vh;
       font-size: 8rem;
@@ -3402,7 +3402,7 @@ input:valid {
   @media (max-width: 479px) and (orientation: portrait) {
     .tittle-box {
       height: 50px; } }
-  @media (max-width: 600px) and (orientation: portrait) {
+  @media (max-width: 625px) and (orientation: portrait) {
     .tittle-box {
       top: 0;
       height: 75px;
@@ -3432,7 +3432,7 @@ input:valid {
       @media (max-width: 479px) and (orientation: portrait) {
         .tittle-box--layer:after {
           font-size: 4rem; } }
-      @media (max-width: 600px) and (orientation: portrait) {
+      @media (max-width: 625px) and (orientation: portrait) {
         .tittle-box--layer:after {
           font-size: 7rem; } }
       @media (max-width: 1024px) {
@@ -3511,7 +3511,7 @@ input:valid {
         font-size: 3rem;
         position: absolute;
         margin-top: 0; } }
-    @media (max-width: 600px) and (orientation: portrait) {
+    @media (max-width: 625px) and (orientation: portrait) {
       .tittle-box--content {
         font-size: 4rem;
         top: 30%;
@@ -3599,7 +3599,7 @@ input:valid {
     width: 80%;
     display: flex;
     flex-direction: column; }
-    @media (max-width: 600px) and (orientation: portrait) {
+    @media (max-width: 625px) and (orientation: portrait) {
       .features-container {
         margin: 0 auto; } }
     @media (max-width: 1024px) {
@@ -3644,7 +3644,7 @@ input:valid {
         overflow: hidden;
         overflow-x: scroll;
         scroll-snap-align: center; } }
-    @media (max-width: 600px) and (orientation: portrait) {
+    @media (max-width: 625px) and (orientation: portrait) {
       .features-content {
         margin-top: 1rem;
         height: 80%;
@@ -3689,7 +3689,7 @@ input:valid {
           color: #c89c21;
           font-size: 5rem;
           padding-right: 10px; }
-          @media (max-width: 600px) and (orientation: portrait) {
+          @media (max-width: 625px) and (orientation: portrait) {
             .features-content--box_logo__icon {
               font-size: 4rem; } }
           @media (max-width: 1024px) {
@@ -3712,7 +3712,7 @@ input:valid {
           .features-content--box_tittle {
             width: max-content;
             margin-top: 0; } }
-        @media (max-width: 600px) and (orientation: portrait) {
+        @media (max-width: 625px) and (orientation: portrait) {
           .features-content--box_tittle {
             margin: 1rem 0; } }
         @media (max-width: 768px) {
@@ -3736,7 +3736,7 @@ input:valid {
         @media (max-width: 479px) and (orientation: portrait) {
           .features-content--box_content {
             font-size: 1.5rem; } }
-        @media (max-width: 600px) and (orientation: portrait) {
+        @media (max-width: 625px) and (orientation: portrait) {
           .features-content--box_content {
             font-size: 1.4rem; } }
         @media (max-width: 1024px) {
@@ -3762,7 +3762,7 @@ input:valid {
               font-size: 3rem;
               line-height: 2rem;
               margin-top: 0; } }
-          @media (max-width: 600px) and (orientation: portrait) {
+          @media (max-width: 625px) and (orientation: portrait) {
             .features-content--box_content::first-letter {
               font-size: 4rem;
               line-height: 3rem;
@@ -3796,7 +3796,7 @@ input:valid {
   @media (max-width: 479px) and (orientation: portrait) {
     .resume {
       top: 0; } }
-  @media (max-width: 600px) and (orientation: portrait) {
+  @media (max-width: 625px) and (orientation: portrait) {
     .resume {
       top: 0; } }
   @media (max-width: 768px) {
@@ -4537,7 +4537,7 @@ input:valid {
         @media (max-width: 479px) and (orientation: portrait) {
           .product-container--website_second__name {
             margin-left: 0rem; } }
-        @media (max-width: 600px) and (orientation: portrait) {
+        @media (max-width: 625px) and (orientation: portrait) {
           .product-container--website_second__name {
             margin-left: 5rem; } }
         @media (max-width: 768px) {
@@ -4989,7 +4989,7 @@ input:valid {
           @media (max-width: 479px) and (orientation: portrait) {
             .contact-container--item_img__details {
               width: 100%; } }
-          @media (max-width: 600px) and (orientation: portrait) {
+          @media (max-width: 625px) and (orientation: portrait) {
             .contact-container--item_img__details {
               width: 100%; } }
           @media (max-width: 768px) {
