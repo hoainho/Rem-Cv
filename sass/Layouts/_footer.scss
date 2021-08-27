@@ -21,9 +21,6 @@
   &-box {
     & p {
       margin: 0 !important;
-      @include Pc {
-        font-size: 2rem;
-      }
     }
     width: 100%;
     &--list {

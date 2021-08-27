@@ -46,11 +46,11 @@
         padding: 10vh 0;
         @include mobile {
           padding: 0;
-          padding-top: 40vh;
+          padding-top: 25vh;
         }
         @include smtablet {
           padding: 0;
-          padding-top: 40vh;
+          padding-top: 25vh;
         }
         &__slogan {
           font-size: 7vw;

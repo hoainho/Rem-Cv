@@ -2,7 +2,9 @@
 .logo {
     flex: 1;
     height: 5vh;
-
+    @include smtablet {
+        flex: 0;
+    }
     &-letter {
         top: -10vh;
         display: inline-block;

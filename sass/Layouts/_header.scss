@@ -117,9 +117,6 @@
             }
             @include tablet {
             }
-            @include Pc {
-              font-size: 2rem;
-            }
           }
           &___item {
             margin: 0 2rem;
