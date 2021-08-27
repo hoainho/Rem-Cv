@@ -132,6 +132,7 @@
               padding-left: 2rem;
               width: max-content;
               font-size: 2.5rem;
+              margin: 0;
             }
           }
           &___icon {
@@ -154,6 +155,7 @@
         margin: 0;
         width: 10vw;
         top: 50%;
+        left: 0;
         transform: translateY(-50%);
         height: 1px;
         content: "";
@@ -165,19 +167,6 @@
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1);
-        // @include mobile {
-        //   width: 32%;
-        // }
-        // @include smtablet {
-        // }
-        // @include tablet {
-        //   width: 20%;
-        // }
-        // @include IpadPro {
-        //   width: 20%;
-        // }
-        // @include FHD {
-        // }
       }
       &_download::after {
         position: absolute;
@@ -198,20 +187,6 @@
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1);
-        // @include mobile {
-        //   left: -32%;
-        //   width: 32%;
-        // }
-        // @include smtablet {
-        // }
-        // @include tablet {
-        //   width: 20%;
-        // }
-        // @include tablet {
-        //   width: 20%;
-        // }
-        // @include FHD {
-        // }
       }
     }
   }

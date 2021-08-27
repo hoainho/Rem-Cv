@@ -359,7 +359,8 @@ input:valid {
             position: relative;
             padding-left: 2rem;
             width: max-content;
-            font-size: 2.5rem; }
+            font-size: 2.5rem;
+            margin: 0; }
           .hero-container--row_download__box___icon {
             inset: 0;
             position: relative;
@@ -373,6 +374,7 @@ input:valid {
         margin: 0;
         width: 10vw;
         top: 50%;
+        left: 0;
         transform: translateY(-50%);
         height: 1px;
         content: "";
