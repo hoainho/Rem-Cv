@@ -314,7 +314,7 @@ input:valid {
           width: 100%;
           height: 100%; }
       .hero-container--row_download {
-        padding-left: 10vw !important;
+        padding: 0;
         max-width: fit-content;
         z-index: 2; }
         .hero-container--row_download:hover::after {
@@ -351,6 +351,7 @@ input:valid {
           position: relative;
           text-align: center;
           height: 8rem;
+          left: 10vw;
           border-radius: 50%;
           text-decoration: none !important; }
           .hero-container--row_download__box:active, .hero-container--row_download__box:link {
@@ -374,7 +375,6 @@ input:valid {
         margin: 0;
         width: 10vw;
         top: 50%;
-        left: 0;
         transform: translateY(-50%);
         height: 1px;
         content: "";

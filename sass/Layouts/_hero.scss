@@ -73,7 +73,7 @@
         }
       }
       &_download {
-        padding-left: 10vw !important;
+        padding: 0;
         max-width: fit-content;
         z-index: 2;
         &:hover {
@@ -120,6 +120,7 @@
           position: relative;
           text-align: center;
           height: 8rem;
+          left: 10vw;
           border-radius: 50%;
           text-decoration: none !important;
           &:active,
@@ -155,7 +156,6 @@
         margin: 0;
         width: 10vw;
         top: 50%;
-        left: 0;
         transform: translateY(-50%);
         height: 1px;
         content: "";
