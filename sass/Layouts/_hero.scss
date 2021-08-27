@@ -14,13 +14,16 @@
     justify-items: center;
     justify-content: center;
     &--img {
-      right: auto;
+      right: 0;
       bottom: 0;
       height: 100%;
       width: auto;
       z-index: 1;
       position: absolute;
       background-repeat: no-repeat;
+      @include mobile {
+        right: auto;
+      }
     }
   }
   &-container {

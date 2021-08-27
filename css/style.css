@@ -266,13 +266,16 @@ input:valid {
     justify-items: center;
     justify-content: center; }
     .hero-bg--img {
-      right: auto;
+      right: 0;
       bottom: 0;
       height: 100%;
       width: auto;
       z-index: 1;
       position: absolute;
       background-repeat: no-repeat; }
+      @media (max-width: 479px) and (orientation: portrait) {
+        .hero-bg--img {
+          right: auto; } }
   .hero-container {
     height: 100vh;
     width: 100%;
