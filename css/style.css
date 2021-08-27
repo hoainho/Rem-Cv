@@ -57,10 +57,10 @@ input:valid {
   @media (max-width: 479px) and (orientation: portrait) {
     .l-0 {
       left: -3rem !important; } }
-  @media (min-width: 600px) and (orientation: portrait) {
+  @media (max-width: 600px) and (orientation: portrait) {
     .l-0 {
       left: -6rem !important; } }
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .l-0 {
       left: 2rem !important; } }
 
@@ -181,7 +181,7 @@ input:valid {
               justify-content: center;
               text-align: center;
               top: 1rem; } }
-          @media (min-width: 1920px) {
+          @media (max-width: 1920px) {
             .rem-navbar--inner_left__contacts___list {
               font-size: 2rem; } }
         .rem-navbar--inner_left__contacts___item {
@@ -203,7 +203,7 @@ input:valid {
       @media (max-width: 479px) and (orientation: portrait) {
         .rem-navbar--inner_right {
           right: 3%; } }
-      @media (min-width: 1920px) {
+      @media (max-width: 1920px) {
         .rem-navbar--inner_right {
           right: 0; } }
       .rem-navbar--inner_right__loading {
@@ -212,10 +212,10 @@ input:valid {
         height: 10px;
         transform: rotate(45deg);
         animation: hue-rotate 10s linear infinite both; }
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
           .rem-navbar--inner_right__loading {
             right: 3rem; } }
-        @media (min-width: 1366px) {
+        @media (max-width: 1366px) {
           .rem-navbar--inner_right__loading {
             right: 0; } }
         .rem-navbar--inner_right__loading___square {
@@ -273,7 +273,7 @@ input:valid {
       z-index: 1;
       position: absolute;
       background-repeat: no-repeat; }
-      @media (max-width: 479px) and (orientation: portrait) {
+      @media (max-width: 600px) and (orientation: portrait) {
         .hero-bg--img {
           right: auto; } }
   .hero-container {
@@ -296,12 +296,19 @@ input:valid {
           .hero-container--row_box {
             padding: 0;
             padding-top: 40vh; } }
+        @media (max-width: 600px) and (orientation: portrait) {
+          .hero-container--row_box {
+            padding: 0;
+            padding-top: 40vh; } }
         .hero-container--row_box__slogan {
           font-size: 7vw;
           font-weight: 800;
           color: #fff;
           z-index: 1; }
           @media (max-width: 479px) and (orientation: portrait) {
+            .hero-container--row_box__slogan {
+              font-size: 10vw; } }
+          @media (max-width: 600px) and (orientation: portrait) {
             .hero-container--row_box__slogan {
               font-size: 12vw; } }
           .hero-container--row_box__slogan___howdy {
@@ -3346,7 +3353,7 @@ input:valid {
       top: 50%;
       text-align: center;
       transform: translate(-50%, -50%) rotate(-45deg); } }
-  @media (min-width: 600px) and (orientation: portrait) {
+  @media (max-width: 600px) and (orientation: portrait) {
     .slogan--shadow {
       width: 80vh;
       font-size: 8rem;
@@ -3354,7 +3361,7 @@ input:valid {
       top: 50%;
       text-align: center;
       transform: translate(-50%, -50%) rotate(-45deg); } }
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .slogan--shadow {
       width: 80vh;
       font-size: 13rem;
@@ -3362,20 +3369,20 @@ input:valid {
       top: 50%;
       text-align: center;
       transform: translate(-50%, -50%) rotate(-45deg); } }
-  @media (min-width: 1024px) {
+  @media (max-width: 1024px) {
     .slogan--shadow {
       transform: translateY(-100%) rotate(-90deg);
       width: 50vw;
       font-size: 7rem;
       left: -17%; } }
-  @media (min-width: 1366px) {
+  @media (max-width: 1366px) {
     .slogan--shadow {
       transform: translateY(-100%) rotate(-90deg);
       width: 50vw;
       font-size: 10rem;
       left: -17%;
       text-align: left; } }
-  @media (min-width: 1920px) {
+  @media (max-width: 1920px) {
     .slogan--shadow {
       transform: translateY(-100%) rotate(-90deg);
       text-align: left;
@@ -3395,7 +3402,7 @@ input:valid {
   @media (max-width: 479px) and (orientation: portrait) {
     .tittle-box {
       height: 50px; } }
-  @media (min-width: 600px) and (orientation: portrait) {
+  @media (max-width: 600px) and (orientation: portrait) {
     .tittle-box {
       top: 0;
       height: 75px;
@@ -3425,16 +3432,16 @@ input:valid {
       @media (max-width: 479px) and (orientation: portrait) {
         .tittle-box--layer:after {
           font-size: 4rem; } }
-      @media (min-width: 600px) and (orientation: portrait) {
+      @media (max-width: 600px) and (orientation: portrait) {
         .tittle-box--layer:after {
           font-size: 7rem; } }
-      @media (min-width: 1024px) {
+      @media (max-width: 1024px) {
         .tittle-box--layer:after {
           font-size: 7rem; } }
-      @media (min-width: 1366px) {
+      @media (max-width: 1366px) {
         .tittle-box--layer:after {
           font-size: 10rem; } }
-      @media (min-width: 1920px) {
+      @media (max-width: 1920px) {
         .tittle-box--layer:after {
           font-size: 11rem; } }
     .tittle-box--layer:nth-child(1):after {
@@ -3504,24 +3511,24 @@ input:valid {
         font-size: 3rem;
         position: absolute;
         margin-top: 0; } }
-    @media (min-width: 600px) and (orientation: portrait) {
+    @media (max-width: 600px) and (orientation: portrait) {
       .tittle-box--content {
         font-size: 4rem;
         top: 30%;
         margin-left: 1rem; } }
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
       .tittle-box--content {
         top: 8%;
         left: 25%; } }
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
       .tittle-box--content {
         left: 25%;
         top: 17%; } }
-    @media (min-width: 1366px) {
+    @media (max-width: 1366px) {
       .tittle-box--content {
         top: 17%;
         left: 20%; } }
-    @media (min-width: 1920px) {
+    @media (max-width: 1920px) {
       .tittle-box--content {
         top: 17%;
         left: 20%;
@@ -3592,18 +3599,18 @@ input:valid {
     width: 80%;
     display: flex;
     flex-direction: column; }
-    @media (min-width: 600px) and (orientation: portrait) {
+    @media (max-width: 600px) and (orientation: portrait) {
       .features-container {
         margin: 0 auto; } }
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
       .features-container {
         width: 80%;
         margin: 0 auto; } }
-    @media (min-width: 1366px) {
+    @media (max-width: 1366px) {
       .features-container {
         margin: 0 auto;
         width: 75%; } }
-    @media (min-width: 1920px) {
+    @media (max-width: 1920px) {
       .features-container {
         margin: 0 auto; } }
   .features-tittle {
@@ -3637,27 +3644,27 @@ input:valid {
         overflow: hidden;
         overflow-x: scroll;
         scroll-snap-align: center; } }
-    @media (min-width: 600px) and (orientation: portrait) {
+    @media (max-width: 600px) and (orientation: portrait) {
       .features-content {
         margin-top: 1rem;
         height: 80%;
         flex-direction: column; } }
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
       .features-content {
         height: 80%;
         flex-direction: column; } }
-    @media (min-width: 1200px) {
+    @media (max-width: 1200px) {
       .features-content {
         flex-direction: row; } }
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
       .features-content {
         flex-direction: row;
         height: 60%; } }
-    @media (min-width: 1366px) {
+    @media (max-width: 1366px) {
       .features-content {
         flex-direction: row;
         height: 60%; } }
-    @media (min-width: 1920px) {
+    @media (max-width: 1920px) {
       .features-content {
         flex-direction: row;
         height: 60%; } }
@@ -3682,16 +3689,16 @@ input:valid {
           color: #c89c21;
           font-size: 5rem;
           padding-right: 10px; }
-          @media (min-width: 600px) and (orientation: portrait) {
+          @media (max-width: 600px) and (orientation: portrait) {
             .features-content--box_logo__icon {
               font-size: 4rem; } }
-          @media (min-width: 1024px) {
+          @media (max-width: 1024px) {
             .features-content--box_logo__icon {
               font-size: 3rem; } }
-          @media (min-width: 1366px) {
+          @media (max-width: 1366px) {
             .features-content--box_logo__icon {
               font-size: 5rem; } }
-          @media (min-width: 1920px) {
+          @media (max-width: 1920px) {
             .features-content--box_logo__icon {
               font-size: 8rem; } }
       .features-content--box_tittle {
@@ -3705,22 +3712,22 @@ input:valid {
           .features-content--box_tittle {
             width: max-content;
             margin-top: 0; } }
-        @media (min-width: 600px) and (orientation: portrait) {
+        @media (max-width: 600px) and (orientation: portrait) {
           .features-content--box_tittle {
             margin: 1rem 0; } }
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
           .features-content--box_tittle {
             margin: 2rem 0; } }
-        @media (min-width: 1366px) {
+        @media (max-width: 1366px) {
           .features-content--box_tittle {
             font-size: 3rem; } }
-        @media (min-width: 1024px) {
+        @media (max-width: 1024px) {
           .features-content--box_tittle {
             font-size: 2rem;
             letter-spacing: 0.1rem;
             word-spacing: 0.3rem;
             width: fit-content; } }
-        @media (min-width: 1920px) {
+        @media (max-width: 1920px) {
           .features-content--box_tittle {
             font-size: 4rem; } }
       .features-content--box_content {
@@ -3729,16 +3736,16 @@ input:valid {
         @media (max-width: 479px) and (orientation: portrait) {
           .features-content--box_content {
             font-size: 1.5rem; } }
-        @media (min-width: 600px) and (orientation: portrait) {
+        @media (max-width: 600px) and (orientation: portrait) {
           .features-content--box_content {
             font-size: 1.4rem; } }
-        @media (min-width: 1024px) {
+        @media (max-width: 1024px) {
           .features-content--box_content {
             font-size: 1.3rem; } }
-        @media (min-width: 1366px) {
+        @media (max-width: 1366px) {
           .features-content--box_content {
             font-size: 1.7rem; } }
-        @media (min-width: 1920px) {
+        @media (max-width: 1920px) {
           .features-content--box_content {
             font-size: 2.5rem; } }
         .features-content--box_content::first-letter {
@@ -3755,23 +3762,23 @@ input:valid {
               font-size: 3rem;
               line-height: 2rem;
               margin-top: 0; } }
-          @media (min-width: 600px) and (orientation: portrait) {
+          @media (max-width: 600px) and (orientation: portrait) {
             .features-content--box_content::first-letter {
               font-size: 4rem;
               line-height: 3rem;
               margin-top: 5px; } }
-          @media (min-width: 1024px) {
+          @media (max-width: 1024px) {
             .features-content--box_content::first-letter {
               font-size: 3rem;
               font-size: 3rem;
               line-height: 3rem;
               margin-top: 5px; } }
-          @media (min-width: 1366px) {
+          @media (max-width: 1366px) {
             .features-content--box_content::first-letter {
               font-size: 5rem;
               line-height: 3rem;
               margin-top: 10px; } }
-          @media (min-width: 1920px) {
+          @media (max-width: 1920px) {
             .features-content--box_content::first-letter {
               font-size: 8rem;
               line-height: 5rem;
@@ -3789,10 +3796,10 @@ input:valid {
   @media (max-width: 479px) and (orientation: portrait) {
     .resume {
       top: 0; } }
-  @media (min-width: 600px) and (orientation: portrait) {
+  @media (max-width: 600px) and (orientation: portrait) {
     .resume {
       top: 0; } }
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .resume {
       top: 0; } }
   .resume-wrap {
@@ -3915,7 +3922,7 @@ input:valid {
   font-weight: 200;
   color: #fff;
   z-index: 1000; }
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .footer {
       font-size: 2rem; } }
   .footer-row {
@@ -3927,7 +3934,7 @@ input:valid {
     width: 100%; }
     .footer-box p {
       margin: 0 !important; }
-      @media (min-width: 1920px) {
+      @media (max-width: 1920px) {
         .footer-box p {
           font-size: 2rem; } }
     .footer-box--list {
@@ -3941,7 +3948,7 @@ input:valid {
       @media (max-width: 479px) and (orientation: portrait) {
         .footer-box--item {
           margin-left: 2rem; } }
-      @media (min-width: 768px) {
+      @media (max-width: 768px) {
         .footer-box--item {
           margin-left: 6rem; } }
     .footer-box--link {
@@ -3949,10 +3956,10 @@ input:valid {
       font-size: 2rem;
       color: #fff;
       transition: 0.5s; }
-      @media (min-width: 768px) {
+      @media (max-width: 768px) {
         .footer-box--link {
           font-size: 3rem; } }
-      @media (min-width: 1920px) {
+      @media (max-width: 1920px) {
         .footer-box--link {
           font-size: 4rem; } }
       .footer-box--link:hover {
@@ -4530,10 +4537,10 @@ input:valid {
         @media (max-width: 479px) and (orientation: portrait) {
           .product-container--website_second__name {
             margin-left: 0rem; } }
-        @media (min-width: 600px) and (orientation: portrait) {
+        @media (max-width: 600px) and (orientation: portrait) {
           .product-container--website_second__name {
             margin-left: 5rem; } }
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
           .product-container--website_second__name {
             margin-left: 10rem; } }
         .product-container--website_second__name___tittle {
@@ -4982,10 +4989,10 @@ input:valid {
           @media (max-width: 479px) and (orientation: portrait) {
             .contact-container--item_img__details {
               width: 100%; } }
-          @media (min-width: 600px) and (orientation: portrait) {
+          @media (max-width: 600px) and (orientation: portrait) {
             .contact-container--item_img__details {
               width: 100%; } }
-          @media (min-width: 768px) {
+          @media (max-width: 768px) {
             .contact-container--item_img__details {
               width: 100%; } }
         .contact-container--item_img article {

@@ -21,7 +21,7 @@
       z-index: 1;
       position: absolute;
       background-repeat: no-repeat;
-      @include mobile {
+      @include smtablet {
         right: auto;
       }
     }
@@ -48,12 +48,19 @@
           padding: 0;
           padding-top: 40vh;
         }
+        @include smtablet {
+          padding: 0;
+          padding-top: 40vh;
+        }
         &__slogan {
           font-size: 7vw;
           font-weight: 800;
           color: $color-white;
           z-index: 1;
           @include mobile {
+            font-size: 10vw;
+          }
+          @include smtablet {
             font-size: 12vw;
           }
           &___howdy {

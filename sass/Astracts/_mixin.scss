@@ -14,33 +14,33 @@ $pc-1920: 1920px;
 }
 
 @mixin smtablet {
-    @media (min-width: #{$smTablet-width}) and (orientation: portrait) {
+    @media (max-width: #{$smTablet-width}) and (orientation: portrait) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media (min-width: #{$tablet-width}) {
+    @media (max-width: #{$tablet-width}) {
         @content;
     }
 }
 @mixin desktop {
-    @media (min-width: #{$desktop-width}) {
+    @media (max-width: #{$desktop-width}) {
         @content;
     }
 }
 @mixin FHD {
-    @media (min-width: #{$res-1200}) {
+    @media (max-width: #{$res-1200}) {
         @content;
     }
 }
 @mixin IpadPro {
-    @media (min-width: #{$ipadPro}) {
+    @media (max-width: #{$ipadPro}) {
         @content;
     }
 }
 @mixin Pc {
-    @media (min-width: #{$pc-1920} ) {
+    @media (max-width: #{$pc-1920} ) {
         @content;
     }
 }
