@@ -266,7 +266,7 @@ input:valid {
     justify-items: center;
     justify-content: center; }
     .hero-bg--img {
-      right: 0;
+      right: auto;
       bottom: 0;
       height: 100%;
       width: auto;
@@ -289,11 +289,18 @@ input:valid {
         height: auto;
         margin: 0;
         padding: 10vh 0; }
+        @media (max-width: 479px) and (orientation: portrait) {
+          .hero-container--row_box {
+            padding: 0;
+            padding-top: 40vh; } }
         .hero-container--row_box__slogan {
-          font-size: 6.5vw;
+          font-size: 7vw;
           font-weight: 800;
           color: #fff;
           z-index: 1; }
+          @media (max-width: 479px) and (orientation: portrait) {
+            .hero-container--row_box__slogan {
+              font-size: 12vw; } }
           .hero-container--row_box__slogan___howdy {
             opacity: 0; }
           .hero-container--row_box__slogan___after {

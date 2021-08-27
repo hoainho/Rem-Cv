@@ -14,7 +14,7 @@
     justify-items: center;
     justify-content: center;
     &--img {
-      right: 0;
+      right: auto;
       bottom: 0;
       height: 100%;
       width: auto;
@@ -41,11 +41,18 @@
         height: auto;
         margin: 0;
         padding: 10vh 0;
+        @include mobile {
+          padding: 0;
+          padding-top: 40vh;
+        }
         &__slogan {
-          font-size: 6.5vw;
+          font-size: 7vw;
           font-weight: 800;
           color: $color-white;
           z-index: 1;
+          @include mobile {
+            font-size: 12vw;
+          }
           &___howdy {
             opacity: 0;
           }
