@@ -1,13 +1,13 @@
 
 //AOS
-// AOS.init({
-// });
 AOS.init({
-  disable: function () {
-    var maxWidth = 375;
-    return window.innerWidth < maxWidth;
-  }
 });
+// AOS.init({
+//   disable: function () {
+//     var maxWidth = 375;
+//     return window.innerWidth < maxWidth;
+//   }
+// });
 //AnimationWhenScrollYPage
 window.onload = function () {
   //MID
