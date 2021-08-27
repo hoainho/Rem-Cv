@@ -493,6 +493,10 @@ input:valid {
           .hero-container--row_download::after {
             width: 20%; } }
 
+.temp {
+  top: 20%;
+  z-index: 2; }
+
 @keyframes loop {
   from {
     transform: rotateX(0deg) rotateY(0deg); }
@@ -4660,8 +4664,6 @@ input:valid {
 
 .loading {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   z-index: 9999;
@@ -4670,49 +4672,46 @@ input:valid {
   background-color: #242424;
   background-position: center;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   .loading-bg {
     background-color: #242424;
     width: 100vw;
     height: 100vh;
-    z-index: 10000; }
+    z-index: 10000;
+    position: fixed; }
 
 .finger {
   float: left;
   margin: 0 2px 0 0;
   width: 20px;
   height: 10%;
-  top: 20% !important;
   position: relative;
   height: 70px; }
 
 .finger-1 {
-  animation: finger-1-animation 2s infinite ease-out;
-  top: 20.15%; }
+  animation: finger-1-animation 2s infinite ease-out; }
   .finger-1 span {
     animation: finger-1-animation-span 2s infinite ease-out; }
   .finger-1 i {
     animation: finger-1-animation-i 2s infinite ease-out; }
 
 .finger-2 {
-  animation: finger-2-animation 2s infinite ease-out;
-  top: 20%; }
+  animation: finger-2-animation 2s infinite ease-out; }
   .finger-2 span {
     animation: finger-2-animation-span 2s infinite ease-out; }
   .finger-2 i {
     animation: finger-2-animation-i 2s infinite ease-out; }
 
 .finger-3 {
-  animation: finger-3-animation 2s infinite ease-out;
-  top: 20%; }
+  animation: finger-3-animation 2s infinite ease-out; }
   .finger-3 span {
     animation: finger-3-animation-span 2s infinite ease-out; }
   .finger-3 i {
     animation: finger-3-animation-i 2s infinite ease-out; }
 
 .finger-4 {
-  animation: finger-4-animation 2s infinite ease-out;
-  top: 20.05%; }
+  animation: finger-4-animation 2s infinite ease-out; }
   .finger-4 span {
     animation: finger-4-animation-span 2s infinite ease-out; }
   .finger-4 i {
@@ -4752,9 +4751,8 @@ input:valid {
   position: relative;
   float: left;
   width: 24px;
-  height: 100%;
-  overflow: hidden;
-  top: 20%; }
+  height: 70px;
+  overflow: hidden; }
 
 .last-finger-item {
   position: absolute;

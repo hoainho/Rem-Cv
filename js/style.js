@@ -320,14 +320,8 @@ window.onload = function () {
 
 
 }
-//LoadingPage
-// $(document).ready(() => {
-//   $(window).on('load', () => {
-//     $('.loading').delay(2000).fadeOut('slow');
-//   });
-// })
 $(document).ready(function () {
-  $('.loading').delay(2000).fadeOut('slow');
+  $('.loading-bg').delay(2000).fadeOut('slow');
 });
 //FullPage
 new fullpage('#fullPage', {
