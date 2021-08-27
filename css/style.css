@@ -493,10 +493,6 @@ input:valid {
           .hero-container--row_download::after {
             width: 20%; } }
 
-.temp {
-  top: 20%;
-  z-index: 2; }
-
 @keyframes loop {
   from {
     transform: rotateX(0deg) rotateY(0deg); }
