@@ -280,25 +280,28 @@ input:valid {
     .hero-container--row {
       display: flex;
       align-items: flex-start;
-      justify-content: space-around;
+      justify-content: center;
       flex-direction: column;
       height: 100%; }
       .hero-container--row_box {
-        top: 0%;
-        width: 100%; }
+        left: 10vw;
+        width: fit-content;
+        height: auto;
+        margin: 0;
+        padding: 10vh 0; }
         .hero-container--row_box__slogan {
-          left: 10%;
           font-size: 6.5vw;
           font-weight: 800;
-          position: absolute;
           color: #fff;
           z-index: 1; }
           .hero-container--row_box__slogan___howdy {
             opacity: 0; }
           .hero-container--row_box__slogan___after {
+            position: relative;
             color: transparent;
             -webkit-text-stroke: 0.1rem #c89c21; }
           .hero-container--row_box__slogan___before {
+            position: absolute;
             color: #c89c21;
             animation: wave 10s ease-in-out infinite; }
           .hero-container--row_box__slogan___color {
